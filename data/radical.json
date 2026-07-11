@@ -1,0 +1,1490 @@
+[
+  {
+    "hanzi": "孩",
+    "pinyin": "hái",
+    "koPron": "하이",
+    "meanings": [
+      { "pos": "명사", "ko": "어린이", "en": "Child" }
+    ],
+    "hanja": "아이 해",
+    "charTip": "子(아이) + 亥(돼지): 통통한 새끼 돼지처럼 귀여운 아이",
+    "pronTip": "부수: 子 (zǐ [쯔]) - 아들 자",
+    "exZh": "孩子",
+    "exPinyin": "háizi",
+    "exMeaning": "아이, 자녀"
+  },
+  {
+    "hanzi": "孙",
+    "pinyin": "sūn",
+    "koPron": "쑨",
+    "meanings": [
+      { "pos": "명사", "ko": "손자, 후손", "en": "Grandson/Descendant" }
+    ],
+    "hanja": "손자 손",
+    "charTip": "子(아이) + 系(잇다): 핏줄을 이어가는 후손",
+    "pronTip": "부수: 子 (zǐ [쯔]) - 아들 자",
+    "exZh": "孙子",
+    "exPinyin": "sūnzi",
+    "exMeaning": "손자"
+  },
+  {
+    "hanzi": "孤",
+    "pinyin": "gū",
+    "koPron": "꾸",
+    "meanings": [
+      { "pos": "형용사", "ko": "고독하다", "en": "Lonely" }
+    ],
+    "hanja": "외로울 고",
+    "charTip": "子(아이) + 瓜(오이): 넝쿨에서 떨어진 오이처럼 홀로 남은 아이",
+    "pronTip": "부수: 子 (zǐ [쯔]) - 아들 자",
+    "exZh": "孤单",
+    "exPinyin": "gūdān",
+    "exMeaning": "외롭고 쓸쓸하다"
+  },
+  {
+    "hanzi": "孺",
+    "pinyin": "rú",
+    "koPron": "루",
+    "meanings": [
+      { "pos": "명사", "ko": "어린아이", "en": "Young child" }
+    ],
+    "hanja": "어린아이 유",
+    "charTip": "子(아이) + 需(구하다): 보살핌을 간절히 필요로 하는 아이",
+    "pronTip": "부수: 子 (zǐ [쯔]) - 아들 자",
+    "exZh": "妇孺",
+    "exPinyin": "fùrú",
+    "exMeaning": "부녀자와 어린아이"
+  },
+  {
+    "hanzi": "孕",
+    "pinyin": "yùn",
+    "koPron": "윈",
+    "meanings": [
+      { "pos": "동사", "ko": "임신하다", "en": "To be pregnant" }
+    ],
+    "hanja": "아이밸 잉",
+    "charTip": "乃(배) + 子(아이): 배 안에 아이가 들어있는 모습",
+    "pronTip": "부수: 子 (zǐ [쯔]) - 아들 자",
+    "exZh": "怀孕",
+    "exPinyin": "huáiyùn",
+    "exMeaning": "임신하다"
+  },
+  {
+    "hanzi": "孝",
+    "pinyin": "xiào",
+    "koPron": "샤오",
+    "meanings": [
+      { "pos": "동사", "ko": "효도하다", "en": "To show filial piety" }
+    ],
+    "hanja": "효도 효",
+    "charTip": "老(노인) + 子(아이): 자식이 노인을 업고 봉양하는 모습",
+    "pronTip": "부수: 子 (zǐ [쯔]) - 아들 자",
+    "exZh": "孝顺",
+    "exPinyin": "xiàoshùn",
+    "exMeaning": "효도하다, 순종하다"
+  },
+  {
+    "hanzi": "存",
+    "pinyin": "cún",
+    "koPron": "춘",
+    "meanings": [
+      { "pos": "동사", "ko": "존재하다", "en": "To exist" }
+    ],
+    "hanja": "있을 존",
+    "charTip": "才(바야흐로) + 子(아이): 아이가 태어나 이 세상에 존재함",
+    "pronTip": "부수: 子 (zǐ [쯔]) - 아들 자",
+    "exZh": "存在",
+    "exPinyin": "cúnzài",
+    "exMeaning": "존재하다"
+  },
+  {
+    "hanzi": "字",
+    "pinyin": "zì",
+    "koPron": "쯔",
+    "meanings": [
+      { "pos": "명사", "ko": "글자, 문자", "en": "Character" }
+    ],
+    "hanja": "글자 자",
+    "charTip": "宀(집) + 子(아이): 집안에 아이가 늘어나듯 계속 파생되는 글자",
+    "pronTip": "부수: 子 (zǐ [쯔]) - 아들 자",
+    "exZh": "汉字",
+    "exPinyin": "hànzì",
+    "exMeaning": "한자"
+  },
+  {
+    "hanzi": "她",
+    "pinyin": "tā",
+    "koPron": "타",
+    "meanings": [
+      { "pos": "대명사", "ko": "그녀", "en": "She" }
+    ],
+    "hanja": "그녀 타",
+    "charTip": "女(여자) + 也(어조사): 여자를 지칭하는 3인칭 대명사",
+    "pronTip": "부수: 女 (nǚ [뉘]) - 여자 녀",
+    "exZh": "她们",
+    "exPinyin": "tāmen",
+    "exMeaning": "그녀들"
+  },
+  {
+    "hanzi": "妈",
+    "pinyin": "mā",
+    "koPron": "마",
+    "meanings": [
+      { "pos": "명사", "ko": "어머니", "en": "Mother" }
+    ],
+    "hanja": "어머니 마",
+    "charTip": "女(여자) + 马(말): 말처럼 힘겹게 일하며 자식을 키우는 엄마",
+    "pronTip": "부수: 女 (nǚ [뉘]) - 여자 녀",
+    "exZh": "妈妈",
+    "exPinyin": "māma",
+    "exMeaning": "엄마"
+  },
+  {
+    "hanzi": "妹",
+    "pinyin": "mèi",
+    "koPron": "메이",
+    "meanings": [
+      { "pos": "명사", "ko": "여동생", "en": "Younger sister" }
+    ],
+    "hanja": "누이 매",
+    "charTip": "女(여자) + 未(아닐 미): 아직 다 성장하지 못한 여자 형제",
+    "pronTip": "부수: 女 (nǚ [뉘]) - 여자 녀",
+    "exZh": "妹妹",
+    "exPinyin": "mèimei",
+    "exMeaning": "여동생"
+  },
+  {
+    "hanzi": "嫁",
+    "pinyin": "jià",
+    "koPron": "지아",
+    "meanings": [
+      { "pos": "동사", "ko": "시집가다", "en": "To marry (of a woman)" }
+    ],
+    "hanja": "시집갈 가",
+    "charTip": "女(여자) + 家(집): 여자가 남편의 집으로 들어가다",
+    "pronTip": "부수: 女 (nǚ [뉘]) - 여자 녀",
+    "exZh": "出嫁",
+    "exPinyin": "chūjià",
+    "exMeaning": "시집가다"
+  },
+  {
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "koPron": "하오",
+    "meanings": [
+      { "pos": "형용사", "ko": "좋다", "en": "Good" }
+    ],
+    "hanja": "좋을 호",
+    "charTip": "女(여자) + 子(아이): 여자가 아이를 안고 있는 좋은 모습",
+    "pronTip": "부수: 女 (nǚ [뉘]) - 여자 녀",
+    "exZh": "很好",
+    "exPinyin": "hěnhǎo",
+    "exMeaning": "매우 좋다"
+  },
+  {
+    "hanzi": "姿",
+    "pinyin": "zī",
+    "koPron": "쯔",
+    "meanings": [
+      { "pos": "명사", "ko": "용모, 모습", "en": "Appearance/Posture" }
+    ],
+    "hanja": "모양 자",
+    "charTip": "次(버금) + 女(여자): 여성의 빼어난 자태나 용모",
+    "pronTip": "부수: 女 (nǚ [뉘]) - 여자 녀",
+    "exZh": "姿势",
+    "exPinyin": "zīshì",
+    "exMeaning": "자세, 태도"
+  },
+  {
+    "hanzi": "婆",
+    "pinyin": "pó",
+    "koPron": "포",
+    "meanings": [
+      { "pos": "명사", "ko": "할머니", "en": "Grandmother" }
+    ],
+    "hanja": "할머니 파",
+    "charTip": "波(물결) + 女(여자): 얼굴에 물결처럼 주름이 진 나이 든 여자",
+    "pronTip": "부수: 女 (nǚ [뉘]) - 여자 녀",
+    "exZh": "老婆",
+    "exPinyin": "lǎopó",
+    "exMeaning": "아내, 마누라"
+  },
+  {
+    "hanzi": "妻",
+    "pinyin": "qī",
+    "koPron": "치",
+    "meanings": [
+      { "pos": "명사", "ko": "아내", "en": "Wife" }
+    ],
+    "hanja": "아내 처",
+    "charTip": "女(여자)를 손으로 다소곳이 잡고 있는 아내",
+    "pronTip": "부수: 女 (nǚ [뉘]) - 여자 녀",
+    "exZh": "妻子",
+    "exPinyin": "qīzi",
+    "exMeaning": "아내, 부인"
+  },
+  {
+    "hanzi": "促",
+    "pinyin": "cù",
+    "koPron": "추",
+    "meanings": [
+      { "pos": "형용사", "ko": "급하다", "en": "Urgent" },
+      { "pos": "동사", "ko": "재촉하다", "en": "To urge" }
+    ],
+    "hanja": "재촉할 촉",
+    "charTip": "亻(사람) + 足(발): 사람이 발을 동동 구르며 급하게 서두름",
+    "pronTip": "부수: 足 (zú [쭈]) - 발 족",
+    "exZh": "促进",
+    "exPinyin": "cùjìn",
+    "exMeaning": "촉진하다"
+  },
+  {
+    "hanzi": "踢",
+    "pinyin": "tī",
+    "koPron": "티",
+    "meanings": [
+      { "pos": "동사", "ko": "차다, 발길질하다", "en": "To kick" }
+    ],
+    "hanja": "찰 척",
+    "charTip": "足(발) + 易(바꾸다): 발의 위치를 휙휙 바꾸며 차는 동작",
+    "pronTip": "부수: 足 (zú [쭈]) - 발 족",
+    "exZh": "踢足球",
+    "exPinyin": "tī zúqiú",
+    "exMeaning": "축구를 하다"
+  },
+  {
+    "hanzi": "跟",
+    "pinyin": "gēn",
+    "koPron": "껀",
+    "meanings": [
+      { "pos": "전치사", "ko": "~와", "en": "With" },
+      { "pos": "동사", "ko": "따라가다", "en": "To follow" }
+    ],
+    "hanja": "발뒤꿈치 근",
+    "charTip": "足(발) + 艮(어긋날 간): 앞사람의 발꿈치를 바짝 따라가다",
+    "pronTip": "부수: 足 (zú [쭈]) - 발 족",
+    "exZh": "跟我来",
+    "exPinyin": "gēn wǒ lái",
+    "exMeaning": "나를 따라오세요"
+  },
+  {
+    "hanzi": "跳",
+    "pinyin": "tiào",
+    "koPron": "티아오",
+    "meanings": [
+      { "pos": "동사", "ko": "뛰다, 도약하다", "en": "To jump" }
+    ],
+    "hanja": "뛸 도",
+    "charTip": "足(발) + 兆(조짐): 위로 뛰어오를 조짐을 보이며 도약함",
+    "pronTip": "부수: 足 (zú [쭈]) - 발 족",
+    "exZh": "跳舞",
+    "exPinyin": "tiàowǔ",
+    "exMeaning": "춤을 추다"
+  },
+  {
+    "hanzi": "距",
+    "pinyin": "jù",
+    "koPron": "쥐",
+    "meanings": [
+      { "pos": "명사", "ko": "거리, 간격", "en": "Distance" }
+    ],
+    "hanja": "떨어질 거",
+    "charTip": "足(발) + 巨(크다): 발걸음으로 잰 커다란 거리나 간격",
+    "pronTip": "부수: 足 (zú [쭈]) - 발 족",
+    "exZh": "距离",
+    "exPinyin": "jùlí",
+    "exMeaning": "거리, 간격"
+  },
+  {
+    "hanzi": "踪",
+    "pinyin": "zōng",
+    "koPron": "쫑",
+    "meanings": [
+      { "pos": "명사", "ko": "자취, 흔적", "en": "Trace" }
+    ],
+    "hanja": "자취 종",
+    "charTip": "足(발) + 宗(마루): 발이 지나간 근본적인 자취",
+    "pronTip": "부수: 足 (zú [쭈]) - 발 족",
+    "exZh": "失踪",
+    "exPinyin": "shīzōng",
+    "exMeaning": "실종되다"
+  },
+  {
+    "hanzi": "跨",
+    "pinyin": "kuà",
+    "koPron": "콰",
+    "meanings": [
+      { "pos": "동사", "ko": "뛰어넘다, 걸치다", "en": "To stride/cross" }
+    ],
+    "hanja": "넘을 과",
+    "charTip": "足(발) + 夸(자랑할 과): 보란 듯이 다리를 크게 뻗어 걸쳐 넘음",
+    "pronTip": "부수: 足 (zú [쭈]) - 발 족",
+    "exZh": "跨国",
+    "exPinyin": "kuàguó",
+    "exMeaning": "다국적의, 국경을 넘는"
+  },
+  {
+    "hanzi": "蹴",
+    "pinyin": "cù",
+    "koPron": "추",
+    "meanings": [
+      { "pos": "동사", "ko": "차다", "en": "To kick" }
+    ],
+    "hanja": "찰 축",
+    "charTip": "足(발) + 就(나아가다): 목표를 향해 나아가며 발로 걷어차다",
+    "pronTip": "부수: 足 (zú [쭈]) - 발 족",
+    "exZh": "一蹴而就",
+    "exPinyin": "yī cù ér jiù",
+    "exMeaning": "단번에 목적을 달성하다"
+  },
+  {
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "koPron": "칸",
+    "meanings": [
+      { "pos": "동사", "ko": "보다, 읽다", "en": "To look/read" }
+    ],
+    "hanja": "볼 간",
+    "charTip": "手(손)을 目(눈) 위에 얹고 멀리 바라보는 모습",
+    "pronTip": "부수: 目 (mù [무]) - 눈 목",
+    "exZh": "看书",
+    "exPinyin": "kànshū",
+    "exMeaning": "책을 읽다"
+  },
+  {
+    "hanzi": "盲",
+    "pinyin": "máng",
+    "koPron": "망",
+    "meanings": [
+      { "pos": "형용사", "ko": "눈멀다", "en": "Blind" }
+    ],
+    "hanja": "눈멀 맹",
+    "charTip": "亡(망할 망) + 目: 시력이 사라져 보이지 않음",
+    "pronTip": "부수: 目 (mù [무]) - 눈 목",
+    "exZh": "盲人",
+    "exPinyin": "mángrén",
+    "exMeaning": "시각장애인"
+  },
+  {
+    "hanzi": "直",
+    "pinyin": "zhí",
+    "koPron": "즈",
+    "meanings": [
+      { "pos": "형용사", "ko": "곧다, 똑바르다", "en": "Straight" }
+    ],
+    "hanja": "곧을 직",
+    "charTip": "눈(目)이 앞을 똑바로 향해 흔들림 없이 보는 모양",
+    "pronTip": "부수: 目 (mù [무]) - 눈 목",
+    "exZh": "一直走",
+    "exPinyin": "yìzhí zǒu",
+    "exMeaning": "곧장 가다"
+  },
+  {
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "koPron": "쩐",
+    "meanings": [
+      { "pos": "형용사", "ko": "진실이다", "en": "True" }
+    ],
+    "hanja": "참 진",
+    "charTip": "흔들리지 않는 사물의 참된 본질을 눈(目)으로 봄",
+    "pronTip": "부수: 目 (mù [무]) - 눈 목",
+    "exZh": "真的吗？",
+    "exPinyin": "zhēnde ma?",
+    "exMeaning": "정말입니까?"
+  },
+  {
+    "hanzi": "眼",
+    "pinyin": "yǎn",
+    "koPron": "옌",
+    "meanings": [
+      { "pos": "명사", "ko": "눈, 시력", "en": "Eye" }
+    ],
+    "hanja": "눈 안",
+    "charTip": "目 + 艮(눈동자 굴림): 눈동자를 굴리며 이리저리 살핌",
+    "pronTip": "부수: 目 (mù [무]) - 눈 목",
+    "exZh": "眼睛",
+    "exPinyin": "yǎnjing",
+    "exMeaning": "눈 (신체)"
+  },
+  {
+    "hanzi": "相",
+    "pinyin": "xiāng",
+    "koPron": "시앙",
+    "meanings": [
+      { "pos": "부사", "ko": "서로", "en": "Each other" },
+      { "pos": "부사", "ko": "함께", "en": "Together" }
+    ],
+    "hanja": "서로 상",
+    "charTip": "木(나무) 뒤에서 눈(目)으로 서로 마주 봄",
+    "pronTip": "부수: 目 (mù [무]) - 눈 목",
+    "exZh": "互相",
+    "exPinyin": "hùxiāng",
+    "exMeaning": "서로"
+  },
+  {
+    "hanzi": "睡",
+    "pinyin": "shuì",
+    "koPron": "쉐이",
+    "meanings": [
+      { "pos": "동사", "ko": "자다", "en": "To sleep" }
+    ],
+    "hanja": "잘 수",
+    "charTip": "目 + 垂(드리울 수): 눈꺼풀이 무겁게 드리워져 잠이 듦",
+    "pronTip": "부수: 目 (mù [무]) - 눈 목",
+    "exZh": "睡觉",
+    "exPinyin": "shuìjiào",
+    "exMeaning": "잠을 자다"
+  },
+  {
+    "hanzi": "眠",
+    "pinyin": "mián",
+    "koPron": "미엔",
+    "meanings": [
+      { "pos": "명사", "ko": "잠, 휴면", "en": "Sleep/Dormancy" }
+    ],
+    "hanja": "잘 면",
+    "charTip": "目 + 民(백성): 백성들이 밤이 되어 눈을 감고 휴면함",
+    "pronTip": "부수: 目 (mù [무]) - 눈 목",
+    "exZh": "失眠",
+    "exPinyin": "shīmián",
+    "exMeaning": "불면증"
+  },
+  {
+    "hanzi": "必",
+    "pinyin": "bì",
+    "koPron": "삐",
+    "meanings": [
+      { "pos": "부사", "ko": "반드시", "en": "Must" }
+    ],
+    "hanja": "반드시 필",
+    "charTip": "심장(心) 한가운데를 가로지르는 확고한 결심",
+    "pronTip": "부수: 心/忄 (xīn [신]) - 마음 심",
+    "exZh": "必须去",
+    "exPinyin": "bìxū qù",
+    "exMeaning": "반드시 가야 한다"
+  },
+  {
+    "hanzi": "忘",
+    "pinyin": "wàng",
+    "koPron": "왕",
+    "meanings": [
+      { "pos": "동사", "ko": "잊다", "en": "To forget" }
+    ],
+    "hanja": "잊을 망",
+    "charTip": "亡(없을 망) + 心: 마음속에서 기억이 사라짐",
+    "pronTip": "부수: 心/忄 (xīn [신]) - 마음 심",
+    "exZh": "忘记密码",
+    "exPinyin": "wàngjì mìmǎ",
+    "exMeaning": "비밀번호를 잊다"
+  },
+  {
+    "hanzi": "感",
+    "pinyin": "gǎn",
+    "koPron": "간",
+    "meanings": [
+      { "pos": "동사", "ko": "느끼다", "en": "To feel" }
+    ],
+    "hanja": "느낄 감",
+    "charTip": "咸(다 함) + 心: 온 마음을 다해 깊이 느낌",
+    "pronTip": "부수: 心/忄 (xīn [신]) - 마음 심",
+    "exZh": "感觉很好",
+    "exPinyin": "gǎnjué hěnhǎo",
+    "exMeaning": "느낌이 매우 좋다"
+  },
+  {
+    "hanzi": "急",
+    "pinyin": "jí",
+    "koPron": "지",
+    "meanings": [
+      { "pos": "형용사", "ko": "급하다, 초조하다", "en": "Urgent/Anxious" }
+    ],
+    "hanja": "급할 급",
+    "charTip": "刍(꼴 추) + 心: 무언가에 쫓기듯 마음이 초조함",
+    "pronTip": "부수: 心/忄 (xīn [신]) - 마음 심",
+    "exZh": "着急",
+    "exPinyin": "zháojí",
+    "exMeaning": "조급해하다"
+  },
+  {
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "koPron": "망",
+    "meanings": [
+      { "pos": "형용사", "ko": "바쁘다", "en": "Busy" }
+    ],
+    "hanja": "바쁠 망",
+    "charTip": "忄 + 亡(망할 망): 조급하여 마음의 여유가 사라짐",
+    "pronTip": "부수: 心/忄 (xīn [신]) - 마음 심",
+    "exZh": "工作很忙",
+    "exPinyin": "gōngzuò hěnmáng",
+    "exMeaning": "일이 매우 바쁘다"
+  },
+  {
+    "hanzi": "怕",
+    "pinyin": "pà",
+    "koPron": "파",
+    "meanings": [
+      { "pos": "동사", "ko": "무서워하다", "en": "To fear" }
+    ],
+    "hanja": "두려워할 파",
+    "charTip": "忄 + 白(흰 백): 공포로 마음과 얼굴이 하얗게 질림",
+    "pronTip": "부수: 心/忄 (xīn [신]) - 마음 심",
+    "exZh": "害怕",
+    "exPinyin": "hàipà",
+    "exMeaning": "두려워하다"
+  },
+  {
+    "hanzi": "快",
+    "pinyin": "kuài",
+    "koPron": "콰이",
+    "meanings": [
+      { "pos": "형용사", "ko": "빠르다", "en": "Fast" },
+      { "pos": "형용사", "ko": "유쾌하다", "en": "Happy" }
+    ],
+    "hanja": "빠를 쾌",
+    "charTip": "忄 + 夬(터놓을 쾌): 마음이 시원하고 속도가 빠름",
+    "pronTip": "부수: 心/忄 (xīn [신]) - 마음 심",
+    "exZh": "快点儿",
+    "exPinyin": "kuàidiǎnr",
+    "exMeaning": "좀 빨리 해"
+  },
+  {
+    "hanzi": "性",
+    "pinyin": "xìng",
+    "koPron": "싱",
+    "meanings": [
+      { "pos": "명사", "ko": "성격, 본성", "en": "Nature/Personality" }
+    ],
+    "hanja": "성품 성",
+    "charTip": "忄 + 生(날 생): 태어날 때부터 지니고 난 성질",
+    "pronTip": "부수: 心/忄 (xīn [신]) - 마음 심",
+    "exZh": "性格",
+    "exPinyin": "xìnggé",
+    "exMeaning": "성격"
+  },
+  {
+    "hanzi": "闻",
+    "pinyin": "wén",
+    "koPron": "원",
+    "meanings": [
+      { "pos": "동사", "ko": "듣다, 냄새 맡다", "en": "To hear/smell" }
+    ],
+    "hanja": "들을 문",
+    "charTip": "门(문) + 耳(귀): 문틈에 귀를 대고 소식을 듣거나 냄새를 맡다",
+    "pronTip": "부수: 耳 (ěr [얼]) - 귀 이",
+    "exZh": "新闻",
+    "exPinyin": "xīnwén",
+    "exMeaning": "뉴스 (새로 들은 소식)"
+  },
+  {
+    "num": 242,
+    "hanzi": "职",
+    "pinyin": "zhí",
+    "koPron": "즈",
+    "meanings": [
+      { "pos": "명사", "ko": "직무, 직책", "en": "Duty/Position" }
+    ],
+    "hanja": "직분 직",
+    "charTip": "귀(耳) 기울여 남의 말을 듣고 실천하는 맡은 바 직무",
+    "pronTip": "부수: 耳 (ěr [얼]) - 귀 이",
+    "exZh": "职业",
+    "exPinyin": "zhíyè",
+    "exMeaning": "직업"
+  },
+  {
+    "num": 243,
+    "hanzi": "联",
+    "pinyin": "lián",
+    "koPron": "리엔",
+    "meanings": [
+      { "pos": "동사", "ko": "잇다, 연결하다", "en": "To connect" }
+    ],
+    "hanja": "이을 련",
+    "charTip": "耳(귀) + 关(빗장): 귀와 귀가 빗장처럼 서로 엮여 이어짐",
+    "pronTip": "부수: 耳 (ěr [얼]) - 귀 이",
+    "exZh": "联系",
+    "exPinyin": "liánxì",
+    "exMeaning": "연락하다, 연결하다"
+  },
+  {
+    "num": 244,
+    "hanzi": "聊",
+    "pinyin": "liáo",
+    "koPron": "랴오",
+    "meanings": [
+      { "pos": "동사", "ko": "잡담하다", "en": "To chat" }
+    ],
+    "hanja": "애기할 료",
+    "charTip": "耳(귀) + 卯(토끼): 토끼처럼 귀를 쫑긋 세우고 수다 떨다",
+    "pronTip": "부수: 耳 (ěr [얼]) - 귀 이",
+    "exZh": "聊天",
+    "exPinyin": "liáotiān",
+    "exMeaning": "수다 떨다, 한담하다"
+  },
+  {
+    "num": 245,
+    "hanzi": "聪",
+    "pinyin": "cōng",
+    "koPron": "충",
+    "meanings": [
+      { "pos": "형용사", "ko": "총명하다", "en": "Clever" }
+    ],
+    "hanja": "귀밝을 총",
+    "charTip": "남의 말을 잘 알아듣는 귀(耳) 밝은 영리함",
+    "pronTip": "부수: 耳 (ěr [얼]) - 귀 이",
+    "exZh": "聪明",
+    "exPinyin": "cōngming",
+    "exMeaning": "똑똑하다, 영리하다"
+  },
+  {
+    "num": 246,
+    "hanzi": "聚",
+    "pinyin": "jù",
+    "koPron": "쥐",
+    "meanings": [
+      { "pos": "동사", "ko": "모이다", "en": "To gather" }
+    ],
+    "hanja": "모일 취",
+    "charTip": "부르는 소리를 귀(耳)로 듣고 한곳으로 사람들이 모임",
+    "pronTip": "부수: 耳 (ěr [얼]) - 귀 이",
+    "exZh": "聚会",
+    "exPinyin": "jùhuì",
+    "exMeaning": "모임, 파티"
+  },
+  {
+    "num": 247,
+    "hanzi": "聘",
+    "pinyin": "pìn",
+    "koPron": "핀",
+    "meanings": [
+      { "pos": "동사", "ko": "초빙하다", "en": "To invite/employ" }
+    ],
+    "hanja": "부를 빙",
+    "charTip": "명성을 귀(耳)로 전해 듣고 훌륭한 사람을 모셔 옴",
+    "pronTip": "부수: 耳 (ěr [얼]) - 귀 이",
+    "exZh": "招聘",
+    "exPinyin": "zhāopìn",
+    "exMeaning": "채용하다, 모집하다"
+  },
+  {
+    "num": 248,
+    "hanzi": "耸",
+    "pinyin": "sǒng",
+    "koPron": "쏭",
+    "meanings": [
+      { "pos": "동사", "ko": "치솟다, 으쓱이다", "en": "To tower/shrug" }
+    ],
+    "hanja": "솟을 용",
+    "charTip": "从(따를 종) + 耳(귀): 소리를 좇아 귀나 어깨가 위로 솟아오름",
+    "pronTip": "부수: 耳 (ěr [얼]) - 귀 이",
+    "exZh": "耸立",
+    "exPinyin": "sǒnglì",
+    "exMeaning": "우뚝 솟다"
+  },
+  {
+    "num": 249,
+    "hanzi": "朋",
+    "pinyin": "péng",
+    "koPron": "펑",
+    "meanings": [
+      { "pos": "명사", "ko": "벗, 친구", "en": "Friend" }
+    ],
+    "hanja": "벗 붕",
+    "charTip": "달(月) 두 개가 나란히 떠 있는 동등한 벗",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "朋友",
+    "exPinyin": "péngyou",
+    "exMeaning": "친구"
+  },
+  {
+    "num": 250,
+    "hanzi": "服",
+    "pinyin": "fú",
+    "koPron": "푸",
+    "meanings": [
+      { "pos": "명사", "ko": "옷", "en": "Clothes" },
+      { "pos": "동사", "ko": "복용하다", "en": "To take (medicine)" }
+    ],
+    "hanja": "옷 복",
+    "charTip": "사람의 신체(月)에 걸쳐 입는 옷",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "衣服",
+    "exPinyin": "yīfu",
+    "exMeaning": "옷, 의복"
+  },
+  {
+    "num": 251,
+    "hanzi": "朗",
+    "pinyin": "lǎng",
+    "koPron": "랑",
+    "meanings": [
+      { "pos": "형용사", "ko": "밝다, 환하다", "en": "Bright/Clear" }
+    ],
+    "hanja": "밝을 랑",
+    "charTip": "良(어질 량) + 月(달): 둥근 달빛처럼 환하고 맑음",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "开朗",
+    "exPinyin": "kāilǎng",
+    "exMeaning": "명랑하다, 밝다"
+  },
+  {
+    "num": 252,
+    "hanzi": "望",
+    "pinyin": "wàng",
+    "koPron": "왕",
+    "meanings": [
+      { "pos": "동사", "ko": "바라다, 희망하다", "en": "To hope/wish" }
+    ],
+    "hanja": "바랄 망",
+    "charTip": "멀리 떠 있는 달(月)을 우러러보며 간절히 소망함",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "希望",
+    "exPinyin": "xīwàng",
+    "exMeaning": "희망하다, 바라다"
+  },
+  {
+    "num": 253,
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "koPron": "여우",
+    "meanings": [
+      { "pos": "동사", "ko": "가지고 있다", "en": "To have" }
+    ],
+    "hanja": "있을 유",
+    "charTip": "又(손)에 고기(月)를 단단히 쥐고 있어 소유함을 뜻함",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "没有",
+    "exPinyin": "méiyǒu",
+    "exMeaning": "없다"
+  },
+  {
+    "num": 254,
+    "hanzi": "育",
+    "pinyin": "yù",
+    "koPron": "위",
+    "meanings": [
+      { "pos": "동사", "ko": "기르다, 양육하다", "en": "To raise/nurture" }
+    ],
+    "hanja": "기를 육",
+    "charTip": "아이의 신체(月)를 튼튼하게 기름",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "教育",
+    "exPinyin": "jiàoyù",
+    "exMeaning": "교육하다"
+  },
+  {
+    "num": 255,
+    "hanzi": "能",
+    "pinyin": "néng",
+    "koPron": "넝",
+    "meanings": [
+      { "pos": "명사", "ko": "능력", "en": "Ability" },
+      { "pos": "조동사", "ko": "~할 수 있다", "en": "Can" }
+    ],
+    "hanja": "능할 능",
+    "charTip": "곰처럼 강한 신체(月) 능력을 묘사함",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "可能",
+    "exPinyin": "kěnéng",
+    "exMeaning": "아마도, 가능하다"
+  },
+  {
+    "num": 256,
+    "hanzi": "胃",
+    "pinyin": "wèi",
+    "koPron": "웨이",
+    "meanings": [
+      { "pos": "명사", "ko": "위", "en": "Stomach" }
+    ],
+    "hanja": "위장 위",
+    "charTip": "田(밭) + 月(몸): 몸속의 밭처럼 음식을 받아들여 소화함",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "胃疼",
+    "exPinyin": "wèiténg",
+    "exMeaning": "위가 아프다"
+  },
+  {
+    "num": 257,
+    "hanzi": "脑",
+    "pinyin": "nǎo",
+    "koPron": "나오",
+    "meanings": [
+      { "pos": "명사", "ko": "뇌, 두뇌", "en": "Brain" }
+    ],
+    "hanja": "골 뇌",
+    "charTip": "몸(月)에서 가장 중요한 머릿속 기관",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "电脑",
+    "exPinyin": "diànnǎo",
+    "exMeaning": "컴퓨터 (전자 뇌)"
+  },
+  {
+    "num": 258,
+    "hanzi": "肚",
+    "pinyin": "dù",
+    "koPron": "뚜",
+    "meanings": [
+      { "pos": "명사", "ko": "배, 복부", "en": "Belly/Stomach" }
+    ],
+    "hanja": "배 두",
+    "charTip": "月(몸) + 土(흙/토대): 몸의 중심 토대 역할을 하는 복부",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "肚子",
+    "exPinyin": "dùzi",
+    "exMeaning": "배"
+  },
+  {
+    "num": 259,
+    "hanzi": "肥",
+    "pinyin": "féi",
+    "koPron": "페이",
+    "meanings": [
+      { "pos": "형용사", "ko": "살찌다", "en": "Fat" },
+      { "pos": "명사", "ko": "비계", "en": "Fat/Lard" }
+    ],
+    "hanja": "살찔 비",
+    "charTip": "月(몸) + 巴(꼬리): 몸에 보기 좋게 엉겨 붙은 꼬리 같은 살",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "减肥",
+    "exPinyin": "jiǎnféi",
+    "exMeaning": "다이어트하다"
+  },
+  {
+    "num": 260,
+    "hanzi": "肝",
+    "pinyin": "gān",
+    "koPron": "간",
+    "meanings": [
+      { "pos": "명사", "ko": "간", "en": "Liver" }
+    ],
+    "hanja": "간 간",
+    "charTip": "月(몸) + 干(방패): 몸속에서 방패처럼 독을 막아주는 장기",
+    "pronTip": "부수: 月 (yuè [위에]) - 달 월 / 육달월(신체)",
+    "exZh": "肝脏",
+    "exPinyin": "gānzàng",
+    "exMeaning": "간 (신체 장기)"
+  },
+  {
+    "num": 261,
+    "hanzi": "江",
+    "pinyin": "jiāng",
+    "koPron": "지앙",
+    "meanings": [
+      { "pos": "명사", "ko": "강", "en": "River" }
+    ],
+    "hanja": "강 강",
+    "charTip": "氵(물) + 工(장인): 공들여 판 것처럼 거대하게 뻗은 강",
+    "pronTip": "부수: 水/氵 (shuǐ [슈에이]) - 물 수",
+    "exZh": "长江",
+    "exPinyin": "chángjiāng",
+    "exMeaning": "창장 (양쯔강)"
+  },
+  {
+    "num": 262,
+    "hanzi": "河",
+    "pinyin": "hé",
+    "koPron": "허",
+    "meanings": [
+      { "pos": "명사", "ko": "물, 하천", "en": "River/Stream" }
+    ],
+    "hanja": "물 하",
+    "charTip": "氵(물) + 可(옳다): 물결치며 자유롭게 흐르는 하천",
+    "pronTip": "부수: 水/氵 (shuǐ [슈에이]) - 물 수",
+    "exZh": "黄河",
+    "exPinyin": "huánghé",
+    "exMeaning": "황허 (황하)"
+  },
+  {
+    "num": 263,
+    "hanzi": "池",
+    "pinyin": "chí",
+    "koPron": "츠",
+    "meanings": [
+      { "pos": "명사", "ko": "못", "en": "Pond" }
+    ],
+    "hanja": "못 지",
+    "charTip": "氵(물) + 也(어조사): 한 곳에 넓게 물이 고여있는 곳",
+    "pronTip": "부수: 水/氵 (shuǐ [슈에이]) - 물 수",
+    "exZh": "电池",
+    "exPinyin": "diànchí",
+    "exMeaning": "배터리, 건전지"
+  },
+  {
+    "num": 264,
+    "hanzi": "没",
+    "pinyin": "mò/méi",
+    "koPron": "모/메이",
+    "meanings": [
+      { "pos": "동사", "ko": "물에 잠기다", "en": "To submerge" },
+      { "pos": "부사", "ko": "없다", "en": "None/Not" }
+    ],
+    "hanja": "가라앉을 몰",
+    "charTip": "물(氵) 속으로 푹 빠져 가라앉아 보이지 않음",
+    "pronTip": "부수: 水/氵 (shuǐ [슈에이]) - 물 수",
+    "exZh": "没关系",
+    "exPinyin": "méiguānxi",
+    "exMeaning": "괜찮다, 상관없다"
+  },
+  {
+    "num": 265,
+    "hanzi": "泰",
+    "pinyin": "tài",
+    "koPron": "타이",
+    "meanings": [
+      { "pos": "형용사", "ko": "편안하다, 태평하다", "en": "Peaceful" }
+    ],
+    "hanja": "클 태",
+    "charTip": "아래로 물(水)이 풍부하게 흘러 생활이 태평함",
+    "pronTip": "부수: 水/氵 (shuǐ [슈에이]) - 물 수",
+    "exZh": "泰山",
+    "exPinyin": "tàishān",
+    "exMeaning": "타이산 (태산)"
+  },
+  {
+    "num": 266,
+    "hanzi": "炎",
+    "pinyin": "yán",
+    "koPron": "옌",
+    "meanings": [
+      { "pos": "명사", "ko": "화염, 불꽃", "en": "Flame" },
+      { "pos": "명사", "ko": "염증", "en": "Inflammation" }
+    ],
+    "hanja": "불꽃 염",
+    "charTip": "火(불)이 위아래로 겹쳐 활활 크게 타오르는 화염",
+    "pronTip": "부수: 火/灬 (huǒ [후오]) - 불 화",
+    "exZh": "发炎",
+    "exPinyin": "fāyán",
+    "exMeaning": "염증이 생기다"
+  },
+  {
+    "num": 267,
+    "hanzi": "灭",
+    "pinyin": "miè",
+    "koPron": "미에",
+    "meanings": [
+      { "pos": "동사", "ko": "불을 끄다, 소멸하다", "en": "To extinguish/perish" }
+    ],
+    "hanja": "멸할 멸",
+    "charTip": "一(덮개)로 火(불)을 덮어 불을 끄고 없애다",
+    "pronTip": "부수: 火/灬 (huǒ [후오]) - 불 화",
+    "exZh": "消灭",
+    "exPinyin": "xiāomiè",
+    "exMeaning": "소멸하다, 없애다"
+  },
+  {
+    "num": 268,
+    "hanzi": "灾",
+    "pinyin": "zāi",
+    "koPron": "짜이",
+    "meanings": [
+      { "pos": "명사", "ko": "재해, 재난", "en": "Disaster" }
+    ],
+    "hanja": "재앙 재",
+    "charTip": "宀(집) 안에 火(불)이 나서 생긴 끔찍한 재난",
+    "pronTip": "부수: 火/灬 (huǒ [후오]) - 불 화",
+    "exZh": "火灾",
+    "exPinyin": "huǒzāi",
+    "exMeaning": "화재"
+  },
+  {
+    "num": 269,
+    "hanzi": "灰",
+    "pinyin": "huī",
+    "koPron": "훼이",
+    "meanings": [
+      { "pos": "명사", "ko": "재, 회색", "en": "Ash/Grey" }
+    ],
+    "hanja": "재 회",
+    "charTip": "厂(손/기슭)으로 火(불)이 타고 남은 잔여물(재)을 만짐",
+    "pronTip": "부수: 火/灬 (huǒ [후오]) - 불 화",
+    "exZh": "灰色",
+    "exPinyin": "huīsè",
+    "exMeaning": "회색"
+  },
+  {
+    "num": 270,
+    "hanzi": "炒",
+    "pinyin": "chǎo",
+    "koPron": "차오",
+    "meanings": [
+      { "pos": "동사", "ko": "볶다", "en": "To stir-fry" }
+    ],
+    "hanja": "볶을 초",
+    "charTip": "火(불)과 少(적다): 재료를 작게 썰어 불에 달달 볶음",
+    "pronTip": "부수: 火/灬 (huǒ [후오]) - 불 화",
+    "exZh": "炒饭",
+    "exPinyin": "chǎofàn",
+    "exMeaning": "볶음밥"
+  },
+  {
+    "num": 271,
+    "hanzi": "烟",
+    "pinyin": "yān",
+    "koPron": "옌",
+    "meanings": [
+      { "pos": "명사", "ko": "연기, 담배", "en": "Smoke/Cigarette" }
+    ],
+    "hanja": "연기 연",
+    "charTip": "火(불) + 因(인하다): 불로 인하여 피어오르는 연기",
+    "pronTip": "부수: 火/灬 (huǒ [후오]) - 불 화",
+    "exZh": "抽烟",
+    "exPinyin": "chōuyān",
+    "exMeaning": "담배를 피우다"
+  },
+  {
+    "num": 272,
+    "hanzi": "热",
+    "pinyin": "rè",
+    "koPron": "러",
+    "meanings": [
+      { "pos": "명사", "ko": "열", "en": "Heat" },
+      { "pos": "형용사", "ko": "뜨겁다", "en": "Hot" }
+    ],
+    "hanja": "더울 열",
+    "charTip": "灬(불) 부수 활용: 열기가 오를 정도로 덥고 뜨거움",
+    "pronTip": "부수: 火/灬 (huǒ [후오]) - 불 화",
+    "exZh": "很热",
+    "exPinyin": "hěnrè",
+    "exMeaning": "매우 덥다"
+  },
+  {
+    "num": 273,
+    "hanzi": "熟",
+    "pinyin": "shú",
+    "koPron": "슈",
+    "meanings": [
+      { "pos": "동사", "ko": "익다", "en": "To ripen/cook" },
+      { "pos": "형용사", "ko": "익숙하다", "en": "Familiar" }
+    ],
+    "hanja": "익을 숙",
+    "charTip": "灬(불) 부수 활용: 불에 오랜 시간 가열되어 푹 익음",
+    "pronTip": "부수: 火/灬 (huǒ [후오]) - 불 화",
+    "exZh": "熟悉",
+    "exPinyin": "shúxī",
+    "exMeaning": "익숙하다, 잘 알다"
+  },
+  {
+    "num": 274,
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "koPron": "쭈어",
+    "meanings": [
+      { "pos": "동사", "ko": "앉다, 타다", "en": "To sit/take(transport)" }
+    ],
+    "hanja": "앉을 좌",
+    "charTip": "土(땅) 위에 두 사람(人人)이 편히 마주 앉은 모습",
+    "pronTip": "부수: 土 (tǔ [투]) - 흙 토",
+    "exZh": "坐下",
+    "exPinyin": "zuòxià",
+    "exMeaning": "앉다"
+  },
+  {
+    "num": 275,
+    "hanzi": "在",
+    "pinyin": "zài",
+    "koPron": "짜이",
+    "meanings": [
+      { "pos": "동사", "ko": "존재하다, 있다", "en": "To be at" }
+    ],
+    "hanja": "있을 재",
+    "charTip": "土(땅)을 기반으로 특정 장소에 머물러 존재함",
+    "pronTip": "부수: 土 (tǔ [투]) - 흙 토",
+    "exZh": "现在",
+    "exPinyin": "xiànzài",
+    "exMeaning": "지금, 현재"
+  },
+  {
+    "num": 276,
+    "hanzi": "地",
+    "pinyin": "dì",
+    "koPron": "띠",
+    "meanings": [
+      { "pos": "명사", "ko": "지구, 육지, 토지", "en": "Earth/Ground" }
+    ],
+    "hanja": "땅 지",
+    "charTip": "土(땅) + 也(어조사): 모든 만물의 바탕이 되는 토지",
+    "pronTip": "부수: 土 (tǔ [투]) - 흙 토",
+    "exZh": "地方",
+    "exPinyin": "dìfang",
+    "exMeaning": "장소, 곳"
+  },
+  {
+    "num": 277,
+    "hanzi": "均",
+    "pinyin": "jūn",
+    "koPron": "쥔",
+    "meanings": [
+      { "pos": "형용사", "ko": "균일하다", "en": "Even/Equal" }
+    ],
+    "hanja": "고를 균",
+    "charTip": "土(땅) + 匀(고르다): 울퉁불퉁한 흙을 평평하고 고르게 폄",
+    "pronTip": "부수: 土 (tǔ [투]) - 흙 토",
+    "exZh": "平均",
+    "exPinyin": "píngjūn",
+    "exMeaning": "평균"
+  },
+  {
+    "num": 278,
+    "hanzi": "研",
+    "pinyin": "yán",
+    "koPron": "옌",
+    "meanings": [
+      { "pos": "동사", "ko": "갈다, 연구하다", "en": "To grind/research" }
+    ],
+    "hanja": "갈 연",
+    "charTip": "단단한 石(돌) 맷돌로 물건을 곱게 가는 모습에서 파생",
+    "pronTip": "부수: 石 (shí [스]) - 돌 석",
+    "exZh": "研究",
+    "exPinyin": "yánjiū",
+    "exMeaning": "연구하다"
+  },
+  {
+    "num": 279,
+    "hanzi": "碗",
+    "pinyin": "wǎn",
+    "koPron": "완",
+    "meanings": [
+      { "pos": "명사", "ko": "그릇, 사발", "en": "Bowl" }
+    ],
+    "hanja": "사발 완",
+    "charTip": "고대에 속이 파인 石(돌)을 그릇으로 사용하던 흔적",
+    "pronTip": "부수: 石 (shí [스]) - 돌 석",
+    "exZh": "洗碗",
+    "exPinyin": "xǐwǎn",
+    "exMeaning": "설거지하다"
+  },
+  {
+    "num": 280,
+    "hanzi": "破",
+    "pinyin": "pò",
+    "koPron": "포",
+    "meanings": [
+      { "pos": "동사", "ko": "파손되다, 부수다", "en": "To break/destroy" }
+    ],
+    "hanja": "깨뜨릴 파",
+    "charTip": "石(돌) + 皮(가죽): 돌로 가죽을 치듯 단단한 것을 깸",
+    "pronTip": "부수: 石 (shí [스]) - 돌 석",
+    "exZh": "破坏",
+    "exPinyin": "pòhuài",
+    "exMeaning": "파괴하다"
+  },
+  {
+    "num": 281,
+    "hanzi": "碧",
+    "pinyin": "bì",
+    "koPron": "삐",
+    "meanings": [
+      { "pos": "형용사", "ko": "푸른", "en": "Blue/Green" }
+    ],
+    "hanja": "푸를 벽",
+    "charTip": "石(돌) 중에서도 영롱하고 푸른빛이 나는 아름다운 보석",
+    "pronTip": "부수: 石 (shí [스]) - 돌 석",
+    "exZh": "碧绿",
+    "exPinyin": "bìlǜ",
+    "exMeaning": "청록색"
+  },
+  {
+    "num": 282,
+    "hanzi": "银",
+    "pinyin": "yín",
+    "koPron": "인",
+    "meanings": [
+      { "pos": "명사", "ko": "은, 은화", "en": "Silver" }
+    ],
+    "hanja": "은 은",
+    "charTip": "钅(금속) + 艮(어긋날 간): 화폐로 많이 쓰이던 금속 은",
+    "pronTip": "부수: 金/钅 (jīn [진]) - 쇠 금",
+    "exZh": "银行",
+    "exPinyin": "yínháng",
+    "exMeaning": "은행"
+  },
+  {
+    "num": 283,
+    "hanzi": "铜",
+    "pinyin": "tóng",
+    "koPron": "통",
+    "meanings": [
+      { "pos": "명사", "ko": "동, 구리", "en": "Copper" }
+    ],
+    "hanja": "구리 동",
+    "charTip": "钅(금속) + 同(같다): 생활에 흔히 쓰이던 금속인 구리",
+    "pronTip": "부수: 金/钅 (jīn [진]) - 쇠 금",
+    "exZh": "铜牌",
+    "exPinyin": "tóngpái",
+    "exMeaning": "동메달"
+  },
+  {
+    "num": 284,
+    "hanzi": "针",
+    "pinyin": "zhēn",
+    "koPron": "쩐",
+    "meanings": [
+      { "pos": "명사", "ko": "바늘, 주사", "en": "Needle/Injection" }
+    ],
+    "hanja": "바늘 침",
+    "charTip": "钅(금속)으로 십(十)자 모양처럼 가늘게 만든 바늘",
+    "pronTip": "부수: 金/钅 (jīn [진]) - 쇠 금",
+    "exZh": "打针",
+    "exPinyin": "dǎzhēn",
+    "exMeaning": "주사를 맞다"
+  },
+  {
+    "num": 285,
+    "hanzi": "钟",
+    "pinyin": "zhōng",
+    "koPron": "쫑",
+    "meanings": [
+      { "pos": "명사", "ko": "종, 시간", "en": "Bell/Time" }
+    ],
+    "hanja": "쇠북 종",
+    "charTip": "钅(금속)을 부어 만들어 시간을 알리는 커다란 종",
+    "pronTip": "부수: 金/钅 (jīn [진]) - 쇠 금",
+    "exZh": "分钟",
+    "exPinyin": "fēnzhōng",
+    "exMeaning": "분 (시간 단위)"
+  },
+  {
+    "num": 286,
+    "hanzi": "雪",
+    "pinyin": "xuě",
+    "koPron": "쉬에",
+    "meanings": [
+      { "pos": "명사", "ko": "눈", "en": "Snow" }
+    ],
+    "hanja": "눈 설",
+    "charTip": "雨(날씨) 기호 아래에 빗자루(彐)로 쓸어낼 눈이 쌓임",
+    "pronTip": "부수: 雨 (yǔ [위]) - 비 우",
+    "exZh": "下雪",
+    "exPinyin": "xiàxuě",
+    "exMeaning": "눈이 내린다"
+  },
+  {
+    "num": 287,
+    "hanzi": "雷",
+    "pinyin": "léi",
+    "koPron": "레이",
+    "meanings": [
+      { "pos": "명사", "ko": "천둥, 우레", "en": "Thunder" }
+    ],
+    "hanja": "우레 뢰",
+    "charTip": "雨(비)가 올 때 밭(田) 위로 쾅 치는 천둥",
+    "pronTip": "부수: 雨 (yǔ [위]) - 비 우",
+    "exZh": "雷阵雨",
+    "exPinyin": "léizhènyǔ",
+    "exMeaning": "뇌우, 소나기"
+  },
+  {
+    "num": 288,
+    "hanzi": "需",
+    "pinyin": "xū",
+    "koPron": "쉬",
+    "meanings": [
+      { "pos": "동사", "ko": "필요로 하다", "en": "To need" }
+    ],
+    "hanja": "구할 수",
+    "charTip": "농사를 위해 하늘의 雨(비)가 내리기를 간절히 바라고 필요로 함",
+    "pronTip": "부수: 雨 (yǔ [위]) - 비 우",
+    "exZh": "需要",
+    "exPinyin": "xūyào",
+    "exMeaning": "필요로 하다, 요구되다"
+  },
+  {
+    "num": 289,
+    "hanzi": "霜",
+    "pinyin": "shuāng",
+    "koPron": "슈앙",
+    "meanings": [
+      { "pos": "명사", "ko": "서리", "en": "Frost" }
+    ],
+    "hanja": "서리 상",
+    "charTip": "雨(기상 현상) + 相(서로): 날씨가 추워져 얼어붙은 서리",
+    "pronTip": "부수: 雨 (yǔ [위]) - 비 우",
+    "exZh": "冰霜",
+    "exPinyin": "bīngshuāng",
+    "exMeaning": "얼음과 서리"
+  },
+  {
+    "num": 290,
+    "hanzi": "震",
+    "pinyin": "zhèn",
+    "koPron": "쩐",
+    "meanings": [
+      { "pos": "동사", "ko": "진동하다, 울리다", "en": "To shake/quake" }
+    ],
+    "hanja": "우레 진",
+    "charTip": "천둥(雨)의 강력한 힘으로 만물이 흔들리고 진동함",
+    "pronTip": "부수: 雨 (yǔ [위]) - 비 우",
+    "exZh": "地震",
+    "exPinyin": "dìzhèn",
+    "exMeaning": "지진"
+  },
+  {
+    "num": 291,
+    "hanzi": "雾",
+    "pinyin": "wù",
+    "koPron": "우",
+    "meanings": [
+      { "pos": "명사", "ko": "안개", "en": "Fog" }
+    ],
+    "hanja": "안개 무",
+    "charTip": "雨(날씨) + 务(힘쓸 무): 대기 중 수증기가 엉겨 시야를 가림",
+    "pronTip": "부수: 雨 (yǔ [위]) - 비 우",
+    "exZh": "起雾",
+    "exPinyin": "qǐwù",
+    "exMeaning": "안개가 끼다"
+  },
+  {
+    "num": 292,
+    "hanzi": "霾",
+    "pinyin": "mái",
+    "koPron": "마이",
+    "meanings": [
+      { "pos": "명사", "ko": "황사, 하늘이 부옇다", "en": "Haze/Smog" }
+    ],
+    "hanja": "흙비 매",
+    "charTip": "비(雨) 오듯 흙먼지가 떨어지는 기상 현상",
+    "pronTip": "부수: 雨 (yǔ [위]) - 비 우",
+    "exZh": "雾霾",
+    "exPinyin": "wùmái",
+    "exMeaning": "스모그, 미세먼지"
+  },
+  {
+    "num": 293,
+    "hanzi": "露",
+    "pinyin": "lù",
+    "koPron": "루",
+    "meanings": [
+      { "pos": "명사", "ko": "이슬", "en": "Dew" }
+    ],
+    "hanja": "이슬 로",
+    "charTip": "雨(날씨) + 路(길): 맺혀 있던 수분이 이슬이 되어 밖으로 드러남",
+    "pronTip": "부수: 雨 (yǔ [위]) - 비 우",
+    "exZh": "露水",
+    "exPinyin": "lùshuǐ",
+    "exMeaning": "이슬"
+  },
+  {
+    "num": 294,
+    "hanzi": "秀",
+    "pinyin": "xiù",
+    "koPron": "시우",
+    "meanings": [
+      { "pos": "형용사", "ko": "우수하다, 빼어나다", "en": "Excellent/Outstanding" }
+    ],
+    "hanja": "빼어날 수",
+    "charTip": "禾(벼)가 다른 작물보다 쑥쑥 자라 빼어나게 아름다움",
+    "pronTip": "부수: 禾 (hé [허]) - 벼 화",
+    "exZh": "优秀",
+    "exPinyin": "yōuxiù",
+    "exMeaning": "우수하다, 뛰어나다"
+  },
+  {
+    "num": 295,
+    "hanzi": "私",
+    "pinyin": "sī",
+    "koPron": "쓰",
+    "meanings": [
+      { "pos": "형용사", "ko": "사적인, 개인적인", "en": "Private" }
+    ],
+    "hanja": "사사 사",
+    "charTip": "禾(벼)를 내 것(厶)으로 몰래 움켜쥐어 사유재산으로 삼음",
+    "pronTip": "부수: 禾 (hé [허]) - 벼 화",
+    "exZh": "私人",
+    "exPinyin": "sīrén",
+    "exMeaning": "개인, 사적인 사람"
+  },
+  {
+    "num": 296,
+    "hanzi": "科",
+    "pinyin": "kē",
+    "koPron": "커",
+    "meanings": [
+      { "pos": "명사", "ko": "과목", "en": "Subject" },
+      { "pos": "동사", "ko": "부과하다", "en": "To impose" }
+    ],
+    "hanja": "과목 과",
+    "charTip": "禾(벼)를 말(斗)로 되어서 종류와 등급을 과목별로 나눔",
+    "pronTip": "부수: 禾 (hé [허]) - 벼 화",
+    "exZh": "科学",
+    "exPinyin": "kēxué",
+    "exMeaning": "과학"
+  },
+  {
+    "num": 297,
+    "hanzi": "秋",
+    "pinyin": "qiū",
+    "koPron": "치우",
+    "meanings": [
+      { "pos": "명사", "ko": "가을", "en": "Autumn" }
+    ],
+    "hanja": "가을 추",
+    "charTip": "禾(벼)가 불(火)처럼 붉게 여물고 익어가는 가을",
+    "pronTip": "부수: 禾 (hé [허]) - 벼 화",
+    "exZh": "秋天",
+    "exPinyin": "qiūtiān",
+    "exMeaning": "가을"
+  },
+  {
+    "num": 298,
+    "hanzi": "秒",
+    "pinyin": "miǎo",
+    "koPron": "미아오",
+    "meanings": [
+      { "pos": "명사", "ko": "초(시간 단위)", "en": "Second" }
+    ],
+    "hanja": "초 초",
+    "charTip": "禾(벼)의 까끄라기(少)처럼 아주 미세하고 작은 시간의 단위",
+    "pronTip": "부수: 禾 (hé [허]) - 벼 화",
+    "exZh": "秒表",
+    "exPinyin": "miǎobiǎo",
+    "exMeaning": "초시계, 스톱워치"
+  },
+  {
+    "num": 299,
+    "hanzi": "移",
+    "pinyin": "yí",
+    "koPron": "이",
+    "meanings": [
+      { "pos": "동사", "ko": "이동하다, 옮기다", "en": "To move/transfer" }
+    ],
+    "hanja": "옮길 이",
+    "charTip": "禾(벼) 모종을 다른 곳에 많이(多) 옮겨 심음",
+    "pronTip": "부수: 禾 (hé [허]) - 벼 화",
+    "exZh": "移动",
+    "exPinyin": "yídòng",
+    "exMeaning": "이동하다"
+  },
+  {
+    "num": 300,
+    "hanzi": "租",
+    "pinyin": "zū",
+    "koPron": "쭈",
+    "meanings": [
+      { "pos": "동사", "ko": "세내다", "en": "To rent" },
+      { "pos": "명사", "ko": "임대료", "en": "Rent" }
+    ],
+    "hanja": "세낼 조",
+    "charTip": "과거에 禾(벼)로 세금과 임대료를 냈던 데서 유래",
+    "pronTip": "부수: 禾 (hé [허]) - 벼 화",
+    "exZh": "出租车",
+    "exPinyin": "chūzūchē",
+    "exMeaning": "택시 (세내어 타는 차)"
+  },
+  {
+    "num": 301,
+    "hanzi": "税",
+    "pinyin": "shuì",
+    "koPron": "슈에이",
+    "meanings": [
+      { "pos": "명사", "ko": "세금", "en": "Tax" },
+      { "pos": "동사", "ko": "납세하다", "en": "To pay tax" }
+    ],
+    "hanja": "세금 세",
+    "charTip": "거두어들인 禾(벼)를 국가에 세금으로 바침",
+    "pronTip": "부수: 禾 (hé [허]) - 벼 화",
+    "exZh": "交税",
+    "exPinyin": "jiāoshuì",
+    "exMeaning": "세금을 내다"
+  }
+]
