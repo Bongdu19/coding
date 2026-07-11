@@ -1,0 +1,2263 @@
+[
+  {
+    "num": 1,
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "koPron": "아이",
+    "meanings": [
+      { "pos": "동사", "ko": "사랑하다", "en": "To Love" }
+    ],
+    "hanja": "사랑 애(愛)",
+    "pronTip": "예쁜 아이(ài)를 사랑하다.",
+    "charTip": "손톱 조(爫)와 덮을 멱(冖), 마음 심(心)이 합쳐져 마음을 손으로 조심스레 감싸 안는 사랑을 뜻합니다.",
+    "exZh": "我爱你。",
+    "exPinyin": "Wǒ ài nǐ.",
+    "exMeaning": "나는 너를 사랑해."
+  },
+  {
+    "num": 2,
+    "hanzi": "八",
+    "pinyin": "bā",
+    "koPron": "빠",
+    "meanings": [
+      { "pos": "수사", "ko": "여덟, 8", "en": "Eight" }
+    ],
+    "hanja": "여덟 팔(八)",
+    "pronTip": "숫자 8을 빠(bā)르게 적다.",
+    "charTip": "물건이 두 갈래로 나뉘어(八) 떨어지는 모양에서 숫자 8을 뜻하는 부수 글자입니다.",
+    "exZh": "八个人。",
+    "exPinyin": "Bā ge rén.",
+    "exMeaning": "8명의 사람."
+  },
+  {
+    "num": 3,
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "koPron": "빠바",
+    "meanings": [
+      { "pos": "명사", "ko": "아빠", "en": "Father" }
+    ],
+    "hanja": "아비 파(爸)",
+    "pronTip": "옹알이하듯 아빠를 빠바(bàba).",
+    "charTip": "아비 부(父) 부수 아래에 소리 역할을 하는 파(巴)가 붙어 아버지를 뜻합니다.",
+    "exZh": "我的爸爸。",
+    "exPinyin": "Wǒ de bàba.",
+    "exMeaning": "나의 아빠."
+  },
+  {
+    "num": 4,
+    "hanzi": "杯子",
+    "pinyin": "bēizi",
+    "koPron": "베이쯔",
+    "meanings": [
+      { "pos": "명사", "ko": "잔, 컵", "en": "Cup" }
+    ],
+    "hanja": "잔 배(杯)",
+    "pronTip": "베이(bēi)지색 예쁜 쯔(zi) 잔.",
+    "charTip": "나무 목(木) 부수 옆에 아닐 불(不)이 결합하여, 본래 나무로 만든 둥근 잔을 뜻합니다.",
+    "exZh": "一个杯子。",
+    "exPinyin": "Yí ge bēizi.",
+    "exMeaning": "컵 한 개."
+  },
+  {
+    "num": 5,
+    "hanzi": "北京",
+    "pinyin": "Běijīng",
+    "koPron": "베이징",
+    "meanings": [
+      { "pos": "명사", "ko": "베이징", "en": "Beijing" }
+    ],
+    "hanja": "북녘 북(北), 서울 경(京)",
+    "pronTip": "북(北)쪽의 수도(京), 베이징.",
+    "charTip": "두 사람이 서로 등 돌린 북녘 북(北) 부수와 높은 누각을 본뜬 서울 경(京) 부수가 만난 글자입니다.",
+    "exZh": "去北京。",
+    "exPinyin": "Qù Běijīng.",
+    "exMeaning": "베이징에 가다."
+  },
+  {
+    "num": 6,
+    "hanzi": "本",
+    "pinyin": "běn",
+    "koPron": "벤",
+    "meanings": [
+      { "pos": "양사", "ko": "권", "en": "Volume" }
+    ],
+    "hanja": "근본 본(本)",
+    "pronTip": "책의 근본(běn)은 세는 것.",
+    "charTip": "나무 목(木) 부수 아래쪽에 선(一)을 그어 나무의 뿌리와 근본을 지칭하는 지사문자입니다.",
+    "exZh": "一本书。",
+    "exPinyin": "Yì běn shū.",
+    "exMeaning": "책 한 권."
+  },
+  {
+    "num": 7,
+    "hanzi": "不",
+    "pinyin": "bù",
+    "koPron": "부",
+    "meanings": [
+      { "pos": "부사", "ko": "~이 아니다, ~하지 않다", "en": "Not" }
+    ],
+    "hanja": "아닐 불(不)",
+    "pronTip": "아니라고 단호히 부(bù)리치다.",
+    "charTip": "새가 하늘 위로 날아가 버려 땅에 내려오지 않는 모양에서 부정의 뜻을 나타내는 부수 글자입니다.",
+    "exZh": "不是。",
+    "exPinyin": "Bù shì.",
+    "exMeaning": "아닙니다."
+  },
+  {
+    "num": 8,
+    "hanzi": "不客气",
+    "pinyin": "bú kèqi",
+    "koPron": "부 커치",
+    "meanings": [
+      { "pos": "인사말", "ko": "천만에요", "en": "You're welcome" }
+    ],
+    "hanja": "손 객(客), 기운 기(气)",
+    "pronTip": "객(客)처럼 고마워하지 말라(不)!",
+    "charTip": "집 면(宀)과 각각 각(各)이 합쳐진 손 객(客), 그리고 구름이 피어오르는 기운 기(气) 부수가 결합했습니다.",
+    "exZh": "谢谢！- 不客气。",
+    "exPinyin": "Xièxie! - Bú kèqi.",
+    "exMeaning": "고마워! - 천만에요."
+  },
+  {
+    "num": 9,
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "koPron": "차에이",
+    "meanings": [
+      { "pos": "명사", "ko": "채소, 요리", "en": "Dish" }
+    ],
+    "hanja": "나물 채(菜)",
+    "pronTip": "채(cài)소가 듬뿍 든 요리.",
+    "charTip": "맨 위의 풀 초(艹) 부수가 식물을 뜻하며, 아래의 채(采)가 결합해 먹을 수 있는 나물과 요리를 뜻합니다.",
+    "exZh": "中国菜。",
+    "exPinyin": "Zhōngguó cài.",
+    "exMeaning": "중국 요리."
+  },
+  {
+    "num": 10,
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "koPron": "차",
+    "meanings": [
+      { "pos": "명사", "ko": "차", "en": "Tea" }
+    ],
+    "hanja": "차 다/차(茶)",
+    "pronTip": "마시는 차, 발음도 차(chá).",
+    "charTip": "풀 초(艹) 부수 아래에 사람(人)과 나무 목(木)이 만나 사람이 나무에서 따낸 찻잎을 의미합니다.",
+    "exZh": "喝茶。",
+    "exPinyin": "Hē chá.",
+    "exMeaning": "차를 마시다."
+  },
+  {
+    "num": 11,
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "koPron": "츠",
+    "meanings": [
+      { "pos": "동사", "ko": "먹다", "en": "To Eat" }
+    ],
+    "hanja": "먹을 흘(吃)",
+    "pronTip": "츠츠(chī) 소리 내며 먹다.",
+    "charTip": "입 구(口) 부수가 먹는 동작을 나타내며, 오른쪽의 기운 기(乞) 자가 소리를 빌려왔습니다.",
+    "exZh": "吃饭。",
+    "exPinyin": "Chī fàn.",
+    "exMeaning": "밥을 먹다."
+  },
+  {
+    "num": 12,
+    "hanzi": "出租车",
+    "pinyin": "chūzūchē",
+    "koPron": "추쭈처",
+    "meanings": [
+      { "pos": "명사", "ko": "택시", "en": "Taxi" }
+    ],
+    "hanja": "날 출(出), 세낼 조(租), 수레 차(车)",
+    "pronTip": "돈(조) 내고 빌려 타는 차 = 택시.",
+    "charTip": "벼 화(禾) 부수가 들어간 조세 조(租)와 바퀴 달린 수레 차(车) 부수가 결합해 대가를 지불하고 타는 탈것을 뜻합니다.",
+    "exZh": "坐出租车。",
+    "exPinyin": "Zuò chūzūchē.",
+    "exMeaning": "택시를 타다."
+  },
+  {
+    "num": 13,
+    "hanzi": "打篮球",
+    "pinyin": "dǎ lánqiú",
+    "koPron": "다 란치우",
+    "meanings": [
+      { "pos": "동사", "ko": "전화를 걸다", "en": "To Call" }
+    ],
+    "hanja": "칠 타(打), 번개 전(电), 말씀 화(话)",
+    "pronTip": "다이얼을 치며(打) 전화(话)하다.",
+    "charTip": "손 수(打) 부수가 포함된 칠 타(打)와 말씀 언(讠) 부수가 포함된 말씀 화(话)가 만나 손으로 기기를 작동해 말하는 행위입니다.",
+    "exZh": "打电话给他。",
+    "exPinyin": "Dǎ diànhuà gěi tā.",
+    "exMeaning": "그에게 전화를 걸다."
+  },
+  {
+    "num": 14,
+    "hanzi": "大",
+    "pinyin": "dà",
+    "koPron": "따",
+    "meanings": [
+      { "pos": "형용사", "ko": "크다", "en": "Big" }
+    ],
+    "hanja": "클 대(大)",
+    "pronTip": "크고 좋으니까 따(dà)봉!",
+    "charTip": "사람(人)이 팔다리를 양옆으로 크게 벌리고 서 있는 모습을 본뜬 부수 글자입니다.",
+    "exZh": "很大。",
+    "exPinyin": "Hěn dà.",
+    "exMeaning": "매우 크다."
+  },
+  {
+    "num": 15,
+    "hanzi": "的",
+    "pinyin": "de",
+    "koPron": "더",
+    "meanings": [
+      { "pos": "조사", "ko": "~의, ~한", "en": "(particle)" }
+    ],
+    "hanja": "과녁 적(的)",
+    "pronTip": "이것은 나의(더, de) 것!",
+    "charTip": "흰 백(白) 부수와 구기 작(勺) 부수가 결합하여 본래 밝게 빛나는 과녁이나 소속 및 소유 관계를 나타냅니다.",
+    "exZh": "我的猫。",
+    "exPinyin": "Wǒ de māo.",
+    "exMeaning": "나의 고양이."
+  },
+  {
+    "num": 16,
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "koPron": "뎬",
+    "meanings": [
+      { "pos": "명사", "ko": "시(시간)", "en": "O'clock" },
+      { "pos": "양사", "ko": "시(시간)", "en": "O'clock" }
+    ],
+    "hanja": "점 점(点)",
+    "pronTip": "시계의 점(点)으로 시간을 보다.",
+    "charTip": "아래에 있는 연화발(灬=불 화) 부수가 타오르는 불꽃의 미세한 점들을 묘사하며, 여기서는 시계 바늘이 가리키는 시각을 의미합니다.",
+    "exZh": "三点。",
+    "exPinyin": "Sān diǎn.",
+    "exMeaning": "3시."
+  },
+  {
+    "num": 17,
+    "hanzi": "电脑",
+    "pinyin": "diànnǎo",
+    "koPron": "뎬나오",
+    "meanings": [
+      { "pos": "명사", "ko": "컴퓨터", "en": "Computer" }
+    ],
+    "hanja": "번개 전(电), 뇌 뇌(脑)",
+    "pronTip": "전기(电)로 작동하는 두뇌(脑).",
+    "charTip": "전기를 뜻하는 电과 신체 기관을 뜻하는 육달월(月) 부수가 들어간 뇌 뇌(脑)가 만나 전동식 전자 두뇌를 표현합니다.",
+    "exZh": "买电脑。",
+    "exPinyin": "Mǎi diànnǎo.",
+    "exMeaning": "컴퓨터를 사다."
+  },
+  {
+    "num": 18,
+    "hanzi": "电视",
+    "pinyin": "diànshì",
+    "koPron": "뎬스",
+    "meanings": [
+      { "pos": "명사", "ko": "텔레비전", "en": "TV" }
+    ],
+    "hanja": "볼 시(视)",
+    "pronTip": "전기(电)를 통해 보는(视) 것.",
+    "charTip": "볼 견(见) 부수가 포함되어 눈으로 시청한다는 의미를 지닌 스(视)와 번개 전(电)의 결합입니다.",
+    "exZh": "看电视。",
+    "exPinyin": "Kàn diànshì.",
+    "exMeaning": "TV를 보다."
+  },
+  {
+    "num": 19,
+    "hanzi": "电影",
+    "pinyin": "diànyǐng",
+    "koPron": "뎬잉",
+    "meanings": [
+      { "pos": "명사", "ko": "영화", "en": "Movie" }
+    ],
+    "hanja": "그림자 영(影)",
+    "pronTip": "전기(电)로 그림자(影)를 보다.",
+    "charTip": "오른쪽의 터럭 삼(彡) 부수가 빛의 그림자나 무늬를 뜻하며, 전기(电) 스크린에 영사되는 영상을 의미합니다.",
+    "exZh": "看电影。",
+    "exPinyin": "Kàn diànyǐng.",
+    "exMeaning": "영화를 보다."
+  },
+  {
+    "num": 20,
+    "hanzi": "东西",
+    "pinyin": "dōngxi",
+    "koPron": "둥시",
+    "meanings": [
+      { "pos": "명사", "ko": "물건", "en": "Thing" }
+    ],
+    "hanja": "동녘 동(东), 서녘 서(西)",
+    "pronTip": "동(东)서(西) 사방에서 파는 물건.",
+    "charTip": "나무 뒤로 해가 뜨는 동녘 동(东) 부수와 새가 둥지에 앉은 모양의 서녘 서(西) 부수가 만나 방위를 넘어서 모든 물품을 총칭합니다.",
+    "exZh": "买东西。",
+    "exPinyin": "Mǎi dōngxi.",
+    "exMeaning": "물건을 사다."
+  },
+  {
+    "num": 21,
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "koPron": "도우",
+    "meanings": [
+      { "pos": "부사", "ko": "모두", "en": "All" }
+    ],
+    "hanja": "도읍 도(都)",
+    "pronTip": "사람들이 모두 모인 도(dōu)읍.",
+    "charTip": "우측의 우부방(阝=고을 읍) 부수가 대도시를 뜻하며, 사람들이 한 대도시에 모여 있는 것에서 '전부, 모두'의 뜻이 파생되었습니다.",
+    "exZh": "우리 모두 간다.",
+    "exPinyin": "Wǒmen dōu qù.",
+    "exMeaning": "우리는 모두 간다."
+  },
+  {
+    "num": 22,
+    "hanzi": "读",
+    "pinyin": "dú",
+    "koPron": "두",
+    "meanings": [
+      { "pos": "동사", "ko": "읽다", "en": "To Read" }
+    ],
+    "hanja": "읽을 독(读)",
+    "pronTip": "책을 두(dú) 눈 부릅뜨고 읽다.",
+    "charTip": "말씀 언(讠) 부수가 결합하여 소리 내어 문장을 암송하거나 글을 소리 내어 읽는 동작을 뜻합니다.",
+    "exZh": "读书。",
+    "exPinyin": "Dú shū.",
+    "exMeaning": "책을 읽다."
+  },
+  {
+    "num": 23,
+    "hanzi": "对不起",
+    "pinyin": "duìbuqǐ",
+    "koPron": "뚜에이부치",
+    "meanings": [
+      { "pos": "인사말", "ko": "미안합니다", "en": "Sorry" }
+    ],
+    "hanja": "대할 대(对)",
+    "pronTip": "고개를 들고 대할(对) 수 없다.",
+    "charTip": "마디 촌(寸) 부수가 손을 의미하며, 상대방을 똑바로 마주 대하기(对) 미안하여 낮춘다는 표현입니다.",
+    "exZh": "对不起！- 没关系。",
+    "exPinyin": "Duìbuqǐ! - Méi guānxi.",
+    "exMeaning": "미안해! - 괜찮아."
+  },
+  {
+    "num": 24,
+    "hanzi": "多",
+    "pinyin": "duō",
+    "koPron": "둬",
+    "meanings": [
+      { "pos": "형용사", "ko": "많다", "en": "Many" }
+    ],
+    "hanja": "많을 다(多)",
+    "pronTip": "너무 많아서 둬(duō) 개씩 나누다.",
+    "charTip": "저녁 석(夕) 부수가 상하로 포개어져 밤이 거듭 지나가며 수량이 누적되는 '많음'을 뜻합니다.",
+    "exZh": "很多。",
+    "exPinyin": "Hěn duō.",
+    "exMeaning": "매우 많다."
+  },
+  {
+    "num": 25,
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "koPron": "둬사오",
+    "meanings": [
+      { "pos": "대명사", "ko": "얼마, 몇", "en": "How much" }
+    ],
+    "hanja": "많을 다(多), 적을 소(少)",
+    "pronTip": "많고(多) 적음(少)을 묻다.",
+    "charTip": "많을 다(多)와 작을 소(小)에 사선이 그어져 적어짐을 뜻하는 적을 소(少) 부수가 합쳐진 의문사입니다.",
+    "exZh": "多少钱？",
+    "exPinyin": "Duōshao qián?",
+    "exMeaning": "얼마입니까?"
+  },
+  {
+    "num": 26,
+    "hanzi": "儿子",
+    "pinyin": "érzi",
+    "koPron": "얼쯔",
+    "meanings": [
+      { "pos": "명사", "ko": "아들", "en": "Son" }
+    ],
+    "hanja": "아이 아(儿), 아들 자(子)",
+    "pronTip": "얼(ér)굴 잘생긴 내 아들 자(子)식.",
+    "charTip": "어린아이의 다리 모양을 본뜬 어진사람인발(儿) 부수와 포대기에 싸인 아기(子) 부수가 만난 단어입니다.",
+    "exZh": "我的儿子。",
+    "exPinyin": "Wǒ de érzi.",
+    "exMeaning": "나의 아들."
+  },
+  {
+    "num": 27,
+    "hanzi": "二",
+    "pinyin": "èr",
+    "koPron": "얼",
+    "meanings": [
+      { "pos": "수사", "ko": "둘, 2", "en": "Two" }
+    ],
+    "hanja": "두 이(二)",
+    "pronTip": "숫자 1, 2 = 이, 얼(èr).",
+    "charTip": "가로 선 두 개(二)를 나란히 그어 수량 2를 직관적으로 나타내는 부수 글자입니다.",
+    "exZh": "二十。",
+    "exPinyin": "Èr shí.",
+    "exMeaning": "20."
+  },
+  {
+    "num": 28,
+    "hanzi": "饭店",
+    "pinyin": "fàndiàn",
+    "koPron": "판뎬",
+    "meanings": [
+      { "pos": "명사", "ko": "식당, 호텔", "en": "Restaurant" }
+    ],
+    "hanja": "밥 반(饭), 가게 점(店)",
+    "pronTip": "밥(饭)을 먹는 가게(店).",
+    "charTip": "먹을 식(饣) 부수가 들어간 밥 반(饭)과 엄호(广) 부수가 들어간 가게 점(店)이 만나 음식을 파는 매장을 뜻합니다.",
+    "exZh": "去饭店。",
+    "exPinyin": "Qù fàndiàn.",
+    "exMeaning": "식당에 가다."
+  },
+  {
+    "num": 29,
+    "hanzi": "飞机",
+    "pinyin": "fēijī",
+    "koPron": "페이지",
+    "meanings": [
+      { "pos": "명사", "ko": "비행기", "en": "Airplane" }
+    ],
+    "hanja": "날 비(飞), 틀 기(机)",
+    "pronTip": "하늘을 나는(飞) 기계(机).",
+    "charTip": "새가 날개를 펼쳐 나는 모습을 본뜬 날 비(飞) 부수와 나무 목(木) 부수가 결합한 틀 기(机)가 만나 비행 장치를 뜻합니다.",
+    "exZh": "坐飞机。",
+    "exPinyin": "Zuò fēijī.",
+    "exMeaning": "비행기를 타다."
+  },
+  {
+    "num": 30,
+    "hanzi": "分钟",
+    "pinyin": "fēnzhōng",
+    "koPron": "펀중",
+    "meanings": [
+      { "pos": "양사", "ko": "분(시간)", "en": "Minute" }
+    ],
+    "hanja": "나눌 분(分), 쇠북 종(钟)",
+    "pronTip": "시계(종 钟)를 잘게 나눈(分) 단위.",
+    "charTip": "칼 도(刀) 부수로 나눈다는 분(分)과 쇠 금(金=钅) 부수가 들어간 시계 종(钟)이 합쳐져 시계 눈금의 '분'을 의미합니다.",
+    "exZh": "五分钟。",
+    "exPinyin": "Wǔ fēnzhōng.",
+    "exMeaning": "5분."
+  },
+  {
+    "num": 31,
+    "hanzi": "高兴",
+    "pinyin": "gāoxìng",
+    "koPron": "가오싱",
+    "meanings": [
+      { "pos": "형용사", "ko": "기쁘다", "en": "Happy" }
+    ],
+    "hanja": "높을 고(高), 일어날 흥(兴)",
+    "pronTip": "흥(兴)이 높게(高) 일어나 기쁘다.",
+    "charTip": "높은 건물 모양의 높을 고(高) 부수와 양손으로 기물을 맞들고 일어나는 흥(兴) 부수가 만나 기쁜 감정을 표현합니다.",
+    "exZh": "很高兴。",
+    "exPinyin": "Hěn gāoxìng.",
+    "exMeaning": "매우 기쁘다."
+  },
+  {
+    "num": 32,
+    "hanzi": "个",
+    "pinyin": "ge",
+    "koPron": "거",
+    "meanings": [
+      { "pos": "양사", "ko": "개, 명", "en": "(measure word)" }
+    ],
+    "hanja": "낱 개(个)",
+    "pronTip": "한 개(ge) 두 개 셀 때의 그 '개'.",
+    "charTip": "사람 인(人) 부수에 세로획을 내려 그어 사물이나 사람의 개수를 세는 가장 보편적인 양사입니다.",
+    "exZh": "一个。",
+    "exPinyin": "Yí ge.",
+    "exMeaning": "한 개."
+  },
+  {
+    "num": 33,
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "koPron": "궁쭤",
+    "meanings": [
+      { "pos": "동사", "ko": "일하다", "en": "To Work" },
+      { "pos": "명사", "ko": "직업", "en": "Job" }
+    ],
+    "hanja": "장인 공(工), 지을 작(作)",
+    "pronTip": "공(工)장에서 작(作)업하며 일하다.",
+    "charTip": "장인의 도구를 본뜬 장인 공(工) 부수와 사람 인(亻) 부수가 포함된 지을 작(作)이 결합해 사람이 하는 노동이나 업무를 지칭합니다.",
+    "exZh": "工作很忙。",
+    "exPinyin": "Gōngzuò hěn máng.",
+    "exMeaning": "일이 매우 바쁘다."
+  },
+  {
+    "num": 34,
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "koPron": "고우",
+    "meanings": [
+      { "pos": "명사", "ko": "개, 강아지", "en": "Dog" }
+    ],
+    "hanja": "개 구(狗)",
+    "pronTip": "강아지가 꼬리를 꼬우(gǒu)며 반긴다.",
+    "charTip": "동물을 나타내는 개사슴록변(犭) 부수에 소리 구(句)가 더해져 네 발 달린 반려견을 뜻합니다.",
+    "exZh": "我的狗。",
+    "exPinyin": "Wǒ de gǒu.",
+    "exMeaning": "나의 개."
+  },
+  {
+    "num": 35,
+    "hanzi": "汉语",
+    "pinyin": "Hànyǔ",
+    "koPron": "한위",
+    "meanings": [
+      { "pos": "명사", "ko": "중국어", "en": "Chinese" }
+    ],
+    "hanja": "한나라 한(汉), 말씀 어(语)",
+    "pronTip": "한(汉)족의 언어(语) = 중국어.",
+    "charTip": "삼수변(氵) 부수의 한나라 한(汉)과 말씀 언(讠) 부수의 말씀 어(语)가 결합하여 한족이 사용하는 언어를 뜻합니다.",
+    "exZh": "学习汉语。",
+    "exPinyin": "Xuéxí Hànyǔ.",
+    "exMeaning": "중국어를 배우다."
+  },
+  {
+    "num": 36,
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "koPron": "하오",
+    "meanings": [
+      { "pos": "형용사", "ko": "좋다", "en": "Good" }
+    ],
+    "hanja": "좋을 호(好)",
+    "pronTip": "하오(hǎo)! 아주 좋다!",
+    "charTip": "여자 녀(女) 부수와 아들 자(子) 부수가 나란히 만나 어머니와 아이가 함께 있는 가장 이상적이고 '좋은' 상태를 뜻합니다.",
+    "exZh": "很好。",
+    "exPinyin": "Hěn hǎo.",
+    "exMeaning": "매우 좋다."
+  },
+  {
+    "num": 37,
+    "hanzi": "号",
+    "pinyin": "hào",
+    "koPron": "하오",
+    "meanings": [
+      { "pos": "명사", "ko": "일, 날짜, 번호", "en": "Number" }
+    ],
+    "hanja": "이름 호(号)",
+    "pronTip": "번호를 하오(hào)하고 부르다.",
+    "charTip": "입 구(口) 부수가 들어가 있어 소리 높여 부르거나 특정 순서의 번호 및 날짜를 명시할 때 씁니다.",
+    "exZh": "几号？",
+    "exPinyin": "Jǐ hào?",
+    "exMeaning": "며칠 입니까?"
+  },
+  {
+    "num": 38,
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "koPron": "허",
+    "meanings": [
+      { "pos": "동사", "ko": "마시다", "en": "To Drink" }
+    ],
+    "hanja": "마실 갈(喝)",
+    "pronTip": "허(hē) 기침하며 물을 마시다.",
+    "charTip": "입 구(口) 부수가 액체를 입안으로 넘겨 마시는 구체적인 신체 동작을 표현합니다.",
+    "exZh": "喝 water. -> 喝水。",
+    "exPinyin": "Hē shuǐ.",
+    "exMeaning": "물을 마시다."
+  },
+  {
+    "num": 39,
+    "hanzi": "和",
+    "pinyin": "hé",
+    "koPron": "허",
+    "meanings": [
+      { "pos": "전치사", "ko": "~와/과", "en": "With" },
+      { "pos": "접속사", "ko": "~와/과", "en": "And" }
+    ],
+    "hanja": "화할 화(和)",
+    "pronTip": "너와 나, 허(hé)물 없이 지내다.",
+    "charTip": "벼 화(禾) 부수 옆에 입 구(口)가 어우러져 여럿이 함께 음식을 평화롭게 나누어 먹는 어울림을 뜻합니다.",
+    "exZh": "我和他。",
+    "exPinyin": "Wǒ hé tā.",
+    "exMeaning": "나와 그."
+  },
+  {
+    "num": 40,
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "koPron": "헌",
+    "meanings": [
+      { "pos": "부사", "ko": "매우", "en": "Very" }
+    ],
+    "hanja": "매우 흔(很)",
+    "pronTip": "매우 헌(hěn) 물건이다.",
+    "charTip": "조금걸을척(彳) 부수가 그칠 간(艮)이 만나 한 걸음 더 나아가 강하게 강조하는 '매우, 대단히'의 뜻으로 쓰입니다.",
+    "exZh": "很大。",
+    "exPinyin": "Hěn dà.",
+    "exMeaning": "매우 크다."
+  },
+  {
+    "num": 41,
+    "hanzi": "后面",
+    "pinyin": "hòumiàn",
+    "koPron": "호우몐",
+    "meanings": [
+      { "pos": "명사", "ko": "뒤, 후방", "en": "Behind" }
+    ],
+    "hanja": "뒤 후(后), 낯 면(面)",
+    "pronTip": "뒤에서 호우(hòu)! 하고 부르다.",
+    "charTip": "입 구(口) 부수가 든 뒤 후(后)와 머리 혈 부수 계열의 낯 면(面) 부수가 만나 등 뒤의 방향이나 공간을 나타냅니다.",
+    "exZh": "在后面。",
+    "exPinyin": "Zài hòumiàn.",
+    "exMeaning": "뒤에 있다."
+  },
+  {
+    "num": 42,
+    "hanzi": "回",
+    "pinyin": "huí",
+    "koPron": "후에이",
+    "meanings": [
+      { "pos": "동사", "ko": "돌아가다", "en": "To Return" }
+    ],
+    "hanja": "돌아올 회(回)",
+    "pronTip": "후에이(huí)리릭~ 돌아가다.",
+    "charTip": "큰 에운담(囗) 부수 안에 작은 네모가 겹쳐져 소용돌이치듯 중심으로 빙글 돌아오는 모양을 나타냅니다.",
+    "exZh": "回家。",
+    "exPinyin": "Huí jiā.",
+    "exMeaning": "집에 가다."
+  },
+  {
+    "num": 43,
+    "hanzi": "会",
+    "pinyin": "huì",
+    "koPron": "후에이",
+    "meanings": [
+      { "pos": "조동사", "ko": "~할 수 있다", "en": "Can" }
+    ],
+    "hanja": "모일 회(会)",
+    "pronTip": "나도 후에이(huì)딱 할 수 있어!",
+    "charTip": "사람 인(人) 부수 아래에 구름과 지혜가 모이는 형상으로, 배워서 능숙하게 다룰 줄 안다는 가능성을 뜻합니다.",
+    "exZh": "我会做。",
+    "exPinyin": "Wǒ huì zuò.",
+    "exMeaning": "나는 할 줄 안다."
+  },
+  {
+    "num": 44,
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "koPron": "지",
+    "meanings": [
+      { "pos": "대명사", "ko": "몇", "en": "How many" }
+    ],
+    "hanja": "몇 기(几)",
+    "pronTip": "이게 지(jǐ)금 몇 개야?",
+    "charTip": "작은 탁자 모양을 본뜬 안석궤(几) 부수 글자로, 10 이하의 적은 수량을 묻는 의문대명사입니다.",
+    "exZh": "几个人？",
+    "exPinyin": "Jǐ ge rén?",
+    "exMeaning": "몇 사람 입니까?"
+  },
+  {
+    "num": 45,
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "koPron": "지아",
+    "meanings": [
+      { "pos": "명사", "ko": "집, 가정", "en": "Home" },
+      { "pos": "양사", "ko": "집, 가정", "en": "Home" }
+    ],
+    "hanja": "집 가(家)",
+    "pronTip": "우리가 자(jiā)는 집.",
+    "charTip": "갓머리/집 면(宀) 부수 아래에 가축인 돼지 시(豕)를 키우는 전통적인 주거 공간의 형태를 본뜬 글자입니다.",
+    "exZh": "回家。",
+    "exPinyin": "Huí jiā.",
+    "exMeaning": "집에 돌아가다."
+  },
+  {
+    "num": 46,
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "koPron": "지아오",
+    "meanings": [
+      { "pos": "동사", "ko": "~라고 부르다", "en": "To Be Called" }
+    ],
+    "hanja": "부를 교(叫)",
+    "pronTip": "지아오(jiào)! 하고 큰 소리로 부르다.",
+    "charTip": "입 구(口) 부수가 소리 높여 외치는 동작을 나타내며, 오른쪽의 얽힐 구(丩)가 소리역할을 합니다.",
+    "exZh": "我叫王明。",
+    "exPinyin": "Wǒ jiào Wáng Míng.",
+    "exMeaning": "내 이름은 왕밍입니다."
+  },
+  {
+    "num": 47,
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "koPron": "진퉨",
+    "meanings": [
+      { "pos": "명사", "ko": "오늘", "en": "Today" }
+    ],
+    "hanja": "이제 금(今), 하늘 천(天)",
+    "pronTip": "진(jīn)짜 맑은 퉨(tiān) 하늘인 오늘.",
+    "charTip": "현재를 가리키는 이제 금(今)과 하늘 천(天) 부수가 만나 바로 지금 흘러가고 있는 날을 뜻합니다.",
+    "exZh": "今天很热。",
+    "exPinyin": "Jīntiān hěn rè.",
+    "exMeaning": "오늘은 매우 덥다."
+  },
+  {
+    "num": 48,
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "koPron": "지우",
+    "meanings": [
+      { "pos": "수사", "ko": "아홉, 9", "en": "Nine" }
+    ],
+    "hanja": "아홉 구(九)",
+    "pronTip": "지우(jiǔ)개 9개.",
+    "charTip": "사람의 팔을 굽히고 뻗쳐서 수량의 마지막 극치인 숫자 9를 나타내는 부수 글자입니다.",
+    "exZh": "九点。",
+    "exPinyin": "Jiǔ diǎn.",
+    "exMeaning": "9시."
+  },
+  {
+    "num": 49,
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "koPron": "카이",
+    "meanings": [
+      { "pos": "동사", "ko": "열다", "en": "To Open" }
+    ],
+    "hanja": "열 개(开)",
+    "pronTip": "카(kāi)드를 대고 문을 열다.",
+    "charTip": "대문의 양쪽 빗장을 두 손으로 잡고 활짝 열어젖히는 형상을 단순화한 부수 계열 글자입니다.",
+    "exZh": "开门。",
+    "exPinyin": "Kāi mén.",
+    "exMeaning": "문을 열다."
+  },
+  {
+    "num": 50,
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "koPron": "칸",
+    "meanings": [
+      { "pos": "동사", "ko": "보다", "en": "To Watch" }
+    ],
+    "hanja": "볼 간(看)",
+    "pronTip": "칸(kàn)칸이 자세히 보다.",
+    "charTip": "눈 목(目) 부수 위에 손 수(Hand)를 얹어서 햇빛을 가리고 멀리 바라보는 모습을 지칭합니다.",
+    "exZh": "看书。",
+    "exPinyin": "Kàn shū.",
+    "exMeaning": "책을 보다."
+  },
+  {
+    "num": 51,
+    "hanzi": "看见",
+    "pinyin": "kànjiàn",
+    "koPron": "칸지앤",
+    "meanings": [
+      { "pos": "동사", "ko": "보다, 보이다", "en": "To See" }
+    ],
+    "hanja": "볼 간(看), 볼 견(见)",
+    "pronTip": "보고(kàn) 또 보다(jiàn).",
+    "charTip": "시선을 던지는 볼 간(看)과 눈의 시각 기능을 본뜬 볼 견(见) 부수가 만나 결과적으로 시야에 포착됨을 뜻합니다.",
+    "exZh": "看见他。",
+    "exPinyin": "Kànjiàn tā.",
+    "exMeaning": "그를 보았다."
+  },
+  {
+    "num": 52,
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "koPron": "콰에이",
+    "meanings": [
+      { "pos": "양사", "ko": "콰이 (화폐 단위)", "en": "(currency unit)" }
+    ],
+    "hanja": "흙덩이 괴(块)",
+    "pronTip": "돈을 콰에이(kuài)크하게 쓰다.",
+    "charTip": "흙 토(土) 부수가 포함되어 뭉쳐진 덩어리를 뜻하며, 구어체에서 화폐를 세는 덩이 단위로 쓰입니다.",
+    "exZh": "十块钱。",
+    "exPinyin": "Shí kuài qián.",
+    "exMeaning": "10위안."
+  },
+  {
+    "num": 53,
+    "hanzi": "来",
+    "pinyin": "lái",
+    "koPron": "라이",
+    "meanings": [
+      { "pos": "동사", "ko": "오다", "en": "To Come" }
+    ],
+    "hanja": "올 래(来)",
+    "pronTip": "나에게 라이(lái)~ 오라.",
+    "charTip": "하늘이 내려준 곡식인 보리 이삭 모양을 본뜬 나무 목(木) 계열 부수에서 '오다'라는 뜻이 파생되었습니다.",
+    "exZh": "他来了。",
+    "exPinyin": "Tā lái le.",
+    "exMeaning": "그가 왔다."
+  },
+  {
+    "num": 54,
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "koPron": "라오스",
+    "meanings": [
+      { "pos": "명사", "ko": "선생님", "en": "Teacher" }
+    ],
+    "hanja": "늙을 노(老), 스승 사(师)",
+    "pronTip": "라오스(lǎoshī)님이 가르쳐주시다.",
+    "charTip": "늙을 노(老) 부수와 군사/무리를 뜻하는 스승 사(师) 부수가 만나 경험과 학식이 풍부한 스승을 뜻합니다.",
+    "exZh": "汉语老师。",
+    "exPinyin": "Hànyǔ lǎoshī.",
+    "exMeaning": "중국어 선생님."
+  },
+  {
+    "num": 55,
+    "hanzi": "了",
+    "pinyin": "le",
+    "koPron": "러",
+    "meanings": [
+      { "pos": "조사", "ko": "완료, 변화", "en": "(particle)" }
+    ],
+    "hanja": "마칠 료(了)",
+    "pronTip": "다 끝났어 러(le)~",
+    "charTip": "아기가 띠에 묶여 팔다리를 쓰지 못하는 모양에서 동작이 종결되고 마쳤음을 뜻하는 부수 글자입니다.",
+    "exZh": "吃饭了。",
+    "exPinyin": "Chī fàn le.",
+    "exMeaning": "밥을 먹었다."
+  },
+  {
+    "num": 56,
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "koPron": "렁",
+    "meanings": [
+      { "pos": "형용사", "ko": "춥다", "en": "Cold" }
+    ],
+    "hanja": "찰 냉(冷)",
+    "pronTip": "너무 추워서 몸이 렁(lěng)렁 떨리다.",
+    "charTip": "좌측의 이수변(冫) 부수가 얼음과 한기를 뜻하며, 오른쪽의 하여금 령(令) 자가 결합해 차가운 날씨를 뜻합니다.",
+    "exZh": "今天很冷。",
+    "exPinyin": "Jīntiān hěn lěng.",
+    "exMeaning": "오늘 매우 춥다."
+  },
+  {
+    "num": 57,
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "koPron": "리",
+    "meanings": [
+      { "pos": "명사", "ko": "안, 속", "en": "Inside" }
+    ],
+    "hanja": "마을 리(里)",
+    "pronTip": "이(lǐ) 안에 있다.",
+    "charTip": "밭 전(田) 부수 아래에 흙 토(土) 부수가 결합하여 사람들이 경작하며 정착해 사는 거주 공간의 내부를 가리킵니다.",
+    "exZh": "在家里。",
+    "exPinyin": "Zài jiā lǐ.",
+    "exMeaning": "집 안에 있다."
+  },
+  {
+    "num": 58,
+    "hanzi": "六",
+    "pinyin": "liù",
+    "koPron": "리우",
+    "meanings": [
+      { "pos": "수사", "ko": "여섯, 6", "en": "Six" }
+    ],
+    "hanja": "여섯 육(六)",
+    "pronTip": "리우(liù)월은 6월.",
+    "charTip": "집의 지붕과 기둥 모양을 기본으로 하여 수량 6을 표현하는 전통적인 부수 글자입니다.",
+    "exZh": "六个月。",
+    "exPinyin": "Liù ge yuè.",
+    "exMeaning": "6개월."
+  },
+  {
+    "num": 59,
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "koPron": "마마",
+    "meanings": [
+      { "pos": "명사", "ko": "엄마", "en": "Mother" }
+    ],
+    "hanja": "어미 모(妈)",
+    "pronTip": "마마(māma)는 엄마.",
+    "charTip": "여자 녀(女) 부수와 소리를 담당하는 말 마(马) 부수가 결합하여 자식을 극진히 돌보는 어머니를 지칭합니다.",
+    "exZh": "我的妈妈。",
+    "exPinyin": "Wǒ de māma.",
+    "exMeaning": "나의 엄마."
+  },
+  {
+    "num": 60,
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "koPron": "마",
+    "meanings": [
+      { "pos": "조사", "ko": "~입니까?", "en": "(question particle)" }
+    ],
+    "hanja": "의문조사 마(吗)",
+    "pronTip": "맞아 마(ma)?",
+    "charTip": "입 구(口) 부수가 질문을 던지는 어조사임을 나타내며, 말 마(马) 자가 소리 역할을 합니다.",
+    "exZh": "你好吗？",
+    "exPinyin": "Nǐ hǎo ma?",
+    "exMeaning": "잘 지내요?"
+  },
+  {
+    "num": 61,
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "koPron": "마이",
+    "meanings": [
+      { "pos": "동사", "ko": "사다", "en": "To Buy" }
+    ],
+    "hanja": "살 매(买)",
+    "pronTip": "마이(mǎi)마이 사다.",
+    "charTip": "그물망 머리(罒) 부수 계열 아래에 재물을 뜻하는 조개 패(贝)를 쳐서 시장에서 재화로 물건을 구입함을 뜻합니다.",
+    "exZh": "买苹果。",
+    "exPinyin": "Mǎi píngguǒ.",
+    "exMeaning": "사과를 사다."
+  },
+  {
+    "num": 62,
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "koPron": "마오",
+    "meanings": [
+      { "pos": "명사", "ko": "고양이", "en": "Cat" }
+    ],
+    "hanja": "고기 어/고양이 묘(猫)",
+    "pronTip": "마오(māo) 하고 우는 고양이.",
+    "charTip": "동물을 지칭하는 개사슴록변(犭) 부수 옆에 곡식의 싹을 뜻하는 묘(苗)가 붙어 밭의 쥐를 잡는 고양이를 뜻합니다.",
+    "exZh": "小猫。",
+    "exPinyin": "Xiǎo māo.",
+    "exMeaning": "새끼 고양이."
+  },
+  {
+    "num": 63,
+    "hanzi": "没关系",
+    "pinyin": "méi guānxi",
+    "koPron": "메이 관시",
+    "meanings": [
+      { "pos": "인사말", "ko": "괜찮습니다", "en": "It's okay" }
+    ],
+    "hanja": "관계 없음",
+    "pronTip": "메이(méi) 구겨진 관시(guānxi)라도 괜찮다.",
+    "charTip": "삼수변(氵)이 든 가라앉을 몰(没)과 문 문(门) 부수가 든 맬 계(系)가 결합해 연결된 고리가 끊어져 상관없음을 뜻합니다.",
+    "exZh": "对不起！- 没关系。",
+    "exPinyin": "Duìbuqǐ! - Méi guānxi.",
+    "exMeaning": "미안해! - 괜찮아."
+  },
+  {
+    "num": 64,
+    "hanzi": "没有",
+    "pinyin": "méiyǒu",
+    "koPron": "메이요우",
+    "meanings": [
+      { "pos": "동사", "ko": "없다", "en": "Don't have" },
+      { "pos": "부사", "ko": "하지 않았다", "en": "Didn't" }
+    ],
+    "hanja": "빠질 몰(没), 있을 유(有)",
+    "pronTip": "있는 게 메이(méi) 요우(yǒu) (없다).",
+    "charTip": "물이 빠져 부재함을 뜻하는 没과 고기를 손으로 쥐고 있는 달 월(月=고기 육) 부수의 有가 만나 소유하지 않음을 뜻합니다.",
+    "exZh": "没有钱。",
+    "exPinyin": "Méiyǒu qián.",
+    "exMeaning": "돈이 없다."
+  },
+  {
+    "num": 65,
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "koPron": "미판",
+    "meanings": [
+      { "pos": "명사", "ko": "쌀밥", "en": "Rice" }
+    ],
+    "hanja": "쌀 미(米), 밥 반(饭)",
+    "pronTip": "미(mǐ)치게 맛있는 쌀 판(fàn).",
+    "charTip": "곡식 알갱이를 본뜬 쌀 미(米) 부수와 먹을 식(饣) 부수가 든 밥 반(饭)이 만나 잘 지어진 하얀 쌀밥을 뜻합니다.",
+    "exZh": "吃米饭。",
+    "exPinyin": "Chī mǐfàn.",
+    "exMeaning": "밥을 먹다."
+  },
+  {
+    "num": 66,
+    "hanzi": "名字",
+    "pinyin": "míngzi",
+    "koPron": "밍쯔",
+    "meanings": [
+      { "pos": "명사", "ko": "이름", "en": "Name" }
+    ],
+    "hanja": "이름 명(名), 글자 자(字)",
+    "pronTip": "내 밍쯔(míngzi)는 뭐야?",
+    "charTip": "저녁 석(夕)과 입 구(口)가 만난 이름 명(名), 집 면(宀)과 아들 자(子)가 만난 글자 자(字) 부수의 결합입니다.",
+    "exZh": "什么名字？",
+    "exPinyin": "Shénme míngzi?",
+    "exMeaning": "무슨 이름입니까?"
+  },
+  {
+    "num": 67,
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "koPron": "밍퉨",
+    "meanings": [
+      { "pos": "명사", "ko": "내일", "en": "Tomorrow" }
+    ],
+    "hanja": "밝을 명(明), 하늘 천(天)",
+    "pronTip": "밍(míng)일 하늘(tiān)은 밝을 거다.",
+    "charTip": "해 일(日)과 달 월(月) 부수가 만난 밝을 명(明)과 대자형 하늘 천(天) 부수가 만나 다음으로 다가올 날을 뜻합니다.",
+    "exZh": "明天见。",
+    "exPinyin": "Míngtiān jiàn.",
+    "exMeaning": "내일 보자."
+  },
+  {
+    "num": 68,
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "koPron": "나",
+    "meanings": [
+      { "pos": "대명사", "ko": "어느", "en": "Which" }
+    ],
+    "hanja": "어찌 나(哪)",
+    "pronTip": "나(nǎ)는 어느 것을 고를까?",
+    "charTip": "입 구(口) 부수가 포함되어 대상을 특정하여 질문하는 의문지시대명사 역할을 합니다.",
+    "exZh": "哪个？",
+    "exPinyin": "Nǎ ge?",
+    "exMeaning": "어느 것?"
+  },
+  {
+    "num": 69,
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "koPron": "나얼",
+    "meanings": [
+      { "pos": "대명사", "ko": "어디", "en": "Where" }
+    ],
+    "hanja": "어느 곳(哪儿)",
+    "pronTip": "나얼(nǎr)로 갈까? (어디로 갈까?)",
+    "charTip": "입 구(口) 부수가 든 哪에 장소를 나타내는 접미사 어진사람인발(儿) 부수가 결합한 장소 의문사입니다.",
+    "exZh": "去哪儿？",
+    "exPinyin": "Qù nǎr?",
+    "exMeaning": "어디 가?"
+  },
+  {
+    "num": 70,
+    "hanzi": "那",
+    "pinyin": "nà",
+    "koPron": "나",
+    "meanings": [
+      { "pos": "대명사", "ko": "저것, 그것", "en": "That" }
+    ],
+    "hanja": "저 나(那)",
+    "pronTip": "나(nà)는 저것이 좋아.",
+    "charTip": "우측의 우부방(阝=고을 읍) 부수가 포함되어 있으며, 화자와 멀리 떨어져 있는 대상을 지시하는 대명사입니다.",
+    "exZh": "那个。",
+    "exPinyin": "Nà ge.",
+    "exMeaning": "저것."
+  },
+  {
+    "num": 71,
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "koPron": "느어",
+    "meanings": [
+      { "pos": "조사", "ko": "~는요?", "en": "(particle)" }
+    ],
+    "hanja": "어조사 니(呢)",
+    "pronTip": "너(ne)는 어때?",
+    "charTip": "입 구(口) 부수가 결합하여 문장 끝에서 되묻거나 상태의 지속을 부드럽게 나타내는 질문의 어조사입니다.",
+    "exZh": "你呢？",
+    "exPinyin": "Nǐ ne?",
+    "exMeaning": "당신은요?"
+  },
+  {
+    "num": 72,
+    "hanzi": "能",
+    "pinyin": "néng",
+    "koPron": "넝",
+    "meanings": [
+      { "pos": "조동사", "ko": "~할 수 있다", "en": "Can" }
+    ],
+    "hanja": "능할 능(能)",
+    "pronTip": "재능(néng)이 있어 할 수 있다.",
+    "charTip": "육달월(月=고기 육) 부수와 다리 모양이 합쳐져 본래 곰의 강인한 신체 능력과 잠재력을 나타낸 글자입니다.",
+    "exZh": "能不能？",
+    "exPinyin": "Néng bu néng?",
+    "exMeaning": "할 수 있어 없어?"
+  },
+  {
+    "num": 73,
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "koPron": "니",
+    "meanings": [
+      { "pos": "대명사", "ko": "너, 당신", "en": "You" }
+    ],
+    "hanja": "너 니(你)",
+    "pronTip": "니(nǐ)가 해라.",
+    "charTip": "사람 인(亻) 부수가 좌측에 붙어 대화의 주체인 상대방 '사람'을 2인칭으로 가리킵니다.",
+    "exZh": "你好。",
+    "exPinyin": "Nǐ hǎo.",
+    "exMeaning": "안녕."
+  },
+  {
+    "num": 74,
+    "hanzi": "年",
+    "pinyin": "nián",
+    "koPron": "니앤",
+    "meanings": [
+      { "pos": "명사", "ko": "년, 해", "en": "Year" },
+      { "pos": "양사", "ko": "년, 해", "en": "Year" }
+    ],
+    "hanja": "해 년(年)",
+    "pronTip": "올해 일어난 니앤(nián) 일.",
+    "charTip": "방패 간(干) 부수 계열로, 본래 사람이 벼 이삭을 등에 업고 수확하는 1년 주기의 계절 흐름을 뜻합니다.",
+    "exZh": "一年。",
+    "exPinyin": "Yì nián.",
+    "exMeaning": "1년."
+  },
+  {
+    "num": 75,
+    "hanzi": "女儿",
+    "pinyin": "nǚ'ér",
+    "koPron": "뉘얼",
+    "meanings": [
+      { "pos": "명사", "ko": "딸", "en": "Daughter" }
+    ],
+    "hanja": "계집 녀(女), 아이 아(儿)",
+    "pronTip": "예쁜 뉘얼(nǚ'ér) 같은 딸.",
+    "charTip": "여자가 무릎을 꿇고 있는 모양의 여자 녀(女) 부수와 아이를 뜻하는 어진사람인발(儿) 부수가 만난 단어입니다.",
+    "exZh": "我的女儿。",
+    "exPinyin": "Wǒ de nǚ'ér.",
+    "exMeaning": "나의 딸."
+  },
+  {
+    "num": 76,
+    "hanzi": "朋友",
+    "pinyin": "péngyou",
+    "koPron": "펑요우",
+    "meanings": [
+      { "pos": "명사", "ko": "친구", "en": "Friend" }
+    ],
+    "hanja": "벗 붕(朋), 벗 우(友)",
+    "pronTip": "펑(péng)생 함께할 요우(you)정 같은 친구.",
+    "charTip": "달 월(月) 부수가 나란히 어깨동무를 한 벗 붕(朋)과 오른손 우(又) 부수가 겹쳐 손을 맞잡은 벗 우(友)가 결합한 글자입니다.",
+    "exZh": "好朋友。",
+    "exPinyin": "Hǎo péngyou.",
+    "exMeaning": "좋은 친구."
+  },
+  {
+    "num": 77,
+    "hanzi": "漂亮",
+    "pinyin": "piàoliang",
+    "koPron": "피아오리앙",
+    "meanings": [
+      { "pos": "형용사", "ko": "예쁘다", "en": "Beautiful" }
+    ],
+    "hanja": "표류할 표(漂), 밝을 량(亮)",
+    "pronTip": "피아오리앙(piàoliang)하게 예쁘네!",
+    "charTip": "삼수변(氵) 부수가 든 맑게 물이 흐르는 표(漂)와 높을 고(High) 계열 부수가 든 밝을 량(亮)이 만나 깨끗하고 빛난다는 뜻입니다.",
+    "exZh": "很漂亮。",
+    "exPinyin": "Hěn piàoliang.",
+    "exMeaning": "매우 예쁘다."
+  },
+  {
+    "num": 78,
+    "hanzi": "苹果",
+    "pinyin": "píngguǒ",
+    "koPron": "핑궈",
+    "meanings": [
+      { "pos": "명사", "ko": "사과", "en": "Apple" }
+    ],
+    "hanja": "사과 평(苹), 과실 과(果)",
+    "pronTip": "핑궈(píngguǒ)르르 구르는 사과.",
+    "charTip": "풀 초(艹) 부수가 들어간 식물 평(苹)과 나무 목(木) 부수 위에 열매가 맺힌 과실 과(果)가 만나 사과 나무의 열매를 뜻합니다.",
+    "exZh": "吃苹果。",
+    "exPinyin": "Chī píngguǒ.",
+    "exMeaning": "사과를 먹다."
+  },
+  {
+    "num": 79,
+    "hanzi": "七",
+    "pinyin": "qī",
+    "koPron": "치",
+    "meanings": [
+      { "pos": "수사", "ko": "일곱, 7", "en": "Seven" }
+    ],
+    "hanja": "일곱 칠(七)",
+    "pronTip": "치(qī)즈 7장.",
+    "charTip": "칼로 물건을 가로세로로 자른 모양에서 유래하여 숫자 7을 나타내는 전통적인 부수 글자입니다.",
+    "exZh": "七个。",
+    "exPinyin": "Qī ge.",
+    "exMeaning": "7개."
+  },
+  {
+    "num": 80,
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "koPron": "치엔",
+    "meanings": [
+      { "pos": "명사", "ko": "돈", "en": "Money" }
+    ],
+    "hanja": "돈 전(钱)",
+    "pronTip": "치엔(qián) 챙기자, 돈!",
+    "charTip": "쇠 금(金=钅) 부수가 금속 화폐를 뜻하며, 우측의 잔해할 잔(戔)이 소리와 더불어 칼로 쪼개듯 가치를 나누는 돈을 뜻합니다.",
+    "exZh": "多少钱？",
+    "exPinyin": "Duōshao qián?",
+    "exMeaning": "얼마입니까?"
+  },
+  {
+    "num": 81,
+    "hanzi": "前面",
+    "pinyin": "qiánmiàn",
+    "koPron": "치엔미엔",
+    "meanings": [
+      { "pos": "명사", "ko": "앞", "en": "Front" }
+    ],
+    "hanja": "앞 전(前), 낯 면(面)",
+    "pronTip": "치엔(qián) 앞으로 가자.",
+    "charTip": "칼 도(刂) 부수가 포함된 앞 전(前)과 사람의 안면을 본뜬 낯 면(面) 부수가 결합하여 정면 방향을 뜻합니다.",
+    "exZh": "在前面。",
+    "exPinyin": "Zài qiánmiàn.",
+    "exMeaning": "앞에 있다."
+  },
+  {
+    "num": 82,
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "koPron": "칭",
+    "meanings": [
+      { "pos": "동사", "ko": "청하다, ~해 주세요", "en": "Please" }
+    ],
+    "hanja": "청할 청(请)",
+    "pronTip": "칭(qǐng)찬하며 부탁하다.",
+    "charTip": "말씀 언(讠) 부수가 말로 정중하게 요청함을 뜻하고, 푸를 청(青)이 결합하여 공손한 태도로 청함을 뜻합니다.",
+    "exZh": "请坐。",
+    "exPinyin": "Qǐng zuò.",
+    "exMeaning": "앉으세요."
+  },
+  {
+    "num": 83,
+    "hanzi": "去",
+    "pinyin": "qù",
+    "koPron": "취",
+    "meanings": [
+      { "pos": "동사", "ko": "가다", "en": "To Go" }
+    ],
+    "hanja": "갈 거(去)",
+    "pronTip": "취(qù)직하러 가다.",
+    "charTip": "사사 사(厶) 부수와 흙 토(土)가 결합하여 본래 사람이 흙을 밟고 거처에서 밖으로 나아감을 의미하는 글자입니다.",
+    "exZh": "去医院。",
+    "exPinyin": "Qù yīyuàn.",
+    "exMeaning": "병원에 가다."
+  },
+  {
+    "num": 84,
+    "hanzi": "热",
+    "pinyin": "rè",
+    "koPron": "러",
+    "meanings": [
+      { "pos": "형용사", "ko": "뜨겁다, 덥다", "en": "Hot" }
+    ],
+    "hanja": "더울 열(热)",
+    "pronTip": "러(rè)닝머신 뛰어서 덥다.",
+    "charTip": "아래에 위치한 연화발(灬=불 화) 부수가 뜨거운 열기를 뿜어내어 온도가 높고 더운 상태를 뜻합니다.",
+    "exZh": "今天很热。",
+    "exPinyin": "Jīntiān hěn rè.",
+    "exMeaning": "오늘은 매우 덥다."
+  },
+  {
+    "num": 85,
+    "hanzi": "人",
+    "pinyin": "rén",
+    "koPron": "런",
+    "meanings": [
+      { "pos": "명사", "ko": "사람", "en": "Person" }
+    ],
+    "hanja": "사람 인(人)",
+    "pronTip": "런(rén)닝하는 사람.",
+    "charTip": "사람이 두 다리를 딛고 똑바로 서서 옆을 바라보는 모습을 본뜬 독자적인 부수 글자입니다.",
+    "exZh": "好人。",
+    "exPinyin": "Hǎo rén.",
+    "exMeaning": "좋은 사람."
+  },
+  {
+    "num": 86,
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "koPron": "런스",
+    "meanings": [
+      { "pos": "동사", "ko": "알다 (사람을)", "en": "To Know" }
+    ],
+    "hanja": "알 인(认), 알 식(识)",
+    "pronTip": "런스(rènshi)를 알게 되다.",
+    "charTip": "두 글자 모두 말씀 언(讠) 부수를 채택하여 서로 말과 대화를 나누며 상대방을 식별하고 지적으로 알게 됨을 뜻합니다.",
+    "exZh": "认识니. -> 认识你。",
+    "exPinyin": "Rènshi nǐ.",
+    "exMeaning": "너를 알다."
+  },
+  {
+    "num": 87,
+    "hanzi": "三",
+    "pinyin": "sān",
+    "koPron": "싼",
+    "meanings": [
+      { "pos": "수사", "ko": "셋, 3", "en": "Three" }
+    ],
+    "hanja": "석 삼(三)",
+    "pronTip": "물건이 싼(sān) 3개.",
+    "charTip": "가로줄 세 개(三)를 나란히 겹쳐 그어 수량 3을 나타내는 가장 직관적인 지사 부수 글자입니다.",
+    "exZh": "三个。",
+    "exPinyin": "Sān ge.",
+    "exMeaning": "3개."
+  },
+  {
+    "num": 88,
+    "hanzi": "商店",
+    "pinyin": "shāngdiàn",
+    "koPron": "샹뎬",
+    "meanings": [
+      { "pos": "명사", "ko": "상점, 가게", "en": "Shop" }
+    ],
+    "hanja": "장사 상(商), 가게 점(店)",
+    "pronTip": "샹(shāng)들리에가 있는 상점.",
+    "charTip": "입 구(구) 부수가 포함된 거래하는 장사 상(商)과 엄호(广) 부수가 들어간 건물인 가게 점(店)이 결합한 단어입니다.",
+    "exZh": "去商店。",
+    "exPinyin": "Qù shāngdiàn.",
+    "exMeaning": "상점에 가다."
+  },
+  {
+    "num": 89,
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "koPron": "샹",
+    "meanings": [
+      { "pos": "명사", "ko": "위", "en": "Up" },
+      { "pos": "동사", "ko": "오르다", "en": "To go up" }
+    ],
+    "hanja": "윗 상(上)",
+    "pronTip": "샹(shàng)들리에가 있는 위.",
+    "charTip": "기준선 가로획 위에 세로획과 점을 찍어 기준보다 높은 '위쪽' 공간을 나타내는 지사 부수 글자입니다.",
+    "exZh": "在上面。",
+    "exPinyin": "Zài shàngmiàn.",
+    "exMeaning": "위에 있다."
+  },
+  {
+    "num": 90,
+    "hanzi": "上午",
+    "pinyin": "shàngwǔ",
+    "koPron": "샹우",
+    "meanings": [
+      { "pos": "명사", "ko": "오전", "en": "Morning" }
+    ],
+    "hanja": "윗 상(上), 낮 오(午)",
+    "pronTip": "샹(shàng)쾌한 오전.",
+    "charTip": "낮 오(午) 부수가 정오를 뜻하며, 윗 상(上)이 그보다 앞서 지나가는 정오 이전의 아침 시간대를 뜻합니다.",
+    "exZh": "今天上午。",
+    "exPinyin": "Jīntiān shàngwǔ.",
+    "exMeaning": "오늘 오전."
+  },
+  {
+    "num": 91,
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "koPron": "사오",
+    "meanings": [
+      { "pos": "형용사", "ko": "적다", "en": "Few" }
+    ],
+    "hanja": "적을 소(少)",
+    "pronTip": "사오(shǎo)정 머리숱이 적다.",
+    "charTip": "작을 소(小) 부수의 아래에 사선(丿)을 획을 하나 더하여 부피나 수량이 더 적어졌음을 표현한 글자입니다.",
+    "exZh": "很少。",
+    "exPinyin": "Hěn shǎo.",
+    "exMeaning": "매우 적다."
+  },
+  {
+    "num": 92,
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "koPron": "셰이",
+    "meanings": [
+      { "pos": "대명사", "ko": "누구", "en": "Who" }
+    ],
+    "hanja": "누구 수(谁)",
+    "pronTip": "누군지 셰이(shéi)어보자.",
+    "charTip": "말씀 언(讠) 부수가 사용되어 말로 대상을 캐물으며 어떤 사람인지를 물어보는 의문대명사입니다.",
+    "exZh": "他是谁？",
+    "exPinyin": "Tā -shì shéi? -> Tā shì shéi?",
+    "exMeaning": "그는 누구입니까?"
+  },
+  {
+    "num": 93,
+    "hanzi": "什么",
+    "pinyin": "shénme",
+    "koPron": "션머",
+    "meanings": [
+      { "pos": "대명사", "ko": "무엇", "en": "What" }
+    ],
+    "hanja": "열 십(什), 어조사 마(么)",
+    "pronTip": "이게 다 션머(shénme)?",
+    "charTip": "사람 인(亻) 부수가 든 什과 갈 고리 모양을 지닌 사사 사(厶) 계열 부수의 么가 만나 사물이나 행동을 묻는 의문사가 됩니다.",
+    "exZh": "什么名字？",
+    "exPinyin": "Shénme míngzi?",
+    "exMeaning": "무슨 이름입니까?"
+  },
+  {
+    "num": 94,
+    "hanzi": "十",
+    "pinyin": "shí",
+    "koPron": "스",
+    "meanings": [
+      { "pos": "수사", "ko": "열, 10", "en": "Ten" }
+    ],
+    "hanja": "열 십(十)",
+    "pronTip": "스(shí)트레스 받는 10시간.",
+    "charTip": "가로줄과 세로줄을 교차하여(十) 동서남북 사방이 꽉 찬 완전한 기본 숫자 10을 뜻하는 부수 글자입니다.",
+    "exZh": "十个人。",
+    "exPinyin": "Shí ge rén.",
+    "exMeaning": "10명."
+  },
+  {
+    "num": 95,
+    "hanzi": "时候",
+    "pinyin": "shíhou",
+    "koPron": "스호우",
+    "meanings": [
+      { "pos": "명사", "ko": "시간, 때", "en": "Time" }
+    ],
+    "hanja": "때 시(时), 기후 후(候)",
+    "pronTip": "스호우(shíhou) 시호 시간에 만나.",
+    "charTip": "해 일(日) 부수가 들어간 시간 시(时)와 사람 인(亻) 부수가 들어간 계절 기후 후(候)가 만나 특정한 시점을 뜻합니다.",
+    "exZh": "什么时候？",
+    "exPinyin": "Shénme shíhou?",
+    "exMeaning": "언제입니까?"
+  },
+  {
+    "num": 96,
+    "hanzi": "是",
+    "pinyin": "shì",
+    "koPron": "스",
+    "meanings": [
+      { "pos": "동사", "ko": "~이다, 맞다", "en": "To Be" }
+    ],
+    "hanja": "옳을 시(Align)",
+    "pronTip": "스(shì)! 맞습니다!",
+    "charTip": "해 일(日) 부수 아래에 바를 정(疋 계열) 자가 만나 해가 머리 위에서 한가운데를 바르게 비추듯 '옳다, 맞다'를 나타냅니다.",
+    "exZh": "我是학생. -> 我เป็น학생. -> 我是学生。",
+    "exPinyin": "Wǒ shì xuésheng.",
+    "exMeaning": "나는 학생이다."
+  },
+  {
+    "num": 97,
+    "hanzi": "书",
+    "pinyin": "shū",
+    "koPron": "슈",
+    "meanings": [
+      { "pos": "명사", "ko": "책", "en": "Book" }
+    ],
+    "hanja": "글 서(书)",
+    "pronTip": "슈(shū)퍼맨이 읽는 책.",
+    "charTip": "손으로 붓을 잡고 대나무 판에 글을 써 내려가는 모양을 본뜬 뚫을 곤(丨) 계열의 부수 글자입니다.",
+    "exZh": "看书。",
+    "exPinyin": "Kàn shū.",
+    "exMeaning": "책을 보다."
+  },
+  {
+    "num": 98,
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "koPron": "슈이",
+    "meanings": [
+      { "pos": "명사", "ko": "물", "en": "Water" }
+    ],
+    "hanja": "물 수(水)",
+    "pronTip": "슈이(shuǐ)영장에서 물장구.",
+    "charTip": "계곡 한가운데로 세차게 흘러가는 강물과 주변으로 튀는 물방울 모양을 본뜬 고유한 부수 글자입니다.",
+    "exZh": "喝水。",
+    "exPinyin": "Hē shuǐ.",
+    "exMeaning": "물을 마시다."
+  },
+  {
+    "num": 99,
+    "hanzi": "水果",
+    "pinyin": "shuǐguǒ",
+    "koPron": "슈이궈",
+    "meanings": [
+      { "pos": "명사", "ko": "과일", "en": "Fruit" }
+    ],
+    "hanja": "물 수(水), 과실 과(果)",
+    "pronTip": "슈이궈(shuǐguǒ) 달콤한 과일.",
+    "charTip": "액체를 뜻하는 물 수(水) 부수와 나무에 매달린 둥근 열매인 과실 과(果) 부수가 만나 수분이 가득한 과일을 뜻합니다.",
+    "exZh": "吃水果。",
+    "exPinyin": "Chī shuǐguǒ.",
+    "exMeaning": "과일을 먹다."
+  },
+  {
+    "num": 100,
+    "hanzi": "睡觉",
+    "pinyin": "shuìjiào",
+    "koPron": "슈이지아오",
+    "meanings": [
+      { "pos": "동사", "ko": "자다", "en": "To Sleep" }
+    ],
+    "hanja": "잘 수(睡), 깰 각(觉)",
+    "pronTip": "슈이지아오(shuìjiào) 푹 자다.",
+    "charTip": "눈 목(目) 부수가 포함되어 눈꺼풀이 아래로 처지며 잠을 청하는 신체 행동 상태를 뜻합니다.",
+    "exZh": "睡觉了。",
+    "exPinyin": "Shuìjiào le.",
+    "exMeaning": "잠을 잤다."
+  },
+  {
+    "num": 101,
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "koPron": "슈오",
+    "meanings": [
+      { "pos": "동사", "ko": "말하다", "en": "To Speak" }
+    ],
+    "hanja": "말씀 설(说)",
+    "pronTip": "슈오(shuō)리 지르며 말하다.",
+    "charTip": "말씀 언(讠) 부수가 입으로 내뱉는 언어를 뜻하며, 우측의 기쁠 태(兑)가 소리와 함께 기쁘게 소통함을 나타냅니다.",
+    "exZh": "说话。",
+    "exPinyin": "Shuō huà.",
+    "exMeaning": "말을 하다."
+  },
+  {
+    "num": 102,
+    "hanzi": "四",
+    "pinyin": "sì",
+    "koPron": "쓰",
+    "meanings": [
+      { "pos": "수사", "ko": "넷, 4", "en": "Four" }
+    ],
+    "hanja": "넉 사(四)",
+    "pronTip": "쓰(sì)레기 4봉지.",
+    "charTip": "에운담 방곽(囗) 부수 안에 양옆으로 사방이 나뉘어 흩어지는 사선의 모양을 담아 숫자 4를 표현했습니다.",
+    "exZh": "四个。",
+    "exPinyin": "Sì ge.",
+    "exMeaning": "4개."
+  },
+  {
+    "num": 103,
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "koPron": "쑤이",
+    "meanings": [
+      { "pos": "양사", "ko": "살, 세 (나이)", "en": "Years old" }
+    ],
+    "hanja": "해 세(岁)",
+    "pronTip": "쑤이(suì)월이 흘러 나이를 먹다.",
+    "charTip": "뫼 산(山) 부수 아래에 저녁 석(夕) 부수가 만나 산에 해가 저물고 세월이 쌓여 나이를 먹어감을 가리킵니다.",
+    "exZh": "十岁。",
+    "exPinyin": "Shí suì.",
+    "exMeaning": "10살."
+  },
+  {
+    "num": 104,
+    "hanzi": "他",
+    "pinyin": "tā",
+    "koPron": "타",
+    "meanings": [
+      { "pos": "대명사", "ko": "그 (남자)", "en": "He" }
+    ],
+    "hanja": "다를 타(他)",
+    "pronTip": "타(tā)인인 그 남자.",
+    "charTip": "사람 인(亻) 부수가 왼쪽에 결합하여 나 혹은 너가 아닌 제3자의 남성을 칭하는 대명사입니다.",
+    "exZh": "他是老师。",
+    "exPinyin": "Tā shì lǎoshī.",
+    "exMeaning": "그는 선생님이다."
+  },
+  {
+    "num": 105,
+    "hanzi": "她",
+    "pinyin": "tā",
+    "koPron": "타",
+    "meanings": [
+      { "pos": "대명사", "ko": "그녀", "en": "She" }
+    ],
+    "hanja": "다를 타(她)",
+    "pronTip": "타(tā)인인 그녀.",
+    "charTip": "여자 녀(女) 부수가 좌측에 명시되어 남성이 아닌 제3자의 여성을 특정하여 부르는 대명사입니다.",
+    "exZh": "她是学生。",
+    "exPinyin": "Tā shì xuésheng.",
+    "exMeaning": "그녀는 학생이다."
+  },
+  {
+    "num": 106,
+    "hanzi": "太",
+    "pinyin": "tài",
+    "koPron": "타이",
+    "meanings": [
+      { "pos": "부사", "ko": "너무, 몹시", "en": "Too" }
+    ],
+    "hanja": "클 태(太)",
+    "pronTip": "타이(tài)밍이 너무 좋다.",
+    "charTip": "클 대(大) 부수 아래에 점(丶) 획을 하나 더 추가하여 보통의 큰 수준을 초과하는 '너무, 몹시'의 뜻을 지닙니다.",
+    "exZh": "太好了！",
+    "exPinyin": "Tài hǎo le!",
+    "exMeaning": "너무 좋다!"
+  },
+  {
+    "num": 107,
+    "hanzi": "天气",
+    "pinyin": "tiānqì",
+    "koPron": "퉨치",
+    "meanings": [
+      { "pos": "명사", "ko": "날씨", "en": "Weather" }
+    ],
+    "hanja": "하늘 천(天), 기운 기(气)",
+    "pronTip": "퉨치(tiānqì)가 참 맑네.",
+    "charTip": "대자형 하늘 천(天) 부수가와 구름이 공중에 피어오르는 형상의 기운 기(气) 부수가 만나 대기의 기상 상태를 뜻합니다.",
+    "exZh": "天气很好。",
+    "exPinyin": "Tiānqì hěn hǎo.",
+    "exMeaning": "날씨가 좋다."
+  },
+  {
+    "num": 108,
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "koPron": "팅",
+    "meanings": [
+      { "pos": "동사", "ko": "듣다", "en": "To Listen" }
+    ],
+    "hanja": "들을 청(听)",
+    "pronTip": "음악을 팅(tīng)가팅가 듣다.",
+    "charTip": "입 구(口) 부수와 도끼 근(斤)이 결합하여 상대방의 소리를 입과 감각을 통해 집중해 수용하고 듣는 동작입니다.",
+    "exZh": "听音乐。",
+    "exPinyin": "Tīng yīnyuè.",
+    "exMeaning": "음악을 듣다."
+  },
+  {
+    "num": 109,
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "koPron": "퉁쉬에",
+    "meanings": [
+      { "pos": "명사", "ko": "동창, 학우", "en": "Classmate" }
+    ],
+    "hanja": "같을 동(同), 배울 학(学)",
+    "pronTip": "퉁쉬에(tóngxué)들 다 같이 모이자.",
+    "charTip": "입 구(口)가 포함된 같을 동(同)과 자식 자(子) 부수가 아래에 포함된 배울 학(学)이 만나 함께 공부하는 학우를 뜻합니다.",
+    "exZh": "我的同学。",
+    "exPinyin": "Wǒ de tóngxué.",
+    "exMeaning": "나의 동창."
+  },
+  {
+    "num": 110,
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "koPron": "웨이",
+    "meanings": [
+      { "pos": "인사말", "ko": "여보세요", "en": "Hello (on phone)" }
+    ],
+    "hanja": "먹일 위(喂)",
+    "pronTip": "웨이(wèi) 여보세요?",
+    "charTip": "입 구(口) 부수가 소리쳐 부르는 감탄사임을 나타내며, 우측의 위(畏)가 결합하여 전화 통화 시 상대방을 부를 때 씁니다.",
+    "exZh": "喂，你好！",
+    "exPinyin": "Wèi, nǐ hǎo!",
+    "exMeaning": "여보세요, 안녕하세요!"
+  },
+  {
+    "num": 111,
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "koPron": "워",
+    "meanings": [
+      { "pos": "대명사", "ko": "나", "en": "Me" }
+    ],
+    "hanja": "나 아(我)",
+    "pronTip": "워(wǒ)리어가 된 나.",
+    "charTip": "창 과(戈) 부수가 포함되어 손에 무기를 들고 내 소유와 자신을 스스로 지키는 주체인 '나'를 나타냅니다.",
+    "exZh": "我是中国人。",
+    "exPinyin": "Wǒ  shì Zhōngguó rén.",
+    "exMeaning": "나는 중국인이다."
+  },
+  {
+    "num": 112,
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "koPron": "워먼",
+    "meanings": [
+      { "pos": "대명사", "ko": "우리", "en": "We" }
+    ],
+    "hanja": "나 아(我), 무리 문(们)",
+    "pronTip": "워먼(wǒmen) 다 같이 가자.",
+    "charTip": "나 아(我)에 인칭 복수 복합 부수인 사람 인(亻) 부수의 들 문(们)이 만나 나를 포함한 여러 사람의 무리를 지칭합니다.",
+    "exZh": "我们是朋友。",
+    "exPinyin": "Wǒmen  shì péngyou.",
+    "exMeaning": "우리는 친구다."
+  },
+  {
+    "num": 113,
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "koPron": "우",
+    "meanings": [
+      { "pos": "수사", "ko": "다섯, 5", "en": "Five" }
+    ],
+    "hanja": "다섯 오(五)",
+    "pronTip": "우(wǔ)리 다섯 명.",
+    "charTip": "두 선 사이에 가로와 사선이 교차하며(五) 천지 사방의 한가운데 숫자 5를 표현한 두 이(二) 계열 부수 글자입니다.",
+    "exZh": "五个。",
+    "exPinyin": "Wǔ ge.",
+    "exMeaning": "5개."
+  },
+  {
+    "num": 114,
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "koPron": "시환",
+    "meanings": [
+      { "pos": "동사", "ko": "좋아하다", "en": "To Like" }
+    ],
+    "hanja": "기쁠 희(喜), 기쁠 환(欢)",
+    "pronTip": "시환(xǐhuan)하게 웃으며 좋아하다.",
+    "charTip": "입 구(口) 부수가 든 기쁠 희(喜)와 하품 석(欠) 부수가 든 기쁠 환(欢)이 만나 기쁜 마음으로 대상을 애호함을 뜻합니다.",
+    "exZh": "我喜欢他。",
+    "exPinyin": "Wǒ xǐhuan tā.",
+    "exMeaning": "나는 그를 좋아한다."
+  },
+  {
+    "num": 115,
+    "hanzi": "下",
+    "pinyin": "xià",
+    "koPron": "시아",
+    "meanings": [
+      { "pos": "명사", "ko": "아래", "en": "Down" },
+      { "pos": "동사", "ko": "내리다", "en": "To go down" }
+    ],
+    "hanja": "아래 하(下)",
+    "pronTip": "시아(xià)래로 내려가자.",
+    "charTip": "기준선 가로획 아래에 세로획과 굴절을 주어 기준보다 낮은 하방의 영역을 표시한 한 일(一) 계열 지사 부수 글자입니다.",
+    "exZh": "在下面。",
+    "exPinyin": "Zài xiàmiàn.",
+    "exMeaning": "아래에 있다."
+  },
+  {
+    "num": 116,
+    "hanzi": "下午",
+    "pinyin": "xiàwǔ",
+    "koPron": "시아우",
+    "meanings": [
+      { "pos": "명사", "ko": "오후", "en": "Afternoon" }
+    ],
+    "hanja": "아래 하(下), 낮 오(午)",
+    "pronTip": "시아우(xiàwǔ)에는 좀 쉬자.",
+    "charTip": "낮 오(午) 부수의 정오 기준점 아래(下)로 해가 떨어지고 지나가는 시점인 오후 시간대를 뜻합니다.",
+    "exZh": "今天下午。",
+    "exPinyin": "Jīntiān xiàwǔ.",
+    "exMeaning": "오늘 오후."
+  },
+  {
+    "num": 117,
+    "hanzi": "下雨",
+    "pinyin": "xiàyǔ",
+    "koPron": "시아위",
+    "meanings": [
+      { "pos": "동사", "ko": "비가 내리다", "en": "To Rain" }
+    ],
+    "hanja": "아래 하(下), 비 우(雨)",
+    "pronTip": "비가 시아위(xiàyǔ)로 내리네.",
+    "charTip": "하늘에서 물방울이 떨어지는 형상의 비 우(雨) 부수와 아래 하(下)가 결합하여 하늘에서 비가 내리는 기상 현상입니다.",
+    "exZh": "明天하무. -> 明天下雨。",
+    "exPinyin": "Míngtiān xiàyǔ.",
+    "exMeaning": "내일 비가 온다."
+  },
+  {
+    "num": 118,
+    "hanzi": "先生",
+    "pinyin": "xiānsheng",
+    "koPron": "시엔셩",
+    "meanings": [
+      { "pos": "명사", "ko": "~씨, 남편", "en": "Mr." }
+    ],
+    "hanja": "먼저 선(先), 날 생(生)",
+    "pronTip": "시엔셩(xiānsheng)님 먼저 가시죠.",
+    "charTip": "어진사람인(儿) 부수가 포함된 먼저 선(先)과 날 생(生) 부수가 만나 성인 남성을 높여 부르는 호칭이 됩니다.",
+    "exZh": "王先生。",
+    "exPinyin": "Wáng xiānsheng.",
+    "exMeaning": "왕 선생님(씨)."
+  },
+  {
+    "num": 119,
+    "hanzi": "现",
+    "pinyin": "xiànzài",
+    "koPron": "시엔짜이",
+    "meanings": [
+      { "pos": "명사", "ko": "현재, 지금", "en": "Now" }
+    ],
+    "hanja": "나타날 현(现), 있을 재(在)",
+    "pronTip": "시엔짜이(xiànzài) 지금 당장!",
+    "charTip": "임금 왕(王=구슬 옥) 부수의 나타날 현(现)과 흙 토(土) 부수의 있을 재(在)가 만나 지금 눈앞에 존재하는 시점을 뜻합니다.",
+    "exZh": "现在几点？",
+    "exPinyin": "Xiànzài jǐ diǎn?",
+    "exMeaning": "지금 몇 시입니까?"
+  },
+  {
+    "num": 120,
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "koPron": "시앙",
+    "meanings": [
+      { "pos": "조동사", "ko": "~하고 싶다", "en": "Want to" },
+      { "pos": "동사", "ko": "생각하다", "en": "To think" }
+    ],
+    "hanja": "생각할 상(想)",
+    "pronTip": "시앙(xiǎng)상해 보니 하고 싶다.",
+    "charTip": "하단의 마음 심(心) 부수가 사람의 내면 심리를 나타내며, 서로 상(相)이 결합해 마음속으로 간절히 바라거나 생각함을 뜻합니다.",
+    "exZh": "我想去。",
+    "exPinyin": "Wǒ xiǎng qù.",
+    "exMeaning": "나는 가고 싶다."
+  },
+  {
+    "num": 121,
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "koPron": "시아오",
+    "meanings": [
+      { "pos": "형용사", "ko": "작다, 어리다", "en": "Small" }
+    ],
+    "hanja": "작을 소(小)",
+    "pronTip": "시아오(xiǎo)소하게 작네.",
+    "charTip": "물건의 중심을 자르고 나누어 크기가 미세하고 갈수록 '작아짐'을 나타내는 독자적인 기본 부수 글자입니다.",
+    "exZh": "小狗。",
+    "exPinyin": "Xiǎo gǒu.",
+    "exMeaning": "작은 개(강아지)."
+  },
+  {
+    "num": 122,
+    "hanzi": "小姐",
+    "pinyin": "xiǎojiě",
+    "koPron": "시아오지에",
+    "meanings": [
+      { "pos": "명사", "ko": "아가씨", "en": "Miss" }
+    ],
+    "hanja": "작을 소(小), 누이 저(姐)",
+    "pronTip": "시아오지에(xiǎojiě) 예쁜 아가씨.",
+    "charTip": "작을 소(小)와 여자 녀(女) 부수가 든 누이 저(姐)가 결합하여 젊거나 미혼인 여성을 친근하고 예의 바르게 부르는 호칭입니다.",
+    "exZh": "李小姐。",
+    "exPinyin": "Lǐ xiǎojiě.",
+    "exMeaning": "이 아가씨."
+  },
+  {
+    "num": 123,
+    "hanzi": "些",
+    "pinyin": "xiē",
+    "koPron": "시에",
+    "meanings": [
+      { "pos": "양사", "ko": "조금, 약간", "en": "Some" }
+    ],
+    "hanja": "적을 사(些)",
+    "pronTip": "시에(xiē)시에, 조금만 줄게.",
+    "charTip": "이 차(此) 자 아래에 복수 및 수량을 나타내는 두 이(二) 부수가 결합하여 수량이 명확지 않은 약간의 단위를 나타냅니다.",
+    "exZh": "一些。",
+    "exPinyin": "Yì xiē.",
+    "exMeaning": "조금."
+  },
+  {
+    "num": 124,
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "koPron": "시에",
+    "meanings": [
+      { "pos": "동사", "ko": "쓰다", "en": "To Write" }
+    ],
+    "hanja": "베낄 사(写)",
+    "pronTip": "글씨를 시에(xiě)서 쓰다.",
+    "charTip": "민갓머리(冖) 부수 아래에 붓으로 도화지에 글이나 그림을 배치해 베끼고 남기는 동작을 나타냅니다.",
+    "exZh": "写字。",
+    "exPinyin": "Xiě zì.",
+    "exMeaning": "글자를 쓰다."
+  },
+  {
+    "num": 125,
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "koPron": "씨에씨에",
+    "meanings": [
+      { "pos": "인사말", "ko": "고맙습니다", "en": "Thank you" }
+    ],
+    "hanja": "사례할 사(谢)",
+    "pronTip": "씨에씨에(xièxie) 감사합니다.",
+    "charTip": "말씀 언(讠) 부수가 감사 인사의 말을 나타내며, 몸 신(身)과 마디 촌(寸)이 만나 몸을 굽혀 공손히 사례함을 뜻합니다.",
+    "exZh": "谢谢你。",
+    "exPinyin": "Xièxie nǐ.",
+    "exMeaning": "고마워."
+  },
+  {
+    "num": 126,
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "koPron": "싱치",
+    "meanings": [
+      { "pos": "명사", "ko": "주, 요일", "en": "Week" }
+    ],
+    "hanja": "별 성(星), 기약할 기(期)",
+    "pronTip": "싱치(xīngqī)일엔 뭐하지?",
+    "charTip": "날 일(日) 부수가 포함된 별 성(星)과 달 월(月) 부수가 포함된 기약할 기(期)가 만나 천체 주기에 따른 요일을 뜻합니다.",
+    "exZh": "星期一。",
+    "exPinyin": "Xīngqī yī.",
+    "exMeaning": "월요일."
+  },
+  {
+    "num": 127,
+    "hanzi": "学生",
+    "pinyin": "xuésheng",
+    "koPron": "쉬에셩",
+    "meanings": [
+      { "pos": "명사", "ko": "학생", "en": "Student" }
+    ],
+    "hanja": "배울 학(学), 날 생(生)",
+    "pronTip": "쉬에셩(xuésheng)은 학교에 가야지.",
+    "charTip": "아들 자(子) 부수가 하단에 배치된 배울 학(学)과 날 생(生) 부수가 결합해 지식을 습득하는 어린 사람을 지칭합니다.",
+    "exZh": "我是学生。",
+    "exPinyin": "Wǒ  shì xuésheng.",
+    "exMeaning": "나는 학생이다."
+  },
+  {
+    "num": 128,
+    "hanzi": "学习",
+    "pinyin": "xueéxí",
+    "koPron": "쉬에씨",
+    "meanings": [
+      { "pos": "동사", "ko": "배우다", "en": "To Study" }
+    ],
+    "hanja": "배울 학(学), 익힐 습(习)",
+    "pronTip": "쉬에씨(xueéxí)하고 익히자.",
+    "charTip": "자식 자(子) 부수가 든 학(学)과 본래 새가 깃털을 펄럭이며 연습을 하던 모양을 본뜬 습(习)이 결합했습니다.",
+    "exZh": "学习汉语。",
+    "exPinyin": "Xueéxí Hànyǔ.",
+    "exMeaning": "중국어를 배우다."
+  },
+  {
+    "num": 129,
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "koPron": "쉬에시아오",
+    "meanings": [
+      { "pos": "명사", "ko": "학교", "en": "School" }
+    ],
+    "hanja": "배울 학(学), 학교 교(校)",
+    "pronTip": "쉬에시아오(xuéxiào) 학교 가는 길.",
+    "charTip": "배우는 학(学)과 목재 건물인 나무 목(木) 부수가 들어간 학교 교(校)가 만나 배움을 진행하는 교육 기관의 건물을 뜻합니다.",
+    "exZh": "去学校。",
+    "exPinyin": "Qù xuéxiào.",
+    "exMeaning": "학교에 가다."
+  },
+  {
+    "num": 130,
+    "hanzi": "一",
+    "pinyin": "yī",
+    "koPron": "이",
+    "meanings": [
+      { "pos": "수사", "ko": "하나, 1", "en": "One" }
+    ],
+    "hanja": "한 일(一)",
+    "pronTip": "이(yī)거 하나 줘.",
+    "charTip": "가로로 선을 하나(一)를 길게 그어 모든 숫자의 시작이자 나란한 수량 1을 표현한 독자적인 기본 부수 글자입니다.",
+    "exZh": "一个。",
+    "exPinyin": "Yí ge.",
+    "exMeaning": "한 개."
+  },
+  {
+    "num": 131,
+    "hanzi": "一点儿",
+    "pinyin": "yìdiǎnr",
+    "koPron": "이디엔얼",
+    "meanings": [
+      { "pos": "명사", "ko": "조금", "en": "A little" }
+    ],
+    "hanja": "한 일(一), 점 점(点), 아이 아(儿)",
+    "pronTip": "이디엔얼(yìdiǎnr) 조금만 주세요.",
+    "charTip": "불 화(灬)가 든 미세한 점 점(点)과 접미사 복합 구문인 어진사람인발(儿) 부수가 만나 극히 소량의 단위를 뜻합니다.",
+    "exZh": "会一点儿。",
+    "exPinyin": "Huì yìdiǎnr.",
+    "exMeaning": "조금 할 줄 안다."
+  },
+  {
+    "num": 132,
+    "hanzi": "衣服",
+    "pinyin": "yīfu",
+    "koPron": "이푸",
+    "meanings": [
+      { "pos": "명사", "ko": "옷", "en": "Clothes" }
+    ],
+    "hanja": "옷 의(衣), 옷 복(服)",
+    "pronTip": "이푸(yīfu)른 옷.",
+    "charTip": "사람의 의복 모양을 형상화한 옷 의(衣) 부수와 신체 및 착용을 뜻하는 달 월(月=고기 육) 부수의 복(服)이 결합한 단어입니다.",
+    "exZh": "买衣服。",
+    "exPinyin": "Mǎi yīfu.",
+    "exMeaning": "옷을 사다."
+  },
+  {
+    "num": 133,
+    "hanzi": "医生",
+    "pinyin": "yīshēng",
+    "koPron": "이셩",
+    "meanings": [
+      { "pos": "명사", "ko": "의사", "en": "Doctor" }
+    ],
+    "hanja": "의원 의(医), 날 생(生)",
+    "pronTip": "이셩(yīshēng)님 도와주세요.",
+    "charTip": "상자 방(匚) 부수 안에 화살을 담아 본래 수술 도구를 상징하던 의원 의(医)와 날 생(生) 부수가 만나 의료진을 뜻합니다.",
+    "exZh": "他是医生。",
+    "exPinyin": "Tā  shì yīshēng.",
+    "exMeaning": "그는 의사다."
+  },
+  {
+    "num": 134,
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "koPron": "이위엔",
+    "meanings": [
+      { "pos": "명사", "ko": "병원", "en": "Hospital" }
+    ],
+    "hanja": "의원 의(医), 집 원(院)",
+    "pronTip": "이위엔(yīyuàn) 병원으로 가자.",
+    "charTip": "의원 의(医)와 좌측에 높은 담장이나 건물을 뜻하는 좌부방(阝=언덕 부) 부수가 들어간 집 원(院)이 만나 치료 기관의 건물을 뜻합니다.",
+    "exZh": "去医院。",
+    "exPinyin": "Qù yīyuàn.",
+    "exMeaning": "병원에 가다."
+  },
+  {
+    "num": 135,
+    "hanzi": "椅子",
+    "pinyin": "yǐzi",
+    "koPron": "이쯔",
+    "meanings": [
+      { "pos": "명사", "ko": "의자", "en": "Chair" }
+    ],
+    "hanja": "의자 의(椅), 아들 자(子)",
+    "pronTip": "이쯔(yǐzi)에 앉자.",
+    "charTip": "목재 가구를 제조할 때 쓰이던 나무 목(木) 부수가 의자 의(椅)에 들어가 사람이 걸터앉는 가구 소품을 나타냅니다.",
+    "exZh": "坐椅子。",
+    "exPinyin": "Zuò yǐzi.",
+    "exMeaning": "의자에 앉다."
+  },
+  {
+    "num": 136,
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "koPron": "요우",
+    "meanings": [
+      { "pos": "동사", "ko": "있다, 소유하다", "en": "Have" }
+    ],
+    "hanja": "있을 유(有)",
+    "pronTip": "요우(yǒu)! 나 있어!",
+    "charTip": "오른손 모양의 부수 잔상 아래에 음식물 고기인 달 월(月=고기 육 부수)을 쥐고 있어 재화를 가졌거나 존재함을 뜻합니다.",
+    "exZh": "有钱。",
+    "exPinyin": "Yǒu qián.",
+    "exMeaning": "돈이 있다."
+  },
+  {
+    "num": 137,
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "koPron": "위에",
+    "meanings": [
+      { "pos": "명사", "ko": "달, 월", "en": "Month" },
+      { "pos": "양사", "ko": "달, 월", "en": "Month" }
+    ],
+    "hanja": "달 월(月)",
+    "pronTip": "위에(yuè) 떠 있는 달.",
+    "charTip": "밤하늘에 은은하게 뜬 초승달의 결과 모양을 그대로 본떠서 날짜와 달을 세는 기본 독자 부수 글자입니다.",
+    "exZh": "一个月。",
+    "exPinyin": "Yí ge yuè.",
+    "exMeaning": "1개월."
+  },
+  {
+    "num": 138,
+    "hanzi": "在",
+    "pinyin": "zài",
+    "koPron": "짜이",
+    "meanings": [
+      { "pos": "전치사", "ko": "~에서", "en": "At" },
+      { "pos": "동사", "ko": "~에 있다", "en": "To be at" }
+    ],
+    "hanja": "있을 재(在)",
+    "pronTip": "짜이(zài)리에 앉아 있다.",
+    "charTip": "하단에 위치한 흙 토(土) 부수가 명확한 지면의 장소를 나타내며 사람이 공간 상에 실존하고 머무름을 뜻합니다.",
+    "exZh": "在家。",
+    "exPinyin": "Zài jiā.",
+    "exMeaning": "집에 있다."
+  },
+  {
+    "num": 139,
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "koPron": "짜이지엔",
+    "meanings": [
+      { "pos": "인사말", "ko": "잘 가, 안녕", "en": "Goodbye" }
+    ],
+    "hanja": "다시 재(再), 볼 견(见)",
+    "pronTip": "짜이지엔(zà이지엔), 나중에 또 봐.",
+    "charTip": "거듭 가로획을 쌓은 멀경(冂) 계열의 다시 재(再)와 시각 기능의 볼 견(见) 부수가 만나 헤어질 때 훗날 '다시 만나자'는 인사말입니다.",
+    "exZh": "明天再见。",
+    "exPinyin": "Míngtiān zàijiàn.",
+    "exMeaning": "내일 또 보자."
+  },
+  {
+    "num": 140,
+    "hanzi": "怎么",
+    "pinyin": "zěnme",
+    "koPron": "쩐머",
+    "meanings": [
+      { "pos": "대명사", "ko": "어떻게", "en": "How" }
+    ],
+    "hanja": "어찌 전(怎), 어조사 마(么)",
+    "pronTip": "쩐머(zěnme) 이런 일이?",
+    "charTip": "하단에 마음 심(心) 부수가 배치된 怎과 사사 사(厶) 부수 계열의 么가 만나 속마음으로 이유나 방도를 묻는 의문사가 됩니다.",
+    "exZh": "怎么做？",
+    "exPinyin": "Zěnme zuò?",
+    "exMeaning": "어떻게 합니까?"
+  },
+  {
+    "num": 141,
+    "hanzi": "怎么样",
+    "pinyin": "z&nbsp;ěnmeyàng",
+    "koPron": "쩐머양",
+    "meanings": [
+      { "pos": "대명사", "ko": "어떠하다", "en": "How about" }
+    ],
+    "hanja": "어찌 전(怎), 어조사 마(么), 모양 양(样)",
+    "pronTip": "쩐머양(zěnmeyàng)? 괜찮아?",
+    "charTip": "어떻게의 怎么에 구체적인 도구의 틀을 나타내는 나무 목(木) 부수가 조합된 모양 양(样)이 붙어 상태나 의견을 묻는 표현이 됩니다.",
+    "exZh": "天气怎么样？",
+    "exPinyin": "Tiānqì zěnmeyàng?",
+    "exMeaning": "날씨가 어떻습니까?"
+  },
+  {
+    "num": 142,
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "koPron": "쩌",
+    "meanings": [
+      { "pos": "대명사", "ko": "이것", "en": "This" }
+    ],
+    "hanja": "이 저(这)",
+    "pronTip": "쩌(zhè)것 주세요.",
+    "charTip": "책받침 책(辶=갈 착) 부수가 길을 가다 멈추어 가까이에 위치한 대상을 손으로 지시하는 지시대명사 역할을 수행합니다.",
+    "exZh": "这个。",
+    "exPinyin": "Zhè ge.",
+    "exMeaning": "이것."
+  },
+  {
+    "num": 143,
+    "hanzi": "中国",
+    "pinyin": "Zhōngguó",
+    "koPron": "쭝궈",
+    "meanings": [
+      { "pos": "명사", "ko": "중국", "en": "China" }
+    ],
+    "hanja": "가운데 중(中), 나라 국(国)",
+    "pronTip": "쭝궈(Zhōngguó) 사람.",
+    "charTip": "한가운데 깃대를 꽂은 모양의 가운데 중(中) 부수와 테두리 에운담(囗) 부수 안에 옥 구슬(玉)을 지닌 나라 국(国)이 결합한 국가명입니다.",
+    "exZh": "去中国。",
+    "exPinyin": "Qù Zhōngguó.",
+    "exMeaning": "중국에 가다."
+  },
+  {
+    "num": 144,
+    "hanzi": "中午",
+    "pinyin": "zhōngwǔ",
+    "koPron": "쭝우",
+    "meanings": [
+      { "pos": "명사", "ko": "정오, 한낮", "en": "Noon" }
+    ],
+    "hanja": "가운데 중(中), 낮 오(午)",
+    "pronTip": "쭝우(zhōngwǔ)에 점심 먹자.",
+    "charTip": "중심인 중(中)과 시각의 한낮을 뜻하는 기본 낮 오(午) 부수가 만나 하루의 정확한 정오 시각을 뜻합니다.",
+    "exZh": "中午好。",
+    "exPinyin": "Zhōngwǔ hǎo.",
+    "exMeaning": "점심 인사."
+  },
+  {
+    "num": 145,
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "koPron": "쭈",
+    "meanings": [
+      { "pos": "동사", "ko": "살다, 거주하다", "en": "To Live" }
+    ],
+    "hanja": "살 주(住)",
+    "pronTip": "쭈(zhù)욱 여기서 살다.",
+    "charTip": "사람 인(亻) 부수가 주거 생활의 주체를 뜻하고, 우측의 주인 주(主)가 등잔대 불꽃의 주위로 터전을 잡고 머무름을 나타냅니다.",
+    "exZh": "住在北京。",
+    "exPinyin": "Zhù zài Běijīng.",
+    "exMeaning": "베이징에 살다."
+  },
+  {
+    "num": 146,
+    "hanzi": "桌子",
+    "pinyin": "zhuōzi",
+    "koPron": "쭈어쯔",
+    "meanings": [
+      { "pos": "명사", "ko": "책상, 탁자", "en": "Table" }
+    ],
+    "hanja": "탁자 탁(桌), 아들 자(子)",
+    "pronTip": "쭈어쯔(zhuōzi) 위에 올려놔.",
+    "charTip": "하단에 위치한 나무 목(木) 부수가 나무로 조립된 평평한 가구 탁자 품목임을 분명하게 나타냅니다.",
+    "exZh": "桌子上。",
+    "exPinyin": "Zhuōzi shàng.",
+    "exMeaning": "책상 위."
+  },
+  {
+    "num": 147,
+    "hanzi": "字",
+    "pinyin": "zì",
+    "koPron": "쯔",
+    "meanings": [
+      { "pos": "명사", "ko": "글자", "en": "Character" }
+    ],
+    "hanja": "글자 자(字)",
+    "pronTip": "쯔(zì)를 쓰자.",
+    "charTip": "갓머리/집 면(宀) 부수 아래에 아기 자(子) 부수가 들어 있어 문자를 지칭합니다.",
+    "exZh": "写字。",
+    "exPinyin": "Xiě zì.",
+    "exMeaning": "글자를 쓰다."
+  },
+  {
+    "num": 148,
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "koPron": "쭈어퉨",
+    "meanings": [
+      { "pos": "명사", "ko": "어제", "en": "Yesterday" }
+    ],
+    "hanja": "어제 작(昨), 하늘 천(天)",
+    "pronTip": "쭈어퉨(zuótiān) 일은 잊어버려.",
+    "charTip": "날 일(日) 부수가 지나간 날짜의 시간 흐름을 뜻하며 뒤의 하늘 천(天)과 만나 바로 직전의 지나간 날을 가리킵니다.",
+    "exZh": "昨天晚上。",
+    "exPinyin": "Zuótiān wǎnshang.",
+    "exMeaning": "어제 저녁."
+  },
+  {
+    "num": 149,
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "koPron": "쭈어",
+    "meanings": [
+      { "pos": "동사", "ko": "앉다", "en": "To Sit" }
+    ],
+    "hanja": "앉을 좌(坐)",
+    "pronTip": "쭈어(zuò)리에 앉아라.",
+    "charTip": "하단의 흙 토(土) 부수가 단단한 지반을 뜻하며, 그 위에 두 사람이 마주 보고 걸터앉아 쉬는 모습을 형상화했습니다.",
+    "exZh": "请坐。",
+    "exPinyin": "Qǐng zuò.",
+    "exMeaning": "앉으세요."
+  },
+  {
+    "num": 150,
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "koPron": "쭈어",
+    "meanings": [
+      { "pos": "동사", "ko": "하다, 만들다", "en": "To Do" }
+    ],
+    "hanja": "지을 작(做)",
+    "pronTip": "쭈어(zuò)서 만들다.",
+    "charTip": "사람 인(亻) 부수와 등글월문(攵=칠 복) 부수가 함께 만나 사람이 도구를 쥐고 구체적인 작업이나 행동을 진행함을 뜻합니다.",
+    "exZh": "做饭。",
+    "exPinyin": "Zuò fàn.",
+    "exMeaning": "밥을 하다."
+  }
+]
