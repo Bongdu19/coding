@@ -41,6 +41,8 @@
         .hub-card.hsk::before { background: linear-gradient(to right, #6366f1, #ef4444); }
         .hub-card.hsk-all::before { background: linear-gradient(to right, #f59e0b, #ef4444); } 
         .hub-card.radical::before { background: linear-gradient(to right, #10b981, #3b82f6); }
+        /* 품사 통합 카드용 색상 */
+        .hub-card.pos-all::before { background: linear-gradient(to right, #ec4899, #8b5cf6); }
         .hub-card h3 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: var(--text-main); }
         .hub-card p { margin: 0; font-size: 13px; color: var(--text-sub); line-height: 1.5; }
         .hub-card strong { display: inline-block; margin-top: 8px; font-size: 11px; color: var(--primary); background: #f0fdf4; padding: 2px 8px; border-radius: 6px; font-weight: 600; }
@@ -82,12 +84,11 @@
         
         .card-divider { border-top: 1px solid #e2e8f0; margin: 2px 0 6px 0; }
         
-        /* 의미(meaning) 영역 스타일 수정 */
+        /* 의미(meaning) 영역 스타일 */
         .meaning-box { display: flex; flex-direction: column; gap: 6px; margin-bottom: 6px; }
         .meaning-row { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
         .pos-badge { font-size: 13px; font-weight: 700; color: var(--primary); background: #e0e7ff; padding: 2px 6px; border-radius: 4px; border: 1px solid #c7d2fe; }
         .ko-meaning { font-size: 22px; font-weight: 800; color: #dc2626; line-height: 1.1; }
-        /* en-meaning의 폰트 크기와 두께를 한국어 뜻(ko-meaning)과 동일하게 설정 */
         .en-meaning { font-size: 22px; font-weight: 800; color: #2563eb; line-height: 1.1; }
         
         .tip-box { background: #fffdf2; padding: 6px 12px; border-left: 3px solid var(--accent-yellow); border-radius: 6px; border: 1px solid #fef3c7; margin-bottom: 4px; }
@@ -95,7 +96,7 @@
         .tip-item:last-child { margin-bottom: 0; }
         
         .ex-box { background: #f1f5f9; padding: 8px 12px; border-radius: 8px; border: 1px solid #cbd5e1; width: 100%; box-sizing: border-box; }
-        .ex-zh font-size: 19px; color: #0f172a; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
+        .ex-zh { font-size: 19px; color: #0f172a; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
         .ex-pinyin-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; font-size: 14px; line-height: 1.3; }
         .ex-pinyin { color: #1e3a8a; font-weight: 600; }
         .ex-mean { color: #334155; font-weight: 600; }
@@ -151,12 +152,18 @@
 
     <div id="hubMainView" class="hub-container">
         <div class="hub-title">BONG HUB</div>
-        <div class="hub-subtitle">원하는 service 포털이나 학습 단어장을 선택해 주세요.</div>
+        <div class="hub-subtitle">원하는 서비스 포털이나 학습 단어장을 선택해 주세요.</div>
         
         <div class="hub-grid">
             <div class="hub-card hsk-all" style="cursor:pointer;" onclick="loadHskData('all')">
                 <h3>👑 HSK 1~3급 통합</h3>
                 <p>총 600단어 완전 마스터 코스<br><strong>학습 & 퀴즈 플립 엔진 통합형</strong></p>
+            </div>
+
+            <!-- 신규 품사별 마스터 트랙 카드 추가 -->
+            <div class="hub-card pos-all" style="cursor:pointer;" onclick="loadHskData('pos')">
+                <h3>✨ HSK 1~3급 품사별 분류</h3>
+                <p>명사, 동사, 대명사, 양사 등 품사별 정복<br><strong>선택 품사 집중 훈련 엔진</strong></p>
             </div>
             
             <div class="hub-card hsk" style="cursor:pointer;" onclick="loadHskData(1)">
@@ -231,7 +238,7 @@
             currentLevel = level;
             wrongWordsSet.clear(); 
             
-            if (level === 'all') {
+            if (level === 'all' || level === 'pos') {
                 Promise.all([
                     fetch('./data/hsk1.json').then(res => res.json()),
                     fetch('./data/hsk2.json').then(res => res.json()),
@@ -243,7 +250,12 @@
                     
                     document.getElementById('hubMainView').style.display = 'none';
                     document.getElementById('hskViewContainer').style.display = 'block';
-                    document.getElementById('hskTitleDisplay').innerText = `HSK 1~3급 통합 단어 마스터`;
+                    
+                    if(level === 'pos') {
+                        document.getElementById('hskTitleDisplay').innerText = `HSK 1~3급 품사별 집중 마스터`;
+                    } else {
+                        document.getElementById('hskTitleDisplay').innerText = `HSK 1~3급 통합 단어 마스터`;
+                    }
                     
                     switchTab('study');
                     applyFilter();
@@ -287,8 +299,30 @@
         function setupFilterOptions(level) {
             const filter = document.getElementById('dayFilter');
             filter.innerHTML = '';
-            let options = `<option value="all">전체 단어 리스트 (1~${allWords.length}번)</option>`;
             
+            if (level === 'pos') {
+                // 품사별 분류 모드일 때 select 옵션을 품사로 동적 추출/배치
+                let posSet = new Set();
+                allWords.forEach(w => {
+                    if (Array.isArray(w.meanings)) {
+                        w.meanings.forEach(m => { if(m.pos) posSet.add(m.pos.trim()); });
+                    }
+                });
+                
+                // 정렬된 품사 어레이 구성
+                let sortedPos = Array.from(posSet).sort();
+                let options = `<option value="pos_all">품사 전체 리스트 (총 ${allWords.length}단어)</option>`;
+                sortedPos.forEach(pos => {
+                    // 해당 품사가 포함된 단어 세기
+                    let count = allWords.filter(w => Array.isArray(w.meanings) && w.meanings.some(m => m.pos && m.pos.trim() === pos)).length;
+                    options += `<option value="pos_${pos}">🏷️ [${pos}] 단어 모아보기 (${count}개)</option>`;
+                });
+                options += `<option value="wrong">❌ 집중 오답노트 필터링</option>`;
+                filter.innerHTML = options;
+                return;
+            }
+
+            let options = `<option value="all">전체 단어 리스트 (1~${allWords.length}번)</option>`;
             if (level === 'all') {
                 options += `
                     <option value="all_part1">1일차 트랙 (1~100번)</option>
@@ -352,6 +386,13 @@
             const val = document.getElementById('dayFilter').value;
             let mapped = allWords.map((w, i) => ({...w, num: i + 1}));
             
+            // 품사 기반 필터링 분기 처리
+            if (val.startsWith('pos_')) {
+                const targetPos = val.replace('pos_', '');
+                if (targetPos === 'all') return mapped;
+                return mapped.filter(w => Array.isArray(w.meanings) && w.meanings.some(m => m.pos && m.pos.trim() === targetPos));
+            }
+
             if (val === 'all_part1') return mapped.slice(0, 100);
             if (val === 'all_part2') return mapped.slice(100, 200);
             if (val === 'all_part3') return mapped.slice(200, 300);
@@ -388,7 +429,6 @@
             renderQuizCards(quizWords);
         }
 
-        // 한국어 뜻 추출 함수
         function getMeaningSpeechText(word) {
             if (Array.isArray(word.meanings)) {
                 return word.meanings.map(m => m.ko.replace(/^~\s*/, '')).join(', ');
@@ -400,7 +440,6 @@
             return '';
         }
 
-        // 영어 뜻 추출 함수
         function getEnMeaningSpeechText(word) {
             if (Array.isArray(word.meanings)) {
                 return word.meanings.map(m => m.en || '').filter(Boolean).join(', ');
@@ -424,7 +463,6 @@
                 const tip1Label = (word.pronTip && word.pronTip.includes('부수')) ? '🧩 <b>부수 정보:</b>' : '💡 <b>발음 팁:</b>';
                 const tip2Label = (word.charTip && word.charTip.includes('+')) ? '✍️ <b>연상 스토리:</b>' : '✍️ <b>한자 팁:</b>';
 
-                // 뜻 배열(meanings) HTML 동적 생성
                 let meaningsHtml = '';
                 if (Array.isArray(word.meanings)) {
                     word.meanings.forEach(m => {
@@ -492,7 +530,6 @@
                 const tip1Label = (word.pronTip && word.pronTip.includes('부수')) ? '🧩 <b>부수 정보:</b>' : '💡 <b>발음 팁:</b>';
                 const tip2Label = (word.charTip && word.charTip.includes('+')) ? '✍️ <b>연상 스토리:</b>' : '✍️ <b>한자 팁:</b>';
 
-                // 플립 카드용 뜻 배열(meanings) HTML 생성 (퀴즈 카드 뒷면 스타일 수정)
                 let meaningsHtml = '';
                 if (Array.isArray(word.meanings)) {
                     word.meanings.forEach(m => {
@@ -574,7 +611,6 @@
                         u2.rate = 1.0;
                         window.speechSynthesis.speak(u2);
 
-                        // 영어 뜻 읽기 추가
                         const enMeaning = getEnMeaningSpeechText(word);
                         if (enMeaning) {
                             const uEn = new SpeechSynthesisUtterance(enMeaning);
@@ -680,7 +716,6 @@
             u2.rate = 1.0;
             window.speechSynthesis.speak(u2);
 
-            // 단별 오디오 재생 시 영어 뜻 추가
             const enMeaning = getEnMeaningSpeechText(word);
             if (enMeaning) {
                 const uEn = new SpeechSynthesisUtterance(enMeaning);
@@ -721,7 +756,6 @@
             }
         }
 
-        // 전체 자동 재생 루틴 수정 (영어 발음 단계를 추가하기 위해 총 단계를 0~5로 확장)
         function playNextStep() {
             if (!isAutoPlaying || isPaused) return;
             if (autoIndex >= currentFilteredWords.length) { stopStudyAudio(); return; }
@@ -734,7 +768,7 @@
 
             if (autoStep === 0 || autoStep === 1) { text = word.hanzi; lang = 'zh-CN'; rate = slowSpeed; }
             else if (autoStep === 2) { text = getMeaningSpeechText(word); lang = 'ko-KR'; rate = 1.0; }
-            else if (autoStep === 3) { text = getEnMeaningSpeechText(word); lang = 'en-US'; rate = 1.0; } // 영어 뜻 재생 단계
+            else if (autoStep === 3) { text = getEnMeaningSpeechText(word); lang = 'en-US'; rate = 1.0; } 
             else if (autoStep === 4) { text = word.exZh || ''; lang = 'zh-CN'; rate = speed; }
             else if (autoStep === 5) { text = word.exMeaning || ''; lang = 'ko-KR'; rate = 1.0; }
 
