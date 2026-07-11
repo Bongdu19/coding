@@ -1,2260 +1,2280 @@
 [
   {
     "num": 1,
-    "hanzi": "吧",
-    "pinyin": "ba",
-    "koPron": "빠",
+    "hanzi": "阿姨",
+    "pinyin": "āyí",
+    "koPron": "아이",
     "meanings": [
-      { "pos": "조사", "ko": "~하자, ~이지요?", "en": "particle" }
+      { "pos": "명사", "ko": "아주머니, 이모", "en": "Aunt" }
     ],
-    "hanja": "어조사 파",
-    "pronTip": "가볍게 빠(ba) 하고 권유하다",
-    "charTip": "입 구(口) 부수가 말소리의 어조 나타내며, 우측의 꼬리 파(巴)가 소리 역할을 하여 문장 끝에서 권유나 추측을 나타냅니다.",
-    "exZh": "走吧。",
-    "exPinyin": "Zǒu ba.",
-    "exMeaning": "가자."
+    "hanja": "언덕 아(阿), 이모 이(姨)",
+    "pronTip": "아이(āyí)를 예뻐해 주시는 이모님",
+    "charTip": "좌부방(阝=언덕 부) 부수가 든 아(阿)와 여자 녀(女) 부수가 명시된 이(姨)가 결합하여 어머니 또래의 친근한 여성을 지칭합니다.",
+    "exZh": "阿姨您好。",
+    "exPinyin": "Āyí nín hǎo.",
+    "exMeaning": "아주머니 안녕하세요."
   },
   {
     "num": 2,
-    "hanzi": "白",
-    "pinyin": "bái",
-    "koPron": "바이",
+    "hanzi": "啊",
+    "pinyin": "a",
+    "koPron": "아",
     "meanings": [
-      { "pos": "형용사", "ko": "희다, 하얗다", "en": "White" }
+      { "pos": "조사", "ko": "아 (감탄사)", "en": "Ah" }
     ],
-    "hanja": "흰 백(白)",
-    "pronTip": "바이(bái)올린처럼 하얀색",
-    "charTip": "태양(日) 위로 빛이 강하게 솟구쳐 올라 사방이 하얗게 밝아오는 모습을 본뜬 고유한 부수 글자입니다.",
-    "exZh": "白纸。",
-    "exPinyin": "Bái zhǐ.",
-    "exMeaning": "흰 종이."
+    "hanja": "어조사 아(啊)",
+    "pronTip": "놀라거나 감탄할 때 아(a)!",
+    "charTip": "입 구(口) 부수가 감탄이나 의문의 발성임을 나타내며, 우측의 언덕 아(阿) 자가 소리 역할을 하는 어조사입니다.",
+    "exZh": "好啊！",
+    "exPinyin": "Hǎo a!",
+    "exMeaning": "좋아요!"
   },
   {
     "num": 3,
-    "hanzi": "百",
-    "pinyin": "bǎi",
-    "koPron": "바이",
+    "hanzi": "矮",
+    "pinyin": "ǎi",
+    "koPron": "아이",
     "meanings": [
-      { "pos": "수사", "ko": "백, 100", "en": "Hundred" }
+      { "pos": "형용사", "ko": "작다, 낮다", "en": "Short" }
     ],
-    "hanja": "일백 백(百)",
-    "pronTip": "숫자 백은 바이(bǎi)",
-    "charTip": "흰 백(白) 부수의 머리에 가로획(一)을 하나 더 얹어 수량이 꽉 찬 큰 숫자 100을 나타냅니다.",
-    "exZh": "一百。",
-    "exPinyin": "Yì bǎi.",
-    "exMeaning": "100."
+    "hanja": "난쟁이 왜(矮)",
+    "pronTip": "키가 작아서 아이(ǎi) 같다",
+    "charTip": "화살 시(矢) 부수가 자와 같이 짧은 길이를 재는 기준을 뜻하며 신장이나 높이가 기준보다 아래에 머물러 낮음을 뜻합니다.",
+    "exZh": "他个子很矮。",
+    "exPinyin": "Tā gèzi hěn ǎi.",
+    "exMeaning": "그는 키가 매우 작다."
   },
   {
     "num": 4,
-    "hanzi": "帮助",
-    "pinyin": "bāngzhù",
-    "koPron": "빵쭈",
+    "hanzi": "爱好",
+    "pinyin": "àihào",
+    "koPron": "아이하오",
     "meanings": [
-      { "pos": "동사", "ko": "돕다", "en": "To Help" }
+      { "pos": "명사", "ko": "취미", "en": "Hobby" },
+      { "pos": "동사", "ko": "애호하다", "en": "To be fond of" }
     ],
-    "hanja": "도울 방(帮), 도울 조(助)",
-    "pronTip": "빵(bāng)을 주(zhù)며 돕다",
-    "charTip": "수건 건(巾) 부수가 든 帮과 힘 력(力) 부수가 명시된 助가 만나 이웃에게 수건을 건네고 힘을 보태며 돕는 행동을 뜻합니다.",
-    "exZh": "帮助朋友。",
-    "exPinyin": "Bāngzhù péngyou.",
-    "exMeaning": "친구를 돕다."
+    "hanja": "사랑 애(爱), 좋을 호(好)",
+    "pronTip": "취미를 너무 아이하오(àihào) 사랑해",
+    "charTip": "마음 심(心) 부수 계열이 포함된 애(爱)와 여자 녀(女) 부수가 든 호(好)가 만나 마음 깊이 즐기고 좋아하는 활동을 뜻합니다.",
+    "exZh": "我的爱好是看书。",
+    "exPinyin": "Wǒ de àihào  shì kàn shū.",
+    "exMeaning": "나의 취미는 독서다."
   },
   {
     "num": 5,
-    "hanzi": "报纸",
-    "pinyin": "bàozhǐ",
-    "koPron": "빠오즈",
+    "hanzi": "安静",
+    "pinyin": "ānjìng",
+    "koPron": "안징",
     "meanings": [
-      { "pos": "명사", "ko": "신문", "en": "Newspaper" }
+      { "pos": "형용사", "ko": "고요하다, 조용하다", "en": "Quiet" }
     ],
-    "hanja": "알릴 보(报), 종이 지(纸)",
-    "pronTip": "소식을 빠오(bào)르게 전하는 즈(zhǐ) 종이",
-    "charTip": "손 수(扌) 부수가 포함된 소식 보(报)와 실 사(纟) 부수가 포함된 종이 지(纸)가 결합해 소식을 적어 전하는 지면 매체입니다.",
-    "exZh": "看报纸。",
-    "exPinyin": "Kàn bàozhǐ.",
-    "exMeaning": "신문을 보다."
+    "hanja": "편안할 안(安), 고요할 정(静)",
+    "pronTip": "안징(ānjìng)맞게 조용하다",
+    "charTip": "갓머리(宀=집 면 부수)가 든 안(安)과 푸를 청(青) 부수가 명시된 정(静)이 만나 집안이 고요하고 평온하게 안정되어 있음을 뜻합니다.",
+    "exZh": "请安静。",
+    "exPinyin": "Qǐng ānjìng.",
+    "exMeaning": "조용히 해 주세요."
   },
   {
     "num": 6,
-    "hanzi": "比",
-    "pinyin": "bǐ",
-    "koPron": "비",
+    "hanzi": "把",
+    "pinyin": "bǎ",
+    "koPron": "바",
     "meanings": [
-      { "pos": "전치사", "ko": "~보다", "en": "Than" }
+      { "pos": "전치사", "ko": "~을/를 (처치문)", "en": "(object marker)" }
     ],
-    "hanja": "견줄 비(比)",
-    "pronTip": "비(bǐ)교해 보니",
-    "charTip": "두 사람이 같은 방향을 바라보고 나란히 서서 서로의 크기나 키를 견주는 모양의 고유한 부수 글자입니다.",
-    "exZh": "他比我高。",
-    "exPinyin": "Tā bǐ wǒ gāo.",
-    "exMeaning": "그는 나보다 크다."
+    "hanja": "잡을 파(把)",
+    "pronTip": "바(bǎ)로 잡아서 처리하다",
+    "charTip": "손 수(扌) 부수가 손의 구체적인 제어 동작을 뜻하여 대상을 손으로 꼭 움켜잡고 목적대로 처치함을 나타냅니다.",
+    "exZh": "把书给我。",
+    "exPinyin": "Bǎ shū gěi wǒ.",
+    "exMeaning": "책을 나에게 줘."
   },
   {
     "num": 7,
-    "hanzi": "别",
-    "pinyin": "bié",
-    "koPron": "비에",
+    "hanzi": "班",
+    "pinyin": "bān",
+    "koPron": "반",
     "meanings": [
-      { "pos": "부사", "ko": "~하지 마라", "en": "Don't" }
+      { "pos": "명사", "ko": "반, 클래스", "en": "Class" }
     ],
-    "hanja": "다를 별(别)",
-    "pronTip": "비에(bié)고 우니까 하지 마",
-    "charTip": "우측의 선칼도방(刂=칼 도) 부수가 뼈와 살을 칼로 떼어내듯 행동을 단호하게 차단하고 금지함을 나타냅니다.",
-    "exZh": "别哭。",
-    "exPinyin": "Bié kū.",
-    "exMeaning": "울지 마라."
+    "hanja": "나눌 반(班)",
+    "pronTip": "우리는 같은 반(bān)",
+    "charTip": "임금 왕(王=구슬 옥 부수) 사이에 칼 도(刀)의 변형이 들어있어, 귀한 옥을 칼로 나누어 조를 짜듯 편성한 무리를 뜻합니다.",
+    "exZh": "我们班。",
+    "exPinyin": "Wǒmen bān.",
+    "exMeaning": "우리 반."
   },
   {
     "num": 8,
-    "hanzi": "宾馆",
-    "pinyin": "bīnguǎn",
-    "koPron": "삔꽌",
+    "hanzi": "搬",
+    "pinyin": "bān",
+    "koPron": "반",
     "meanings": [
-      { "pos": "명사", "ko": "호텔", "en": "Hotel" }
+      { "pos": "동사", "ko": "옮기다, 이사하다", "en": "To Move" }
     ],
-    "hanja": "손 빈(宾), 집 관(馆)",
-    "pronTip": "손님(삔)이 묵는 곳(꽌)",
-    "charTip": "조개 패(贝)가 든 손 객/빈(宾)과 먹을 식(饣) 부수가 든 여관 관(馆)이 만나 외지 손님이 숙식을 해결하는 큰 건물을 뜻합니다.",
-    "exZh": "住宾馆。",
-    "exPinyin": "Zhù bīnguǎn.",
-    "exMeaning": "호텔에 묵다."
+    "hanja": "옮길 반(搬)",
+    "pronTip": "물건을 반(bān)대쪽으로 옮기다",
+    "charTip": "손 수(扌) 부수가 육체적인 노동을 나타내며, 무거운 기물이나 짐을 힘써 손으로 들어 다른 처소로 이전시킴을 뜻합니다.",
+    "exZh": "搬家。",
+    "exPinyin": "Bān jiā.",
+    "exMeaning": "이사를 하다."
   },
   {
     "num": 9,
-    "hanzi": "长",
-    "pinyin": "cháng",
-    "koPron": "창",
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "koPron": "반",
     "meanings": [
-      { "pos": "형용사", "ko": "길다", "en": "Long" }
+      { "pos": "수사", "ko": "반, 절반", "en": "Half" }
     ],
-    "hanja": "길 장(长)",
-    "pronTip": "길이가 창(cháng) 길다",
-    "charTip": "노인의 긴 머리카락이 아래로 길게 늘어뜨려진 형상을 본떠 물리적인 거리가 '길다'를 나타내는 고유 부수 글자입니다.",
-    "exZh": "长头发。",
-    "exPinyin": "Cháng tóufa.",
-    "exMeaning": "긴 머리카락."
+    "hanja": "반 반(半)",
+    "pronTip": "반(bàn)으로 딱 자르다",
+    "charTip": "가로지르는 십(十) 획의 축 주위로 사물을 균등하게 둘로 쪼갠 지사 부수 계열 글자로 전체의 정확한 2분의 1을 뜻합니다.",
+    "exZh": "一半。",
+    "exPinyin": "Yí bàn.",
+    "exMeaning": "절반."
   },
   {
     "num": 10,
-    "hanzi": "唱歌",
-    "pinyin": "chàng gē",
-    "koPron": "창 꺼",
+    "hanzi": "办法",
+    "pinyin": "bànfǎ",
+    "koPron": "반파",
     "meanings": [
-      { "pos": "동사", "ko": "노래 부르다", "en": "To Sing" }
+      { "pos": "명사", "ko": "방법, 해결책", "en": "Method" }
     ],
-    "hanja": "부를 창(唱), 노래 가(歌)",
-    "pronTip": "창(chàng)법이 좋은 가수(gē)",
-    "charTip": "입 구(口) 부수가 든 부를 창(唱)과 하품 석(欠) 부수가 목을 열어 소리 내는 노래 가(歌)에 쓰여 멜로디를 부르는 행위입니다.",
-    "exZh": "喜欢唱歌。",
-    "exPinyin": "Xǐhuan chàng gē.",
-    "exMeaning": "노래 부르기를 좋아한다."
+    "hanja": "힘쓸 판(办), 법 법(法)",
+    "pronTip": "반파(bànfǎ)시킬 방법을 찾다",
+    "charTip": "힘 력(力) 부수가 든 판(办)과 삼수변(氵=물 수 부수)이 든 법(法)이 만나 사태를 힘써 처리하는 정당한 절차나 방도를 뜻합니다.",
+    "exZh": "好办法。",
+    "exPinyin": "Hǎo bànfǎ.",
+    "exMeaning": "좋은 방법."
   },
   {
     "num": 11,
-    "hanzi": "出",
-    "pinyin": "chū",
-    "koPron": "추",
+    "hanzi": "办公室",
+    "pinyin": "bàngōngshì",
+    "koPron": "반궁스",
     "meanings": [
-      { "pos": "동사", "ko": "나가다", "en": "To Go out" }
+      { "pos": "명사", "ko": "사무실", "en": "Office" }
     ],
-    "hanja": "날 출(出)",
-    "pronTip": "추(chū)울발! 나가자!",
-    "charTip": "뫼 산(山) 모양이 겹친 형상이나, 본래 구덩이 밖으로 발가락을 내밀고 밖으로 '나아감'을 뜻하는 기표 부수 계열 글자입니다.",
-    "exZh": "出去。",
-    "exPinyin": "Chū qù.",
-    "exMeaning": "나가다."
+    "hanja": "힘쓸 판(办), 공평할 공(公), 집 실(室)",
+    "pronTip": "반궁스(bàngōngshì)에 출근하다",
+    "charTip": "힘 력(力)의 办, 여덟 팔(八)의 公, 갓머리(宀=집 면 부수)의 室이 만나 공적인 비즈니스 업무를 처리하는 독립 방입니다.",
+    "exZh": "去办公室。",
+    "exPinyin": "Qù bàngōngshì.",
+    "exMeaning": "사무실에 가다."
   },
   {
     "num": 12,
-    "hanzi": "穿",
-    "pinyin": "chuān",
-    "koPron": "추안",
+    "hanzi": "帮忙",
+    "pinyin": "bāng máng",
+    "koPron": "방망",
     "meanings": [
-      { "pos": "동사", "ko": "입다, 신다", "en": "To Wear" }
+      { "pos": "동사", "ko": "돕다", "en": "To Help" }
     ],
-    "hanja": "뚫을 천(穿)",
-    "pronTip": "옷을 추안(chuān) 챙겨 입다",
-    "charTip": "상단의 구멍 혈(穴) 부수가 옷의 구멍을 뜻하며, 머리나 다리를 구멍으로 통과시켜 의복을 착용하는 동작입니다.",
-    "exZh": "穿衣服。",
-    "exPinyin": "Chuān yīfu.",
-    "exMeaning": "옷을 입다."
+    "hanja": "도울 방(帮), 바쁠 망(忙)",
+    "pronTip": "방망(bāng mang)이 깎는 노인을 돕다",
+    "charTip": "수건 건(巾) 부수가 든 帮과 심방변(忄=마음 심 부수)이 든 忙이 결합해 타인의 분주하고 바쁜 업무를 보조해 줌을 뜻합니다.",
+    "exZh": "帮我一个忙。",
+    "exPinyin": "Bāng wǒ yí ge máng.",
+    "exMeaning": "나 좀 도와줘."
   },
   {
     "num": 13,
-    "hanzi": "次",
-    "pinyin": "cì",
-    "koPron": "츠",
+    "hanzi": "包",
+    "pinyin": "bāo",
+    "koPron": "바오",
     "meanings": [
-      { "pos": "양사", "ko": "번, 회", "en": "Time" }
+      { "pos": "명사", "ko": "가방", "en": "Bag" },
+      { "pos": "동사", "ko": "싸다", "en": "To wrap" }
     ],
-    "hanja": "버금 차(次)",
-    "pronTip": "츠(cì)음부터 다시 한 번",
-    "charTip": "우측의 하품 석(欠) 부수가 침을 튀기며 차례대로 순서를 반복해 거쳐 가는 횟수를 나타내는 글자입니다.",
-    "exZh": "一次。",
-    "exPinyin": "Yí cì.",
-    "exMeaning": "한 번."
+    "hanja": "쌀 포(包)",
+    "pronTip": "가방에 바오(bāo)리바리 싸다",
+    "charTip": "태아가 어머니 복중 포대기에 조심스레 싸여 보호받고 있는 외관 윤곽을 그대로 가공한 고유 부수 계열 글자입니다.",
+    "exZh": "买一个包。",
+    "exPinyin": "Mǎi yí ge bāo.",
+    "exMeaning": "가방을 하나 사다."
   },
   {
     "num": 14,
-    "hanzi": "从",
-    "pinyin": "cóng",
-    "koPron": "충",
+    "hanzi": "饱",
+    "pinyin": "bǎo",
+    "koPron": "바오",
     "meanings": [
-      { "pos": "전치사", "ko": "~부터", "en": "From" }
+      { "pos": "형용사", "ko": "배부르다", "en": "Full" }
     ],
-    "hanja": "좇을 종(从)",
-    "pronTip": "여기부터 쭈~욱 충(cóng)분히",
-    "charTip": "사람 인(人) 부수 뒤에 또 다른 사람(人)이 밀착해 뒤를 바짝 따라가는 모양에서 어떤 기준점의 기원을 나타냅니다.",
-    "exZh": "从这里。",
-    "exPinyin": "Cóng zhèli.",
-    "exMeaning": "여기서부터."
+    "hanja": "배부를 포(饱)",
+    "pronTip": "배불러서 바오(bǎo)둥거리다",
+    "charTip": "좌측의 먹을 식(饣) 부수가 음식물 섭취를 뜻하며, 우측의 쌀 포(包)가 위장에 음식물이 가방처럼 꽉 찬 배부름을 나타냅니다.",
+    "exZh": "我吃饱了。",
+    "exPinyin": "Wǒ chī bǎo le.",
+    "exMeaning": "나는 배불리 먹었다."
   },
   {
     "num": 15,
-    "hanzi": "错",
-    "pinyin": "cuò",
-    "koPron": "추오",
+    "hanzi": "北方",
+    "pinyin": "běifāng",
+    "koPron": "베이팡",
     "meanings": [
-      { "pos": "형용사", "ko": "틀리다, 잘못되다", "en": "Wrong" }
+      { "pos": "명사", "ko": "북방, 북쪽", "en": "North" }
     ],
-    "hanja": "어긋날 착(错)",
-    "pronTip": "추오(cuò)점 없이 틀리다",
-    "charTip": "쇠 금(钅) 부수가 은백색 금속의 도구를 뜻하며, 그것이 규격에 맞지 않고 서로 어긋나거나 틀린 상태를 의미합니다.",
-    "exZh": "写错了。",
-    "exPinyin": "Xiě cuò le.",
-    "exMeaning": "잘못 썼다."
+    "hanja": "북녘 북(北), 모 방(方)",
+    "pronTip": "베이팡(běifāng) 북쪽 지방",
+    "charTip": "두 사람이 등 돌린 북녘 북(北) 부수와 쟁기 모양을 본뜬 모 방(方) 부수가 만나 지구의 자전축 기준 북쪽 방향을 가리킵니다.",
+    "exZh": "他是北方人。",
+    "exPinyin": "Tā shì běifāng rén.",
+    "exMeaning": "그는 북방 사람이다."
   },
   {
     "num": 16,
-    "hanzi": "打篮球",
-    "pinyin": "dǎ lánqiú",
-    "koPron": "다 란치우",
+    "hanzi": "被",
+    "pinyin": "bèi",
+    "koPron": "베이",
     "meanings": [
-      { "pos": "동사", "ko": "농구를 하다", "en": "To Play Basketball" }
+      { "pos": "전치사", "ko": "~에게 당하다 (피동문)", "en": "By" }
     ],
-    "hanja": "칠 타(打), 바구니 람(篮), 공 구(球)",
-    "pronTip": "다(dǎ) 같이 란치우(lánqiú) 하다",
-    "charTip": "손 수(扌)의 타(打), 대나무 쪽(竹)의 람(篮), 임금 왕(王=구슬 옥 부수)의 구(球)가 만나 손으로 구공을 다루는 구기 종목입니다.",
-    "exZh": "我们去打篮球。",
-    "exPinyin": "Wǒmen qù dǎ lánqiú.",
-    "exMeaning": "우리 농구하러 가자."
+    "hanja": "입을 피(被)",
+    "pronTip": "이불을 베이(bèi)고 누워 당하다",
+    "charTip": "좌측의 옷 의(衣=衤 보방 부수) 부수가 신체를 덮는 이불을 뜻하며, 외부의 타격이나 영향력이 신체에 피동적으로 덮쳐옴을 뜻합니다.",
+    "exZh": "被打了。",
+    "exPinyin": "Bèi dǎ le.",
+    "exMeaning": "맞았다."
   },
   {
     "num": 17,
-    "hanzi": "大家",
-    "pinyin": "dàjiā",
-    "koPron": "따지아",
+    "hanzi": "鼻子",
+    "pinyin": "bízi",
+    "koPron": "비쯔",
     "meanings": [
-      { "pos": "대명사", "ko": "모두, 여러분", "en": "Everyone" }
+      { "pos": "명사", "ko": "코", "en": "Nose" }
     ],
-    "hanja": "큰 대(大), 집 가(家)",
-    "pronTip": "따지아(dàjiā) 모두 모여라",
-    "charTip": "큰 대(大) 부수와 집 면(宀) 부수가 든 집 가(家)가 합쳐져 한 지붕 아래에 속한 큰 공동체 전체인 '여러분, 모두'를 지칭합니다.",
-    "exZh": "大家好。",
-    "exPinyin": "Dàjiā hǎo.",
-    "exMeaning": "여러분 안녕하세요."
+    "hanja": "코 비(鼻), 아들 자(子)",
+    "pronTip": "비(bí)염 걸린 코",
+    "charTip": "스스로 자(自) 아래에 비강 모양이 든 코 비(鼻) 부수와 자(子)가 만나 얼굴의 정중앙에 위치한 호흡 기관을 뜻합니다.",
+    "exZh": "鼻子很高。",
+    "exPinyin": "Bízi hěn gāo.",
+    "exMeaning": "코가 오똑하다."
   },
   {
     "num": 18,
-    "hanzi": "到",
-    "pinyin": "dào",
-    "koPron": "따오",
+    "hanzi": "笔记本",
+    "pinyin": "bǐjìběn",
+    "koPron": "비지번",
     "meanings": [
-      { "pos": "동사", "ko": "도착하다", "en": "To Arrive" }
+      { "pos": "명사", "ko": "공책, 노트북", "en": "Notebook" }
     ],
-    "hanja": "이를 도(到)",
-    "pronTip": "목적지에 따오(dào)착!",
-    "charTip": "至(이를 지)는 화살이 과녁에 날아가 박힌 모습이며, 길(刂)을 달려 목적지에 도달하다(至)는 의미입니다.",
-    "exZh": "到了。",
-    "exPinyin": "Dào le.",
-    "exMeaning": "도착했다."
+    "hanja": "붓 필(笔), 기록할 기(记), 근본 본(本)",
+    "pronTip": "비지(bǐjì) 땀 흘리며 번(běn)역 적는 공책",
+    "charTip": "대나무(竹)의 笔, 말씀(讠)의 记, 나무뿌리(本) 부수가 만나 문자 기록용 공책 및 이동식 전자 PC를 가리킵니다.",
+    "exZh": "笔记本电脑。",
+    "exPinyin": "Bǐjìben diànnǎo.",
+    "exMeaning": "노트북 컴퓨터."
   },
   {
     "num": 19,
-    "hanzi": "得",
-    "pinyin": "de",
-    "koPron": "더",
+    "hanzi": "比较",
+    "pinyin": "bǐjiào",
+    "koPron": "비지아오",
     "meanings": [
-      { "pos": "조사", "ko": "정도 보어 구조조사", "en": "(particle)" }
+      { "pos": "부사", "ko": "비교적", "en": "Relatively" }
     ],
-    "hanja": "얻을 득(得)",
-    "pronTip": "정도를 나타낼 땐 더(de)",
-    "charTip": "조금걸을척(彳) 부수 옆에 획이 더해져 동작을 수행한 결과의 상태나 수위를 뒤에 연동시켜 주는 문법 조사입니다.",
-    "exZh": "跑得快。",
-    "exPinyin": "Pǎo de kuài.",
-    "exMeaning": "달리는 정도가 빠르다(매우 빠르다)."
+    "hanja": "견줄 비(比), 견줄 교(较)",
+    "pronTip": "이것저것 비지아오(bǐjiào)하다",
+    "charTip": "견줄 비(比) 부수와 우측에 수레 차(车) 부수가 명시된 교(较)가 만나 두 사물의 수량과 속성을 나란히 대조함을 뜻합니다.",
+    "exZh": "比较好。",
+    "exPinyin": "Bǐjiào hǎo.",
+    "exMeaning": "비교적 좋다."
   },
   {
     "num": 20,
-    "hanzi": "等",
-    "pinyin": "děng",
-    "koPron": "덩",
+    "hanzi": "比赛",
+    "pinyin": "bǐsài",
+    "koPron": "비싸이",
     "meanings": [
-      { "pos": "동사", "ko": "기다리다", "en": "To Wait" }
+      { "pos": "명사", "ko": "경기, 시합", "en": "Match" },
+      { "pos": "동사", "ko": "경쟁하다", "en": "To compete" }
     ],
-    "hanja": "무리 등(等)",
-    "pronTip": "덩(děng)그러니 기다리다",
-    "charTip": "상단의 대나무 죽(竹) 부수가 문서의 등급을 뜻하며 관청에서 차례대로 명단을 분류하며 대기하고 기다림을 뜻합니다.",
-    "exZh": "等一下。",
-    "exPinyin": "Děng yíxià.",
-    "exMeaning": "잠시만 기다려요."
+    "hanja": "견줄 비(比), 겨룰 새(赛)",
+    "pronTip": "비(bǐ)장하게 싸이(sài)클 시합",
+    "charTip": "견줄 비(比) 부수와 조개 패(贝=재화 부수)가 하단에 명시된 겨룰 새(赛)가 만나 승패를 가르고 포상하는 시합 경기입니다.",
+    "exZh": "参加比赛。",
+    "exPinyin": "Cānjiā bǐsài.",
+    "exMeaning": "시합에 참가하다."
   },
   {
     "num": 21,
-    "hanzi": "弟弟",
-    "pinyin": "dìdi",
-    "koPron": "띠디",
+    "hanzi": "必须",
+    "pinyin": "bìxū",
+    "koPron": "삐쉬",
     "meanings": [
-      { "pos": "명사", "ko": "남동생", "en": "Younger Brother" }
+      { "pos": "조동사", "ko": "반드시 ~해야 한다", "en": "Must" }
     ],
-    "hanja": "아우 제(弟)",
-    "pronTip": "띠디(dìdi)는 내 남동생",
-    "charTip": "활 궁(弓) 부수 계열의 나무에 줄을 꼬아 묶은 모양에서 손아래 형제인 아우를 가리키는 정형 글자입니다.",
-    "exZh": "我的弟弟。",
-    "exPinyin": "Wǒ de dìdi.",
-    "exMeaning": "나의 남동생."
+    "hanja": "반드시 필(必), 모름지기 수(须)",
+    "pronTip": "삐쉬(bìxū) 반드시 해라!",
+    "charTip": "마음 심(心) 부수 계열 of 必과 머리 혈(页) 부수가 들어간 须가 만나 의무 사항을 당부하는 조동사 구문입니다.",
+    "exZh": "必须去。",
+    "exPinyin": "Bìxū qù.",
+    "exMeaning": "반드시 가야 한다."
   },
   {
     "num": 22,
-    "hanzi": "第一",
-    "pinyin": "dì-yī",
-    "koPron": "띠이",
+    "hanzi": "变化",
+    "pinyin": "biànhuà",
+    "koPron": "비엔화",
     "meanings": [
-      { "pos": "수사", "ko": "첫 번째", "en": "First" }
+      { "pos": "동사", "ko": "변화하다", "en": "To Change" },
+      { "pos": "명사", "ko": "변화", "en": "Change" }
     ],
-    "hanja": "차례 제(第), 한 일(一)",
-    "pronTip": "띠(dì)용~ 내가 1(yī)등!",
-    "charTip": "대나무 죽(竹) 부수가 포함된 순서 제(第)와 한 일(一) 부수가 만나 수량의 가장 첫머리에 위치함을 가리킵니다.",
-    "exZh": "第一名。",
-    "exPinyin": "Dì-yī míng.",
-    "exMeaning": "1등."
+    "hanja": "변할 변(变), 될 화(化)",
+    "pronTip": "비엔화(biànhuà) 무쌍하다",
+    "charTip": "말씀 언(言) 변형의 변(变)과 사람이 거꾸러진 모양의 비수 비(匕) 부수가 든 화(化)가 만나 기존 속성이 완전히 바뀜을 뜻합니다.",
+    "exZh": "变化很大。",
+    "exPinyin": "Biànhuà hěn dà.",
+    "exMeaning": "변화가 매우 크다."
   },
   {
     "num": 23,
-    "hanzi": "懂",
-    "pinyin": "dǒng",
-    "koPron": "둥",
+    "hanzi": "别人",
+    "pinyin": "biérén",
+    "koPron": "비에런",
     "meanings": [
-      { "pos": "동사", "ko": "알다, 이해하다", "en": "To Understand" }
+      { "pos": "대명사", "ko": "다른 사람", "en": "Others" }
     ],
-    "hanja": "알 동(懂)",
-    "pronTip": "둥(dǒng)그렇게 고개를 끄덕이며 이해하다",
-    "charTip": "심방변(忄=마음 심 부수)이 사람의 사유 능력을 뜻하며, 사물의 논리를 머리와 가슴으로 깊이 깨달아 앎을 뜻합니다.",
-    "exZh": "听懂了。",
-    "exPinyin": "Tīng dǒng le.",
-    "exMeaning": "듣고 이해했다."
+    "hanja": "다를 별(别), 사람 인(人)",
+    "pronTip": "비에런(biérén) 다른 사람 신경 꺼",
+    "charTip": "선칼도방(刂) 부수가 포함된 구별할 별(别)과 사람 인(人) 부수가 만나 내 범주를 제외한 제3자의 타인을 지칭합니다.",
+    "exZh": "别人的东西。",
+    "exPinyin": "Biérén de dōngxi.",
+    "exMeaning": "다른 사람의 물건."
   },
   {
     "num": 24,
-    "hanzi": "对",
-    "pinyin": "duì",
-    "koPron": "뚜에이",
+    "hanzi": "冰箱",
+    "pinyin": "bīngxiāng",
+    "koPron": "빙시앙",
     "meanings": [
-      { "pos": "형용사", "ko": "맞다, 정확하다", "en": "Correct" }
+      { "pos": "명사", "ko": "냉장고", "en": "Refrigerator" }
     ],
-    "hanja": "대할 대(对)",
-    "pronTip": "뚜에이(duì)! 정답!",
-    "charTip": "우측의 마디 촌(寸) 부수가 손의 규격을 뜻하여, 어떤 사실에 잣대를 대어 보니 오차 없이 완벽히 들어맞음을 의미합니다.",
-    "exZh": "对不对？",
-    "exPinyin": "Duì bu duì?",
-    "exMeaning": "맞아 안 맞아?"
+    "hanja": "얼음 빙(冰), 상자 상(箱)",
+    "pronTip": "빙시앙(bīngxiāng) 얼음 상자",
+    "charTip": "이수변(冫=얼음/차단 부수)의 冰과 대나무 죽(竹) 부수가 상단에 배치된 상자 상(箱)이 만나 냉동 저장용 전자 기기를 뜻합니다.",
+    "exZh": "放在冰箱里。",
+    "exPinyin": "Fàng zài bīngxiāng lǐ.",
+    "exMeaning": "냉장고 안에 두다."
   },
   {
     "num": 25,
-    "hanzi": "对",
-    "pinyin": "duì",
-    "koPron": "뚜에이",
+    "hanzi": "不但...而且",
+    "pinyin": "búdàn...érqiě",
+    "koPron": "부단...얼치에",
     "meanings": [
-      { "pos": "전치사", "ko": "~에게, ~에 대해", "en": "Toward" }
+      { "pos": "접속사", "ko": "~뿐만 아니라 게다가", "en": "Not only... but also" }
     ],
-    "hanja": "대할 대(对)",
-    "pronTip": "너에게 뚜에이(duì) 대하다",
-    "charTip": "손을 뜻하는 마디 촌(寸) 부수가 대상을 정면으로 응시하고 가리키는 동작에서 대상 전치사로 기능합니다.",
-    "exZh": "对他好。",
-    "exPinyin": "Duì tā hǎo.",
-    "exMeaning": "그에게 잘하다."
+    "hanja": "아닐 불(不), 다만 단(但)... 말 이(而), 또 차(且)",
+    "pronTip": "부단(búdàn)히 노력할 뿐 아니라 얼치에(érqiě)",
+    "charTip": "사람 인(亻)의 但, 말 이(而) 부수, 한 일(一) 계열의 且가 결합해 조건의 점층적 심화를 나타내는 복합 연동 접속사입니다.",
+    "exZh": "他不但聪明, 而且努力。",
+    "exPinyin": "Tā búdàn cōngming, érqiě nǔlì.",
+    "exMeaning": "그는 똑똑할 뿐만 아니라 노력도 한다."
   },
   {
     "num": 26,
-    "hanzi": "房间",
-    "pinyin": "fángjiān",
-    "koPron": "팡지앤",
+    "hanzi": "菜单",
+    "pinyin": "càidān",
+    "koPron": "차이단",
     "meanings": [
-      { "pos": "명사", "ko": "방", "en": "Room" }
+      { "pos": "명사", "ko": "메뉴판", "en": "Menu" }
     ],
-    "hanja": "방 방(房), 사이 간(间)",
-    "pronTip": "팡(fáng) 터진 지앤(jiān) 방",
-    "charTip": "지게문 호(户) 부수가 달린 房과 문 문(门) 부수 사이에 해가 비추는 간(间)이 만나 가옥 내부의 독립된 여유 구획을 뜻합니다.",
+    "hanja": "나물 채(菜), 홑 단(单)",
+    "pronTip": "차이(cài) 요리 단(dān)어장",
+    "charTip": "풀 초(艹) 부수의 요리 채(菜)와 입 구 계열의 표 단(单) 부수가 만나 음식점에서 취급하는 요리 종류를 표기한 메뉴 일람표입니다.",
+    "exZh": "请给我菜单。",
+    "exPinyin": "Qǐng gěi wǒ càidān.",
+    "exMeaning": "메뉴판 좀 주세요."
+  },
+  {
+    "num": 27,
+    "hanzi": "参加",
+    "pinyin": "cānjiā",
+    "koPron": "찬지아",
+    "meanings": [
+      { "pos": "동사", "ko": "참가하다, 참석하다", "en": "To Participate" }
+    ],
+    "hanja": "참여할 참(参), 더할 가(加)",
+    "pronTip": "나도 찬지아(cānjiā)할래",
+    "charTip": "사사 사(厶) 계열 부수의 참(参)과 힘 력(力) 부수가 하단에 명시된 가(加)가 만나 대중 집회나 행사에 내 힘을 보태어 동참함을 뜻합니다.",
+    "exZh": "参加会议。",
+    "exPinyin": "Cānjiā huìyì.",
+    "exMeaning": "회의에 참가하다."
+  },
+  {
+    "num": 28,
+    "hanzi": "草",
+    "pinyin": "cǎo",
+    "koPron": "차오",
+    "meanings": [
+      { "pos": "명사", "ko": "풀, 잡초", "en": "Grass" }
+    ],
+    "hanja": "풀 초(草)",
+    "pronTip": "차오(cǎo)원에 자라는 풀",
+    "charTip": "상단에 위치한 풀 초(艹) 부수가 초본 식물 종을 뜻하며, 아래의 날 일(日) 계열과 만나 지면에 돋아나는 식물 풀을 가리킵니다.",
+    "exZh": "绿色的草。",
+    "exPinyin": "Lǜsè de cǎo.",
+    "exMeaning": "녹색 풀."
+  },
+  {
+    "num": 29,
+    "hanzi": "层",
+    "pinyin": "céng",
+    "koPron": "청",
+    "meanings": [
+      { "pos": "양사", "ko": "층, 겹", "en": "Floor/Layer" },
+      { "pos": "명사", "ko": "층, 겹", "en": "Floor/Layer" }
+    ],
+    "hanja": "층 층(层)",
+    "pronTip": "건물 청(céng)수",
+    "charTip": "주검 시(尸) 부수가 가옥의 벽면 골조를 뜻하며, 아래에 구름 운(云)이 더해져 건물이 구름처럼 높게 쌓여 올라간 층층을 뜻합니다.",
+    "exZh": "第三层。",
+    "exPinyin": "Dì sān céng.",
+    "exMeaning": "제3층."
+  },
+  {
+    "num": 30,
+    "hanzi": "差",
+    "pinyin": "chà",
+    "koPron": "차",
+    "meanings": [
+      { "pos": "형용사", "ko": "나쁘다, 부족하다", "en": "Poor/Bad" },
+      { "pos": "동사", "ko": "모자라다", "en": "To lack" }
+    ],
+    "hanja": "어긋날 차(差)",
+    "pronTip": "수준 차(chà)이가 나다",
+    "charTip": "장인 공(工) 부수 계열이 포함되어 정밀하게 맞물려야 할 도구의 규격이 서로 맞지 않고 어긋나서 등급이 떨어지거나 부족함을 뜻합니다.",
+    "exZh": "差不多。",
+    "exPinyin": "Chàbuduō.",
+    "exMeaning": "비슷하다."
+  },
+  {
+    "num": 31,
+    "hanzi": "超市",
+    "pinyin": "chāoshì",
+    "koPron": "차오스",
+    "meanings": [
+      { "pos": "명사", "ko": "슈퍼마켓", "en": "Supermarket" }
+    ],
+    "hanja": "뛰어넘을 초(超), 저자 시(市)",
+    "pronTip": "차오(chāo)대형 스(shì)장",
+    "charTip": "달릴 주(走) 부수의 넘을 초(超)와 수건 건(巾) 부수가 포함된 저자 시(市)가 만나 규모의 규격을 뛰어넘은 대형 마트를 뜻합니다.",
+    "exZh": "去超市。",
+    "exPinyin": "Qù chāoshì.",
+    "exMeaning": "슈퍼마켓에 가다."
+  },
+  {
+    "num": 32,
+    "hanzi": "衬衫",
+    "pinyin": "chènshān",
+    "koPron": "천션",
+    "meanings": [
+      { "pos": "명사", "ko": "셔츠", "en": "Shirt" }
+    ],
+    "hanja": "속옷 친(衬), 적삼 삼(衫)",
+    "pronTip": "천션(chènshān) 하얀 셔츠",
+    "charTip": "두 글자 모두 좌측에 의류를 지칭하는 옷 의(衣=衤 보방 부수)를 채택하여 상체에 직접 착용하는 칼라 셔츠를 뜻합니다.",
+    "exZh": "一件衬衫。",
+    "exPinyin": "Yí jiàn chènshān.",
+    "exMeaning": "셔츠 한 벌."
+  },
+  {
+    "num": 33,
+    "hanzi": "成绩",
+    "pinyin": "chéngjì",
+    "koPron": "청지",
+    "meanings": [
+      { "pos": "명사", "ko": "성적, 결과물", "en": "Score" }
+    ],
+    "hanja": "이룰 성(成), 길쌈 적(绩)",
+    "pronTip": "청지(chéngjì)표를 받다",
+    "charTip": "창 과(戈) 부수 계열의 성(成)과 실 사(纟) 부수가 명시된 적(绩)이 만나 노력하여 축적해 이룩해 낸 정량적인 점수 성적을 뜻합니다.",
+    "exZh": "成绩很好。",
+    "exPinyin": "Chéngjì hěn hǎo.",
+    "exMeaning": "성적이 매우 좋다."
+  },
+  {
+    "num": 34,
+    "hanzi": "城市",
+    "pinyin": "城市",
+    "koPron": "청스",
+    "meanings": [
+      { "pos": "명사", "ko": "도시", "en": "City" }
+    ],
+    "hanja": "재 성(城), 저자 시(市)",
+    "pronTip": "청스(chéngshì)에는 차가 많다",
+    "charTip": "흙 토(土) 부수가 든 성벽 성(城)과 수건 건(巾) 부수 계열의 마켓 시(市)가 결합해 행정과 상업 유통망이 밀집한 번화 도시를 가리킵니다.",
+    "exZh": "大城市。",
+    "exPinyin": "Dà  chéngshì.",
+    "exMeaning": "큰 도시."
+  },
+  {
+    "num": 35,
+    "hanzi": "迟到",
+    "pinyin": "chídào",
+    "koPron": "츠따오",
+    "meanings": [
+      { "pos": "동사", "ko": "지각하다", "en": "To Be Late" }
+    ],
+    "hanja": "늦을 지(迟), 이를 도(到)",
+    "pronTip": "츠(chí)각하여 따오(dào)착하다",
+    "charTip": "책받침(辶=갈 착 부수)의 늦을 지(迟)와 선칼도방(刂) 부수의 이를 도(到)가 만나 정해진 규정 시각보다 늦게 당도함을 뜻합니다.",
+    "exZh": "别迟到。",
+    "exPinyin": "Bié chídào.",
+    "exMeaning": "지각하지 마."
+  },
+  {
+    "num": 36,
+    "hanzi": "除了",
+    "pinyin": "chúle",
+    "koPron": "추러",
+    "meanings": [
+      { "pos": "전치사", "ko": "~을 제외하고", "en": "Except" }
+    ],
+    "hanja": "덜 제(除), 마칠 료(了)",
+    "pronTip": "너만 추러(chúle) 제외할게",
+    "charTip": "좌부방(阝=언덕 부 부수)이 든 덜 제(除)와 부수 글자 마칠 료(了)가 만나 어떤 특정 조건 항목을 덜어내어 완료시키고 배제함을 뜻합니다.",
+    "exZh": "除了他，都去了。",
+    "exPinyin": "Chúle tā, dōu qù le.",
+    "exMeaning": "그를 제외하고, 모두 갔다."
+  },
+  {
+    "num": 37,
+    "hanzi": "船",
+    "pinyin": "chuán",
+    "koPron": "추엔",
+    "meanings": [
+      { "pos": "명사", "ko": "배, 선박", "en": "Boat" }
+    ],
+    "hanja": "배 선(船)",
+    "pronTip": "물 위를 추엔(chuán) 미끄러지는 배",
+    "charTip": "좌측의 배 주(舟) 부수가 물 위에 떠다니는 나룻배나 선박 모양을 가리켜 수상 교통 이동 수단임을 나타냅니다.",
+    "exZh": "坐船。",
+    "exPinyin": "Zuò chuán.",
+    "exMeaning": "배를 타다."
+  },
+  {
+    "num": 38,
+    "hanzi": "春",
+    "pinyin": "chūn",
+    "koPron": "춘",
+    "meanings": [
+      { "pos": "명사", "ko": "봄", "en": "Spring" }
+    ],
+    "hanja": "봄 춘(春)",
+    "pronTip": "따뜻한 춘(chūn) 봄날",
+    "charTip": "하단의 날 일(日) 부수가 따뜻한 봄볕을 뜻하며, 초목이 지면을 뚫고 무성하게 세 가닥으로 돋아나는 절기를 뜻합니다.",
+    "exZh": "春天。",
+    "exPinyin": "Chūntiān.",
+    "exMeaning": "봄."
+  },
+  {
+    "num": 39,
+    "hanzi": "词典",
+    "pinyin": "词典",
+    "koPron": "츠디엔",
+    "meanings": [
+      { "pos": "명사", "ko": "사전", "en": "Dictionary" }
+    ],
+    "hanja": "말씀 사(词), 법전 전(典)",
+    "pronTip": "츠디엔(cídiǎn) 찾아서 단어 외워",
+    "charTip": "말씀 언(讠) 부수의 말 사(词)와 여덟 팔(八) 부수가 하단에 명시된 책 전(典)이 만나 수많은 어휘 단어를 정렬해 둔 사전을 뜻합니다.",
+    "exZh": "查词典。",
+    "exPinyin": "Chá  cídiǎn.",
+    "exMeaning": "사전을 찾다."
+  },
+  {
+    "num": 40,
+    "hanzi": "聪明",
+    "pinyin": "cōngming",
+    "koPron": "총밍",
+    "meanings": [
+      { "pos": "형용사", "ko": "똑똑하다, 총명하다", "en": "Clever" }
+    ],
+    "hanja": "귀밝을 총(聪), 밝을 명(明)",
+    "pronTip": "총밍(cōngming)한 아이",
+    "charTip": "귀 이(耳) 부수가 포함된 총(聪)과 해 일(日) 부수의 명(明)이 만나 귀로 사리판단을 잘 듣고 눈빛이 명민하여 영리함을 나타냅니다.",
+    "exZh": "很聪明。",
+    "exPinyin": "Hěn cōngming.",
+    "exMeaning": "매우 똑똑하다."
+  },
+  {
+    "num": 41,
+    "hanzi": "打扫",
+    "pinyin": "dǎsǎo",
+    "koPron": "다싸오",
+    "meanings": [
+      { "pos": "동사", "ko": "청소하다", "en": "To Clean" }
+    ],
+    "hanja": "칠 타(打), 쓸 소(扫)",
+    "pronTip": "다싸오(dǎsǎo) 버려, 깨끗이 청소해",
+    "charTip": "두 글자 모두 손 수(扌) 부수를 수반하여 손에 빗자루를 쥐고 지면의 오물과 먼지를 소거하여 쓸어내는 가사 동작입니다.",
     "exZh": "打扫房间。",
     "exPinyin": "Dǎsǎo fángjiān.",
     "exMeaning": "방을 청소하다."
   },
   {
-    "num": 27,
-    "hanzi": "非常",
-    "pinyin": "fēicháng",
-    "koPron": "페이창",
-    "meanings": [
-      { "pos": "부사", "ko": "아주, 대단히", "en": "Very" }
-    ],
-    "hanja": "아닐 비(非), 항상 상(常)",
-    "pronTip": "페이(fēi)창(cháng)히 좋다!",
-    "charTip": "새의 날개가 엇갈린 아닐 비(非) 부수와 수건 건(巾) 부수의 항상 상(常)이 만나 평범한 일상 상태를 아늑히 초월한 수준을 나타냅니다.",
-    "exZh": "非常好。",
-    "exPinyin": "Fēicháng hǎo.",
-    "exMeaning": "아주 좋다."
-  },
-  {
-    "num": 28,
-    "hanzi": "服务员",
-    "pinyin": "fúwùyuán",
-    "koPron": "푸우웨이위안",
-    "meanings": [
-      { "pos": "명사", "ko": "종업원", "en": "Waiter" }
-    ],
-    "hanja": "복종할 복(服), 힘쓸 무(务), 인원 원(员)",
-    "pronTip": "푸(fú)짐하게 우위엔(yuán) 서빙하는 종업원",
-    "charTip": "조개 패(贝) 계열의 입 구(口) 부수가 든 인원 원(员)이 포함되어 매장에서 손님에게 노고를 다해 편의를 제공하는 직원을 뜻합니다.",
-    "exZh": "服务员，点菜。",
-    "exPinyin": "Fúwùyuán, diǎn cài.",
-    "exMeaning": "종업원, 주문할게요."
-  },
-  {
-    "num": 29,
-    "hanzi": "高",
-    "pinyin": "gāo",
-    "koPron": "까오",
-    "meanings": [
-      { "pos": "형용사", "ko": "키가 크다, 높다", "en": "Tall" }
-    ],
-    "hanja": "높을 고",
-    "pronTip": "키가 까오(gāo) 높다",
-    "charTip": "성벽 위에 우뚝 솟아 있는 높은 전통 누각 건물의 수려한 외관 형태를 그대로 가공한 고유 부수 글자입니다.",
-    "exZh": "很高。",
-    "exPinyin": "Hěn gāo.",
-    "exMeaning": "매우 높다(크다)."
-  },
-  {
-    "num": 30,
-    "hanzi": "告诉",
-    "pinyin": "gàosu",
-    "koPron": "까오쑤",
-    "meanings": [
-      { "pos": "동사", "ko": "알리다, 말하다", "en": "To Tell" }
-    ],
-    "hanja": "고할 고(告), 하소연할 소(诉)",
-    "pronTip": "까오(gào)함 쳐서 쑤(su)근대며 알리다",
-    "charTip": "입 구(口) 부수가 든 고(告)와 말씀 언(讠) 부수가 명시된 소(诉)가 만나 타인에게 정보나 사실을 구두로 전달하여 알리는 행위입니다.",
-    "exZh": "告诉我。",
-    "exPinyin": "Gàosu wǒ.",
-    "exMeaning": "나에게 알려줘."
-  },
-  {
-    "num": 31,
-    "hanzi": "哥哥",
-    "pinyin": "gēge",
-    "koPron": "끄어거",
-    "meanings": [
-      { "pos": "명사", "ko": "형, 오빠", "en": "Older Brother" }
-    ],
-    "hanja": "형 가(哥)",
-    "pronTip": "끄어거(gēge) 듬직한 형",
-    "charTip": "입 구(口) 부수의 옳을 가(可)를 위아래로 중첩하여 집안에서 동생들의 모범이 되어 이끄는 손윗형제를 다정하게 부르는 글자입니다.",
-    "exZh": "我的哥哥。",
-    "exPinyin": "Wǒ de gēge.",
-    "exMeaning": "나의 형."
-  },
-  {
-    "num": 32,
-    "hanzi": "给",
-    "pinyin": "gěi",
-    "koPron": "게이",
-    "meanings": [
-      { "pos": "동사", "ko": "주다", "en": "To Give" },
-      { "pos": "전치사", "ko": "~에게", "en": "To" }
-    ],
-    "hanja": "줄 급(给)",
-    "pronTip": "이거 너 게이(gěi)",
-    "charTip": "좌측의 실 사(纟) 부수가 실을 꼬아 단단히 매듭을 짓듯 물건을 타인에게 건네어 인도해 주는 수여 행위를 뜻합니다.",
-    "exZh": "给你。",
-    "exPinyin": "Gěi nǐ.",
-    "exMeaning": "너에게 준다."
-  },
-  {
-    "num": 33,
-    "hanzi": "公共汽车",
-    "pinyin": "gōnggòng qìchē",
-    "koPron": "궁궁 치처",
-    "meanings": [
-      { "pos": "명사", "ko": "버스", "en": "Bus" }
-    ],
-    "hanja": "공평할 공(公), 한가지 공(共), 기운 기(气), 수레 차(车)",
-    "pronTip": "궁궁(gōnggòng) 함께 타는 치처(qìchē)",
-    "charTip": "여덟 팔(八)의 공(公), 수레 차(车) 부수 등이 결합하여 일반 대중들이 공공의 목적으로 연대하여 함께 탑승하는 대형 자동차입니다.",
-    "exZh": "坐公共汽车。",
-    "exPinyin": "Zuò gōnggòng qìchē.",
-    "exMeaning": "버스를 타다."
-  },
-  {
-    "num": 34,
-    "hanzi": "公司",
-    "pinyin": "gōngsī",
-    "koPron": "궁쓰",
-    "meanings": [
-      { "pos": "명사", "ko": "회사", "en": "Company" }
-    ],
-    "hanja": "공평할 공(公), 맡을 사(司)",
-    "pronTip": "궁쓰(gōngsī)에 출근하다",
-    "charTip": "여덟 팔(八) 부수의 공(公)과 입 구(口) 부수의 맡을 사(司)가 만나 공적인 업무를 나누어 경영하는 영리 법인 조직을 뜻합니다.",
-    "exZh": "去公司。",
-    "exPinyin": "Qù gōngsī.",
-    "exMeaning": "회사에 가다."
-  },
-  {
-    "num": 35,
-    "hanzi": "贵",
-    "pinyin": "guì",
-    "koPron": "꾸에이",
-    "meanings": [
-      { "pos": "형용사", "ko": "비싸다", "en": "Expensive" }
-    ],
-    "hanja": "귀할 귀(贵)",
-    "pronTip": "꾸에이(guì)한 물건이라 비싸다",
-    "charTip": "하단의 조개 패(贝) 부수가 고대의 진귀한 화폐 가치를 지칭하여 물건의 가격이나 신분이 매우 존귀하고 고가임을 나타냅니다.",
-    "exZh": "太贵了。",
-    "exPinyin": "Tài guì le.",
-    "exMeaning": "너무 비싸다."
-  },
-  {
-    "num": 36,
-    "hanzi": "过",
-    "pinyin": "guo",
-    "koPron": "꾸오",
-    "meanings": [
-      { "pos": "조사", "ko": "~한 적이 있다", "en": "(experienced particle)" },
-      { "pos": "동사", "ko": "지나다", "en": "To pass" }
-    ],
-    "hanja": "지날 과(过)",
-    "pronTip": "과거에 해본 꾸오(guo)",
-    "charTip": "책받침 책(辶=갈 착 부수)이 도보의 이동을 뜻하며, 동사 뒤에 연동되어 이전에 그 길을 지나며 겪었던 과거의 경험을 뜻합니다.",
-    "exZh": "去过。",
-    "exPinyin": "Qù guo.",
-    "exMeaning": "가 본 적이 있다."
-  },
-  {
-    "num": 37,
-    "hanzi": "还",
-    "pinyin": "hái",
-    "koPron": "하이",
-    "meanings": [
-      { "pos": "부사", "ko": "더, 또, 아직", "en": "Still" }
-    ],
-    "hanja": "돌아올 환(还)",
-    "pronTip": "하이(hái)고, 또 왔네",
-    "charTip": "책받침 책(辶=갈 착 부수)이 쓰여 동작이 제자리로 선회하여 여전히, 아직도, 더 추가로 상태가 이어짐을 나타내는 부사입니다.",
-    "exZh": "还有。",
-    "exPinyin": "Hái yǒu.",
-    "exMeaning": "또 있다."
-  },
-  {
-    "num": 38,
-    "hanzi": "孩子",
-    "pinyin": "háizi",
-    "koPron": "하이쯔",
-    "meanings": [
-      { "pos": "명사", "ko": "아이, 자녀", "en": "Child" }
-    ],
-    "hanja": "아이 해(孩), 아들 자(子)",
-    "pronTip": "하이(hái) 헬로 인사하는 아이(zi)",
-    "charTip": "자식 자(子) 부수가 두 글자 모두 유기적으로 결합하여 나이가 아직 어려 보살핌이 전적으로 필요한 아동을 가리킵니다.",
-    "exZh": "好孩子。",
-    "exPinyin": "Hǎo háizi.",
-    "exMeaning": "착한 아이."
-  },
-  {
-    "num": 39,
-    "hanzi": "好吃",
-    "pinyin": "hǎochī",
-    "koPron": "하오츠",
-    "meanings": [
-      { "pos": "형용사", "ko": "맛있다", "en": "Delicious" }
-    ],
-    "hanja": "좋을 호(好), 먹을 흘(吃)",
-    "pronTip": "하오(hǎo) 아주 잘 츠(chī) 먹다",
-    "charTip": "여자 녀(女) 부수의 호(好)와 입 구(口) 부수의 츠(吃)가 어우러져 입안으로 들어가 씹어 넘기기에 매우 훌륭하고 맛깔스러움을 뜻합니다.",
-    "exZh": "很好吃。",
-    "exPinyin": "Hěn hǎochī.",
-    "exMeaning": "매우 맛있다."
-  },
-  {
-    "num": 40,
-    "hanzi": "黑",
-    "pinyin": "hēi",
-    "koPron": "헤이",
-    "meanings": [
-      { "pos": "형용사", "ko": "검다, 어둡다", "en": "Black" }
-    ],
-    "hanja": "검을 흑(黑)",
-    "pronTip": "헤이(hēi)! 어두운 밤!",
-    "charTip": "하단의 연화발(灬=불 화 부수)이 아궁이의 연기와 그을음을 가리켜 사물의 색상이 까맣고 어두운 흑색임을 나타냅니다.",
-    "exZh": "黑猫。",
-    "exPinyin": "Hēi māo.",
-    "exMeaning": "검은 고양이."
-  },
-  {
-    "num": 41,
-    "hanzi": "红",
-    "pinyin": "hóng",
-    "koPron": "훙",
-    "meanings": [
-      { "pos": "형용사", "ko": "붉다", "en": "Red" }
-    ],
-    "hanja": "붉을 홍(红)",
-    "pronTip": "훙(hóng)당무처럼 붉다",
-    "charTip": "좌측의 실 사(纟) 부수가 섬유 가닥을 뜻하며 옛날에 실을 붉은 꼭두서니 식물로 곱게 염색해 낸 선명한 홍색을 의미합니다.",
-    "exZh": "红色。",
-    "exPinyin": "Hóngsè.",
-    "exMeaning": "빨간색."
-  },
-  {
     "num": 42,
-    "hanzi": "火车站",
-    "pinyin": "huǒchēzhàn",
-    "koPron": "후오체잔",
+    "hanzi": "打算",
+    "pinyin": "dǎsuàn",
+    "koPron": "다쑤엔",
     "meanings": [
-      { "pos": "명사", "ko": "기차역", "en": "Train Station" }
+      { "pos": "동사", "ko": "계획이다, 작정하다", "en": "To Plan" },
+      { "pos": "명사", "ko": "계획, 생각", "en": "Plan" }
     ],
-    "hanja": "불 화(火), 수레 차(车), 설 참(站)",
-    "pronTip": "후오체(불자동차=기차)가 서는 짠(역)",
-    "charTip": "불 화(火), 수레 차(车), 설립(立) 부수가 조합된 잔(站)이 만나 열차가 안전하게 멈추어 여객을 태우는 기차역 정거장을 뜻합니다.",
-    "exZh": "去火车站。",
-    "exPinyin": "Qù huǒchēzhàn.",
-    "exMeaning": "기차역에 가다."
+    "hanja": "칠 타(打), 셈할 산(算)",
+    "pronTip": "속으로 다쑤엔(계산)해 보다",
+    "charTip": "손 수(扌)의 타(打)와 대나무 죽(竹) 부수가 상단에 명시된 산(算)이 만나 머릿속으로 주판을 두드리듯 향후 일정을 조율하고 계획함을 뜻합니다.",
+    "exZh": "打算去。",
+    "exPinyin": "Dǎsuàn qù.",
+    "exMeaning": "갈 계획이다."
   },
   {
     "num": 43,
-    "hanzi": "机场",
-    "pinyin": "jīchǎng",
-    "koPron": "지창",
+    "hanzi": "带",
+    "pinyin": "dài",
+    "koPron": "따이",
     "meanings": [
-      { "pos": "명사", "ko": "공항", "en": "Airport" }
+      { "pos": "동사", "ko": "지니다, 데려가다, 챙기다", "en": "To Bring/Carry" }
     ],
-    "hanja": "틀 기(机), 마당 장(场)",
-    "pronTip": "지창(jīchǎng)에 비행기가 내리다",
-    "charTip": "나무 목(木) 부수의 기계 기(机)와 흙 토(土) 부수의 마당 장(场)이 만나 거대한 비행 기체들이 이착륙하는 탁 트인 공항을 가리킵니다.",
-    "exZh": "在机场。",
-    "exPinyin": "Zài jīchǎng.",
-    "exMeaning": "공항에 있다."
+    "hanja": "띠 대(带)",
+    "pronTip": "허리띠를 따이(dài)고 지니다",
+    "charTip": "하단에 수건 건(巾) 부수가 배치되어 허리에 두르는 가죽 띠를 본떴으며, 몸에 기물이나 소지품을 긴밀히 휴대하여 지님을 뜻합니다.",
+    "exZh": "带伞。",
+    "exPinyin": "Dài sǎn.",
+    "exMeaning": "우산을 챙기다."
   },
   {
     "num": 44,
-    "hanzi": "鸡蛋",
-    "pinyin": "jīdàn",
-    "koPron": "지딴",
+    "hanzi": "担心",
+    "pinyin": "dānxīn",
+    "koPron": "단신",
     "meanings": [
-      { "pos": "명사", "ko": "달걀, 계란", "en": "Egg" }
+      { "pos": "동사", "ko": "걱정하다, 염려하다", "en": "To Worry" }
     ],
-    "hanja": "닭 계(鸡), 새알 단(蛋)",
-    "pronTip": "지(jī)닭이 낳은 딴(dàn)단한 알",
-    "charTip": "새 조(鸟) 부수가 든 닭 계(鸡)와 벌레 훼(虫) 부수가 하단에 배치된 알 단(蛋)이 합쳐져 닭이 부화하기 위해 낳은 알을 뜻합니다.",
-    "exZh": "吃鸡蛋。",
-    "exPinyin": "Chī jīdàn.",
-    "exMeaning": "달걀을 먹다."
+    "hanja": "멜 담(担), 마음 심(心)",
+    "pronTip": "단신(dānxīn) 걱정 마!",
+    "charTip": "손 수(扌) 부수의 담(担)과 사유 기관인 마음 심(心) 부수가 만나 염려스러운 사태의 무거운 마음의 짐을 가슴에 짊어지고 조마조마해함을 뜻합니다.",
+    "exZh": "别担心。",
+    "exPinyin": "Bié dānxīn.",
+    "exMeaning": "걱정하지 마라."
   },
   {
     "num": 45,
-    "hanzi": "件",
-    "pinyin": "jiàn",
-    "koPron": "지앤",
+    "hanzi": "蛋糕",
+    "pinyin": "dàngāo",
+    "koPron": "단가오",
     "meanings": [
-      { "pos": "양사", "ko": "벌, 건", "en": "(measure word)" }
+      { "pos": "명사", "ko": "케이크", "en": "Cake" }
     ],
-    "hanja": "물건 건(件)",
-    "pronTip": "이 옷 한 지앤(jiàn) 살게",
-    "charTip": "사람 인(亻) 부수 옆에 소 우(牛) 부수가 나란히 서서 본래 가축이나 물건을 개별적으로 식별하며 세던 의복 및 안건의 양사입니다.",
-    "exZh": "一件衣服。",
-    "exPinyin": "Yí jiàn yīfu.",
-    "exMeaning": "옷 한 벌."
+    "hanja": "새알 단(蛋), 떡 고(糕)",
+    "pronTip": "달달한 단가오(dàngāo) 케이크",
+    "charTip": "벌레 훼(虫) 계열 알 단(蛋)과 쌀 미(米) 부수가 명시된 떡 고(糕)가 만나 달걀과 곡식 분말을 혼합해 구워낸 달콤한 서양식 케이크입니다.",
+    "exZh": "吃蛋糕。",
+    "exPinyin": "Chī dàngāo.",
+    "exMeaning": "케이크를 먹다."
   },
   {
     "num": 46,
-    "hanzi": "教室",
-    "pinyin": "jiàoshì",
-    "koPron": "지아오스",
+    "hanzi": "当然",
+    "pinyin": "dāngrán",
+    "koPron": "당란",
     "meanings": [
-      { "pos": "명사", "ko": "교실", "en": "Classroom" }
+      { "pos": "부사", "ko": "당연히", "en": "Of course" },
+      { "pos": "형용사", "ko": "당연하다", "en": "Certain" }
     ],
-    "hanja": "가르칠 교(教), 방 실(室)",
-    "pronTip": "지아오(jiào)수님이 있는 스(shì) 공간",
-    "charTip": "칠 복(攵) 계열의 교(教)와 갓머리/집 면(宀) 부수가 포함된 방 실(室)이 만나 학생들이 모여 학업을 전수받는 정형 학습실을 뜻합니다.",
-    "exZh": "去教室。",
-    "exPinyin": "Qù jiàoshì.",
-    "exMeaning": "교실에 가다."
+    "hanja": "마땅할 당(当), 그럴 연(然)",
+    "pronTip": "당란(dāngrán)히 그래야지",
+    "charTip": "작을 소(小) 계열의 당(当)과 연화발(灬=불 화 부수)이 명시된 연(然)이 만나 이치상 마땅히 불타듯 그러해야 함을 확증하는 부사성 형용사입니다.",
+    "exZh": "当然可以。",
+    "exPinyin": "Dāngrán kěyǐ.",
+    "exMeaning": "당연히 된다."
   },
   {
     "num": 47,
-    "hanzi": "姐姐",
-    "pinyin": "jiějie",
-    "koPron": "지에지에",
+    "hanzi": "地",
+    "pinyin": "de",
+    "koPron": "더",
     "meanings": [
-      { "pos": "명사", "ko": "누나, 언니", "en": "Older Sister" }
+      { "pos": "조사", "ko": "~하게 (부사화 구조조사)", "en": "(structural particle)" }
     ],
-    "hanja": "손윗누이 저(姐)",
-    "pronTip": "지에지에(jiějie) 예쁜 언니",
-    "charTip": "여자 녀(女) 부수 옆에 도마 조(且) 자가 결합하여 집안의 여자 형제 중 나이가 위인 언니나 누나를 높여 부르는 패밀리 명칭입니다.",
-    "exZh": "我的姐姐。",
-    "exPinyin": "Wǒ de jiějie.",
-    "exMeaning": "나의 언니(누나)."
+    "hanja": "땅 지(地)",
+    "pronTip": "더(de) 빠르게 달려라",
+    "charTip": "흙 토(土) 부수가 대지의 지면을 뜻하며, 동사 앞에서 수식 성분 형용사를 부사격 상태로 문법적으로 전환해 주는 조사입니다.",
+    "exZh": "慢慢地走。",
+    "exPinyin": "Mànmàn de zǒu.",
+    "exMeaning": "천천히 걷다."
   },
   {
     "num": 48,
-    "hanzi": "介绍",
-    "pinyin": "jièshào",
-    "koPron": "지에샤오",
+    "hanzi": "灯",
+    "pinyin": "dēng",
+    "koPron": "덩",
     "meanings": [
-      { "pos": "동사", "ko": "소개하다", "en": "To Introduce" }
+      { "pos": "명사", "ko": "전등, 등불", "en": "Lamp" }
     ],
-    "hanja": "낄 개(介), 이을 소(绍)",
-    "pronTip": "지에(jiè) 사람을 샤오(shào)개하다",
-    "charTip": "사람 인(人) 부수 계열의 介와 실 사(纟) 부수가 포함된 绍가 만나 사람과 사람 사이에 들어가 인연의 실을 이어주며 소개해 주는 행위입니다.",
-    "exZh": "介绍一下。",
-    "exPinyin": "Jièshào yíxià.",
-    "exMeaning": "소개 좀 할게요."
+    "hanja": "등 등(灯)",
+    "pronTip": "불 켜라 덩(dēng)",
+    "charTip": "좌측 of 불 화(火) 부수가 타오르는 광원을 뜻하며 어두운 공간을 인위적으로 밝히는 실내 등불 기기를 나타냅니다.",
+    "exZh": "开灯。",
+    "exPinyin": "Kāi dēng.",
+    "exMeaning": "불을 켜다."
   },
   {
     "num": 49,
-    "hanzi": "进",
-    "pinyin": "jìn",
-    "koPron": "진",
+    "hanzi": "地方",
+    "pinyin": "dìfang",
+    "koPron": "디팡",
     "meanings": [
-      { "pos": "동사", "ko": "들어가다", "en": "To Enter" }
+      { "pos": "명사", "ko": "장소, 공간", "en": "Place" }
     ],
-    "hanja": "나아갈 진(进)",
-    "pronTip": "안으로 진(jìn)입하다",
-    "charTip": "책받침 책(辶=갈 착 부수)이 보행을 뜻하며 우물 정(井) 모양의 틀 안쪽 공간으로 발을 디뎌 안으로 진입함을 뜻합니다.",
-    "exZh": "请进。",
-    "exPinyin": "Qǐng jìn.",
-    "exMeaning": "들어오세요."
+    "hanja": "땅 지(地), 모 방(方)",
+    "pronTip": "이 디팡(dìfang)은 어디야?",
+    "charTip": "흙 토(土) 부수가 든 땅 지(地)와 방위 기준인 모 방(方) 부수가 결합하여 지표면 상의 특정한 구역이나 처소를 지칭합니다.",
+    "exZh": "什么地方？",
+    "exPinyin": "Shénme  dìfang？",
+    "exMeaning": "어떤 장소?"
   },
   {
     "num": 50,
-    "hanzi": "近",
-    "pinyin": "jìn",
-    "koPron": "진",
+    "hanzi": "地铁",
+    "pinyin": "dìtiě",
+    "koPron": "디퉤이",
     "meanings": [
-      { "pos": "형용사", "ko": "가깝다", "en": "Near" }
+      { "pos": "명사", "ko": "지하철", "en": "Subway" }
     ],
-    "hanja": "가까울 근(近)",
-    "pronTip": "진(jìn)짜 가깝네",
-    "charTip": "책받침 책(辶=갈 착 부수) 옆에 도끼 근(斤)이 더해져 도끼 날을 내리치면 닿을 수 있을 정도로 거리나 시일이 무척 가깝다를 뜻합니다.",
-    "exZh": "很近。",
-    "exPinyin": "Hěn jìn.",
-    "exMeaning": "매우 가깝다."
+    "hanja": "땅 지(地), 쇠 철(铁)",
+    "pronTip": "디퉤이(dìtiě) 타고 지하철역으로",
+    "charTip": "흙 토(土) 부수의 땅 지(地)와 쇠 금(金=钅 부수)이 명시된 쇠 철(铁)이 만나 지면 밑 철로를 달리는 전동차 교통망을 뜻합니다.",
+    "exZh": "坐地铁。",
+    "exPinyin": "Zuò dìtiě.",
+    "exMeaning": "지하철을 타다."
   },
   {
     "num": 51,
-    "hanzi": "就",
-    "pinyin": "jiù",
-    "koPron": "지우",
+    "hanzi": "地图",
+    "pinyin": "dìtú",
+    "koPron": "디투",
     "meanings": [
-      { "pos": "부사", "ko": "바로, 곧", "en": "Exactly" }
+      { "pos": "명사", "ko": "지도", "en": "Map" }
     ],
-    "hanja": "나아갈 취(就)",
-    "pronTip": "지우(jiù)금 바로 갈게",
-    "charTip": "절주부(尢) 부수 우측에 배치되어 어떤 사태나 장소에 긴밀하게 다가가 마주하듯 인과관계가 '바로 곧' 일어남을 표현하는 부사입니다.",
-    "exZh": "就是他。",
-    "exPinyin": "Jiù shì tā.",
-    "exMeaning": "바로 그다."
+    "hanja": "땅 지(地), 그림 도(图)",
+    "pronTip": "디투(dìtú) 펼치고 길 찾자",
+    "charTip": "흙 토(土) 부수의 지(地)와 에운담(囗) 부수 안에 지형 배치가 들어간 도(图)가 만나 지구 표면의 윤곽을 축소해 그린 그림입니다.",
+    "exZh": "看地图。",
+    "exPinyin": "Kàn dìtú.",
+    "exMeaning": "지도를 보다."
   },
   {
     "num": 52,
-    "hanzi": "觉得",
-    "pinyin": "juéde",
-    "koPron": "쥐에더",
+    "hanzi": "电梯",
+    "pinyin": "diàntī",
+    "koPron": "뎬티",
     "meanings": [
-      { "pos": "동사", "ko": "~라고 여기다, 생각하다", "en": "To Think" }
+      { "pos": "명사", "ko": "엘리베이터", "en": "Elevator" }
     ],
-    "hanja": "깨달을 각(觉), 얻을 득(得)",
-    "pronTip": "쥐에더(juéde) 내 생각에는",
-    "charTip": "볼 견(见) 부수가 하단에 든 각(觉)과 조금걸을척(彳) 부수의 득(得)이 결합해 감각을 거쳐 주관적으로 깨닫고 내면의 견해를 도출해 냄을 의미합니다.",
-    "exZh": "我觉得好。",
-    "exPinyin": "Wǒ juéde hǎo.",
-    "exMeaning": "내 생각엔 좋다."
+    "hanja": "번개 전(电), 사다리 제(梯)",
+    "pronTip": "뎬티(diàntī) 갇혔어!",
+    "charTip": "전기 전(电)과 수직 이동용 가구 부수인 나무 목(木) 부수의 사다리 제(梯)가 만나 상하로 자동 작동하는 수직 사다리 기기입니다.",
+    "exZh": "坐电梯。",
+    "exPinyin": "Zuò diàntī.",
+    "exMeaning": "엘리베이터를 타다."
   },
   {
     "num": 53,
-    "hanzi": "咖啡",
-    "pinyin": "kāfēi",
-    "koPron": "카페이",
+    "hanzi": "电子邮件",
+    "pinyin": "diànzǐ yóujiàn",
+    "koPron": "뎬쯔 요우지엔",
     "meanings": [
-      { "pos": "명사", "ko": "커피", "en": "Coffee" }
+      { "pos": "명사", "ko": "이메일, 전자 우편", "en": "Email" }
     ],
-    "hanja": "커피 가(咖), 커피 배(啡)",
-    "pronTip": "카페이(kāfēi) 한 잔",
-    "charTip": "두 글자 모두 입 구(口) 부수를 좌측에 동반하여 서양의 기호 음료인 Coffee의 원어 발음을 입으로 음미하듯 한자 음역어로 묘사했습니다.",
-    "exZh": "喝咖啡。",
-    "exPinyin": "Hē kāfēi.",
-    "exMeaning": "커피를 마시다."
+    "hanja": "전자 우편",
+    "pronTip": "뎬쯔 요우지엔(이메일)",
+    "charTip": "아들 자(子), 사람 인(亻) 부수 등이 결합하여 통신 인프라 전자(电子)망을 거쳐 송수신되는 디지털 서신 우편을 뜻합니다.",
+    "exZh": "发电子邮件。",
+    "exPinyin": "Fā diànzǐ yóujiàn.",
+    "exMeaning": "이메일을 발송하다."
   },
   {
     "num": 54,
-    "hanzi": "开始",
-    "pinyin": "kāishǐ",
-    "koPron": "카이스",
+    "hanzi": "东",
+    "pinyin": "dōng",
+    "koPron": "둥",
     "meanings": [
-      { "pos": "동사", "ko": "시작하다", "en": "To Start" },
-      { "pos": "명사", "ko": "시작", "en": "Start" }
+      { "pos": "명사", "ko": "동쪽", "en": "East" }
     ],
-    "hanja": "열 개(开), 비로소 시(始)",
-    "pronTip": "카이(kāi)운트다운 스(shǐ)작!",
-    "charTip": "양 문을 여는 개(开)와 여자 녀(女) 부수가 든 비로소 시(始)가 만나 어떤 차원문이나 행동을 최초로 열어 전개하기 시작함을 뜻합니다.",
-    "exZh": "现在开始。",
-    "exPinyin": "Xiànzài kāishǐ.",
-    "exMeaning": "지금 시작하다."
+    "hanja": "동녘 동(东)",
+    "pronTip": "둥(dōng)쪽에서 해가 뜬다",
+    "charTip": "나무 목(木) 부수 프레임 한가운데로 붉은 해가 걸려 떠오르는 방위인 동방을 가리키는 고유 정형 글자입니다.",
+    "exZh": "东边。",
+    "exPinyin": "Dōngbian.",
+    "exMeaning": "동쪽 편."
   },
   {
     "num": 55,
-    "hanzi": "考试",
-    "pinyin": "kǎoshì",
-    "koPron": "카오스",
+    "hanzi": "冬",
+    "pinyin": "dōng",
+    "koPron": "둥",
     "meanings": [
-      { "pos": "명사", "ko": "시험", "en": "Exam" },
-      { "pos": "동사", "ko": "시험을 치다", "en": "To take an exam" }
+      { "pos": "명사", "ko": "겨울", "en": "Winter" }
     ],
-    "hanja": "상고할 고(考), 시험할 시(试)",
-    "pronTip": "카오스(kǎoshì) 상태가 되는 시험시간",
-    "charTip": "늙을노엄(耂) 부수의 고(考)와 말씀 언(讠) 부수의 시(试)가 만나 개인의 실력과 학업 성취도를 정식으로 검증하고 테스트하는 평가 행위입니다.",
-    "exZh": "准备考试。",
-    "exPinyin": "Zhǔnbèi kǎoshì.",
-    "exMeaning": "시험을 준비하다."
+    "hanja": "겨울 동(冬)",
+    "pronTip": "둥(dōng)장군이 오는 겨울",
+    "charTip": "하단에 위치한 뒤져올치 계절의 두 점(冫 변형)이 하얗게 언 고드름과 한기를 뜻하여 일 년 사계절의 마지막 겨울 절기를 나타냅니다.",
+    "exZh": "冬天。",
+    "exPinyin": "Dōngtiān.",
+    "exMeaning": "겨울."
   },
   {
     "num": 56,
-    "hanzi": "可能",
-    "pinyin": "kěnéng",
-    "koPron": "커넝",
+    "hanzi": "动物",
+    "pinyin": "dòngwù",
+    "koPron": "둥우",
     "meanings": [
-      { "pos": "부사", "ko": "아마도", "en": "Maybe" },
-      { "pos": "조동사", "ko": "~일 수 있다", "en": "Might/Can" }
+      { "pos": "명사", "ko": "동물", "en": "Animal" }
     ],
-    "hanja": "가할 가(可), 능할 능(能)",
-    "pronTip": "커넝(kěnéng) 그럴 가능성이 있어",
-    "charTip": "입 구(口) 부수의 가(可)와 곰의 형상인 능할 능(能) 부수가 결합하여 이치상 충분히 실현될 잠재적 개연성과 가망이 있음을 뜻합니다.",
-    "exZh": "可能下雨。",
-    "exPinyin": "Kěnéng xiàyǔ.",
-    "exMeaning": "아마 비가 올 것이다."
+    "hanja": "움직일 동(动), 만물 물(物)",
+    "pronTip": "둥우(dòngwù)원 가자",
+    "charTip": "힘 력(力) 부수의 동(动)과 소 우(牛) 부수가 명시된 물(物)이 만나 생명력을 지니고 스스로 능동적으로 작동해 움직이는 생명체입니다.",
+    "exZh": "小动物。",
+    "exPinyin": "Xiǎo  dòngwù.",
+    "exMeaning": "작은 동물."
   },
   {
     "num": 57,
-    "hanzi": "可以",
-    "pinyin": "kěyǐ",
-    "koPron": "커이",
+    "hanzi": "短",
+    "pinyin": "duǎn",
+    "koPron": "두엔",
     "meanings": [
-      { "pos": "조동사", "ko": "~해도 좋다", "en": "Can" }
+      { "pos": "형용사", "ko": "짧다", "en": "Short" }
     ],
-    "hanja": "가할 가(可), 써 이(以)",
-    "pronTip": "허락할 때 커이(kěyǐ)",
-    "charTip": "입 구(口) 부수의 가(可)와 사람 인 계열의 써 이(以) 부수가 결합해 외부의 통제 속에서 행동을 정식으로 승인하고 허락해 줌을 나타냅니다.",
-    "exZh": "可以进吗？",
-    "exPinyin": "Kěyǐ jìn ma?",
-    "exMeaning": "들어가도 됩니까?"
+    "hanja": "짧을 단(短)",
+    "pronTip": "머리를 두엔(duǎn)하게 자르다",
+    "charTip": "좌측의 화살 시(矢) 부수가 일정한 규격의 짧은 화살대를 뜻해 사물의 길이나 리드타임 수치가 길지 않고 짧음을 뜻합니다.",
+    "exZh": "头发很短。",
+    "exPinyin": "Tóufa hěn duǎn.",
+    "exMeaning": "머리카락이 매우 짧다."
   },
   {
     "num": 58,
-    "hanzi": "课",
-    "pinyin": "kè",
-    "koPron": "커",
+    "hanzi": "段",
+    "pinyin": "duàn",
+    "koPron": "두엔",
     "meanings": [
-      { "pos": "명사", "ko": "수업", "en": "Class" }
+      { "pos": "양사", "ko": "단락, 구간", "en": "Section/Period" }
     ],
-    "hanja": "과정 과(课)",
-    "pronTip": "커(kè)리큘럼 수업",
-    "charTip": "말씀 언(讠) 부수가 교육적인 언어 전달을 뜻하며 교실에서 교사가 지정된 커리큘럼 과정을 말로 가르치는 정규 수업 시간입니다.",
-    "exZh": "上课。",
-    "exPinyin": "Shàng kè.",
-    "exMeaning": "수업을 하다."
+    "hanja": "구분 단(段)",
+    "pronTip": "한 두엔(duàn)락 읽어봐",
+    "charTip": "우측의 갖은등글월문(殳=칠 복 수 부수)이 도구로 기물을 내리쳐서 일정한 공간이나 시간 축을 토막 내어 분할한 구간을 뜻합니다.",
+    "exZh": "这段时间。",
+    "exPinyin": "Zhè duàn shíjiān.",
+    "exMeaning": "이 시간 동안."
   },
   {
     "num": 59,
-    "hanzi": "快",
-    "pinyin": "kuài",
-    "koPron": "콰에이",
+    "hanzi": "锻炼",
+    "pinyin": "duànliàn",
+    "koPron": "두엔리엔",
     "meanings": [
-      { "pos": "형용사", "ko": "빠르다", "en": "Fast" },
-      { "pos": "부사", "ko": "빨리", "en": "Quickly" }
+      { "pos": "동사", "ko": "단련하다, 운동하다", "en": "To Exercise" }
     ],
-    "hanja": "빠를 쾌(快)",
-    "pronTip": "콰에이(kuài)하게 빠르다",
-    "charTip": "심방변(忄=마음 심 부수)이 좌측에 명시되어 사람의 결단력 있는 마음가짐이나 물체의 이동 속도가 무척이나 신속하고 빠름을 뜻합니다.",
-    "exZh": "快走。",
-    "exPinyin": "Kuài zǒu.",
-    "exMeaning": "빨리 가다."
+    "hanja": "단련할 단(锻), 불릴 련(炼)",
+    "pronTip": "몸을 두엔리엔(duànliàn)하다",
+    "charTip": "쇠 금(钅) 부수의 단(锻)과 불 화(火) 부수의 련(炼)이 만나 금속을 달구듯 신체를 가혹하게 훈련하여 강인하게 가꾸는 체육 활동입니다.",
+    "exZh": "锻炼身体。",
+    "exPinyin": "Duànliàn shēntǐ.",
+    "exMeaning": "신체를 단련하다(운동하다)."
   },
   {
     "num": 60,
-    "hanzi": "快乐",
-    "pinyin": "kuàilè",
-    "koPron": "콰에이러",
+    "hanzi": "多么",
+    "pinyin": "duōme",
+    "koPron": "두어머",
     "meanings": [
-      { "pos": "형용사", "ko": "즐겁다", "en": "Happy" }
+      { "pos": "부사", "ko": "얼마나, 참으로", "en": "How" }
     ],
-    "hanja": "빠를 쾌(快), 즐길 락(乐)",
-    "pronTip": "콰에이러(kuàilè) 유쾌하고 즐겁다",
-    "charTip": "심방변(忄)의 쾌(快)와 악기 모양을 본뜬 나무 목(木) 계열 부수의 즐길 락(乐)이 만나 마음이 신나고 유쾌한 행복감을 나타냅니다.",
-    "exZh": "生日快乐。",
-    "exPinyin": "Shēngrì kuàilè.",
-    "exMeaning": "생일 축하해."
+    "hanja": "많을 다(多), 어조사 마(么)",
+    "pronTip": "두어머(duōme) 예쁜지!",
+    "charTip": "저녁 석(夕)이 겹친 많을 다(多) 부수 계열과 사사 사(厶) 계열의 么가 만나 수량이나 정도의 지극함을 찬탄하는 감탄 부사입니다.",
+    "exZh": "多么漂亮！",
+    "exPinyin": "Duōme piàoliang!",
+    "exMeaning": "얼마나 예쁜가!"
   },
   {
     "num": 61,
-    "hanzi": "累",
-    "pinyin": "lèi",
-    "koPron": "레이",
+    "hanzi": "饿",
+    "pinyin": "è",
+    "koPron": "으어",
     "meanings": [
-      { "pos": "형용사", "ko": "피곤하다", "en": "Tired" }
+      { "pos": "형용사", "ko": "배고프다", "en": "Hungry" }
     ],
-    "hanja": "여러 루(累)",
-    "pronTip": "너무 일해서 레이(lèi)저 쏠 만큼 피곤해",
-    "charTip": "실 사(조해 패/糸) 부수 위에 밭 전(田)이 겹쳐져, 하루 종일 전답에서 고된 가사 노동을 마쳐 신체가 몹시 고단함을 뜻합니다.",
-    "exZh": "我很累。",
-    "exPinyin": "Wǒ hěn lèi.",
-    "exMeaning": "나는 매우 피곤하다."
+    "hanja": "주릴 아(饿)",
+    "pronTip": "으어(è) 배고파 죽겠어",
+    "charTip": "좌측의 먹을 식(饣) 부수가 영양 섭취를 뜻하며 나 오(我)가 붙어 주관적으로 위장이 비어 음식을 갈구하는 기갈 상태를 뜻합니다.",
+    "exZh": "我饿了。",
+    "exPinyin": "Wǒ è le.",
+    "exMeaning": "나 배고프다."
   },
   {
     "num": 62,
-    "hanzi": "离",
-    "pinyin": "lí",
-    "koPron": "리",
+    "hanzi": "耳朵",
+    "pinyin": "ěrduo",
+    "koPron": "얼두어",
     "meanings": [
-      { "pos": "전치사", "ko": "~로부터", "en": "Away from" }
+      { "pos": "명사", "ko": "귀", "en": "Ear" }
     ],
-    "hanja": "떠날 리(离)",
-    "pronTip": "거리(lí)가 얼마나 떨어져 있어?",
-    "charTip": "새 추(隹) 계열의 부수 변형으로 본래 새가 그물을 벗어나 멀리 날아가 버리듯 특정 기점 장소로부터의 공간적 격리를 뜻합니다.",
-    "exZh": "离这儿远。",
-    "exPinyin": "Lí zhèr yuǎn.",
-    "exMeaning": "여기서 멀다."
+    "hanja": "귀 이(耳), 늘어질 타(朵)",
+    "pronTip": "얼(ěr)어붙은 내 귀",
+    "charTip": "사람 안면 측면의 귓바퀴 청각 윤곽 외형을 본뜬 귀 이(耳) 부수와 나무 목(木) 계열 朵가 만나 청각 신체 소품인 귀를 가리킵니다.",
+    "exZh": "大耳朵。",
+    "exPinyin": "Dà ěrduo.",
+    "exMeaning": "큰 귀."
   },
   {
     "num": 63,
-    "hanzi": "两",
-    "pinyin": "liǎng",
-    "koPron": "리앙",
+    "hanzi": "发",
+    "pinyin": "fā",
+    "koPron": "파",
     "meanings": [
-      { "pos": "수사", "ko": "둘, 2", "en": "Two" }
+      { "pos": "동사", "ko": "보내다, 발송하다", "en": "To Send" }
     ],
-    "hanja": "두 량(两)",
-    "pronTip": "물건 2개는 리앙(liǎng)",
-    "charTip": "저울대가 좌우 양쪽으로 완벽하게 수평 균형을 이룬 균등한 모양을 가공하여 실제 물품을 세는 단위의 숫자 2를 지칭합니다.",
-    "exZh": "两个人。",
-    "exPinyin": "Liǎng ge rén.",
-    "exMeaning": "두 사람."
+    "hanja": "필 발(发)",
+    "pronTip": "메시지를 파(fā)송하다",
+    "charTip": "또 우(又) 부수 계열의 변형으로, 본래 활시위를 당겨 화살을 외부 허공으로 세차게 튕겨 쏘아 보내듯 우편이나 신호를 보냄을 뜻합니다.",
+    "exZh": "发电子邮件。",
+    "exPinyin": "Fā diànzǐ yóujiàn.",
+    "exMeaning": "이메일을 발송하다."
   },
   {
     "num": 64,
-    "hanzi": "零",
-    "pinyin": "líng",
-    "koPron": "링",
+    "hanzi": "发烧",
+    "pinyin": "fāshāo",
+    "koPron": "파샤오",
     "meanings": [
-      { "pos": "수사", "ko": "영, 0", "en": "Zero" }
+      { "pos": "동사", "ko": "열이 나다", "en": "To Have a Fever" }
     ],
-    "hanja": "떨어질 령(零)",
-    "pronTip": "동그란 링(líng) 모양 0",
-    "charTip": "상단의 비 우(雨) 부수가 공중에서 비나 빗방울이 가볍게 아래로 똑똑 떨어지는 미세한 빈 상태의 청정 숫자 0을 뜻합니다.",
-    "exZh": "二零二三。",
-    "exPinyin": "Èr líng èr sān.",
-    "exMeaning": "2023."
+    "hanja": "필 발(发), 불사를 소(烧)",
+    "pronTip": "몸이 불타듯 파샤오(열이) 나다",
+    "charTip": "발할 발(发) 아래에 우측 글자는 불 화(火) 부수를 장착하여, 몸에서 불이 타오르듯 비정상적으로 고열 체온이 나는 병증 현상입니다.",
+    "exZh": "我发烧了。",
+    "exPinyin": "Wǒ fāshāo le.",
+    "exMeaning": "나는 열이 난다."
   },
   {
     "num": 65,
-    "hanzi": "路",
-    "pinyin": "lù",
-    "koPron": "루",
+    "hanzi": "发现",
+    "pinyin": "fāxiàn",
+    "koPron": "파시앤",
     "meanings": [
-      { "pos": "명사", "ko": "길", "en": "Road" }
+      { "pos": "동사", "ko": "발견하다, 알아차리다", "en": "To Discover" }
     ],
-    "hanja": "길 로(路)",
-    "pronTip": "루(lù)트(route) 길",
-    "charTip": "좌측의 발 족(足) 부수가 보행의 신체 기관을 가리키며, 사람들이 발로 직접 딛고 걸어 다니는 지면의 도로망을 뜻합니다.",
-    "exZh": "走错路。",
-    "exPinyin": "Zǒu cuò lù.",
-    "exMeaning": "길을 잘못 들다."
+    "hanja": "필 발(发), 나타날 현(现)",
+    "pronTip": "새로운 걸 파시앤(fāxiàn)했어",
+    "charTip": "발할 발(发)과 구슬 옥(王) 부수가 들어간 나타날 현(现)이 만나 감추어져 보이지 않던 사태나 결함을 명백히 알아채어 포착함을 뜻합니다.",
+    "exZh": "发现问题。",
+    "exPinyin": "Fāxiàn wèntí.",
+    "exMeaning": "문제를 발견하다."
   },
   {
     "num": 66,
-    "hanzi": "旅游",
-    "pinyin": "lǚyóu",
-    "koPron": "뤼요우",
+    "hanzi": "方便",
+    "pinyin": "fāngbiàn",
+    "koPron": "팡비엔",
     "meanings": [
-      { "pos": "동사", "ko": "여행하다", "en": "To Travel" }
+      { "pos": "형용사", "ko": "편리하다", "en": "Convenient" },
+      { "pos": "동사", "ko": "편의를 주다", "en": "To facilitate" }
     ],
-    "hanja": "나그네 여(旅), 놀 유(游)",
-    "pronTip": "뤼요우(lǚyóu) 짐 싸서 여행가자",
-    "charTip": "모방(方) 계열 깃발 아래 무리가 서 있는 여(旅)와 삼수변(氵) 부수의 유(游)가 만나 먼 물길과 육로를 따라 유람하는 여행 행위입니다.",
-    "exZh": "去旅游。",
-    "exPinyin": "Qù lǚyóu.",
-    "exMeaning": "여행을 가다."
+    "hanja": "모 방(方), 편할 편(便)",
+    "pronTip": "팡비엔(fāngbiàn)점(편의점)은 편해",
+    "charTip": "방위 방(方) 부수와 사람 인(亻) 부수가 결합한 편할 편(便)이 만나 이용하는 절차가 복잡하지 않고 편리함을 뜻합니다.",
+    "exZh": "很方便。",
+    "exPinyin": "Hěn fāngbiàn.",
+    "exMeaning": "매우 편리하다."
   },
   {
     "num": 67,
-    "hanzi": "卖",
-    "pinyin": "mài",
-    "koPron": "마이",
+    "hanzi": "放",
+    "pinyin": "fàng",
+    "koPron": "팡",
     "meanings": [
-      { "pos": "동사", "ko": "팔다", "en": "To Sell" }
+      { "pos": "동사", "ko": "놓다, 두다", "en": "To Put" }
     ],
-    "hanja": "팔 매(卖)",
-    "pronTip": "마이(mài) 팔았다",
-    "charTip": "하단에 재화를 뜻하는 조개 패(贝) 부수 계열 위에 선비 사(士) 모양의 넘겨줌이 더해져 내 물건을 남에게 대가를 받고 양도하는 매매 행위입니다.",
-    "exZh": "卖苹果。",
-    "exPinyin": "Mài píngguǒ.",
-    "exMeaning": "사과를 팔다."
+    "hanja": "놓을 방(放)",
+    "pronTip": "짐을 팡(fàng)하고 내려놓다",
+    "charTip": "우측의 등글월문(攵=칠 복 부수)이 손으로 기물을 쳐서 자유롭게 내버려 두듯 소지품을 특정 평면에 배치하여 놓아둠을 뜻합니다.",
+    "exZh": "放在桌子上。",
+    "exPinyin": "Fàng zài zhuōzi shàng.",
+    "exMeaning": "책상 위에 두다."
   },
   {
     "num": 68,
-    "hanzi": "慢",
-    "pinyin": "màn",
-    "koPron": "만",
+    "hanzi": "放心",
+    "pinyin": "fàngxīn",
+    "koPron": "팡신",
     "meanings": [
-      { "pos": "형용사", "ko": "느리다", "en": "Slow" }
+      { "pos": "동사", "ko": "안심하다, 마음을 놓다", "en": "To Rest Assured" }
     ],
-    "hanja": "거만할 만(慢)",
-    "pronTip": "만(màn)만디 느리다",
-    "charTip": "심방변(忄=마음 심 부수)이 사람의 정서를 뜻하며 거만하게 마음의 긴장을 늦추어 행동의 속도를 여유롭게 늦추고 느릿하게 움직임을 뜻합니다.",
-    "exZh": "慢走。",
-    "exPinyin": "Màn zǒu.",
-    "exMeaning": "천천히 가세요."
+    "hanja": "놓을 방(放), 마음 심(心)",
+    "pronTip": "팡신(fàngxīn)하고 맡겨",
+    "charTip": "칠 복 계열의 놓을 방(放)과 사유 정서 기관인 마음 심(心) 부수가 만나 긴장해 묶여있던 염려의 마음을 부드럽게 내려놓아 안심함을 뜻합니다.",
+    "exZh": "请放心。",
+    "exPinyin": "Qǐng fàngxīn.",
+    "exMeaning": "안심하세요."
   },
   {
     "num": 69,
-    "hanzi": "忙",
-    "pinyin": "máng",
-    "koPron": "망",
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "koPron": "펀",
     "meanings": [
-      { "pos": "형용사", "ko": "바쁘다", "en": "Busy" }
+      { "pos": "양사", "ko": "분(시간 단위)", "en": "Minute" },
+      { "pos": "동사", "ko": "나누다", "en": "To divide" }
     ],
-    "hanja": "바쁠 망(忙)",
-    "pronTip": "망(máng)할 너무 바쁘다",
-    "charTip": "심방변(忄=마음 심 부수) 옆에 망할 망(亡) 자가 결합하여 다른 잡무에 치여 마음의 여유가 완전히 '망실될' 정도로 무척 분주함을 나타냅니다.",
-    "exZh": "很忙。",
-    "exPinyin": "Hěn máng.",
-    "exMeaning": "매우 바쁘다."
+    "hanja": "나눌 분(分)",
+    "pronTip": "시간을 펀(fēn) 단위로 나누다",
+    "charTip": "하단의 칼 도(刀) 부수가 날카로운 메스로 상단의 여덟 팔(八) 물건 덩어리를 쪼개어 가르듯 시각이나 단위를 미세 분할함을 뜻합니다.",
+    "exZh": "十分钟。",
+    "exPinyin": "Shí fēnzhōng.",
+    "exMeaning": "10분."
   },
   {
     "num": 70,
-    "hanzi": "每",
-    "pinyin": "měi",
-    "koPron": "메이",
+    "hanzi": "附近",
+    "pinyin": "fùjìn",
+    "koPron": "푸진",
     "meanings": [
-      { "pos": "대명사", "ko": "~마다", "en": "Every" }
+      { "pos": "명사", "ko": "부근, 근처", "en": "Vicinity" }
     ],
-    "hanja": "매양 매(每)",
-    "pronTip": "메이(měi)일 매일",
-    "charTip": "비녀를 머리에 정갈하게 꽂은 가오형 모(毋) 부수 계열에서 유래해 매번, 항상 거르는 시일 없이 정기적으로 일어나는 규칙성을 뜻합니다.",
-    "exZh": "每天。",
-    "exPinyin": "Měi tiān.",
-    "exMeaning": "매일."
+    "hanja": "붙을 부(附), 가까울 근(近)",
+    "pronTip": "이 푸진(fùjìn)에 식당 있나요?",
+    "charTip": "좌부방(阝=언덕 부 부수)의 附와 책받침(辶=갈 착 부수)이 명시된 가까울 근(近)이 만나 기준에서 거리가 멀지 않고 맞붙어 있는 언저리 공간입니다.",
+    "exZh": "在附近。",
+    "exPinyin": "Zài fùjìn.",
+    "exMeaning": "부근에 있다."
   },
   {
     "num": 71,
-    "hanzi": "妹妹",
-    "pinyin": "mèimei",
-    "koPron": "메이메이",
+    "hanzi": "复习",
+    "pinyin": "fùxí",
+    "koPron": "푸시",
     "meanings": [
-      { "pos": "명사", "ko": "여동생", "en": "Younger Sister" }
+      { "pos": "동사", "ko": "복습하다", "en": "To Review" }
     ],
-    "hanja": "누이 매(妹)",
-    "pronTip": "메이메이(mèimei) 귀여운 여동생",
-    "charTip": "여자 녀(女) 부수 우측에 나뭇가지가 아직 완전히 자라나지 않은 아닐 미(未)가 결합하여 혈육 여형제 중 나이가 어린 누이를 지칭합니다.",
-    "exZh": "我的妹妹。",
-    "exPinyin": "Wǒ de mèimei.",
-    "exMeaning": "나의 여동생."
+    "hanja": "다시 복(复), 익힐 습(习)",
+    "pronTip": "푸시(fùxí)해서 내 걸로 만들자",
+    "charTip": "뒤져올치(夂) 부수의 복(复)과 날개 펄럭일 습(习) 부수가 만나 이전에 전수받은 학업 지식을 거듭 선회하여 자기 것으로 연마함을 뜻합니다.",
+    "exZh": "复习生词。",
+    "exPinyin": "Fùxí  shēngcí.",
+    "exMeaning": "새 단어를 복습하다."
   },
   {
     "num": 72,
-    "hanzi": "门",
-    "pinyin": "mén",
-    "koPron": "먼",
+    "hanzi": "干净",
+    "pinyin": "gānjìng",
+    "koPron": "간징",
     "meanings": [
-      { "pos": "명사", "ko": "문", "en": "Door" }
+      { "pos": "형용사", "ko": "깨끗하다, 정갈하다", "en": "Clean" }
     ],
-    "hanja": "문 문(门)",
-    "pronTip": "먼(mén)지가 들어오는 문",
-    "charTip": "외부와 내부를 구분해 주는 전통적인 큰 대문의 한쪽 기둥과 여닫이 외관 틀을 직관적으로 선형 가공한 고유 부수 글자입니다.",
-    "exZh": "开门。",
-    "exPinyin": "Kāi mén.",
-    "exMeaning": "문을 열다."
+    "hanja": "마를 건(干), 깨끗할 정(净)",
+    "pronTip": "간징(gānjìng)하게 청소 끝",
+    "charTip": "방패 간(干) 부수와 좌측에 이수변(冫=얼음/차단 부수)이 든 정(净)이 만나 지면에 물기나 티끌 먼지 오물이 완전히 소거되어 맑음을 뜻합니다.",
+    "exZh": "房间很干净。",
+    "exPinyin": "Fángjiān hěn gānjìng.",
+    "exMeaning": "방이 매우 깨끗하다."
   },
   {
     "num": 73,
-    "hanzi": "面条",
-    "pinyin": "miàntiáo",
-    "koPron": "미엔티아오",
+    "hanzi": "感冒",
+    "pinyin": "gǎnmào",
+    "koPron": "간마오",
     "meanings": [
-      { "pos": "명사", "ko": "국수", "en": "Noodles" }
+      { "pos": "동사", "ko": "감기에 걸리다", "en": "To catch a cold" },
+      { "pos": "명사", "ko": "감기", "en": "Cold" }
     ],
-    "hanja": "밀가루 면(面), 가지 조(条)",
-    "pronTip": "미엔(면) 가락이 티아오(tiáo)",
-    "charTip": "머리 혈 계열의 면(面)과 나무 목(木) 부수 계열의 가닥 조(条)가 만나 밀가루 반죽을 얇고 길게 가닥 내어 뽑아낸 면 국수 요리입니다.",
-    "exZh": "吃面条。",
-    "exPinyin": "Chī miàntiáo.",
-    "exMeaning": "국수를 먹다."
+    "hanja": "느낄 감(感), 무릅쓸 모(冒)",
+    "pronTip": "간마오(gǎnmào) 감기 조심",
+    "charTip": "하단 마음 심(心) 부수의 감(感)과 멀경(冂) 계열 모자 모 부수의 모(冒)가 만나 바이러스성 상기도 감염 질환에 노출되어 앓음을 뜻합니다.",
+    "exZh": "我感冒了。",
+    "exPinyin": "Wǒ gǎnmào le.",
+    "exMeaning": "나는 감기에 걸렸다."
   },
   {
     "num": 74,
-    "hanzi": "男",
-    "pinyin": "nán",
-    "koPron": "난",
+    "hanzi": "感兴趣",
+    "pinyin": "gǎn xìngqù",
+    "koPron": "간 싱취",
     "meanings": [
-      { "pos": "명사", "ko": "남자", "en": "Male" }
+      { "pos": "동사", "ko": "흥미가 있다, 관심이 가다", "en": "Interested" }
     ],
-    "hanja": "사내 남(男)",
-    "pronTip": "난(nán) 남자다",
-    "charTip": "상단의 밭 전(田) 부수 아래에 신체 근육을 상징하는 힘 력(力) 부수가 결합하여 야외 전답에서 힘써 중노동을 하던 남성을 뜻합니다.",
-    "exZh": "男人。",
-    "exPinyin": "Nánrén.",
-    "exMeaning": "남자."
+    "hanja": "느낄 감(感), 흥미 취(趣)",
+    "pronTip": "간(gǎn)절히 싱취(xìngqù)가 생겨",
+    "charTip": "마음 심(心) 부수의 감(感)과 달릴 주(走) 부수가 왼쪽에 포함된 뜻 취(趣)가 만나 내 정서가 특정 취미에 동화되어 쏠림을 뜻합니다.",
+    "exZh": "我对历史感兴趣。",
+    "exPinyin": "Wǒ duì lìshǐ gǎn xìngqù.",
+    "exMeaning": "나는 역사에 흥미가 있다."
   },
   {
     "num": 75,
-    "hanzi": "您",
-    "pinyin": "nín",
-    "koPron": "닌",
+    "hanzi": "刚才",
+    "pinyin": "gāngcái",
+    "koPron": "강차이",
     "meanings": [
-      { "pos": "대명사", "ko": "당신 (존칭)", "en": "You" }
+      { "pos": "명사", "ko": "방금, 조금 전", "en": "Just now" },
+      { "pos": "부사", "ko": "막", "en": "Just" }
     ],
-    "hanja": "너 닌(您)",
-    "pronTip": "닌(nín)자처럼 조심스레 모시는 당신",
-    "charTip": "2인칭을 가리키는 너 니(你)의 하단에 마음 심(心) 부수를 경건하게 추가하여 윗사람이나 대상을 각별히 우러러 부르는 존칭 대명사입니다.",
-    "exZh": "您好。",
-    "exPinyin": "Nín hǎo.",
-    "exMeaning": "안녕하세요."
+    "hanja": "바야흐로 강(刚), 재주 재(才)",
+    "pronTip": "강차이(gāngcái) 방금 전에",
+    "charTip": "선칼도방(刂) 부수의 굳센 강(刚)과 싹이 돋는 지사 부수의 겨우 재(才)가 만나 현재 시점에서 아주 미세한 직전의 과거 시간을 뜻하는 시간명사입니다.",
+    "exZh": "刚才他来了。",
+    "exPinyin": "Gāngcái tā lái le.",
+    "exMeaning": "방금 그가 왔다."
   },
   {
     "num": 76,
-    "hanzi": "牛奶",
-    "pinyin": "niúnǎi",
-    "koPron": "니우나이",
+    "hanzi": "个子",
+    "pinyin": "gèzi",
+    "koPron": "거쯔",
     "meanings": [
-      { "pos": "명사", "ko": "우유", "en": "Milk" }
+      { "pos": "명사", "ko": "키, 신장, 체구", "en": "Stature" }
     ],
-    "hanja": "소 우(牛), 젖 내(奶)",
-    "pronTip": "니우(niú) 소의 나이(nǎi) 젖",
-    "charTip": "뿔이 난 소의 머리를 본뜬 소 우(牛) 부수와 여자 녀(女) 부수가 포함된 젖 내(奶)가 결합하여 젖소가 생산한 우유를 뜻합니다.",
-    "exZh": "喝牛奶。",
-    "exPinyin": "Hē niúnǎi.",
-    "exMeaning": "우유를 마시다."
+    "hanja": "낱 개(个), 아들 자(子)",
+    "pronTip": "거쯔(gèzi)가 얼마나 크니?",
+    "charTip": "사람 인(人) 부수의 변형인 个와 아기 자(子) 부수가 만나 사람 개개인의 신체적인 크기나 신장을 나타냅니다.",
+    "exZh": "个子很高。",
+    "exPinyin": "Gèzi hěn gāo.",
+    "exMeaning": "키가 크다."
   },
   {
     "num": 77,
-    "hanzi": "女",
-    "pinyin": "nǚ",
-    "koPron": "뉘",
+    "hanzi": "跟",
+    "pinyin": "gēn",
+    "koPron": "건",
     "meanings": [
-      { "pos": "명사", "ko": "여자", "en": "Female" }
+      { "pos": "전치사", "ko": "~와/과", "en": "With" },
+      { "pos": "동사", "ko": "따라가다", "en": "To follow" }
     ],
-    "hanja": "계집 녀(女)",
-    "pronTip": "뉘(nǚ) 집 딸인지 참 예쁜 여자",
-    "charTip": "한 여성이 두 손을 앞으로 공손히 모으고 다소곳하게 무릎을 꿇고 앉아 있는 모습을 본뜬 고유한 부수 글자입니다.",
-    "exZh": "女人。",
-    "exPinyin": "Nǚ rén.",
-    "exMeaning": "여자."
+    "hanja": "발뒤꿈치 근(跟)",
+    "pronTip": "나를 건(gēn) 건너뛰지 말고 따라와",
+    "charTip": "좌측의 발 족(足) 부수가 발의 움직임을 뜻하며, 타인의 발뒤꿈치를 바짝 따라간다는 의미에서 동반 전치사(~와)로 확장되었습니다.",
+    "exZh": "跟我走。",
+    "exPinyin": "Gēn wǒ zǒu.",
+    "exMeaning": "나를 따라와."
   },
   {
     "num": 78,
-    "hanzi": "旁边",
-    "pinyin": "pángbiān",
-    "koPron": "팡비엔",
+    "hanzi": "根据",
+    "pinyin": "gēnjù",
+    "koPron": "건쥐",
     "meanings": [
-      { "pos": "명사", "ko": "옆", "en": "Side" }
+      { "pos": "전치사", "ko": "~에 근거하여", "en": "According to" },
+      { "pos": "명사", "ko": "토대, 근거", "en": "Basis" }
     ],
-    "hanja": "곁 방(旁), 가 변(边)",
-    "pronTip": "팡비엔(pángbiān) 옆으로 와",
-    "charTip": "방 향(方) 계열의 곁 방(旁)과 책받침(辶=갈 착 부수)이 들어간 가장자리 변(边)이 만나 중심축에서 벗어난 측면 영역을 뜻합니다.",
-    "exZh": "在旁边。",
-    "exPinyin": "Zài pángbiān.",
-    "exMeaning": "옆에 있다."
+    "hanja": "뿌리 근(根), 의거할 거(据)",
+    "pronTip": "이유를 건쥐(gēnjù) 삼아",
+    "charTip": "나무 목(木) 부수의 뿌리 근(根)과 손 수(扌) 부수가 포함된 의거할 거(据)가 만나 나무뿌리처럼 단단한 사실에 기반함을 뜻합니다.",
+    "exZh": "根据情况。",
+    "exPinyin": "Gēnjù qíngkuàng.",
+    "exMeaning": "상황에 근거하여."
   },
   {
     "num": 79,
-    "hanzi": "跑步",
-    "pinyin": "pǎobù",
-    "koPron": "파오부",
+    "hanzi": "更",
+    "pinyin": "gèng",
+    "koPron": "껑",
     "meanings": [
-      { "pos": "동사", "ko": "달리다", "en": "To Run" }
+      { "pos": "부사", "ko": "더, 더욱", "en": "More" }
     ],
-    "hanja": "달릴 포(跑), 걸음 부(步)",
-    "pronTip": "파오(pǎo)워 워킹하며 부(bù)지런히 뛰다",
-    "charTip": "발 족(足) 부수가 포함된 달릴 포(跑)와 그칠 지(止) 계열의 걸음 부(步) 부수가 만나 발을 굴러 신속하게 전진하는 달리기 동작입니다.",
-    "exZh": "喜欢跑步。",
-    "exPinyin": "Xǐhuan pǎobù.",
-    "exMeaning": "달리기를 좋아한다."
+    "hanja": "고칠 갱/더욱 경(更)",
+    "pronTip": "껑(gèng)충 더 높이 뛰다",
+    "charTip": "가로왈(曰) 부수 계열의 글자로, 본래 기존의 규칙이나 상태를 새롭게 고쳐서 '더욱, 한층 더' 나아가게 함을 뜻하는 부사입니다.",
+    "exZh": "更好。",
+    "exPinyin": "Gèng hǎo.",
+    "exMeaning": "더 좋다."
   },
   {
     "num": 80,
-    "hanzi": "便宜",
-    "pinyin": "piányi",
-    "koPron": "피엔이",
+    "hanzi": "公斤",
+    "pinyin": "gōngjīn",
+    "koPron": "궁진",
     "meanings": [
-      { "pos": "형용사", "ko": "싸다", "en": "Cheap" }
+      { "pos": "양사", "ko": "킬로그램(kg)", "en": "Kilogram" }
     ],
-    "hanja": "편할 편(便), 마당 의/마땅할 의(宜)",
-    "pronTip": "피엔이(piányi) 점에서는 싸다",
-    "charTip": "사람(亻)이 불편한 점을 고쳐(고칠 경(更)) 편(便)안해지다와 갓머리(宀=집 면 부수)가 포함된 宜가 만나 예산에 무리 없이 들어맞아 가격이 저렴함을 뜻합니다.",
-    "exZh": "很便宜。",
-    "exPinyin": "Hěn piányi.",
-    "exMeaning": "매우 싸다."
+    "hanja": "공평할 공(公), 근 근(斤)",
+    "pronTip": "1궁진(gōngjīn)은 1kg",
+    "charTip": "여덟 팔(八) 부수의 공(公)과 도끼 근(斤) 부수가 만나 공공으로 통용되는 무게 측정 기준 단위인 킬로그램을 나타냅니다.",
+    "exZh": "一公斤苹果。",
+    "exPinyin": "Yì gōngjīn píngguǒ.",
+    "exMeaning": "사과 1킬로그램."
   },
   {
     "num": 81,
-    "hanzi": "票",
-    "pinyin": "piào",
-    "koPron": "피아오",
+    "hanzi": "公园",
+    "pinyin": "gōngyuán",
+    "koPron": "궁유엔",
     "meanings": [
-      { "pos": "명사", "ko": "표, 티켓", "en": "Ticket" }
+      { "pos": "명사", "ko": "공원", "en": "Park" }
     ],
-    "hanja": "표 표(票)",
-    "pronTip": "피아오(piào) 끊어라",
-    "charTip": "보이지 않는 제단 위에서 불꽃이 위로 파닥거리며 흩날리는 전표나 티켓 조각을 뜻하는 보일 시(示) 계열의 부수 글자입니다.",
-    "exZh": "买车票。",
-    "exPinyin": "Mǎi chēpiào.",
-    "exMeaning": "차표를 사다."
+    "hanja": "공평할 공(公), 동산 원(园)",
+    "pronTip": "궁유엔(gōngyuán) 산책 가자",
+    "charTip": "공평할 공(公)과 테두리 에운담(囗) 부수 안에 가꾸어진 동산 원(园)이 만나 대중이 함께 이용하는 휴식 정원을 뜻합니다.",
+    "exZh": "去公园。",
+    "exPinyin": "Qù gōngyuán.",
+    "exMeaning": "공원에 가다."
   },
   {
     "num": 82,
-    "hanzi": "千",
-    "pinyin": "qiān",
-    "koPron": "치엔",
+    "hanzi": "故事",
+    "pinyin": "gùshi",
+    "koPron": "구스",
     "meanings": [
-      { "pos": "수사", "ko": "천, 1000", "en": "Thousand" }
+      { "pos": "명사", "ko": "이야기", "en": "Story" }
     ],
-    "hanja": "일천 천(千)",
-    "pronTip": "치엔(qiān) 원 지폐",
-    "charTip": "사람 인(人) 부수의 가로지르는 획을 하나 더 얹어, 사람의 무리가 일천 명에 달할 정도로 무척 큰 수량 단위를 가리킵니다.",
-    "exZh": "一千。",
-    "exPinyin": "Yì qiān.",
-    "exMeaning": "1000."
+    "hanja": "연고 고(故), 일 사(事)",
+    "pronTip": "구스(gùshi) 옛날 옛적 이야기",
+    "charTip": "등글월문(攵) 부수의 옛 고(故)와 갈고리 곤 계열의 일 사(事)가 결합해 과거에 일어났던 흥미로운 사건이나 설화를 뜻합니다.",
+    "exZh": "听故事。",
+    "exPinyin": "Tīng gùshi.",
+    "exMeaning": "이야기를 듣다."
   },
   {
     "num": 83,
-    "hanzi": "妻子",
-    "pinyin": "qīzi",
-    "koPron": "치쯔",
+    "hanzi": "刮风",
+    "pinyin": "guā fêng",
+    "koPron": "구아 펑",
     "meanings": [
-      { "pos": "명사", "ko": "아내", "en": "Wife" }
+      { "pos": "동사", "ko": "바람이 불다", "en": "Windy" }
     ],
-    "hanja": "아내 처(妻), 아들 자(子)",
-    "pronTip": "치쯔(qīzi)하고 예쁜 아내",
-    "charTip": "여자가 머리에 비녀를 꽂고 가사를 총괄하는 형상의 여자 녀(女) 부수의 처(妻)와 아기 자(子) 부수가 만난 가족 명칭입니다.",
-    "exZh": "他的妻子。",
-    "exPinyin": "Tā de qīzi.",
-    "exMeaning": "그의 아내."
+    "hanja": "긁을 괄(刮), 바람 풍(风)",
+    "pronTip": "구아(guā)하고 강한 바람(fêng)이 불다",
+    "charTip": "선칼도방(刂) 부수가 든 괄(刮)과 흩날리는 형상의 바람 풍(风) 부수가 만나 칼로 살을 긁어내듯 매서운 바람이 부는 현상입니다.",
+    "exZh": "刮大风了。",
+    "exPinyin": "Guā dà fêng le.",
+    "exMeaning": "큰 바람이 분다."
   },
   {
     "num": 84,
-    "hanzi": "起床",
-    "pinyin": "qǐchuáng",
-    "koPron": "치추앙",
+    "hanzi": "关",
+    "pinyin": "guān",
+    "koPron": "구안",
     "meanings": [
-      { "pos": "동사", "ko": "일어나다", "en": "To Get up" }
+      { "pos": "동사", "ko": "닫다, 끄다, 잠그다", "en": "To Close" }
     ],
-    "hanja": "일어날 기(起), 평상 상(床)",
-    "pronTip": "치(qǐ) 하고 추앙(chuáng) 침대에서 일어나다",
-    "charTip": "달릴 주(走) 부수의 일어날 기(起)와 엄호(广) 부수 안에 나무가 든 평상 상(床)이 만나 침상에서 몸을 일으킴을 뜻합니다.",
-    "exZh": "早上起床。",
-    "exPinyin": "Zǎoshang qǐchuáng.",
-    "exMeaning": "아침에 일어나다."
+    "hanja": "빗장 관(关)",
+    "pronTip": "문을 구안(guān) 단단히 닫아라",
+    "charTip": "여덟 팔(八) 부수 계열의 글자로, 대문의 교차하는 빗장 기둥을 걸어 잠가 출입을 통제하고 폐쇄함을 뜻합니다.",
+    "exZh": "关门。",
+    "exPinyin": "Guān mén.",
+    "exMeaning": "문을 닫다."
   },
   {
     "num": 85,
-    "hanzi": "铅笔",
-    "pinyin": "qiānbǐ",
-    "koPron": "치엔비",
+    "hanzi": "关系",
+    "pinyin": "guānxi",
+    "koPron": "구안시",
     "meanings": [
-      { "pos": "명사", "ko": "연필", "en": "Pencil" }
+      { "pos": "명사", "ko": "관계, 연관", "en": "Relationship" }
     ],
-    "hanja": "납 연(铅), 붓 필(笔)",
-    "pronTip": "치엔비(qiānbǐ)로 필기하다",
-    "charTip": "쇠 금(钅) 부수가 든 흑연 연(铅)과 대나무 죽(竹) 부수가 상단에 배치된 붓 필(笔)이 만나 필기용 연필을 지칭합니다.",
-    "exZh": "一支铅笔。",
-    "exPinyin": "Yì zhī qiānbǐ.",
-    "exMeaning": "연필 한 자루."
+    "hanja": "빗장 관(关), 맬 계(系)",
+    "pronTip": "우리 구안시(guānxi) 긴밀한 관계",
+    "charTip": "빗장 관(关)과 하단의 실 사(糸) 부수가 포함된 맬 계(系)가 결합하여 사람이나 사물끼리 끈으로 매듭지어지듯 연결된 사이를 뜻합니다.",
+    "exZh": "关系很好。",
+    "exPinyin": "Guānxi hěn hǎo.",
+    "exMeaning": "관계가 좋다."
   },
   {
     "num": 86,
-    "hanzi": "晴",
-    "pinyin": "qíng",
-    "koPron": "칭",
+    "hanzi": "关心",
+    "pinyin": "guānxīn",
+    "koPron": "구안신",
     "meanings": [
-      { "pos": "형용사", "ko": "맑다", "en": "Sunny" }
+      { "pos": "동사", "ko": "관심을 갖다, 보살피다", "en": "To Care for" }
     ],
-    "hanja": "갤 청(晴)",
-    "pronTip": "칭(qíng)창하게 맑은 날씨",
-    "charTip": "날 일(日) 부수가 하늘의 태양을 뜻하고, 우측의 푸를 청(青)이 결합하여 먹구름이 걷히고 하늘이 푸르게 개인 상태를 뜻합니다.",
-    "exZh": "今天是晴天。",
-    "exPinyin": "Jīntiān shì qíngtiān.",
-    "exMeaning": "오늘은 맑은 날이다."
+    "hanja": "빗장 관(关), 마음 심(心)",
+    "pronTip": "서로 구안신(guānxīn)을 쏟아 돌보다",
+    "charTip": "대문을 잠그는 관(关)과 정서 기관인 마음 심(心) 부수가 만나 특정 대상에게 마음의 빗장을 열고 긴밀히 신경 쓰며 돌봄을 뜻합니다.",
+    "exZh": "关心朋友。",
+    "exPinyin": "Guānxīn péngyou.",
+    "exMeaning": "친구에게 관심을 가지다."
   },
   {
     "num": 87,
-    "hanzi": "去年",
-    "pinyin": "qùnián",
-    "koPron": "취니엔",
+    "hanzi": "关于",
+    "pinyin": "guānyú",
+    "koPron": "구안위",
     "meanings": [
-      { "pos": "명사", "ko": "작년", "en": "Last Year" }
+      { "pos": "전치사", "ko": "~에 관하여, ~에 대해서", "en": "About" }
     ],
-    "hanja": "갈 거(去), 해 년(年)",
-    "pronTip": "취니엔(qùnián)에 갔었지",
-    "charTip": "거처를 떠나는 형상의 갈 거(去) 부수 계열과 농사의 결실 주기를 뜻하는 해 년(年)이 만나 이미 지나가버린 해를 뜻합니다.",
-    "exZh": "去年北京。",
-    "exPinyin": "Qùnián Běijīng.",
-    "exMeaning": "작년의 베이징."
+    "hanja": "빗장 관(关), 어조사 우(于)",
+    "pronTip": "이 문제에 구안위(guānyú) 토론하자",
+    "charTip": "빗장 관(关) 부수 계열과 어조사 우(于) 부수가 만나 특정 범주나 사물에 연관 지어 화제를 도입하는 전치사 역할을 합니다.",
+    "exZh": "关于这个问题。",
+    "exPinyin": "Guānyú zhè ge wèntí.",
+    "exMeaning": "이 문제에 관하여."
   },
   {
     "num": 88,
-    "hanzi": "让",
-    "pinyin": "ràng",
-    "koPron": "랑",
+    "hanzi": "国家",
+    "pinyin": "guójiā",
+    "koPron": "구오지아",
     "meanings": [
-      { "pos": "동사", "ko": "~하게 하다", "en": "To Let" }
+      { "pos": "명사", "ko": "국가, 나라", "en": "Country" }
     ],
-    "hanja": "사양할 양(让)",
-    "pronTip": "네가 하도록 랑(ràng)보할게",
-    "charTip": "말씀 언(讠)과 소리를 나타내는 도울 양(襄)이 합쳐져, 말로 의견을 구함을 뜻하고 언어적 명령이나 배려를 통해 피사동문 구조를 형성합니다.",
-    "exZh": "让我看看。",
-    "exPinyin": "Ràng wǒ kànkan.",
-    "exMeaning": "내가 좀 볼게."
+    "hanja": "나라 국(国), 집 가(家)",
+    "pronTip": "우리 구오지아(guójiā) 주권",
+    "charTip": "에운담(囗) 부수 안에 구슬 옥(玉)이 든 국(国)과 갓머리(宀) 부수의 가(家)가 만나 국경으로 둘러싸인 거대한 사회 공동체를 뜻합니다.",
+    "exZh": "其他国家。",
+    "exPinyin": "Qítā guójiā.",
+    "exMeaning": "다른 국가."
   },
   {
     "num": 89,
-    "hanzi": "日",
-    "pinyin": "rì",
-    "koPron": "르",
+    "hanzi": "过",
+    "pinyin": "guò",
+    "koPron": "구오",
     "meanings": [
-      { "pos": "명사", "ko": "일, 날짜", "en": "Day" }
+      { "pos": "동사", "ko": "지나다, 지내다, 건너다", "en": "To Pass" }
     ],
-    "hanja": "날 일(日)",
-    "pronTip": "르(rì)력(달력)의 날짜",
-    "charTip": "하늘에 둥글게 떠 있는 태양의 외형과 중심의 흑점을 선형화하여 날짜와 낮을 세는 근본 부수 글자입니다.",
-    "exZh": "十日。",
-    "exPinyin": "Shí rì.",
-    "exMeaning": "10일."
+    "hanja": "지날 과(过)",
+    "pronTip": "시간이 구오(guò) 훌쩍 지나가다",
+    "charTip": "책받침(辶=갈 착 부수)이 도보의 흐름을 뜻하며, 정해진 시간 축이나 공간적인 경계선을 넘어서 통과해 지나감을 뜻합니다.",
+    "exZh": "过生日。",
+    "exPinyin": "Guò shēngrì.",
+    "exMeaning": "생일을 지내다."
   },
   {
     "num": 90,
-    "hanzi": "上班",
-    "pinyin": "shàngbān",
-    "koPron": "샹빤",
+    "hanzi": "过去",
+    "pinyin": "guòqù",
+    "koPron": "구오취",
     "meanings": [
-      { "pos": "동사", "ko": "출근하다", "en": "To Go to Work" }
+      { "pos": "명사", "ko": "과거, 이전", "en": "Past" },
+      { "pos": "동사", "ko": "지나가다", "en": "To go over" }
     ],
-    "hanja": "윗 상(上), 나눌 반(班)",
-    "pronTip": "샹빤(shàngbān) 시간에 출근하다",
-    "charTip": "위 상(上) 부수와 임금 왕(王=구슬 옥) 사이에 칼이 들어간 나눌 반(班)이 합쳐져 내 근무 조에 투입됨을 의미합니다.",
-    "exZh": "去上班。",
-    "exPinyin": "Qù shàngbān.",
-    "exMeaning": "출근하러 가다."
+    "hanja": "지날 과(过), 갈 거(去)",
+    "pronTip": "구오취(guòqù)한 옛날 기억",
+    "charTip": "갈 착(辶) 부수의 지날 과(过)와 사사 사(厶) 계열의 갈 거(去)가 만나 이미 시간 선상 뒤편으로 흘러가 버린 세월을 가리킵니다.",
+    "exZh": "过去的事情。",
+    "exPinyin": "Guòqù de shìqing.",
+    "exMeaning": "과거의 일."
   },
   {
     "num": 91,
-    "hanzi": "身体",
-    "pinyin": "shēntǐ",
-    "koPron": "션티",
+    "hanzi": "还是",
+    "pinyin": "háishi",
+    "koPron": "하이스",
     "meanings": [
-      { "pos": "명사", "ko": "몸, 건강", "en": "Body" }
+      { "pos": "부사", "ko": "여전히", "en": "Still" },
+      { "pos": "접속사", "ko": "아니면(선택의문문)", "en": "Or" }
     ],
-    "hanja": "몸 신(身), 몸 체(体)",
-    "pronTip": "션티(shēntǐ)가 튼튼하다",
-    "charTip": "아이를 밴 사람의 측면 윤곽인 몸 신(身) 부수와 사람 인(亻) 부수가 든 몸 체(体)가 만나 신체적 건강 상태를 뜻합니다.",
-    "exZh": "身体好。",
-    "exPinyin": "Shēntǐ hǎo.",
-    "exMeaning": "몸이 좋다."
+    "hanja": "돌아올 환(还), 옳을 시(是)",
+    "pronTip": "하이스(háishi) 그래도 너뿐이야",
+    "charTip": "갈 착(辶) 부수의 환(还)과 해 일(日) 부수 아래 바를 정이 든 시(是)가 만나 원점으로 돌아와 여전함을 뜻하거나 대상을 선택할 때 씁니다.",
+    "exZh": "喝茶还是喝咖啡？",
+    "exPinyin": "Hē chá háishi hē kāfēi?",
+    "exMeaning": "차를 마실래 아니면 커피를 마실래?"
   },
   {
     "num": 92,
-    "hanzi": "生病",
-    "pinyin": "shēngbìng",
-    "koPron": "셩빙",
+    "hanzi": "害怕",
+    "pinyin": "hàipà",
+    "koPron": "하이파",
     "meanings": [
-      { "pos": "동사", "ko": "병이 나다", "en": "To Get Sick" }
+      { "pos": "동사", "ko": "두려워하다, 무서워하다", "en": "To Be Afraid" }
     ],
-    "hanja": "날 생(生), 병 병(病)",
-    "pronTip": "셩빙(shēngbìng) 걸려 아프다",
-    "charTip": "새싹이 돋는 날 생(生) 부수와 신체 통증 질환을 나타내는 병질엄(疒) 부수의 병 병(病)이 만나 신체에 병이 발생함을 뜻합니다.",
-    "exZh": "他生病了。",
-    "exPinyin": "Tā shēngbìng le.",
-    "exMeaning": "그는 병이 났다."
+    "hanja": "해할 해(害), 두려워할 파(怕)",
+    "pronTip": "위해를 입을까 몸을 하이파(hàipà) 사리다",
+    "charTip": "갓머리(宀) 부수의 해(害)와 심방변(忄=마음 심 부수)이 든 파(怕)가 만나 내면에 위해를 입을까 가슴 졸이며 두려워하는 감정입니다.",
+    "exZh": "不要害怕。",
+    "exPinyin": "Búyào  hàipà.",
+    "exMeaning": "두려워하지 마."
   },
   {
     "num": 93,
-    "hanzi": "生日",
-    "pinyin": "shēngrì",
-    "koPron": "셩르",
+    "hanzi": "黑板",
+    "pinyin": "hêibǎn",
+    "koPron": "헤이반",
     "meanings": [
-      { "pos": "명사", "ko": "생일", "en": "Birthday" }
+      { "pos": "명사", "ko": "칠판, 흑판", "en": "Blackboard" }
     ],
-    "hanja": "날 생(生), 날 일(日)",
-    "pronTip": "셩르(shēngrì) 파티",
-    "charTip": "식물이 지면에서 자라는 모양의 날 생(生) 부수와 달력 일수를 뜻하는 날 일(日) 부수가 만나 태어난 기념일을 뜻합니다.",
-    "exZh": "生日快乐。",
-    "exPinyin": "Shēngrì kuàilè.",
-    "exMeaning": "생일 축하해."
+    "hanja": "검을 흑(黑), 널 판(板)",
+    "pronTip": "헤이반(hêibǎn)에 하얗게 판서하다",
+    "charTip": "불 화 변형(灬) 부수의 검을 흑(黑)과 나무 목(木) 부수가 포함된 널빤지 판(板)이 만나 교실 앞면의 검은색 강의용 판자를 뜻합니다.",
+    "exZh": "看黑板。",
+    "exPinyin": "Kàn hêibǎn.",
+    "exMeaning": "칠판을 보다."
   },
   {
     "num": 94,
-    "hanzi": "时间",
-    "pinyin": "shíjiān",
-    "koPron": "스지엔",
+    "hanzi": "Later",
+    "pinyin": "hòulái",
+    "koPron": "호우라이",
     "meanings": [
-      { "pos": "명사", "ko": "시간", "en": "Time" }
+      { "pos": "명사", "ko": "그 후에, 그 뒤에", "en": "Later" }
     ],
-    "hanja": "때 시(时), 사이 간(间)",
-    "pronTip": "스지엔(shíjiān)이 얼마나 남았지?",
-    "charTip": "해 일(日) 부수와 음을 나타내는 절 사(寺)의 형성자인 시(时)와 문 문(门) 부수 사이에 햇살(日)이 비추는 사이 간(间)이 합쳐져 연속되는 세월의 흐름을 뜻합니다.",
-    "exZh": "没有时间。",
-    "exPinyin": "Méiyǒu shíjiān.",
-    "exMeaning": "시간이 없다."
+    "hanja": "뒤 후(后), 올 래(来)",
+    "pronTip": "호우라이(hòulái) 나중에 반전이 일어났다",
+    "charTip": "입 구(口) 부수의 뒤 후(后)와 나무 목 계열의 올 래(来) 부수가 만나 어떤 사건이 기점보다 시간상 후방에 도래했음을 나타냅니다.",
+    "exZh": "后来他走了。",
+    "exPinyin": "Hòulái tā zǒu le.",
+    "exMeaning": "그 후 그가 갔다."
   },
   {
     "num": 95,
-    "hanzi": "事情",
-    "pinyin": "shìqing",
-    "koPron": "스칭",
+    "hanzi": "护照",
+    "pinyin": "hùzhào",
+    "koPron": "후자오",
     "meanings": [
-      { "pos": "명사", "ko": "일, 사건", "en": "Affair" }
+      { "pos": "명사", "ko": "여권", "en": "Passport" }
     ],
-    "hanja": "일 사(事), 뜻 정(情)",
-    "pronTip": "스칭(shìqing)이 어떻게 된 일이야?",
-    "charTip": "깃대를 잡고 손으로 사무를 처리하는 일 사(事) 부수와 심방변(忄=마음 심 부수)이 들어간 뜻 정(情)의 결합어입니다.",
-    "exZh": "很多事情。",
-    "exPinyin": "Hěn duō  shìqing.",
-    "exMeaning": "많은 일."
+    "hanja": "보호할 호(护), 비출 조(照)",
+    "pronTip": "출국할 땐 후자오(hùzhào)를 챙겨라",
+    "charTip": "손 수(扌) 부수가 호(护)와 연화발(灬=불 화 부수)의 조(照)가 만나 해외에서 자국민의 안전을 보호하고 신원을 밝혀 비추는 증서입니다.",
+    "exZh": "带护照。",
+    "exPinyin": "Dài hùzhào.",
+    "exMeaning": "여권을 지니다."
   },
   {
     "num": 96,
-    "hanzi": "手表",
-    "pinyin": "shǒubiǎo",
-    "koPron": "쇼우비아오",
+    "hanzi": "花",
+    "pinyin": "huā",
+    "koPron": "후아",
     "meanings": [
-      { "pos": "명사", "ko": "손목시계", "en": "Watch" }
+      { "pos": "명사", "ko": "꽃", "en": "Flower" },
+      { "pos": "동사", "ko": "(돈/시간을) 쓰다, 소비하다", "en": "To Spend" }
     ],
-    "hanja": "손 수(手), 겉 표(表)",
-    "pronTip": "쇼우(shǒu) 손에 차는 비아오(biǎo) 시계",
-    "charTip": "다섯 손가락을 쫙 펼친 형상의 손 수(手) 부수와 옷의 겉면을 타나내는 옷 의 계열 겉 표(表) 부수가 만나 외부에 착용하는 시계입니다.",
-    "exZh": "买手表。",
-    "exPinyin": "Mǎi shǒubiǎo.",
-    "exMeaning": "시계를 사다."
+    "hanja": "꽃 화(花)",
+    "pronTip": "꽃(huā)을 사고 재화를 후아(huā)하게 소비하다",
+    "charTip": "상단의 풀 초(艹) 부수가 초본 식물을 뜻하며, 꽃이 피고 지듯 돈이나 시간의 가치를 소모하여 소비함을 뜻하기도 합니다.",
+    "exZh": "花钱。",
+    "exPinyin": "Huā qián.",
+    "exMeaning": "돈을 쓰다."
   },
   {
     "num": 97,
-    "hanzi": "手机",
-    "pinyin": "shǒujī",
-    "koPron": "쇼우지",
+    "hanzi": "画",
+    "pinyin": "huà",
+    "koPron": "후아",
     "meanings": [
-      { "pos": "명사", "ko": "휴대 전화", "en": "Cellphone" }
+      { "pos": "동사", "ko": "그리다", "en": "To Draw" },
+      { "pos": "명사", "ko": "그림", "en": "Picture" }
     ],
-    "hanja": "손 수(手), 틀 기(机)",
-    "pronTip": "쇼우지(shǒujī)로 전화 걸다",
-    "charTip": "신체 손 모양의 손 수(手) 부수와 목재 가공 축인 나무 목(木) 부수의 틀 기(机)가 만나 손에 들고 다니는 전자 휴대 기기입니다.",
-    "exZh": "看手机。",
-    "exPinyin": "Kàn shǒujī.",
-    "exMeaning": "휴대폰을 보다."
+    "hanja": "그림 화(画)",
+    "pronTip": "캔버스에 그림을 후아(huà) 펼쳐 그리다",
+    "charTip": "가로획 아래 밭 전(田) 부수 형태 틀이 있어, 붓으로 영토의 구획이나 사물의 외관 형상을 선으로 정밀하게 묘사해 낸 그림입니다.",
+    "exZh": "画画儿。",
+    "exPinyin": "Huà huàr.",
+    "exMeaning": "그림을 그리다."
   },
   {
     "num": 98,
-    "hanzi": "说话",
-    "pinyin": "shuōhuà",
-    "koPron": "슈오화",
+    "hanzi": "坏",
+    "pinyin": "huài",
+    "koPron": "후아이",
     "meanings": [
-      { "pos": "동사", "ko": "말하다", "en": "To Speak" }
+      { "pos": "형용사", "ko": "나쁘다, 망가지다", "en": "Bad/Broken" }
     ],
-    "hanja": "말씀 설(说), 말씀 화(话)",
-    "pronTip": "슈오화(shuōhuà) 수다 떨다",
-    "charTip": "두 글자 모두 좌측에 음성 언어를 상징하는 말씀 언(讠) 부수를 장착하여 타인과 구두로 발성해 대화를 나누는 모습입니다.",
-    "exZh": "别说话。",
-    "exPinyin": "Bié shuōhuà.",
-    "exMeaning": "말하지 마라."
+    "hanja": "무너질 괴(坏)",
+    "pronTip": "부품이 후아이(huài) 망가져 못 쓰게 되다",
+    "charTip": "좌측의 흙 토(土) 부수가 단단한 지반을 뜻하며, 그것이 균열이 가고 무너져 내려 정상 기능을 상실하고 나빠진 상태를 뜻합니다.",
+    "exZh": "电脑坏了。",
+    "exPinyin": "Diànnǎo huài le.",
+    "exMeaning": "컴퓨터가 망가졌다."
   },
   {
     "num": 99,
-    "hanzi": "送",
-    "pinyin": "sòng",
-    "koPron": "쑹",
+    "hanzi": "欢迎",
+    "pinyin": "huānyíng",
+    "koPron": "후안잉",
     "meanings": [
-      { "pos": "동사", "ko": "보내다, 배웅하다", "en": "To Send" }
+      { "pos": "동사", "ko": "환영하다", "en": "To Welcome" }
     ],
-    "hanja": "보낼 송(送)",
-    "pronTip": "선물을 쑹(sòng) 보내다",
-    "charTip": "辵(辶, 쉬엄쉬엄 갈 착)과 灷(불씨 선)이 합쳐진 회의자, 노정의 이동을 뜻하며 물품을 먼 목적지로 발송하거나 떠나는 사람을 동행해 배웅해 줌을 뜻합니다.",
-    "exZh": "送给你。",
-    "exPinyin": "Sòng gěi nǐ.",
-    "exMeaning": "너에게 선물할게."
+    "hanja": "기쁠 희/환할 환(欢), 맞을 영(迎)",
+    "pronTip": "귀빈을 후안잉(huānyíng)하며 기쁘게 맞이하다",
+    "charTip": "하품 석(欠) 부수의 환(欢)과 책받침(辶=갈 착 부수)이 든 영(迎)이 만나 다가오는 손님을 기쁜 마음으로 마중 나가 영접함을 뜻합니다.",
+    "exZh": "欢迎光临。",
+    "exPinyin": "Huānyíng guānglín.",
+    "exMeaning": "환영합니다."
   },
   {
     "num": 100,
-    "hanzi": "虽然...但是...",
-    "pinyin": "suīrán dànshì",
-    "koPron": "쑤이란 딴스",
+    "hanzi": "还",
+    "pinyin": "huán",
+    "koPron": "후안",
     "meanings": [
-      { "pos": "접속사", "ko": "비록 ~하지만, ~하다", "en": "Although" }
+      { "pos": "동사", "ko": "돌려주다, 반납하다", "en": "To Return" }
     ],
-    "hanja": "비록 수(虽), 그럴 연(然), 다만 단(但), 옳을 시(是)",
-    "pronTip": "쑤이란(suīrán) 그렇지만 딴스(dànshì) 할거야",
-    "charTip": "입 구(口) 부수가 든 虽, 연화발(灬) 부수의 然, 사람 인(亻) 부수의 但, 해 일(日) 부수의 是가 만난 문장 대조 접속사 구문입니다.",
-    "exZh": "虽然下雨，但是我去了。",
-    "exPinyin": "Suīrán xiàyǔ, dànshì wǒ qù le.",
-    "exMeaning": "비록 비가 왔지만, 나는 갔다."
+    "hanja": "돌려줄 환(还)",
+    "pronTip": "대출한 도서를 후안(huán)불하고 반납하다",
+    "charTip": "책받침(辶=갈 착 부수)이 쓰여 빌려온 기물이나 가치를 원래 소유주가 있던 본래 제자리 위치로 다시 되돌려 보냄을 뜻합니다.",
+    "exZh": "还书。",
+    "exPinyin": "Huán shū.",
+    "exMeaning": "책을 반납하다."
   },
   {
     "num": 101,
-    "hanzi": "它",
-    "pinyin": "tā",
-    "koPron": "타",
+    "hanzi": "环境",
+    "pinyin": "huánjìng",
+    "koPron": "후안징",
     "meanings": [
-      { "pos": "대명사", "ko": "그것", "en": "It" }
+      { "pos": "명사", "ko": "환경", "en": "Environment" }
     ],
-    "hanja": "다를 타(它)",
-    "pronTip": "타(tā)조 같은 동물 그것",
-    "charTip": "상단의 갓머리(宀=집 면 부수) 아래에 본래 뱀이 똬리를 틀고 있는 형상에서 인격이 없는 사물이나 동물을 칭하는 대명사가 되었습니다.",
-    "exZh": "它是我的猫。",
-    "exPinyin": "Tā  shì wǒ de māo.",
-    "exMeaning": "그것은 내 고양이다."
+    "hanja": "고리 환(环), 지경 경(境)",
+    "pronTip": "주변 후안징(huánjìng) 요건이 쾌적하다",
+    "charTip": "임금 왕(王=구슬 옥 부수)의 환(环)과 흙 토(土) 부수가 포함된 경(境)이 만나 나를 둥글게 둘러싸고 있는 토지와 외부 요건을 뜻합니다.",
+    "exZh": "环境很好。",
+    "exPinyin": "Huánjìng hěn hǎo.",
+    "exMeaning": "환경이 매우 좋다."
   },
   {
     "num": 102,
-    "hanzi": "踢足球",
-    "pinyin": "tī zúqiú",
-    "koPron": "티 쭈치우",
+    "hanzi": "换",
+    "pinyin": "huàn",
+    "koPron": "후안",
     "meanings": [
-      { "pos": "동사", "ko": "축구를 하다", "en": "To Play Football" }
+      { "pos": "동사", "ko": "바꾸다, 교환하다", "en": "To Change" }
     ],
-    "hanja": "찰 척(踢), 발 족(足), 공 구(球)",
-    "pronTip": "발로 티(tī)고 쭈치우(zúqiú) 하다",
-    "charTip": "발 족(足) 부수가 두 글자(踢, 足)에 배치되어 하체를 이용해 둥근 구슬 옥(王) 부수의 공(球)을 차서 타격하는 축구 경기 동작입니다.",
-    "exZh": "去踢足球。",
-    "exPinyin": "Qù tī zúqiú.",
-    "exMeaning": "축구하러 가다."
+    "hanja": "바꿀 환(换)",
+    "pronTip": "외화를 다른 화폐로 환(huàn)전하여 바꾸다",
+    "charTip": "손 수(扌) 부수가 구체적인 물리적 취급을 뜻하여, 손으로 기존 물품을 내리고 새 기물로 상호 맞교환함을 뜻합니다.",
+    "exZh": "换衣服。",
+    "exPinyin": "Huàn yīfu.",
+    "exMeaning": "옷을 갈아입다."
   },
   {
     "num": 103,
-    "hanzi": "题",
-    "pinyin": "tí",
-    "koPron": "티",
+    "hanzi": "黄河",
+    "pinyin": "Huánghé",
+    "koPron": "후앙허",
     "meanings": [
-      { "pos": "명사", "ko": "문제", "en": "Problem" }
+      { "pos": "명사", "ko": "황하 (중국의 강 이름)", "en": "Yellow River" }
     ],
-    "hanja": "제목 제(题)",
-    "pronTip": "티(tí)가 나는 어려운 문제",
-    "charTip": "우측의 머리 혈(页) 부수가 문서의 맨 윗부분인 대뇌와 머리맡을 상징하여 책의 소주제 제목이나 풀어야 할 문항을 뜻합니다.",
-    "exZh": "做题。",
-    "exPinyin": "Zuò tí.",
-    "exMeaning": "문제를 풀다."
+    "hanja": "누를 황(黄), 물 하(河)",
+    "pronTip": "후앙허(Huánghé) 문명의 발상지",
+    "charTip": "황(黄) 부수와 좌측에 수자원을 뜻하는 삼수변(氵=물 수 부수)이 결합된 하(河)가 만나 누런 흙탕물이 세차게 흐르는 황하 강을 지칭합니다.",
+    "exZh": "黄河很长。",
+    "exPinyin": "Huánghé hěn cháng.",
+    "exMeaning": "황하는 매우 길다."
   },
   {
     "num": 104,
-    "hanzi": "跳舞",
-    "pinyin": "tiàowǔ",
-    "koPron": "티아오우",
+    "hanzi": "回答",
+    "pinyin": "huídá",
+    "koPron": "후에이다",
     "meanings": [
-      { "pos": "동사", "ko": "춤을 추다", "en": "To Dance" }
+      { "pos": "동사", "ko": "대답하다, 응답하다", "en": "To Answer" },
+      { "pos": "명사", "ko": "대답, 답변", "en": "Answer" }
     ],
-    "hanja": "뛸 도(跳), 춤출 무(舞)",
-    "pronTip": "티아오(tiào) 오르며 우(wǔ)아하게 춤추다",
-    "charTip": "발 족(足) 부수가 들어간 뛸 도(跳)와 어그러질 천(舛) 부수가 든 춤출 무(舞)가 만나 발을 구르며 선율에 몸을 맡겨 춤추는 동작입니다.",
-    "exZh": "喜欢跳舞。",
-    "exPinyin": "Xǐhuan tiàowǔ.",
-    "exMeaning": "춤추기를 좋아한다."
+    "hanja": "돌아올 회(回), 대답할 답(答)",
+    "pronTip": "질문을 던지니 명쾌하게 후에이다(huídá)하다",
+    "charTip": "에운담(囗) 부수의 회(回)와 대나무 죽(竹) 부수가 상단에 명시된 답(答)이 만나 상대방 질문 흐름에 대응해 답변을 돌려보냄을 뜻합니다.",
+    "exZh": "回答问题。",
+    "exPinyin": "Huídá wèntí.",
+    "exMeaning": "문제에 대답하다."
   },
   {
     "num": 105,
-    "hanzi": "外",
-    "pinyin": "wài",
-    "koPron": "와이",
+    "hanzi": "会议",
+    "pinyin": "huìyì",
+    "koPron": "후에이이",
     "meanings": [
-      { "pos": "명사", "ko": "바깥", "en": "Outside" }
+      { "pos": "명사", "ko": "회의, 미팅", "en": "Meeting" }
     ],
-    "hanja": "바깥 외(外)",
-    "pronTip": "와이(wài)파이 잡으러 밖으로",
-    "charTip": "저녁 석(夕) 부수 옆에 점복(卜) 부수가 만나 날이 저물어 야외 어두운 곳에서 점괘를 뽑아 보듯 중심 경계선의 바깥을 의미합니다.",
-    "exZh": "外面。",
-    "exPinyin": "Wàimiàn.",
-    "exMeaning": "바깥."
+    "hanja": "모일 회(会), 의논할 의(议)",
+    "pronTip": "후에이이(huìyì)실에 모여 안건을 도출하다",
+    "charTip": "사람 인(人) 부수 계열의 회(会)와 말씀 언(讠) 부수가 명시된 의(议)가 만나 사람들이 한곳에 모여 토론하고 의논하는 미팅입니다.",
+    "exZh": "开会议。",
+    "exPinyin": "Kāi huìyì.",
+    "exMeaning": "회의를 열다."
   },
   {
     "num": 106,
-    "hanzi": "完",
-    "pinyin": "wán",
-    "koPron": "완",
+    "hanzi": "或者",
+    "pinyin": "huòzhě",
+    "koPron": "후어저",
     "meanings": [
-      { "pos": "동사", "ko": "마치다", "en": "To Finish" }
+      { "pos": "접속사", "ko": "또는, 혹은 (평서문 선택)", "en": "Or" }
     ],
-    "hanja": "완전할 완(完)",
-    "pronTip": "완(wán)전히 끝났다",
-    "charTip": "상단의 갓머리(宀=집 면 부수) 아래에 으뜸 원(元) 자가 배치되어 가옥 건축 공사를 결함 없이 완전하게 완공하여 종료함을 뜻합니다.",
-    "exZh": "做完了。",
-    "exPinyin": "Zuò wán le.",
-    "exMeaning": "다 했다."
+    "hanja": "혹 혹(或), 놈 자(者)",
+    "pronTip": "이것 후어저(huòzhě) 아니면 저것",
+    "charTip": "창 과(戈) 부수 계열의 혹시 혹(或)과 늙을노엄 계열의 놈 자(者) 부수가 만나 여러 대안 중 조건식 하나를 고를 때 쓰는 평서문 접속사입니다.",
+    "exZh": "今天或者明天。",
+    "exPinyin": "Jīntiān huòzhě míngtiān.",
+    "exMeaning": "오늘 또는 내일."
   },
   {
     "num": 107,
-    "hanzi": "玩",
-    "pinyin": "wán",
-    "koPron": "완",
+    "hanzi": "几乎",
+    "pinyin": "jīhū",
+    "koPron": "지후",
     "meanings": [
-      { "pos": "동사", "ko": "놀다", "en": "To Play" }
+      { "pos": "부사", "ko": "거의, 하마터면", "en": "Almost" }
     ],
-    "hanja": "희롱할 완(玩)",
-    "pronTip": "완(wán)구 가지고 놀다",
-    "charTip": "임금 왕(王=구슬 옥 부수)이 보석 장난감을 뜻하며 유희를 즐기는 으뜸 원(元) 자가 어우러져 취미나 오락을 즐기며 놂을 뜻합니다.",
-    "exZh": "出去玩。",
-    "exPinyin": "Chūqù wán.",
-    "exMeaning": "나가 놀다."
+    "hanja": "거의 기(几), 어조사 호(乎)",
+    "pronTip": "한계에 지후(jīhū) 임박하여 거의 다 완료되다",
+    "charTip": "안석 궤(几) 부수의 기(几)와 삐침(丿) 부수 계열의 호(乎)가 결합해 어떤 수치나 상태적 극치 기준에 '거의 임박함'을 뜻하는 부사입니다.",
+    "exZh": "几乎没睡觉。",
+    "exPinyin": "Jīhū méi shuìjiào.",
+    "exMeaning": "거의 자지 못했다."
   },
   {
     "num": 108,
-    "hanzi": "晚上",
-    "pinyin": "wǎnshang",
-    "koPron": "완샹",
+    "hanzi": "机会",
+    "pinyin": "jīhuì",
+    "koPron": "지후에이",
     "meanings": [
-      { "pos": "명사", "ko": "저녁", "en": "Evening" }
+      { "pos": "명사", "ko": "기회, 타이밍", "en": "Opportunity" }
     ],
-    "hanja": "늦을 만(晚), 윗 상(上)",
-    "pronTip": "완샹(wǎnshang)에 별 보러 가자",
-    "charTip": "날 일(日) 부수가 들어간 늦을 만(晚)과 지사 부수의 위 상(上)이 만나 해가 산 너머로 넘어가 날이 어두워진 야간 시간대를 뜻합니다.",
-    "exZh": "今天晚上。",
-    "exPinyin": "Jīntiān wǎnshang.",
-    "exMeaning": "오늘 저녁."
+    "hanja": "틀 기(机), 모일 회(会)",
+    "pronTip": "이번 지후에이(jīhuì)를 절대 놓치지 마라",
+    "charTip": "나무 목(木) 부수의 기계 기(机)와 사람 인(人) 부수 계열의 모일 회(会)가 만나 상황적 요건이 아주 절묘하게 부합해 모인 타이밍을 뜻합니다.",
+    "exZh": "好机会。",
+    "exPinyin": "Hǎo jīhuì.",
+    "exMeaning": "좋은 기회."
   },
   {
     "num": 109,
-    "hanzi": "往",
-    "pinyin": "wǎng",
-    "koPron": "왕",
+    "hanzi": "极",
+    "pinyin": "ji",
+    "koPron": "지",
     "meanings": [
-      { "pos": "전치사", "ko": "~을 향해", "en": "Toward" }
+      { "pos": "부사", "ko": "극히, 매우, 최고조로", "en": "Extremely" }
     ],
-    "hanja": "갈 왕(往)",
-    "pronTip": "저쪽을 향해 왕(wǎng)창 가다",
-    "charTip": "조금걸을척(彳) 부수가 보행 이동 경로를 뜻하며 어떤 명확한 타방의 목표 지점을 향해 걸어 나아가는 개사 기능을 합니다.",
-    "exZh": "往前走。",
-    "exPinyin": "Wǎng qián zǒu.",
-    "exMeaning": "앞을 향해 가라."
+    "hanja": "다할 극(极)",
+    "pronTip": "지(jí)극히 정성스러워 감탄이 나오다",
+    "charTip": "나무 목(木) 부수 옆에 급할 급 자의 윗동 모양이 더해져 나무의 맨 꼭대기 서들보처럼 상태의 수위가 맨 정점에 달했음을 뜻합니다.",
+    "exZh": "好极了。",
+    "exPinyin": "Hǎo jí le.",
+    "exMeaning": "아주 좋다."
   },
   {
     "num": 110,
-    "hanzi": "为什么",
-    "pinyin": "wèi shénme",
-    "koPron": "웨이 션머",
+    "hanzi": "记得",
+    "pinyin": "jìde",
+    "koPron": "지더",
     "meanings": [
-      { "pos": "대명사", "ko": "왜", "en": "Why" }
+      { "pos": "동사", "ko": "기억하고 있다", "en": "To Remember" }
     ],
-    "hanja": "할 위(为), 열 십(什), 어조사 마(么)",
-    "pronTip": "웨이(wèi) 션머(shénme)? 도대체 왜?",
-    "charTip": "무엇 때문인지의 목적격인 为와 사람 인(亻) 부수의 什, 사사 사(厶) 계열 么가 결합해 인과적 원인을 캐묻는 의문대명사 구문입니다.",
-    "exZh": "为什么哭？",
-    "exPinyin": "Wèi shénme kū?",
-    "exMeaning": "왜 울어?"
+    "hanja": "기록할 기(记), 얻을 득(得)",
+    "pronTip": "두뇌 속에 정보 지더(jìde) 선명히 남겨두다",
+    "charTip": "말씀 언(讠) 부수의 기(记)와 조금걸을척(彳) 부수의 득(得)이 만나 인지한 지식을 머릿속에 정교하게 기록해 소유하고 있음을 뜻합니다.",
+    "exZh": "我不记得了。",
+    "exPinyin": "Wǒ bú jìde le.",
+    "exMeaning": "나는 기억나지 않는다."
   },
   {
     "num": 111,
-    "hanzi": "问",
-    "pinyin": "wèn",
-    "koPron": "원",
+    "hanzi": "季节",
+    "pinyin": "jìjié",
+    "koPron": "지지에",
     "meanings": [
-      { "pos": "동사", "ko": "묻다", "en": "To Ask" }
+      { "pos": "명사", "ko": "계절, 시즌", "en": "Season" }
     ],
-    "hanja": "물을 문(问)",
-    "pronTip": "원(wèn)하는 걸 묻다",
-    "charTip": "문 문(门) 부수 한가운데에 입 구(口) 부수가 쏙 들어가, 문틈 사이로 입을 대고 내부를 향해 소리쳐 질문하고 물어보는 행위입니다.",
-    "exZh": "问老师。",
-    "exPinyin": "Wèn lǎoshī.",
-    "exMeaning": "선생님께 묻다."
+    "hanja": "계절 계(季), 마디 절(节)",
+    "pronTip": "어느 지지에(jìjié) 날씨를 애호하니?",
+    "charTip": "아들 자(子) 부수가 하단에 든 계(季)와 대나무 죽(竹) 부수가 명시된 절(节)이 만나 일 년 중 기후 조건에 따라 매듭지어 분류한 시즌입니다.",
+    "exZh": "四个季节。",
+    "exPinyin": "Sì ge jìjié.",
+    "exMeaning": "사계절."
   },
   {
     "num": 112,
-    "hanzi": "问题",
-    "pinyin": "wèntí",
-    "koPron": "원티",
+    "hanzi": "检查",
+    "pinyin": "jiǎnchá",
+    "koPron": "지엔차",
     "meanings": [
-      { "pos": "명사", "ko": "문제", "en": "Question" }
+      { "pos": "동사", "ko": "검사하다, 점검하다", "en": "To Check" }
     ],
-    "hanja": "물을 문(问), 제목 제(题)",
-    "pronTip": "원티(wèntí)를 제기하다",
-    "charTip": "문 안의 입인 물을 문(问) 부수 계열과 머리 혈(页) 부수의 제목 제(题)가 만나 해답을 요구하는 질의사항이나 쟁점을 가리킵니다.",
-    "exZh": "没问题。",
-    "exPinyin": "Méi wèntí.",
-    "exMeaning": "문제 없다."
+    "hanja": "검사할 검(检), 조사할 사(查)",
+    "pronTip": "결함을 찾아내려 세밀하게 지엔차(jiǎnchá)하다",
+    "charTip": "두 글자 모두 좌측에 나무 목(木) 부수를 수반하여 나무 장부를 하나하나 대조하며 오류나 질병 요건이 있는지 밀착 점검하는 행위입니다.",
+    "exZh": "检查身体。",
+    "exPinyin": "Jiǎnchá shēntǐ.",
+    "exMeaning": "건강검진을 하다."
   },
   {
     "num": 113,
-    "hanzi": "西瓜",
-    "pinyin": "xīguā",
-    "koPron": "시구아",
+    "hanzi": "简单",
+    "pinyin": "jiǎndān",
+    "koPron": "지엔단",
     "meanings": [
-      { "pos": "명사", "ko": "수박", "en": "Watermelon" }
+      { "pos": "형용사", "ko": "간단하다, 평범하다", "en": "Simple" }
     ],
-    "hanja": "서녘 서(西), 오이 과(瓜)",
-    "pronTip": "시구아(xīguā) 시원한 수박",
-    "charTip": "둥지 모양의 서녘 서(西) 부수와 덩굴에 열매가 주렁주렁 매달린 모양의 오이 과(瓜) 부수가 만나 서역에서 온 수박을 뜻합니다.",
-    "exZh": "吃西瓜。",
-    "exPinyin": "Chī xīguā.",
-    "exMeaning": "수박을 먹다."
+    "hanja": "대쪽 간(简), 홑 단(单)",
+    "pronTip": "복잡하지 않게 지엔단(jiǎndān) 구조로 가다",
+    "charTip": "대나무 죽(竹) 부수가 든 간(简)과 십 부수 계열의 단(单)이 만나 구조가 여러 갈래로 꼬이지 않고 명확하며 단일하여 수월함을 뜻합니다.",
+    "exZh": "很简单。",
+    "exPinyin": "Hěn jiǎndān.",
+    "exMeaning": "매우 간단하다."
   },
   {
     "num": 114,
-    "hanzi": "希望",
-    "pinyin": "xīwàng",
-    "koPron": "시왕",
+    "hanzi": "见面",
+    "pinyin": "jiànmiàn",
+    "koPron": "지엔미엔",
     "meanings": [
-      { "pos": "동사", "ko": "희망하다", "en": "To Hope" }
+      { "pos": "동사", "ko": "만나다, 면회하다", "en": "To Meet" }
     ],
-    "hanja": "바랄 희(希), 바랄 망(望)",
-    "pronTip": "시왕(xīwàng)을 갖다",
-    "charTip": "수건 건(巾) 부수가 든 희(希)와 달 월(月) 부수 계열이 포함된 바랄 망(望)이 만나 내일의 안녕과 소망을 멀리 내다보며 바람을 뜻합니다.",
-    "exZh": "希望如此。",
-    "exPinyin": "Xīwàng rúcǐ.",
-    "exMeaning": "그러길 바란다."
+    "hanja": "볼 견(见), 얼굴 면(面)",
+    "pronTip": "오프라인에서 얼굴 마주하고 지엔미엔(jiànmiàn)하다",
+    "charTip": "눈의 시각 기능을 본뜬 볼 견(见) 부수와 얼굴 형상인 낯 면(面) 부수가 직접 결합해 물리적으로 조우하여 만나는 사교적 약속 행동입니다.",
+    "exZh": "跟朋友见面。",
+    "exPinyin": "Gên péngyou jiànmiàn.",
+    "exMeaning": "친구와 만나다."
   },
   {
     "num": 115,
-    "hanzi": "洗",
-    "pinyin": "xǐ",
-    "koPron": "시",
+    "hanzi": "健康",
+    "pinyin": "jiànkāng",
+    "koPron": "지엔캉",
     "meanings": [
-      { "pos": "동사", "ko": "씻다", "en": "To Wash" }
+      { "pos": "형용사", "ko": "건강하다", "en": "Healthy" },
+      { "pos": "명사", "ko": "건강", "en": "Health" }
     ],
-    "hanja": "씻을 세(洗)",
-    "pronTip": "시(xǐ)원하게 씻다",
-    "charTip": "좌측의 삼수변이 맑은 세척수를 뜻하며, 먼저 선(先) 자와 만나 지저분한 오물을 물로 깨끗이 씻어냄을 뜻합니다.",
-    "exZh": "洗手。",
-    "exPinyin": "Xǐ shǒu.",
-    "exMeaning": "손을 씻다."
+    "hanja": "굳셀 건(健), 편안할 강(康)",
+    "pronTip": "지엔캉(jiànkāng)이 인생의 최고 가치다",
+    "charTip": "사람 인(亻) 부수의 건(健)과 엄호(广) 부수가 상단에 명시된 강(康)이 만나 신체가 무척 굳세고 기력이 고르고 평안한 웰빙 상태를 뜻합니다.",
+    "exZh": "身体健康。",
+    "exPinyin": "Shēntǐ jiànkāng.",
+    "exMeaning": "몸이 건강하다."
   },
   {
     "num": 116,
-    "hanzi": "小时",
-    "pinyin": "xiǎoshí",
-    "koPron": "시아오스",
+    "hanzi": "讲",
+    "pinyin": "jiǎng",
+    "koPron": "지앙",
     "meanings": [
-      { "pos": "명사", "ko": "시간 (단위)", "en": "Hour" }
+      { "pos": "동사", "ko": "말하다, 설명하다", "en": "To Speak" }
     ],
-    "hanja": "작을 소(小), 때 시(时)",
-    "pronTip": "몇 시아오스(xiǎoshí) 걸려?",
-    "charTip": "작을 소(小) 부수와 해 일(日) 부수가 포함된 때 시(时)가 결합해 하루의 시간 흐름을 규격별로 작게 쪼갠 단위 시수를 뜻합니다.",
-    "exZh": "一个小时。",
-    "exPinyin": "Yí ge xiǎoshí.",
-    "exMeaning": "한 시간"
+    "hanja": "외울 강(讲)",
+    "pronTip": "대중 앞에서 논리 정연하게 지앙(jiǎng)연을 하다",
+    "charTip": "말씀 언(讠) 부수가 음성적인 정보 소통을 뜻하며, 어떤 스토리나 논리를 타인이 이해하도록 조리 있게 풀어서 설명하는 행동입니다.",
+    "exZh": "讲故事。",
+    "exPinyin": "Jiǎng gùshi.",
+    "exMeaning": "이야기를 들려주다."
   },
   {
     "num": 117,
-    "hanzi": "笑",
-    "pinyin": "xiào",
-    "koPron": "시아오",
+    "hanzi": "教",
+    "pinyin": "jiāo",
+    "koPron": "지아오",
     "meanings": [
-      { "pos": "동사", "ko": "웃다", "en": "To Laugh" }
+      { "pos": "동사", "ko": "가르치다", "en": "To Teach" }
     ],
-    "hanja": "웃을 소(笑)",
-    "pronTip": "시아오(xiào) 웃기네",
-    "charTip": "상단의 대나무 죽(竹) 부수가 바람에 흔들리며 바스락 소리를 내듯 사람이 기쁜 안면 근육으로 미소를 짓고 웃는 동작입니다.",
-    "exZh": "大笑。",
-    "exPinyin": "Dà xiào.",
-    "exMeaning": "크게 웃다."
+    "hanja": "가르칠 교(教)",
+    "pronTip": "지식을 학생들에게 성심껏 지아오(jiāo) 육하다",
+    "charTip": "우측의 등글월문(攵=칠 복 부수)이 도구로 훈육함을 뜻해 어린 자식을 바른길로 이끌며 학문과 도리를 주입해 전수함을 뜻합니다.",
+    "exZh": "教汉语。",
+    "exPinyin": "Jiāo Hànyǔ.",
+    "exMeaning": "중국어를 가르치다."
   },
   {
     "num": 118,
-    "hanzi": "新",
-    "pinyin": "xīn",
-    "koPron": "신",
+    "hanzi": "角",
+    "pinyin": "jiǎo",
+    "koPron": "지아오",
     "meanings": [
-      { "pos": "형용사", "ko": "새롭다", "en": "New" }
+      { "pos": "양사", "ko": "자오 (화폐 단위)", "en": "(monetary unit)" }
     ],
-    "hanja": "새 신(新)",
-    "pronTip": "신(xīn)상이라 새롭다",
-    "charTip": "우측의 도끼 근(斤) 부수가 도구로 나무를 쪼개어 가공하듯, 이전의 낡은 습관을 깨트려 단장하여 '새롭다'를 나타내는 글자입니다.",
-    "exZh": "新衣服。",
-    "exPinyin": "Xīn yīfu.",
-    "exMeaning": "새 옷."
+    "hanja": "뿔 각(角)",
+    "pronTip": "동전 단위의 소액 지아오(jiǎo) 지불",
+    "charTip": "동물의 머리에 단단하게 솟아난 모난 뿔 형상을 본뜬 고유 부수 글자로, 화폐 단위를 소포막으로 모나게 쪼갠 0.1위안을 뜻합니다.",
+    "exZh": "五角钱。",
+    "exPinyin": "Wǔ jiǎo qián.",
+    "exMeaning": "5자오 돈."
   },
   {
     "num": 119,
-    "hanzi": "姓",
-    "pinyin": "xìng",
-    "koPron": "싱",
+    "hanzi": "脚",
+    "pinyin": "jiǎo",
+    "koPron": "지아오",
     "meanings": [
-      { "pos": "동사", "ko": "성이 ~이다", "en": "Surname" }
+      { "pos": "명사", "ko": "발", "en": "Foot" }
     ],
-    "hanja": "성 성(姓)",
-    "pronTip": "너의 싱(xìng)은 뭐니?",
-    "charTip": "좌측의 여자 녀(女) 부수와 우측의 날 생(生) 부수가 결합하여 가문의 혈통 성씨입니다.",
-    "exZh": "我姓王。",
-    "exPinyin": "Wǒ xìng Wáng.",
-    "exMeaning": "내 성은 왕씨다."
+    "hanja": "다리 각(脚)",
+    "pronTip": "지아오(jiǎo)로 축구공을 힘차게 걷어차다",
+    "charTip": "좌측의 육달월(月=고기 육 부수)이 하체 신체 부위임을 나타내며, 지면을 딛고 보행하거나 서 있게 해주는 신체 기관 발을 뜻합니다.",
+    "exZh": "洗脚。",
+    "exPinyin": "Xǐ jiǎo.",
+    "exMeaning": "발을 씻다."
   },
   {
     "num": 120,
-    "hanzi": "休息",
-    "pinyin": "xiūxi",
-    "koPron": "시우시",
+    "hanzi": "接",
+    "pinyin": "jiē",
+    "koPron": "지에",
     "meanings": [
-      { "pos": "동사", "ko": "쉬다", "en": "To Rest" }
+      { "pos": "동사", "ko": 받다(전화), 마중하다", "en": "To Pick up/Answer" }
     ],
-    "hanja": "쉴 휴(休), 쉴 식(息)",
-    "pronTip": "시우시(xiūxi) 푹 쉬어",
-    "charTip": "사람 인(亻) 부수가 나무 목(木)에 기대어 쉬는 휴(休)와 하단에 마음 심(心) 부수가 배치된 식(息)이 만나 신체와 정신을 안식시킵니다.",
-    "exZh": "休息一下。",
-    "exPinyin": "Xiūxi yíxià.",
-    "exMeaning": "잠시 쉬다."
+    "hanja": "이을 접(接)",
+    "pronTip": "벨소리가 울리자 수화기를 지에(jiē) 신속히 받다",
+    "charTip": "손 수(扌) 부수가 능동적인 물리 제어를 뜻하며, 손을 뻗어 외부의 전화 통화 신호를 연결해 이어받거나 사람을 영접함을 뜻합니다.",
+    "exZh": "接电话。",
+    "exPinyin": "Jiē diànhuà.",
+    "exMeaning": "전화를 받다."
   },
   {
     "num": 121,
-    "hanzi": "雪",
-    "pinyin": "xuě",
-    "koPron": "쉬에",
+    "hanzi": "街道",
+    "pinyin": "jiēdào",
+    "koPron": "지에따오",
     "meanings": [
-      { "pos": "명사", "ko": "눈", "en": "Snow" }
+      { "pos": "명사", "ko": "거리, 길", "en": "Street" }
     ],
-    "hanja": "눈 설(雪)",
-    "pronTip": "쉬에(xuě)하얗게 내리는 눈",
-    "charTip": "상단의 비 우(雨) 부수가 기상 기후 현상을 나타내며, 대기 중의 수분이 하얗게 응고되어 지면으로 떨어지는 결정체 눈을 가리킵니다.",
-    "exZh": "下雪了。",
-    "exPinyin": "Xià xuě le.",
-    "exMeaning": "눈이 내린다."
+    "hanja": "거리 가(街), 길 도(道)",
+    "pronTip": "지에따오(jiēdào) 번화가 상점을 구경하다",
+    "charTip": "행할 행(行) 부수 사이에 규격화된 블록이 든 가(街)와 머리 혈 계열의 도(道)가 만나 도심지 내부의 사람들이 오가는 포장도로입니다.",
+    "exZh": "在街道上。",
+    "exPinyin": "Zài jiēdào shàng.",
+    "exMeaning": "거리에 있다."
   },
   {
     "num": 122,
-    "hanzi": "颜色",
-    "pinyin": "yánsè",
-    "koPron": "이엔써",
+    "hanzi": "结婚",
+    "pinyin": "jiéhūn",
+    "koPron": "지에훈",
     "meanings": [
-      { "pos": "명사", "ko": "색깔", "en": "Color" }
+      { "pos": "동사", "ko": "결혼하다", "en": "To Marry" }
     ],
-    "hanja": "얼굴 안(颜), 빛 색(色)",
-    "pronTip": "이엔써(yánsè) 예쁜 색상",
-    "charTip": "머리 혈(页) 부수가 들어간 안면 안(颜)과 사람이 업혀 있는 형상의 빛 색(色) 부수가 만나 사물이 발산하는 다채로운 색상을 뜻합니다.",
-    "exZh": "什么颜色？",
-    "exPinyin": "Shénme yánsè?",
-    "exMeaning": "무슨 색입니까?"
+    "hanja": "맺을 결(结), 혼인할 혼(婚)",
+    "pronTip": "지에훈(jiéhūn)식장에서 서약을 맺다",
+    "charTip": "실 사(纟) 부수가 백년가약의 인연 끈을 단단히 묶는 결(结)과 여자 녀(女) 부수가 포함된 혼(婚)이 만나 법적 부부가 되는 의식입니다.",
+    "exZh": " 他们结婚了。",
+    "exPinyin": "Tāmen jiéhūn le.",
+    "exMeaning": "그들은 결혼했다."
   },
   {
     "num": 123,
-    "hanzi": "眼睛",
-    "pinyin": "yǎnjing",
-    "koPron": "이엔징",
+    "hanzi": "节目",
+    "pinyin": "jiémù",
+    "koPron": "지에무",
     "meanings": [
-      { "pos": "명사", "ko": "눈", "en": "Eye" }
+      { "pos": "명사", "ko": "프로그램, 방송 종목", "en": "Program" }
     ],
-    "hanja": "눈 안(眼), 눈동자 정(睛)",
-    "pronTip": "이엔징(yǎnjing) 맑은 눈동자",
-    "charTip": "두 글자 모두 좌측에 시각 감각 기관인 눈 목(目) 부수를 통일되게 배치하여 사람의 안구와 눈동자를 직관적으로 가리킵니다.",
-    "exZh": "大眼睛。",
-    "exPinyin": "Dà yǎnjing.",
-    "exMeaning": "큰 눈."
+    "hanja": "마디 절(节), 눈 목(目)",
+    "pronTip": "TV 지에무(jiémù) 편성이 아주 유쾌하다",
+    "charTip": "대나무 죽 변형의 절(节)과 안구 모양의 눈 목(目) 부수가 만나 방송 시청 시 단락 마디별로 나누어 눈으로 관람하는 콘텐츠입니다.",
+    "exZh": "看电视节目。",
+    "exPinyin": "Kàn diànshì jiémù.",
+    "exMeaning": "TV 프로그램을 보다."
   },
   {
     "num": 124,
-    "hanzi": "羊肉",
-    "pinyin": "yángròu",
-    "koPron": "양로우",
+    "hanzi": "节日",
+    "pinyin": "jiérì",
+    "koPron": "지에르",
     "meanings": [
-      { "pos": "명사", "ko": "양고기", "en": "Mutton" }
+      { "pos": "명사", "ko": "명절, 기념일", "en": "Festival" }
     ],
-    "hanja": "양 양(羊), 고기 육(肉)",
-    "pronTip": "양(yáng) 로우(ròu)스트 고기",
-    "charTip": "두 뿔과 코 모양인 양 양(羊) 부수와 정형 신체 고기 결을 본뜬 고기 육(肉) 부수가 만나 식용 양의 살코기 부위를 의미합니다.",
-    "exZh": "吃羊肉。",
-    "exPinyin": "Chī yángròu.",
-    "exMeaning": "양고기를 먹다."
+    "hanja": "마디 절(节), 날 일(日)",
+    "pronTip": "즐거운 지에르(jiérì) 연휴 시즌",
+    "charTip": "대나무 죽 변형의 마디 절(节) 부수와 시간 날짜를 세는 날 일(日) 부수가 만나 일 년 중 특별한 매듭 기준점이 되는 축제 기념일입니다.",
+    "exZh": "过节日。",
+    "exPinyin": "Guò jiérì.",
+    "exMeaning": "명절을 쇠다."
   },
   {
     "num": 125,
-    "hanzi": "药",
-    "pinyin": "yào",
-    "koPron": "야오",
+    "hanzi": "结束",
+    "pinyin": "jiéshù",
+    "koPron": "지에슈",
     "meanings": [
-      { "pos": "명사", "ko": "약", "en": "Medicine" }
+      { "pos": "동사", "ko": "끝나다, 종료하다", "en": "To End" }
     ],
-    "hanja": "약 약(药)",
-    "pronTip": "야오(yào) 약 먹자",
-    "charTip": "상단의 풀 초(艹) 부수가 초본 식물 성분을 나타내며 질환을 치유하기 위해 약초 풀을 다려 만든 한약이나 알약을 뜻합니다.",
-    "exZh": "吃药。",
-    "exPinyin": "Chī yào.",
-    "exMeaning": "약을 먹다."
+    "hanja": "맺을 결(结), 묶을 속(束)",
+    "pronTip": "모든 식순이 지에슈(jiéshù)되어 해산하다",
+    "charTip": "실 사(纟) 부수가 든 결(结)과 나무를 단단히 포박한 모양의 묶을 속(束) 부수가 만나 사태를 단단히 매듭짓고 묶어서 종결함을 뜻합니다.",
+    "exZh": "会议结束了。",
+    "exPinyin": "Huìyì jiéshù le.",
+    "exMeaning": "회의가 끝났다."
   },
   {
     "num": 126,
-    "hanzi": "要",
-    "pinyin": "yào",
-    "koPron": "야오",
+    "hanzi": "解决",
+    "pinyin": "jiějué",
+    "koPron": "지에쥐에",
     "meanings": [
-      { "pos": "조동사", "ko": "~하려고 하다, 원하다", "en": "Want" }
+      { "pos": "동사", "ko": "해결하다, 처리하다", "en": "To Solve" }
     ],
-    "hanja": "요긴할 요(要)",
-    "pronTip": "야오(yào)구사항을 하려 하다",
-    "charTip": "하단의 여자 녀(女) 부수가 허리에 손을 얹은 요긴한 주체를 뜻하며 주관적으로 대상을 구하고 획득하려는 의지를 표현합니다.",
-    "exZh": "我要去。",
-    "exPinyin": "Wǒ yào qù.",
-    "exMeaning": "나는 가려고 한다."
+    "hanja": "풀 해(解), 결단할 결(决)",
+    "pronTip": "얽힌 원티를 말끔하게 지에쥐에(jiějué)하다",
+    "charTip": "뿔 각(角) 부수의 풀 해(解)와 이수변(冫) 부수의 결단할 결(决)이 만나 복잡하게 꼬인 실타래를 칼로 해체하듯 말끔히 처리함을 뜻합니다.",
+    "exZh": "解决问题。",
+    "exPinyin": "Jiějué wèntí.",
+    "exMeaning": "문제를 해결하다."
   },
   {
     "num": 127,
-    "hanzi": "也",
-    "pinyin": "yě",
-    "koPron": "예",
+    "hanzi": "借",
+    "pinyin": "jiè",
+    "koPron": "지에",
     "meanings": [
-      { "pos": "부사", "ko": "~도 또한", "en": "Also" }
+      { "pos": "동사", "ko": "빌리다, 빌려주다", "en": "To Borrow/Lend" }
     ],
-    "hanja": "어조사 야",
-    "pronTip": "나도 예(yě)스!",
-    "charTip": "본래 땅 위를 구불구불 기어가는 사나운 뱀의 모양을 본뜬 새을(乙) 계열 부수 글자에서 조사로 가공되어 쓰입니다.",
-    "exZh": "我也是。",
-    "exPinyin": "Wǒ yě shì.",
-    "exMeaning": "나도 그렇다."
+    "hanja": "빌릴 차(借)",
+    "pronTip": "도서관에서 책을 지에(jiè) 대출하다",
+    "charTip": "사람 인(亻) 부수가 거래의 주체를 나타내며, 타인과 신용 약속을 맺고 일정 기간 재화나 기물을 임차하여 빌려 쓰고 반환함을 뜻합니다.",
+    "exZh": "借书。",
+    "exPinyin": "Jiè shū.",
+    "exMeaning": "책을 빌리다."
   },
   {
     "num": 128,
-    "hanzi": "一下",
-    "pinyin": "yíxià",
-    "koPron": "이시아",
+    "hanzi": "经常",
+    "pinyin": "jīngcháng",
+    "koPron": "징창",
     "meanings": [
-      { "pos": "부사", "ko": "좀 ~해 보다", "en": "Once" }
+      { "pos": "부사", "ko": "자주, 평소에", "en": "Often" },
+      { "pos": "형용사", "ko": "일상적인", "en": "Frequent" }
     ],
-    "hanja": "한 일(一), 아래 하(下)",
-    "pronTip": "이시아(yíxià) 한 번 해봐",
-    "charTip": "한 일(一) 부수와 아래 하(下) 부수가 동사 뒤에 연동 배치되어 동작의 호흡을 가볍게 한 번 하방으로 시도해 봄을 뜻합니다.",
-    "exZh": "看一下。",
-    "exPinyin": "Kàn yíxià.",
-    "exMeaning": "좀 보다."
+    "hanja": "지날 경(经), 항상 상(常)",
+    "pronTip": "그 단골 매장에 징창(jīngcháng) 자주 왕래하다",
+    "charTip": "실 사(纟) 부수의 경(经)과 수건 건(巾) 부수가 포함된 상(常)이 만나 일상적으로 늘 거쳐 가고 반복되는 빈도가 높은 상태를 뜻합니다.",
+    "exZh": "经常去。",
+    "exPinyin": "Jīngcháng qù.",
+    "exMeaning": "자주 간다."
   },
   {
     "num": 129,
-    "hanzi": "已经",
-    "pinyin": "yǐjīng",
-    "koPron": "이징",
+    "hanzi": "经过",
+    "pinyin": "jīngguò",
+    "koPron": "징구오",
     "meanings": [
-      { "pos": "부사", "ko": "이미, 벌써", "en": "Already" }
+      { "pos": "전치사", "ko": "~을 거쳐서", "en": "Through" },
+      { "pos": "동사", "ko": "지나가다, 통과하다", "en": "To Pass through" }
     ],
-    "hanja": "이미 이(已), 지날 경(经)",
-    "pronTip": "이징(yǐjīng) 끝났어",
-    "charTip": "뱀 몸통 형상의 이미 이(已) 부수와 실 사(纟) 부수가 포함된 지날 경(经)이 만나 사태가 이미 완료되어 과거로 지나갔음을 강조합니다.",
-    "exZh": "已经走了。",
-    "exPinyin": "Yǐjīng zǒu le.",
-    "exMeaning": "이미 갔다."
+    "hanja": "지날 경(经), 지날 과(过)",
+    "pronTip": "징구오(jīngguò)하는 통로를 통해 진입하다",
+    "charTip": "실 사(纟) 부수의 경(经)과 갈 착(辶) 부수가 들어간 과(过)가 만나 노정 상의 특정 장소나 단계를 물리적으로 관통해 스쳐 지나감을 뜻합니다.",
+    "exZh": "经过学校。",
+    "exPinyin": "Jīngguò xuéxiào.",
+    "exMeaning": "학교를 지나가다."
   },
   {
     "num": 130,
-    "hanzi": "一起",
-    "pinyin": "yìqǐ",
-    "koPron": "이치",
+    "hanzi": "经理",
+    "pinyin": "jīnglǐ",
+    "koPron": "징리",
     "meanings": [
-      { "pos": "부사", "ko": "같이, 함께", "en": "Together" }
+      { "pos": "명사", "ko": "사장, 지배인, 매니저", "en": "Manager" }
     ],
-    "hanja": "한 일(一), 일어날 기(起)",
-    "pronTip": "이치(yìqǐ) 함께 으쌰!",
-    "charTip": "한 일(一) 부수와 달릴 주(走) 부수가 포함된 일어날 기(起)가 만나, 여러 사람이 한자리에서 일시에 기립하듯 동행함을 뜻합니다.",
-    "exZh": "一起走吧。",
-    "exPinyin": "Yìqǐ zǒu ba.",
-    "exMeaning": "같이 가자."
+    "hanja": "다스릴 경(经), 다스릴 리(理)",
+    "pronTip": "우리 비즈니스 파트의 징리(jīnglǐ)님 결재",
+    "charTip": "실 사(纟) 부수의 경(经)과 임금 왕(王=구슬 옥 부수)이 명시된 리(理)가 만나 조직의 살림과 인사 경영을 도맡아 다스리는 책임자입니다.",
+    "exZh": "他是经理。",
+    "exPinyin": "Tā shì jīnglǐ.",
+    "exMeaning": "그는 지배인이다."
   },
   {
     "num": 131,
-    "hanzi": "意思",
-    "pinyin": "yìsi",
-    "koPron": "이쓰",
+    "hanzi": "久",
+    "pinyin": "jiǔ",
+    "koPron": "지우",
     "meanings": [
-      { "pos": "명사", "ko": "뜻, 의미", "en": "Meaning" }
+      { "pos": "형용사", "ko": "오래다, 길다 (시간)", "en": "Long time" }
     ],
-    "hanja": "뜻 의(意), 생각 사(思)",
-    "pronTip": "무슨 이쓰(yìsi)야?",
-    "charTip": "두 글자 모두 하단에 심리 기관인 마음 심(心) 부수를 장착하여 인간이 머리와 가슴속으로 사유하는 고유한 취지나 뜻을 뜻합니다.",
-    "exZh": "什么意思？",
-    "exPinyin": "Shénme yìsi?",
-    "exMeaning": "무슨 뜻입니까?"
+    "hanja": "오랠 구(久)",
+    "pronTip": "지우(jiǔ)장창 긴 시간 동안 기다리게 하다",
+    "charTip": "사람의 걷는 다리 모양 뒤편으로 긴 잔상이 길게 늘어지듯 흘러가는 시간 축의 수치가 무척 장구하고 오램을 뜻하는 부수 계열 글자입니다.",
+    "exZh": "好久不见。",
+    "exPinyin": "Hǎojiǔ bú jiàn.",
+    "exMeaning": "오랜만이다."
   },
   {
     "num": 132,
-    "hanzi": "阴",
-    "pinyin": "yīn",
-    "koPron": "인",
+    "hanzi": "旧",
+    "pinyin": "jiù",
+    "koPron": "지우",
     "meanings": [
-      { "pos": "형용사", "ko": "흐리다", "en": "Cloudy" }
+      { "pos": "형용사", "ko": "낡다, 오래되다 (사물)", "en": "Old" }
     ],
-    "hanja": "그늘 음(阴)",
-    "pronTip": "인(yīn)상 쓰게 날씨가 흐리다",
-    "charTip": "좌측의 좌부방(阝=언덕 부 부수)이 높은 담장을 뜻하며 태양빛이 차단되어 언덕 뒷면에 그늘이 지듯 기후가 흐린 상태입니다.",
-    "exZh": "阴天。",
-    "exPinyin": "Yīntiān.",
-    "exMeaning": "흐린 날."
+    "hanja": "옛 구(旧)",
+    "pronTip": "소품이 너무 지우(jiù)낡아서 교체하다",
+    "charTip": "날 일(日) 부수가 세월의 적체를 뜻하며 사용한 지 수많은 날짜가 누적되어 물품의 외관이 닳고 예전 상태가 되었음을 뜻합니다.",
+    "exZh": "旧衣服。",
+    "exPinyin": "Jiù yīfu.",
+    "exMeaning": "낡은 옷."
   },
   {
     "num": 133,
-    "hanzi": "因为...所以...",
-    "pinyin": "yīnwèi suǒyǐ",
-    "koPron": "인웨이 쑤오이",
+    "hanzi": "句子",
+    "pinyin": "jùzi",
+    "koPron": "쥐쯔",
     "meanings": [
-      { "pos": "접속사", "ko": "~때문에, 그래서 ~하다", "en": "Because" }
+      { "pos": "명사", "ko": "문장", "en": "Sentence" }
     ],
-    "hanja": "인할 인(因), 할 위(为), 바 소(所), 써 이(以)",
-    "pronTip": "인웨이(원인) 수어이(결과)",
-    "charTip": "에운담(囗) 부수의 因, 지게문 호(户) 부수의 所 등이 결합하여 사태의 근본 원인과 뒤따르는 결과를 긴밀히 엮어주는 접속사 구문입니다.",
-    "exZh": "因为下雨，所以没去。",
-    "exPinyin": "Yīnwèi xiàyǔ, suǒyǐ méi qù.",
-    "exMeaning": "비가 왔기 때문에, 그래서 가지 않았다."
+    "hanja": "글귀 구(句), 아들 자(子)",
+    "pronTip": "이 쥐쯔(jùzi) 어휘 어순을 분석하다",
+    "charTip": "입 구(口) 부수가 구두 발성을 나타내는 글귀 구(句)와 자(子)가 만나 어휘가 규칙대로 조합되어 의미를 발산하는 하나의 완전한 문장입니다.",
+    "exZh": "写句子。",
+    "exPinyin": "Xiě jùzi.",
+    "exMeaning": "문장을 쓰다."
   },
   {
     "num": 134,
-    "hanzi": "游泳",
-    "pinyin": "yóuyǒng",
-    "koPron": "요우융",
+    "hanzi": "决定",
+    "pinyin": "juédìng",
+    "koPron": "쥐에딩",
     "meanings": [
-      { "pos": "동사", "ko": "수영하다", "en": "To Swim" }
+      { "pos": "동사", "ko": "결정하다, 결심하다", "en": "To Decide" },
+      { "pos": "명사", "ko": "결정, 결심", "en": "Decision" }
     ],
-    "hanja": "놀 유(游), 헤엄칠 영(泳)",
-    "pronTip": "요우융(yóuyǒng)장에 수영하러",
-    "charTip": "두 글자 모두 좌측에 물 수(氵=삼수변 부수)를 동반하여 사람이 인위적인 부력 기구 없이 물 위에서 헤엄치며 나아가는 스포츠 행동입니다.",
-    "exZh": "去游泳。",
-    "exPinyin": "Qù yóuyǒng.",
-    "exMeaning": "수영하러 가다."
+    "hanja": "결단할 결(决), 정할 정(定)",
+    "pronTip": "진로 방향을 확실하게 쥐에딩(juédìng)하다",
+    "charTip": "이수변(冫) 부수의 결(决)과 갓머리(宀=집 면 부수)의 정(定)이 만나 일말의 여지 없이 사안을 매듭짓고 확고하게 목적을 정함을 뜻합니다.",
+    "exZh": "决定去中国。",
+    "exPinyin": "Juédìng qù Zhōngguó.",
+    "exMeaning": "중국에 가기로 결정했다."
   },
   {
     "num": 135,
-    "hanzi": "右边",
-    "pinyin": "yòubian",
-    "koPron": "요우비엔",
+    "hanzi": "渴",
+    "pinyin": "kě",
+    "koPron": "커",
     "meanings": [
-      { "pos": "명사", "ko": "오른쪽", "en": "Right" }
+      { "pos": "형용사", "ko": "목마르다", "en": "Thirsty" }
     ],
-    "hanja": "오른 우, 가 변(边)",
-    "pronTip": "요우비엔(yòubian) 요쪽이 오른쪽",
-    "charTip": "입 구(口) 부수가 포함된 오른 우와 책받침(辶=갈 착 부수)의 변(边)이 만나 밥을 먹는 손이 위치한 우측 방향을 뜻합니다.",
-    "exZh": "在右边。",
-    "exPinyin": "Zài yòubian.",
-    "exMeaning": "오른쪽에 있다."
+    "hanja": "목마를 갈(渴)",
+    "pronTip": "커(kě)피가 간절히 생각날 정도로 목이 타다",
+    "charTip": "좌측의 삼수변(氵=물 수 부수)이 수자원을 뜻하며 신체 내부에 수분이 고갈되어 목구멍이 타들어 가듯 건조한 기갈 상태를 뜻합니다.",
+    "exZh": "我渴了。",
+    "exPinyin": "Wǒ kě le.",
+    "exMeaning": "나 목말라."
   },
   {
     "num": 136,
-    "hanzi": "鱼",
-    "pinyin": "yú",
-    "koPron": "위",
+    "hanzi": "可爱",
+    "pinyin": "kě'ài",
+    "koPron": "커아이",
     "meanings": [
-      { "pos": "명사", "ko": "물고기", "en": "Fish" }
+      { "pos": "형용사", "ko": "귀엽다, 사랑스럽다", "en": "Cute" }
     ],
-    "hanja": "고기 어(鱼)",
-    "pronTip": "위(yú)로 튀어오르는 물고기",
-    "charTip": "물고기의 머리, 비늘로 덮인 몸통, 지느러미와 꼬리 지붕 모양을 위아래 선형으로 결합해 표현한 고유한 부수 글자입니다.",
-    "exZh": "吃鱼。",
-    "exPinyin": "Chī yú.",
-    "exMeaning": "물고기(생선)를 먹다."
+    "hanja": "가할 가(可), 사랑 애(Love)",
+    "pronTip": "커아이(kě'ài) 미소의 귀여운 영아",
+    "charTip": "입 구(口) 부수의 가(可)와 마음 심(心) 부스 계열의 애(爱)가 만나 제삼자가 보기에 충분히 사랑(爱)을 줄 만큼 앙증맞고 귀여움을 뜻합니다.",
+    "exZh": "可爱的小狗。",
+    "exPinyin": "Kě'ài de xiǎo gǒu.",
+    "exMeaning": "귀여운 강아지."
   },
   {
     "num": 137,
-    "hanzi": "远",
-    "pinyin": "yuǎn",
-    "koPron": "위엔",
+    "hanzi": "刻",
+    "pinyin": "kè",
+    "koPron": "커",
     "meanings": [
-      { "pos": "형용사", "ko": "멀다", "en": "Far" }
+      { "pos": "양사", "ko": "15분 (시간 단위)", "en": "Quarter" }
     ],
-    "hanja": "멀 원(远)",
-    "pronTip": "위엔(yuǎn)만치 멀다",
-    "charTip": "책받침 책(辶=갈 착 부수)이 도보 여정을 뜻하며, 길을 아주 한참 동안 걸어가야 도달할 수 있을 정도로 물리적 거리가 멀다를 뜻합니다.",
-    "exZh": "很远。",
-    "exPinyin": "Hěn yuǎn.",
-    "exMeaning": "매우 멀다."
+    "hanja": "새길 각(刻)",
+    "pronTip": "다이얼에 15분 마디 간격으로 커(kè) 눈금을 새기다",
+    "charTip": "우측의 선칼도방(刂=칼 도 부수)이 날카로운 조각도로 판면에 15분 마디 단위를 쪼개어 정밀하게 칼로 새겨둔 시간 단위입니다.",
+    "exZh": "三点一刻。",
+    "exPinyin": "Sān diǎn yí kè.",
+    "exMeaning": "3시 15분."
   },
   {
     "num": 138,
-    "hanzi": "运动",
-    "pinyin": "yùndòng",
-    "koPron": "윈둥",
+    "hanzi": "客人",
+    "pinyin": "kèrén",
+    "koPron": "커런",
     "meanings": [
-      { "pos": "동사", "ko": "운동하다", "en": "To Exercise" }
+      { "pos": "명사", "ko": "손님, 하객", "en": "Guest" }
     ],
-    "hanja": "옮길 운(运), 움직일 동(动)",
-    "pronTip": "윈둥(yùndòng)화 신고 운동하다",
-    "charTip": "책받침(辶=갈 착 부수)의 운(运)과 힘 력(力) 부수가 명시된 동(动)이 만나 신체의 힘을 작동하여 역동적으로 몸을 움직이는 활동입니다.",
-    "exZh": "喜欢运动。",
-    "exPinyin": "Xǐhuan yùndòng.",
-    "exMeaning": "운동을 좋아하다."
+    "hanja": "손 객(客), 사람 인(人)",
+    "pronTip": "귀한 커런(kèrén)들을 연회장에 모시다",
+    "charTip": "갓머리(宀=집 면 부수)가 든 객(客)과 사람 인(人) 부수가 만나 내 주거 공간 안으로 예의를 갖추어 맞이해 들인 외부 방문객을 뜻합니다.",
+    "exZh": "家里有客人。",
+    "exPinyin": "Jiāli yǒu kèrén.",
+    "exMeaning": "집에 손님이 있다."
   },
   {
     "num": 139,
-    "hanzi": "再",
-    "pinyin": "zài",
-    "koPron": "짜이",
+    "hanzi": "空调",
+    "pinyin": "kōngtiáo",
+    "koPron": "쿵티아오",
     "meanings": [
-      { "pos": "부사", "ko": "다시, 또", "en": "Again" }
+      { "pos": "명사", "ko": "에어컨, 공조기", "en": "Air conditioner" }
     ],
-    "hanja": "다시 재(再)",
-    "pronTip": "짜이(zài) 한 번만 다시",
-    "charTip": "멀경(冂) 부수 틀 안에 선을 겹쳐 그어 사태를 일회성으로 끝내지 않고 한 번 더 중첩하여 시도하는 연속 부사입니다.",
-    "exZh": "再说。",
-    "exPinyin": "Zài shuō.",
-    "exMeaning": "다시 말하다."
+    "hanja": "빌 공(空), 고를 조(调)",
+    "pronTip": "쿵티아오(kōngtiáo) 냉방 장치를 작동하다",
+    "charTip": "구멍 혈(穴) 부수의 공(空)과 말씀 언(讠) 부수의 조(调)가 만나 실내 기류와 공기(空)의 온습도를 쾌적하게 조절(调)해 주는 기계입니다.",
+    "exZh": "开空调。",
+    "exPinyin": "Kāi kōngtiáo.",
+    "exMeaning": "에어컨을 켜다."
   },
   {
     "num": 140,
-    "hanzi": "早上",
-    "pinyin": "zǎoshang",
-    "koPron": "짜오샹",
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "koPron": "코우",
     "meanings": [
-      { "pos": "명사", "ko": "아침", "en": "Morning" }
+      { "pos": "명사", "ko": "입", "en": "Mouth" },
+      { "pos": "양사", "ko": "식구 수 (인구 양사)", "en": "(measure word for family members)" }
     ],
-    "hanja": "일찍 조(早), 윗 상(上)",
-    "pronTip": "짜오샹(zǎoshang) 아침 인사",
-    "charTip": "날 일(日) 부수가 포함된 일찍 조(早)와 지사 부수의 위 상(上)이 만나 해가 하늘 위로 갓 떠오른 이른 아침 시간대를 뜻합니다.",
-    "exZh": "早上好。",
-    "exPinyin": "Zǎoshang hǎo.",
-    "exMeaning": "좋은 아침."
+    "hanja": "입 구(口)",
+    "pronTip": "가족 구성원이 몇 코우(kǒu)입니까?",
+    "charTip": "사람이 음식을 섭취하거나 말을 내뱉을 때 사용하는 안면 입 구멍 외관을 사각형 모양으로 단순 가공한 고유 기본 부수 글자입니다.",
+    "exZh": "三口人。",
+    "exPinyin": "Sān kǒu  rén.",
+    "exMeaning": "세 식구."
   },
   {
     "num": 141,
-    "hanzi": "丈夫",
-    "pinyin": "zhàngfu",
-    "koPron": "장푸",
+    "hanzi": "哭",
+    "pinyin": "kū",
+    "koPron": "쿠",
     "meanings": [
-      { "pos": "명사", "ko": "남편", "en": "Husband" }
+      { "pos": "동사", "ko": "울다, 통곡하다", "en": "To Cry" }
     ],
-    "hanja": "어른 장(丈), 지아비 부(夫)",
-    "pronTip": "장푸(zhàngfu) 든든한 남편",
-    "charTip": "한 일(一) 부수 계열의 丈과 대자형 머리에 상투 비녀를 꽂은 지아비 부(夫) 부수가 만나 결혼한 성인 남성 배우자를 뜻합니다.",
-    "exZh": "我的丈夫。",
-    "exPinyin": "Wǒ de zhàngfu.",
-    "exMeaning": "나의 남편."
+    "hanja": "울 곡(哭)",
+    "pronTip": "눈물을 주르륵 쿠(kū)잉 서럽게 울다",
+    "charTip": "하단의 개 견(犬) 부수 위에 입 구(口) 부수가 두 개나 중첩 배치되어, 짐승이 입을 크게 벌려 하염없이 서럽게 통곡하며 우는 모양입니다.",
+    "exZh": "别哭了。",
+    "exPinyin": "Bié kū le.",
+    "exMeaning": "울지 마."
   },
   {
     "num": 142,
-    "hanzi": "找",
-    "pinyin": "zhǎo",
-    "koPron": "자오",
+    "hanzi": "裤子",
+    "pinyin": "kùzi",
+    "koPron": "쿠쯔",
     "meanings": [
-      { "pos": "동사", "ko": "찾다", "en": "To Search" }
+      { "pos": "명사", "ko": "바지, 하의", "en": "Pants" }
     ],
-    "hanja": "찾을 조(找)",
-    "pronTip": "자오(zhǎo)기 있나 찾아봐",
-    "charTip": "손 수(扌) 부수가 왼쪽에 배치되어 분실하거나 필요한 대상을 손으로 이리저리 만지고 더듬거리며 수색하여 찾아내는 행위입니다.",
-    "exZh": "找人。",
-    "exPinyin": "Zhǎo rén.",
-    "exMeaning": "사람을 찾다."
+    "hanja": "바지 고(裤), 아들 자(子)",
+    "pronTip": "쿠쯔(kùzi) 하의를 하체에 착용하다",
+    "charTip": "裤(의복 부수)가 의류 소품임을 나타내며 골반 아래 하체를 덮어 보호해 주는 긴 바지 의복을 뜻합니다.",
+    "exZh": "穿裤子。",
+    "exPinyin": "Chuān kùzi.",
+    "exMeaning": "바지를 입다."
   },
   {
     "num": 143,
-    "hanzi": "着",
-    "pinyin": "zhe",
-    "koPron": "저",
+    "hanzi": "筷子",
+    "pinyin": "kuàizi",
+    "koPron": "콰이쯔",
     "meanings": [
-      { "pos": "조사", "ko": "~하고 있다 (지속)", "en": "(particle)" }
+      { "pos": "명사", "ko": "젓가락", "en": "Chopsticks" }
     ],
-    "hanja": "붙을 착(着)",
-    "pronTip": "저(zhe) 상태로 쭉 하고 있다",
-    "charTip": "양 양(羊) 부수 변형 아래에 눈 목(目) 부수가 결합하여 어떤 상태나 동작의 결과가 계속 이어짐을 뜻하는 조사입니다.",
-    "exZh": "看着。",
-    "exPinyin": "Kàn zhe.",
-    "exMeaning": "보고 있다."
+    "hanja": "젓가락 주(筷), 아들 자(子)",
+    "pronTip": "콰이쯔(kuàizi) 식사 도구를 다루다",
+    "charTip": "상단의 대나무 죽(竹) 부수가 제조 성분을 나타내며, 대나무 살을 가늘게 가공해 신속하게 음식을 집어 먹는 아시아식 식사 도구입니다.",
+    "exZh": "用筷子。",
+    "exPinyin": "Yòng kuàizi.",
+    "exMeaning": "젓가락을 사용하다."
   },
   {
     "num": 144,
-    "hanzi": "真",
-    "pinyin": "zhēn",
-    "koPron": "전",
+    "hanzi": "蓝",
+    "pinyin": "lán",
+    "koPron": "란",
     "meanings": [
-      { "pos": "부사", "ko": "정말", "en": "Real" }
+      { "pos": "형용사", "ko": "남색의, 파란색의", "en": "Blue" }
     ],
-    "hanja": "참 진(真)",
-    "pronTip": "전(zhēn)짜로?",
-    "charTip": "눈 목(目) 부수가 중심에 있어 왜곡 없이 사물을 똑바로 목격하듯 거짓이나 군더더기 없는 명백한 진실 상태를 강조합니다.",
-    "exZh": "真好。",
-    "exPinyin": "Zhēn hǎo.",
-    "exMeaning": "정말 좋다."
+    "hanja": "쪽 람(蓝)",
+    "pronTip": "란(lán)색의 청량한 가을 바다 스크린",
+    "charTip": "맨 위의 풀 초(艹) 부수가 초본 료를 뜻하며 식물 쪽 잎에서 추출해 낸 청량하고 파란 하늘빛의 남색 색상을 의미합니다.",
+    "exZh": "蓝天。",
+    "exPinyin": "Lántiān.",
+    "exMeaning": "푸른 하늘."
   },
   {
     "num": 145,
-    "hanzi": "正在",
-    "pinyin": "zhèngzài",
-    "koPron": "정짜이",
+    "hanzi": "老",
+    "pinyin": "lǎo",
+    "koPron": "라오",
     "meanings": [
-      { "pos": "부사", "ko": "~하는 중이다", "en": "In the process of" }
+      { "pos": "형용사", "ko": "늙다, 오래되다", "en": "Old" }
     ],
-    "hanja": "바를 정(正), 있을 재(在)",
-    "pronTip": "정짜이(zhèngzài) 지금 막 하는 중",
-    "charTip": "그칠 지(止) 부수 계열의 바를 정(正)과 흙 토(土) 부수의 있을 재(在)가 만나 바로 그 장소와 시점에 사태가 실시간 진행 중임을 뜻합니다.",
-    "exZh": "正在吃饭。",
-    "exPinyin": "Zhèngzài chī fàn.",
-    "exMeaning": "지금 밥을 먹고 있다."
+    "hanja": "늙을 노(老)",
+    "pronTip": "라오(lǎo)인 연령층에 진입하다",
+    "charTip": "허리가 굽은 노인이 지팡이를 땅에 짚고 아슬아슬하게 걸어가는 형상을 선형으로 단장한 독립 고유 부수 글자입니다.",
+    "exZh": "老朋友。",
+    "exPinyin": "Lǎo péngyou.",
+    "exMeaning": "오랜 친구."
   },
   {
     "num": 146,
-    "hanzi": "知道",
-    "pinyin": "zhīdào",
-    "koPron": "즈따오",
+    "hanzi": "离开",
+    "pinyin": "líkāi",
+    "koPron": "리카이",
     "meanings": [
-      { "pos": "동사", "ko": "알다", "en": "To Know" }
+      { "pos": "동사", "ko": "떠나다, 벗어나다", "en": "To Leave" }
     ],
-    "hanja": "알 지(知), 길 도(道)",
-    "pronTip": "즈따오(zhīdào) 나도 알아!",
-    "charTip": "입 구(口) 부수가 포함된 알 지(知)와 머리 혈(页) 및 착(辶) 부수가 든 길 도(道)가 만나 사물의 핵심 이치를 인지하여 이해함을 뜻합니다.",
-    "exZh": "不知道。",
-    "exPinyin": "Bù zhīdào.",
-    "exMeaning": "모른다."
+    "hanja": "떠날 리(离), 열 개(开)",
+    "pronTip": "정든 처소를 등지고 리카이(líkāi) 작별해 떠나다",
+    "charTip": "그물을 벗어나는 离 부수 영역과 대문을 여는 개(开)가 만나 고유한 거처 영역을 벗어나 외부 타방으로 출발해 이동함을 뜻합니다.",
+    "exZh": "离开中国。",
+    "exPinyin": "Líkāi Zhōngguó.",
+    "exMeaning": "중국을 떠나다."
   },
   {
     "num": 147,
-    "hanzi": "准备",
-    "pinyin": "zhǔnbèi",
-    "koPron": "준베이",
+    "hanzi": "礼物",
+    "pinyin": "lǐwù",
+    "koPron": "리우우",
     "meanings": [
-      { "pos": "동사", "ko": "준비하다", "en": "To Prepare" }
+      { "pos": "명사", "ko": "선물", "en": "Gift" }
     ],
-    "hanja": "준할 준(准), 갖출 비(备)",
-    "pronTip": "준베이(zhǔnbèi) 다 됐어?",
-    "charTip": "이수변(冫) 부수의 준(准)과 뒤져올치(夂) 부수 계열의 비(备)가 만나 다가올 사태에 대비해 필요한 기물을 온전히 갖추어 놓는 행위입니다.",
-    "exZh": "准备好了。",
-    "exPinyin": "Zhǔnbèi hǎo le.",
-    "exMeaning": "준비 다 됐다."
+    "hanja": "예도 례(礼), 만물 물(物)",
+    "pronTip": "기념일에 전달할 감동적인 리우우(lǐwù) 상자",
+    "charTip": "보일 시(示) 부수의 예(礼)와 소 우(牛) 부수가 명시된 물(物)이 만나 정중한 예의를 담아 상대방에게 무상으로 건네는 물품입니다.",
+    "exZh": "送礼物。",
+    "exPinyin": "Sòng lǐwù.",
+    "exMeaning": "선물을 주다."
   },
   {
     "num": 148,
-    "hanzi": "走",
-    "pinyin": "zǒu",
-    "koPron": "쪼우",
+    "hanzi": "历史",
+    "pinyin": "lìshǐ",
+    "koPron": "리스",
     "meanings": [
-      { "pos": "동사", "ko": "걷다, 가다", "en": "To walk" }
+      { "pos": "명사", "ko": "역사", "en": "History" }
     ],
-    "hanja": "달릴 주(走)",
-    "pronTip": "쪼우(zǒu)심해서 걷다",
-    "charTip": "사람이 팔을 크게 흔들며 힘차게 걸어가거나 달려가는 역동적인 모습을 본뜬 고유 부수 글자입니다.",
-    "exZh": "我们走吧。",
-    "exPinyin": "Wǒmen zǒu ba.",
-    "exMeaning": "우리 가자."
+    "hanja": "지낼 력(历), 사기 사(史)",
+    "pronTip": "리스(lìshǐ) 연대기 사료를 연구하다",
+    "charTip": "엄호(广) 계열 부수의 력(历)과 입 구 계열 무지개 형상의 사(史) 부수가 만나 과거 인간 사회가 거쳐 온 연대기적 기록 사료를 뜻합니다.",
+    "exZh": "历史书。",
+    "exPinyin": "Lìshǐ shū.",
+    "exMeaning": "역사책."
   },
   {
     "num": 149,
-    "hanzi": "最",
-    "pinyin": "zuì",
-    "koPron": "쭈이",
+    "hanzi": "脸",
+    "pinyin": "liǎn",
+    "koPron": "리엔",
     "meanings": [
-      { "pos": "부사", "ko": "가장, 제일", "en": "Most" }
+      { "pos": "명사", "ko": "얼굴, 안면", "en": "Face" }
     ],
-    "hanja": "가장 최(最)",
-    "pronTip": "쭈이(zuì)고로(최고로) 좋다",
-    "charTip": "가로 왈(曰) 부수 아래에 취할 취(取)가 결합하여, 여러 무리 중에서 가장 으뜸가고 뛰어난 것을 취한다는 뜻을 나타냅니다.",
-    "exZh": "最好。",
-    "exPinyin": "Zuì hǎo.",
-    "exMeaning": "가장 좋다."
+    "hanja": "뺨 련(脸)",
+    "pronTip": "내 리엔(liǎn) 안면 피사체를 거울에 비추다",
+    "charTip": "좌측의 육달월(月=고기 육 부수)이 머리 신체 부위임을 나타내며, 사람의 안면 이목구비가 밀집해 있는 얼굴 정면을 가리킵니다.",
+    "exZh": "洗脸。",
+    "exPinyin": "Xǐ liǎn.",
+    "exMeaning": "세수하다."
   },
   {
     "num": 150,
-    "hanzi": "左边",
-    "pinyin": "zuǒbian",
-    "koPron": "쭈오비엔",
+    "hanzi": "练习",
+    "pinyin": "liànxí",
+    "koPron": "리엔시",
     "meanings": [
-      { "pos": "명사", "ko": "왼쪽", "en": "Left side" }
+      { "pos": "동사", "ko": "연습하다, 익히다", "en": "To Practice" },
+      { "pos": "명사", "ko": "연습, 훈련", "en": "Practice" }
     ],
-    "hanja": "왼 좌(左), 가 변(边)",
-    "pronTip": "쭈오비엔(zuǒbian) 쪼쪽이 왼쪽",
-    "charTip": "장인 공(工) 부수가 포함되어 도구를 쥘 때 거드는 손을 뜻하는 왼 좌(左)와 책받침(辶) 부수의 변(边)이 만나 좌측 방향을 뜻합니다.",
-    "exZh": "在左边。",
-    "exPinyin": "Zài zuǒbian.",
-    "exMeaning": "왼쪽에 있다."
+    "hanja": "익힐 련(练), 익힐 습(习)",
+    "pronTip": "리엔시(liànxí) 연습만이 살 길",
+    "charTip": "실 사(纟) 부수가 든 练과 본래 새가 날개(羽)를 펄럭이며 나는 법을 익히던 모양을 본뜬 习 부수가 만나 반복하여 연마함을 뜻합니다.",
+    "exZh": "练习口语。",
+    "exPinyin": "Liànxí kǒuyǔ.",
+    "exMeaning": "회화를 연습하다."
   },
+
   {
     "num": 151,
     "hanzi": "练习",
@@ -4513,7 +4533,7 @@
     "pronTip": "요즘 트렌드 동향이 쭈이진(zuìjìn) 급변하고 있다",
     "charTip": "가장 최(最) 부수와 책받침(辶=갈 착 부수)이 명시된 근(近)이 만나 타임라인 상 현재 시점과 가장 가까운 요즈음을 뜻합니다.",
     "exZh": "最近很忙。",
-    "exPinyin": "Zuìjìn hěn mang. -> Zuìjìn hěn máng.",
+    "exPinyin": "Zuìjìn hěn máng.",
     "exMeaning": "최근 매우 바쁘다."
   }
 ]
