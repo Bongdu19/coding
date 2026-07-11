@@ -82,19 +82,20 @@
         
         .card-divider { border-top: 1px solid #e2e8f0; margin: 2px 0 6px 0; }
         
-        /* 의미(meaning) 영역 새 스타일 적용 */
+        /* 의미(meaning) 영역 스타일 수정 */
         .meaning-box { display: flex; flex-direction: column; gap: 6px; margin-bottom: 6px; }
         .meaning-row { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
         .pos-badge { font-size: 13px; font-weight: 700; color: var(--primary); background: #e0e7ff; padding: 2px 6px; border-radius: 4px; border: 1px solid #c7d2fe; }
         .ko-meaning { font-size: 22px; font-weight: 800; color: #dc2626; line-height: 1.1; }
-        .en-meaning { font-size: 15px; font-weight: 600; color: var(--text-sub); }
+        /* en-meaning의 폰트 크기와 두께를 한국어 뜻(ko-meaning)과 동일하게 설정 */
+        .en-meaning { font-size: 22px; font-weight: 800; color: #2563eb; line-height: 1.1; }
         
         .tip-box { background: #fffdf2; padding: 6px 12px; border-left: 3px solid var(--accent-yellow); border-radius: 6px; border: 1px solid #fef3c7; margin-bottom: 4px; }
         .tip-item { font-size: 13px; color: #334155; line-height: 1.4; margin-bottom: 3px; }
         .tip-item:last-child { margin-bottom: 0; }
         
         .ex-box { background: #f1f5f9; padding: 8px 12px; border-radius: 8px; border: 1px solid #cbd5e1; width: 100%; box-sizing: border-box; }
-        .ex-zh { font-size: 19px; color: #0f172a; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
+        .ex-zh font-size: 19px; color: #0f172a; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
         .ex-pinyin-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; font-size: 14px; line-height: 1.3; }
         .ex-pinyin { color: #1e3a8a; font-weight: 600; }
         .ex-mean { color: #334155; font-weight: 600; }
@@ -150,7 +151,7 @@
 
     <div id="hubMainView" class="hub-container">
         <div class="hub-title">BONG HUB</div>
-        <div class="hub-subtitle">원하는 서비스 포털이나 학습 단어장을 선택해 주세요.</div>
+        <div class="hub-subtitle">원하는 service 포털이나 학습 단어장을 선택해 주세요.</div>
         
         <div class="hub-grid">
             <div class="hub-card hsk-all" style="cursor:pointer;" onclick="loadHskData('all')">
@@ -387,7 +388,7 @@
             renderQuizCards(quizWords);
         }
 
-        // 새로운 TTS 데이터 추출 함수 (meanings 배열 지원)
+        // 한국어 뜻 추출 함수
         function getMeaningSpeechText(word) {
             if (Array.isArray(word.meanings)) {
                 return word.meanings.map(m => m.ko.replace(/^~\s*/, '')).join(', ');
@@ -395,6 +396,14 @@
             if (word.meaning) {
                 let cleaned = word.meaning.replace(/\[[^\]]*\]/g, '').trim();
                 return cleaned.replace(/^~\s*/, '').trim();
+            }
+            return '';
+        }
+
+        // 영어 뜻 추출 함수
+        function getEnMeaningSpeechText(word) {
+            if (Array.isArray(word.meanings)) {
+                return word.meanings.map(m => m.en || '').filter(Boolean).join(', ');
             }
             return '';
         }
@@ -483,7 +492,7 @@
                 const tip1Label = (word.pronTip && word.pronTip.includes('부수')) ? '🧩 <b>부수 정보:</b>' : '💡 <b>발음 팁:</b>';
                 const tip2Label = (word.charTip && word.charTip.includes('+')) ? '✍️ <b>연상 스토리:</b>' : '✍️ <b>한자 팁:</b>';
 
-                // 플립 카드용 뜻 배열(meanings) HTML 생성 (크기 조정)
+                // 플립 카드용 뜻 배열(meanings) HTML 생성 (퀴즈 카드 뒷면 스타일 수정)
                 let meaningsHtml = '';
                 if (Array.isArray(word.meanings)) {
                     word.meanings.forEach(m => {
@@ -491,7 +500,7 @@
                             <div class="meaning-row" style="margin-bottom: 2px;">
                                 <span class="pos-badge" style="font-size: 11px; padding: 1px 4px;">${m.pos}</span>
                                 <span class="ko-meaning" style="font-size: 17px;">${m.ko}</span>
-                                <span class="en-meaning" style="font-size: 12px;">${m.en}</span>
+                                <span class="en-meaning" style="font-size: 17px; font-weight: 800; color: #2563eb;">${m.en}</span>
                             </div>
                         `;
                     });
@@ -564,6 +573,15 @@
                         u2.lang = 'ko-KR'; 
                         u2.rate = 1.0;
                         window.speechSynthesis.speak(u2);
+
+                        // 영어 뜻 읽기 추가
+                        const enMeaning = getEnMeaningSpeechText(word);
+                        if (enMeaning) {
+                            const uEn = new SpeechSynthesisUtterance(enMeaning);
+                            uEn.lang = 'en-US';
+                            uEn.rate = 1.0;
+                            window.speechSynthesis.speak(uEn);
+                        }
                         
                         if (word.exZh) {
                             const u3 = new SpeechSynthesisUtterance(word.exZh); 
@@ -661,6 +679,15 @@
             u2.lang = 'ko-KR'; 
             u2.rate = 1.0;
             window.speechSynthesis.speak(u2);
+
+            // 단별 오디오 재생 시 영어 뜻 추가
+            const enMeaning = getEnMeaningSpeechText(word);
+            if (enMeaning) {
+                const uEn = new SpeechSynthesisUtterance(enMeaning);
+                uEn.lang = 'en-US';
+                uEn.rate = 1.0;
+                window.speechSynthesis.speak(uEn);
+            }
             
             if (word.exZh) {
                 const u3 = new SpeechSynthesisUtterance(word.exZh); 
@@ -694,6 +721,7 @@
             }
         }
 
+        // 전체 자동 재생 루틴 수정 (영어 발음 단계를 추가하기 위해 총 단계를 0~5로 확장)
         function playNextStep() {
             if (!isAutoPlaying || isPaused) return;
             if (autoIndex >= currentFilteredWords.length) { stopStudyAudio(); return; }
@@ -705,16 +733,13 @@
             let text, lang, rate;
 
             if (autoStep === 0 || autoStep === 1) { text = word.hanzi; lang = 'zh-CN'; rate = slowSpeed; }
-            else if (autoStep === 2) { 
-                text = getMeaningSpeechText(word); 
-                lang = 'ko-KR'; 
-                rate = 1.0; 
-            }
-            else if (autoStep === 3) { text = word.exZh || ''; lang = 'zh-CN'; rate = speed; }
-            else if (autoStep === 4) { text = word.exMeaning || ''; lang = 'ko-KR'; rate = 1.0; }
+            else if (autoStep === 2) { text = getMeaningSpeechText(word); lang = 'ko-KR'; rate = 1.0; }
+            else if (autoStep === 3) { text = getEnMeaningSpeechText(word); lang = 'en-US'; rate = 1.0; } // 영어 뜻 재생 단계
+            else if (autoStep === 4) { text = word.exZh || ''; lang = 'zh-CN'; rate = speed; }
+            else if (autoStep === 5) { text = word.exMeaning || ''; lang = 'ko-KR'; rate = 1.0; }
 
             if (!text) {
-                if (autoStep === 3 || autoStep === 4) {
+                if (autoStep === 4 || autoStep === 5) {
                     autoStep = 0; autoIndex++;
                 } else {
                     autoStep++;
@@ -737,7 +762,7 @@
             utterance.onend = () => {
                 if (!isAutoPlaying || isPaused) return;
                 autoStep++;
-                if (autoStep > 4) { autoStep = 0; autoIndex++; }
+                if (autoStep > 5) { autoStep = 0; autoIndex++; }
                 playNextStep(); 
             };
             window.speechSynthesis.speak(utterance);
