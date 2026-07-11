@@ -41,7 +41,6 @@
         .hub-card.hsk::before { background: linear-gradient(to right, #6366f1, #ef4444); }
         .hub-card.hsk-all::before { background: linear-gradient(to right, #f59e0b, #ef4444); } 
         .hub-card.radical::before { background: linear-gradient(to right, #10b981, #3b82f6); }
-        /* 품사 통합 카드용 색상 */
         .hub-card.pos-all::before { background: linear-gradient(to right, #ec4899, #8b5cf6); }
         .hub-card h3 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: var(--text-main); }
         .hub-card p { margin: 0; font-size: 13px; color: var(--text-sub); line-height: 1.5; }
@@ -71,7 +70,8 @@
         .card.active { background-color: #fefcf0; border-color: var(--accent-yellow); }
         .card.is-wrong { border-color: var(--accent-red); background-color: #fef2f2; }
         
-        .card .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #94a3b8; font-weight: 700; }
+        /* No 영역 너비 확보 및 가독성 업그레이드 */
+        .card .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #64748b; font-weight: 700; background: #f1f5f9; padding: 1px 6px; border-radius: 4px; }
 
         .card-row-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; }
         .hanzi { font-size: 46px; color: var(--text-main); font-weight: 800; line-height: 1; } 
@@ -84,7 +84,6 @@
         
         .card-divider { border-top: 1px solid #e2e8f0; margin: 2px 0 6px 0; }
         
-        /* 의미(meaning) 영역 스타일 */
         .meaning-box { display: flex; flex-direction: column; gap: 6px; margin-bottom: 6px; }
         .meaning-row { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
         .pos-badge { font-size: 13px; font-weight: 700; color: var(--primary); background: #e0e7ff; padding: 2px 6px; border-radius: 4px; border: 1px solid #c7d2fe; }
@@ -135,14 +134,14 @@
         
         .flip-card-front { background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px; z-index: 2; }
         .flip-card-front.is-wrong { border-color: var(--accent-red); background-color: #fef2f2; }
-        .flip-card-front .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #94a3b8; font-weight: 700; }
+        /* 퀴즈 카드 No 영역 가독성 확장 */
+        .flip-card-front .index-num, .flip-card-back .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #64748b; font-weight: 700; background: #f1f5f9; padding: 1px 6px; border-radius: 4px; }
         .flip-card-front .wrong-badge { position: absolute; top: 6px; right: 8px; font-size: 13px; display: none; }
         .flip-card-front.is-wrong .wrong-badge { display: block; }
         .flip-card-front .hanzi { font-size: 56px; color: var(--text-main); font-weight: 800; } 
         .flip-card-front .hint { font-size: 11px; color: var(--primary); margin-top: 10px; font-weight: 700; background: #e0e7ff; padding: 2px 8px; border-radius: 20px; }
         
         .flip-card-back { background-color: #ffffff; transform: rotateY(180deg); padding: 22px 12px 8px 12px; display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; z-index: 1; text-align: left; }
-        .flip-card-back .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #94a3b8; font-weight: 700; }
         .flip-card-back .quiz-btn-wrap { margin-top: auto; padding-top: 4px; }
         .btn-wrong-toggle { width: 100%; background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; border-radius: 6px; padding: 6px; font-size: 12px; font-weight: 700; cursor: pointer; text-align: center; }
         .btn-wrong-toggle.marked { background-color: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
@@ -160,7 +159,6 @@
                 <p>총 600단어 완전 마스터 코스<br><strong>학습 & 퀴즈 플립 엔진 통합형</strong></p>
             </div>
 
-            <!-- 신규 품사별 마스터 트랙 카드 추가 -->
             <div class="hub-card pos-all" style="cursor:pointer;" onclick="loadHskData('pos')">
                 <h3>✨ HSK 1~3급 품사별 분류</h3>
                 <p>명사, 동사, 대명사, 양사 등 품사별 정복<br><strong>선택 품사 집중 훈련 엔진</strong></p>
@@ -234,15 +232,16 @@
         let quizWords = [];
         let currentLevel = 1;
 
+        // 패치 단계에서 각 단어 객체에 급수 태그를 주입하도록 매핑 최적화
         function loadHskData(level) {
             currentLevel = level;
             wrongWordsSet.clear(); 
             
             if (level === 'all' || level === 'pos') {
                 Promise.all([
-                    fetch('./data/hsk1.json').then(res => res.json()),
-                    fetch('./data/hsk2.json').then(res => res.json()),
-                    fetch('./data/hsk3.json').then(res => res.json())
+                    fetch('./data/hsk1.json').then(res => res.json()).then(data => data.map(w => ({...w, displayLevel: '1급'}))),
+                    fetch('./data/hsk2.json').then(res => res.json()).then(data => data.map(w => ({...w, displayLevel: '2급'}))),
+                    fetch('./data/hsk3.json').then(res => res.json()).then(data => data.map(w => ({...w, displayLevel: '3급'})))
                 ])
                 .then(datasets => {
                     allWords = [...datasets[0], ...datasets[1], ...datasets[2]];
@@ -266,6 +265,7 @@
             } else {
                 const fileName = level === 'radical' ? 'radical.json' : `hsk${level}.json`;
                 const titleName = level === 'radical' ? '부수로 공부하는 중국어 단어' : `HSK ${level}급 단어 최종 마스터`;
+                const levelTag = level === 'radical' ? '부수' : `${level}급`;
 
                 fetch(`./data/${fileName}`)
                     .then(response => {
@@ -273,7 +273,8 @@
                         return response.json();
                     })
                     .then(data => {
-                        allWords = data;
+                        // 단일 메뉴 데이터 로드 시에도 고유 급수 태그 주입
+                        allWords = data.map(w => ({...w, displayLevel: levelTag}));
                         setupFilterOptions(level);
                         
                         document.getElementById('hubMainView').style.display = 'none';
@@ -301,7 +302,6 @@
             filter.innerHTML = '';
             
             if (level === 'pos') {
-                // 품사별 분류 모드일 때 select 옵션을 품사로 동적 추출/배치
                 let posSet = new Set();
                 allWords.forEach(w => {
                     if (Array.isArray(w.meanings)) {
@@ -309,11 +309,9 @@
                     }
                 });
                 
-                // 정렬된 품사 어레이 구성
                 let sortedPos = Array.from(posSet).sort();
                 let options = `<option value="pos_all">품사 전체 리스트 (총 ${allWords.length}단어)</option>`;
                 sortedPos.forEach(pos => {
-                    // 해당 품사가 포함된 단어 세기
                     let count = allWords.filter(w => Array.isArray(w.meanings) && w.meanings.some(m => m.pos && m.pos.trim() === pos)).length;
                     options += `<option value="pos_${pos}">🏷️ [${pos}] 단어 모아보기 (${count}개)</option>`;
                 });
@@ -386,7 +384,6 @@
             const val = document.getElementById('dayFilter').value;
             let mapped = allWords.map((w, i) => ({...w, num: i + 1}));
             
-            // 품사 기반 필터링 분기 처리
             if (val.startsWith('pos_')) {
                 const targetPos = val.replace('pos_', '');
                 if (targetPos === 'all') return mapped;
@@ -447,6 +444,14 @@
             return '';
         }
 
+        // 한국어 예문 발음 안정화 전처리 헬퍼 함수 (Key를 exMean으로 보정 및 괄호 제거)
+        function getExMeaningSpeechText(word) {
+            let targetText = word.exMean || word.exMeaning || '';
+            if (!targetText) return '';
+            // TTS 가독성 하락을 막기 위해 괄호 '(', ')' 문자를 빈 문자로 치환 및 공백 정돈
+            return targetText.replace(/[\(\)]/g, '').trim();
+        }
+
         function renderStudyCards(wordsArray) {
             const container = document.getElementById('studyContainer');
             container.innerHTML = '';
@@ -478,8 +483,9 @@
                     meaningsHtml = `<div class="ko-meaning">${word.meaning || ''}</div>`;
                 }
 
+                // 기획 수정: No.X 영역에 급수 태그 결합 출력 (예: 1급-No. 12)
                 card.innerHTML = `
-                    <div class="index-num">No. ${word.num}</div>
+                    <div class="index-num">${word.displayLevel || 'HSK'}-No. ${word.num}</div>
                     <div class="card-row-top">
                         <div class="hanzi zh-font">${word.hanzi} <span class="wrong-mark" style="color:var(--accent-red); font-size:18px;">${isWrong ? '❌' : ''}</span></div>
                         <button class="play-btn" onclick="speakSingleStudyWord(${i})">🔊 발음</button>
@@ -506,7 +512,7 @@
                         <div class="ex-zh zh-font">${word.exZh || ''}</div>
                         <div class="ex-pinyin-row">
                             <div class="ex-pinyin">${word.exPinyin || ''}</div>
-                            <div class="ex-mean">(${word.exMeaning || ''})</div>
+                            <div class="ex-mean">${word.exMean || word.exMeaning || ''}</div>
                         </div>
                     </div>
                 `;
@@ -545,16 +551,17 @@
                     meaningsHtml = `<div class="ko-meaning" style="font-size:18px;">${word.meaning || ''}</div>`;
                 }
 
+                // 기획 수정: 플립 퀴즈 앞/뒷면 No.X 영역에도 동일하게 급수 결합 적용
                 card.innerHTML = `
                     <div class="flip-card-inner">
                         <div class="flip-card-front ${isWrong ? 'is-wrong' : ''}">
-                            <div class="index-num">No. ${word.num}</div>
+                            <div class="index-num">${word.displayLevel || 'HSK'}-No. ${word.num}</div>
                             <div class="wrong-badge">❌</div>
                             <div class="hanzi zh-font">${word.hanzi}</div>
                             <div class="hint">👆 정답 뒤집기</div>
                         </div>
                         <div class="flip-card-back">
-                            <div class="index-num">No. ${word.num}</div>
+                            <div class="index-num">${word.displayLevel || 'HSK'}-No. ${word.num}</div>
                             <div class="card-row-top">
                                 <div class="hanzi zh-font" style="font-size:30px;">${word.hanzi}</div>
                             </div>
@@ -578,7 +585,7 @@
                                 <div class="ex-zh zh-font" style="font-size:13px;">${word.exZh || ''}</div>
                                 <div class="ex-pinyin-row" style="font-size:11px; margin-top:0px;">
                                     <span class="ex-pinyin">${word.exPinyin || ''}</span>
-                                    <span class="ex-mean">(${word.exMeaning || ''})</span>
+                                    <span class="ex-mean">(${word.exMean || word.exMeaning || ''})</span>
                                 </div>
                             </div>
                             <div class="quiz-btn-wrap">
@@ -626,8 +633,9 @@
                             window.speechSynthesis.speak(u3);
                         }
                         
-                        if (word.exMeaning) {
-                            const u4 = new SpeechSynthesisUtterance(word.exMeaning); 
+                        const cleanedExMean = getExMeaningSpeechText(word);
+                        if (cleanedExMean) {
+                            const u4 = new SpeechSynthesisUtterance(cleanedExMean); 
                             u4.lang = 'ko-KR'; 
                             u4.rate = 1.0;
                             window.speechSynthesis.speak(u4);
@@ -731,8 +739,9 @@
                 window.speechSynthesis.speak(u3);
             }
             
-            if (word.exMeaning) {
-                const u4 = new SpeechSynthesisUtterance(word.exMeaning); 
+            const cleanedExMean = getExMeaningSpeechText(word);
+            if (cleanedExMean) {
+                const u4 = new SpeechSynthesisUtterance(cleanedExMean); 
                 u4.lang = 'ko-KR'; 
                 u4.rate = 1.0;
                 window.speechSynthesis.speak(u4);
@@ -770,7 +779,7 @@
             else if (autoStep === 2) { text = getMeaningSpeechText(word); lang = 'ko-KR'; rate = 1.0; }
             else if (autoStep === 3) { text = getEnMeaningSpeechText(word); lang = 'en-US'; rate = 1.0; } 
             else if (autoStep === 4) { text = word.exZh || ''; lang = 'zh-CN'; rate = speed; }
-            else if (autoStep === 5) { text = word.exMeaning || ''; lang = 'ko-KR'; rate = 1.0; }
+            else if (autoStep === 5) { text = getExMeaningSpeechText(word); lang = 'ko-KR'; rate = 1.0; } // 보정된 한국어 예문 호출
 
             if (!text) {
                 if (autoStep === 4 || autoStep === 5) {
