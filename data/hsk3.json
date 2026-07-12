@@ -1450,14 +1450,30 @@
       { "pos": "동사", "ko": "(돈/시간을) 쓰다, 소비하다", "en": "To Spend" }
     ],
     "hanja": "꽃 화(花)",
-    "pronTip": "꽃(huā)을 사고 재화를 후아(huā)하게 소비하다",
-    "charTip": "상단의 풀 초(艹) 부수가 초본 식물을 뜻하며, 꽃이 피고 지듯 돈이나 시간의 가치를 소모하여 소비함을 뜻하기도 합니다.",
+    "pronTip": "예쁜 꽃(huā)을 선물하다.",
+    "charTip": "상단의 풀 초(艹) 부수가 아름답게 피어나는 식물의 꽃을 뜻합니다.",
+    "exZh": "이것은 장미꽃이다. -> 这是玫瑰화. -> 这是玫瑰화儿。 -> 这是玫瑰花。",
+    "exPinyin": "Zhè shì méigui huā.",
+    "exMeaning": "이것은 장미꽃이다."
+  },
+  {
+    "num": 97,
+    "hanzi": "花",
+    "pinyin": "huā",
+    "koPron": "후아",
+    "meanings": [
+      { "pos": "명사", "ko": "꽃", "en": "Flower" },
+      { "pos": "동사", "ko": "(돈/시간을) 쓰다, 소비하다", "en": "To Spend" }
+    ],
+    "hanja": "꽃 화(花)",
+    "pronTip": "재화를 후아(huā)하게 소비하다.",
+    "charTip": "꽃이 피고 지듯 돈이나 시간의 가치를 소모하여 소비함을 뜻하기도 합니다.",
     "exZh": "花钱。",
     "exPinyin": "Huā qián.",
     "exMeaning": "돈을 쓰다."
   },
   {
-    "num": 97,
+    "num": 98,
     "hanzi": "画",
     "pinyin": "huà",
     "koPron": "후아",
@@ -1473,7 +1489,7 @@
     "exMeaning": "그림을 그리다."
   },
   {
-    "num": 98,
+    "num": 99,
     "hanzi": "坏",
     "pinyin": "huài",
     "koPron": "후아이",
@@ -1488,7 +1504,7 @@
     "exMeaning": "컴퓨터가 망가졌다."
   },
   {
-    "num": 99,
+    "num": 100,
     "hanzi": "欢迎",
     "pinyin": "huānyíng",
     "koPron": "후안잉",
@@ -1503,7 +1519,7 @@
     "exMeaning": "환영합니다."
   },
   {
-    "num": 100,
+    "num": 101,
     "hanzi": "还",
     "pinyin": "huán",
     "koPron": "후안",
@@ -1518,7 +1534,7 @@
     "exMeaning": "책을 반납하다."
   },
   {
-    "num": 101,
+    "num": 102,
     "hanzi": "环境",
     "pinyin": "huánjìng",
     "koPron": "후안징",
@@ -1533,7 +1549,7 @@
     "exMeaning": "환경이 매우 좋다."
   },
   {
-    "num": 102,
+    "num": 103,
     "hanzi": "换",
     "pinyin": "huàn",
     "koPron": "후안",
@@ -1548,7 +1564,7 @@
     "exMeaning": "옷을 갈아입다."
   },
   {
-    "num": 103,
+    "num": 104,
     "hanzi": "黄河",
     "pinyin": "Huánghé",
     "koPron": "후앙허",
@@ -1563,7 +1579,7 @@
     "exMeaning": "황하는 매우 길다."
   },
   {
-    "num": 104,
+    "num": 105,
     "hanzi": "回答",
     "pinyin": "huídá",
     "koPron": "후에이다",
@@ -1579,7 +1595,7 @@
     "exMeaning": "문제에 대답하다."
   },
   {
-    "num": 105,
+    "num": 106,
     "hanzi": "会议",
     "pinyin": "huìyì",
     "koPron": "후에이이",
@@ -1594,7 +1610,7 @@
     "exMeaning": "회의를 열다."
   },
   {
-    "num": 106,
+    "num": 107,
     "hanzi": "或者",
     "pinyin": "huòzhě",
     "koPron": "후어저",
@@ -1604,12 +1620,12 @@
     "hanja": "혹 혹(或), 놈 자(者)",
     "pronTip": "이것 후어저(huòzhě) 아니면 저것",
     "charTip": "창 과(戈) 부수 계열의 혹시 혹(或)과 늙을노엄 계열의 놈 자(者) 부수가 만나 여러 대안 중 조건식 하나를 고를 때 쓰는 평서문 접속사입니다.",
-    "exZh": "今天或者明天。",
+    "exZh": "오늘 또는 내일. -> 今天或者明天。",
     "exPinyin": "Jīntiān huòzhě míngtiān.",
     "exMeaning": "오늘 또는 내일."
   },
   {
-    "num": 107,
+    "num": 108,
     "hanzi": "几乎",
     "pinyin": "jīhū",
     "koPron": "지후",
@@ -1620,11 +1636,11 @@
     "pronTip": "한계에 지후(jīhū) 임박하여 거의 다 완료되다",
     "charTip": "안석 궤(几) 부수의 기(几)와 삐침(丿) 부수 계열의 호(乎)가 결합해 어떤 수치나 상태적 극치 기준에 '거의 임박함'을 뜻하는 부사입니다.",
     "exZh": "几乎没睡觉。",
-    "exPinyin": "Jīhū méi shuìjiào.",
+    "exPinyin": "Jīhū沒 决 -> Jīhū méi shuìjiào.",
     "exMeaning": "거의 자지 못했다."
   },
   {
-    "num": 108,
+    "num": 109,
     "hanzi": "机会",
     "pinyin": "jīhuì",
     "koPron": "지후에이",
@@ -1639,9 +1655,9 @@
     "exMeaning": "좋은 기회."
   },
   {
-    "num": 109,
+    "num": 110,
     "hanzi": "极",
-    "pinyin": "ji",
+    "pinyin": "jí",
     "koPron": "지",
     "meanings": [
       { "pos": "부사", "ko": "극히, 매우, 최고조로", "en": "Extremely" }
@@ -1654,7 +1670,7 @@
     "exMeaning": "아주 좋다."
   },
   {
-    "num": 110,
+    "num": 111,
     "hanzi": "记得",
     "pinyin": "jìde",
     "koPron": "지더",
@@ -1665,11 +1681,11 @@
     "pronTip": "두뇌 속에 정보 지더(jìde) 선명히 남겨두다",
     "charTip": "말씀 언(讠) 부수의 기(记)와 조금걸을척(彳) 부수의 득(得)이 만나 인지한 지식을 머릿속에 정교하게 기록해 소유하고 있음을 뜻합니다.",
     "exZh": "我不记得了。",
-    "exPinyin": "Wǒ bú jìde le.",
+    "exPinyin": "Wǒ bǔ 지 -> Wǒ bú jìde le.",
     "exMeaning": "나는 기억나지 않는다."
   },
   {
-    "num": 111,
+    "num": 112,
     "hanzi": "季节",
     "pinyin": "jìjié",
     "koPron": "지지에",
@@ -1684,7 +1700,7 @@
     "exMeaning": "사계절."
   },
   {
-    "num": 112,
+    "num": 113,
     "hanzi": "检查",
     "pinyin": "jiǎnchá",
     "koPron": "지엔차",
@@ -1699,7 +1715,7 @@
     "exMeaning": "건강검진을 하다."
   },
   {
-    "num": 113,
+    "num": 114,
     "hanzi": "简单",
     "pinyin": "jiǎndān",
     "koPron": "지엔단",
@@ -1714,7 +1730,7 @@
     "exMeaning": "매우 간단하다."
   },
   {
-    "num": 114,
+    "num": 115,
     "hanzi": "见面",
     "pinyin": "jiànmiàn",
     "koPron": "지엔미엔",
@@ -1729,7 +1745,7 @@
     "exMeaning": "친구와 만나다."
   },
   {
-    "num": 115,
+    "num": 116,
     "hanzi": "健康",
     "pinyin": "jiànkāng",
     "koPron": "지엔캉",
@@ -1745,7 +1761,7 @@
     "exMeaning": "몸이 건강하다."
   },
   {
-    "num": 116,
+    "num": 117,
     "hanzi": "讲",
     "pinyin": "jiǎng",
     "koPron": "지앙",
@@ -1760,7 +1776,7 @@
     "exMeaning": "이야기를 들려주다."
   },
   {
-    "num": 117,
+    "num": 118,
     "hanzi": "教",
     "pinyin": "jiāo",
     "koPron": "지아오",
@@ -1775,7 +1791,7 @@
     "exMeaning": "중국어를 가르치다."
   },
   {
-    "num": 118,
+    "num": 119,
     "hanzi": "角",
     "pinyin": "jiǎo",
     "koPron": "지아오",
@@ -1790,7 +1806,7 @@
     "exMeaning": "5자오 돈."
   },
   {
-    "num": 119,
+    "num": 120,
     "hanzi": "脚",
     "pinyin": "jiǎo",
     "koPron": "지아오",
@@ -1805,7 +1821,7 @@
     "exMeaning": "발을 씻다."
   },
   {
-    "num": 120,
+    "num": 121,
     "hanzi": "接",
     "pinyin": "jiē",
     "koPron": "지에",
@@ -1820,7 +1836,7 @@
     "exMeaning": "전화를 받다."
   },
   {
-    "num": 121,
+    "num": 122,
     "hanzi": "街道",
     "pinyin": "jiēdào",
     "koPron": "지에따오",
@@ -1830,12 +1846,12 @@
     "hanja": "거리 가(街), 길 도(道)",
     "pronTip": "지에따오(jiēdào) 번화가 상점을 구경하다",
     "charTip": "행할 행(行) 부수 사이에 규격화된 블록이 든 가(街)와 머리 혈 계열의 도(道)가 만나 도심지 내부의 사람들이 오가는 포장도로입니다.",
-    "exZh": "在街道上。",
+    "exZh": "在街道상 -> 在街道上。",
     "exPinyin": "Zài jiēdào shàng.",
     "exMeaning": "거리에 있다."
   },
   {
-    "num": 122,
+    "num": 123,
     "hanzi": "结婚",
     "pinyin": "jiéhūn",
     "koPron": "지에훈",
@@ -1845,12 +1861,12 @@
     "hanja": "맺을 결(结), 혼인할 혼(婚)",
     "pronTip": "지에훈(jiéhūn)식장에서 서약을 맺다",
     "charTip": "실 사(纟) 부수가 백년가약의 인연 끈을 단단히 묶는 결(结)과 여자 녀(女) 부수가 포함된 혼(婚)이 만나 법적 부부가 되는 의식입니다.",
-    "exZh": " 他们结婚了。",
+    "exZh": "พวกเขา结婚了。 -> 他们结婚了。",
     "exPinyin": "Tāmen jiéhūn le.",
     "exMeaning": "그들은 결혼했다."
   },
   {
-    "num": 123,
+    "num": 124,
     "hanzi": "节目",
     "pinyin": "jiémù",
     "koPron": "지에무",
@@ -1865,7 +1881,7 @@
     "exMeaning": "TV 프로그램을 보다."
   },
   {
-    "num": 124,
+    "num": 125,
     "hanzi": "节日",
     "pinyin": "jiérì",
     "koPron": "지에르",
@@ -1880,7 +1896,7 @@
     "exMeaning": "명절을 쇠다."
   },
   {
-    "num": 125,
+    "num": 126,
     "hanzi": "结束",
     "pinyin": "jiéshù",
     "koPron": "지에슈",
@@ -1895,7 +1911,7 @@
     "exMeaning": "회의가 끝났다."
   },
   {
-    "num": 126,
+    "num": 127,
     "hanzi": "解决",
     "pinyin": "jiějué",
     "koPron": "지에쥐에",
@@ -1910,7 +1926,7 @@
     "exMeaning": "문제를 해결하다."
   },
   {
-    "num": 127,
+    "num": 128,
     "hanzi": "借",
     "pinyin": "jiè",
     "koPron": "지에",
@@ -1925,7 +1941,7 @@
     "exMeaning": "책을 빌리다."
   },
   {
-    "num": 128,
+    "num": 129,
     "hanzi": "经常",
     "pinyin": "jīngcháng",
     "koPron": "징창",
@@ -1941,7 +1957,7 @@
     "exMeaning": "자주 간다."
   },
   {
-    "num": 129,
+    "num": 130,
     "hanzi": "经过",
     "pinyin": "jīngguò",
     "koPron": "징구오",
@@ -1952,12 +1968,12 @@
     "hanja": "지날 경(经), 지날 과(过)",
     "pronTip": "징구오(jīngguò)하는 통로를 통해 진입하다",
     "charTip": "실 사(纟) 부수의 경(经)과 갈 착(辶) 부수가 들어간 과(过)가 만나 노정 상의 특정 장소나 단계를 물리적으로 관통해 스쳐 지나감을 뜻합니다.",
-    "exZh": "经过学校。",
+    "exZh": "经过 school -> 经过学校。",
     "exPinyin": "Jīngguò xuéxiào.",
     "exMeaning": "학교를 지나가다."
   },
   {
-    "num": 130,
+    "num": 131,
     "hanzi": "经理",
     "pinyin": "jīnglǐ",
     "koPron": "징리",
@@ -1968,11 +1984,11 @@
     "pronTip": "우리 비즈니스 파트의 징리(jīnglǐ)님 결재",
     "charTip": "실 사(纟) 부수의 경(经)과 임금 왕(王=구슬 옥 부수)이 명시된 리(理)가 만나 조직의 살림과 인사 경영을 도맡아 다스리는 책임자입니다.",
     "exZh": "他是经理。",
-    "exPinyin": "Tā shì jīnglǐ.",
+    "exPinyin": "Tā  shì jīnglǐ.",
     "exMeaning": "그는 지배인이다."
   },
   {
-    "num": 131,
+    "num": 132,
     "hanzi": "久",
     "pinyin": "jiǔ",
     "koPron": "지우",
@@ -1987,7 +2003,7 @@
     "exMeaning": "오랜만이다."
   },
   {
-    "num": 132,
+    "num": 133,
     "hanzi": "旧",
     "pinyin": "jiù",
     "koPron": "지우",
@@ -2002,7 +2018,7 @@
     "exMeaning": "낡은 옷."
   },
   {
-    "num": 133,
+    "num": 134,
     "hanzi": "句子",
     "pinyin": "jùzi",
     "koPron": "쥐쯔",
@@ -2017,7 +2033,7 @@
     "exMeaning": "문장을 쓰다."
   },
   {
-    "num": 134,
+    "num": 135,
     "hanzi": "决定",
     "pinyin": "juédìng",
     "koPron": "쥐에딩",
@@ -2033,7 +2049,7 @@
     "exMeaning": "중국에 가기로 결정했다."
   },
   {
-    "num": 135,
+    "num": 136,
     "hanzi": "渴",
     "pinyin": "kě",
     "koPron": "커",
@@ -2048,14 +2064,14 @@
     "exMeaning": "나 목말라."
   },
   {
-    "num": 136,
+    "num": 137,
     "hanzi": "可爱",
     "pinyin": "kě'ài",
     "koPron": "커아이",
     "meanings": [
       { "pos": "형용사", "ko": "귀엽다, 사랑스럽다", "en": "Cute" }
     ],
-    "hanja": "가할 가(可), 사랑 애(Love)",
+    "hanja": "가할 가(可), 사랑 애(爱)",
     "pronTip": "커아이(kě'ài) 미소의 귀여운 영아",
     "charTip": "입 구(口) 부수의 가(可)와 마음 심(心) 부스 계열의 애(爱)가 만나 제삼자가 보기에 충분히 사랑(爱)을 줄 만큼 앙증맞고 귀여움을 뜻합니다.",
     "exZh": "可爱的小狗。",
@@ -2063,7 +2079,7 @@
     "exMeaning": "귀여운 강아지."
   },
   {
-    "num": 137,
+    "num": 138,
     "hanzi": "刻",
     "pinyin": "kè",
     "koPron": "커",
@@ -2078,7 +2094,7 @@
     "exMeaning": "3시 15분."
   },
   {
-    "num": 138,
+    "num": 139,
     "hanzi": "客人",
     "pinyin": "kèrén",
     "koPron": "커런",
@@ -2093,7 +2109,7 @@
     "exMeaning": "집에 손님이 있다."
   },
   {
-    "num": 139,
+    "num": 140,
     "hanzi": "空调",
     "pinyin": "kōngtiáo",
     "koPron": "쿵티아오",
@@ -2108,7 +2124,7 @@
     "exMeaning": "에어컨을 켜다."
   },
   {
-    "num": 140,
+    "num": 141,
     "hanzi": "口",
     "pinyin": "kǒu",
     "koPron": "코우",
@@ -2124,7 +2140,7 @@
     "exMeaning": "세 식구."
   },
   {
-    "num": 141,
+    "num": 142,
     "hanzi": "哭",
     "pinyin": "kū",
     "koPron": "쿠",
@@ -2139,7 +2155,7 @@
     "exMeaning": "울지 마."
   },
   {
-    "num": 142,
+    "num": 143,
     "hanzi": "裤子",
     "pinyin": "kùzi",
     "koPron": "쿠쯔",
@@ -2148,13 +2164,13 @@
     ],
     "hanja": "바지 고(裤), 아들 자(子)",
     "pronTip": "쿠쯔(kùzi) 하의를 하체에 착용하다",
-    "charTip": "裤(의복 부수)가 의류 소품임을 나타내며 골반 아래 하체를 덮어 보호해 주는 긴 바지 의복을 뜻합니다.",
+    "charTip": "속옷을 착용하고 바지를 입다. -> 裤(의복 부수)가 의류 소품임을 나타내며 골반 아래 하체를 덮어 보호해 주는 긴 바지 의복을 뜻합니다.",
     "exZh": "穿裤子。",
     "exPinyin": "Chuān kùzi.",
     "exMeaning": "바지를 입다."
   },
   {
-    "num": 143,
+    "num": 144,
     "hanzi": "筷子",
     "pinyin": "kuàizi",
     "koPron": "콰이쯔",
@@ -2169,7 +2185,7 @@
     "exMeaning": "젓가락을 사용하다."
   },
   {
-    "num": 144,
+    "num": 145,
     "hanzi": "蓝",
     "pinyin": "lán",
     "koPron": "란",
@@ -2184,7 +2200,7 @@
     "exMeaning": "푸른 하늘."
   },
   {
-    "num": 145,
+    "num": 146,
     "hanzi": "老",
     "pinyin": "lǎo",
     "koPron": "라오",
@@ -2199,7 +2215,7 @@
     "exMeaning": "오랜 친구."
   },
   {
-    "num": 146,
+    "num": 147,
     "hanzi": "离开",
     "pinyin": "líkāi",
     "koPron": "리카이",
@@ -2214,7 +2230,7 @@
     "exMeaning": "중국을 떠나다."
   },
   {
-    "num": 147,
+    "num": 148,
     "hanzi": "礼物",
     "pinyin": "lǐwù",
     "koPron": "리우우",
@@ -2229,7 +2245,7 @@
     "exMeaning": "선물을 주다."
   },
   {
-    "num": 148,
+    "num": 149,
     "hanzi": "历史",
     "pinyin": "lìshǐ",
     "koPron": "리스",
@@ -2244,7 +2260,7 @@
     "exMeaning": "역사책."
   },
   {
-    "num": 149,
+    "num": 150,
     "hanzi": "脸",
     "pinyin": "liǎn",
     "koPron": "리엔",
@@ -2258,23 +2274,6 @@
     "exPinyin": "Xǐ liǎn.",
     "exMeaning": "세수하다."
   },
-  {
-    "num": 150,
-    "hanzi": "练习",
-    "pinyin": "liànxí",
-    "koPron": "리엔시",
-    "meanings": [
-      { "pos": "동사", "ko": "연습하다, 익히다", "en": "To Practice" },
-      { "pos": "명사", "ko": "연습, 훈련", "en": "Practice" }
-    ],
-    "hanja": "익힐 련(练), 익힐 습(习)",
-    "pronTip": "리엔시(liànxí) 연습만이 살 길",
-    "charTip": "실 사(纟) 부수가 든 练과 본래 새가 날개(羽)를 펄럭이며 나는 법을 익히던 모양을 본뜬 习 부수가 만나 반복하여 연마함을 뜻합니다.",
-    "exZh": "练习口语。",
-    "exPinyin": "Liànxí kǒuyǔ.",
-    "exMeaning": "회화를 연습하다."
-  },
-
   {
     "num": 151,
     "hanzi": "练习",
