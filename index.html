@@ -230,9 +230,8 @@
         let quizWords = [];
         let currentLevel = null;
         let activeTab = 'study';
-        let autoPlayTimer = null; // 2초 딜레이 제어용 타이머 변수
+        let autoPlayTimer = null; 
 
-        // 페이지 로드 시 기존 상태 완벽 복원
         window.onload = function() {
             const savedLevel = localStorage.getItem('hsk_current_level');
             const savedFilter = localStorage.getItem('hsk_current_filter');
@@ -249,7 +248,7 @@
 
         function loadHskData(level, presetFilter = null) {
             currentLevel = level;
-            localStorage.setItem('hsk_current_level', level); // 단어장 정보 로컬저장소 세팅
+            localStorage.setItem('hsk_current_level', level); 
             wrongWordsSet.clear(); 
             
             if (level === 'all' || level === 'pos') {
@@ -271,7 +270,6 @@
                         document.getElementById('hskTitleDisplay').innerText = `HSK 1~3급 통합 단어 마스터`;
                     }
                     
-                    // 프리셋 필터 정보가 있으면 로드
                     if (presetFilter) {
                         document.getElementById('dayFilter').value = presetFilter;
                     }
@@ -316,7 +314,6 @@
         function goBackToHub() {
             window.speechSynthesis.cancel();
             stopStudyAudio();
-            // 상태 제거
             localStorage.removeItem('hsk_current_level');
             localStorage.removeItem('hsk_current_filter');
             localStorage.removeItem('hsk_active_tab');
@@ -375,15 +372,14 @@
                     <option value="part4">4일차 트랙 (111~150번)</option>
                 `;
             } else if (level === 3) {
+                // 수정 사항: 35개 단위 8일차 분류에서 -> 50개 단위 6일차 분류로 최적화 변경
                 options += `
-                    <option value="part1">1일차 트랙 (1~35번)</option>
-                    <option value="part2">2일차 트랙 (36~70번)</option>
-                    <option value="part3">3일차 트랙 (71~110번)</option>
-                    <option value="part4">4일차 트랙 (111~150번)</option>
-                    <option value="part5">5일차 트랙 (151~190번)</option>
-                    <option value="part6">6일차 트랙 (191~230번)</option>
-                    <option value="part7">7일차 트랙 (231~270번)</option>
-                    <option value="part8">8일차 트랙 (271~${allWords.length}번)</option>
+                    <option value="part1">1일차 트랙 (1~50번)</option>
+                    <option value="part2">2일차 트랙 (51~100번)</option>
+                    <option value="part3">3일차 트랙 (101~150번)</option>
+                    <option value="part4">4일차 트랙 (151~200번)</option>
+                    <option value="part5">5일차 트랙 (201~250번)</option>
+                    <option value="part6">6일차 트랙 (251~300번)</option>
                 `;
             }
             options += `<option value="wrong">❌ 집중 오답노트 필터링</option>`;
@@ -392,7 +388,7 @@
 
         function switchTab(tab) {
             activeTab = tab;
-            localStorage.setItem('hsk_active_tab', tab); // 현재 보고 있는 탭 상태 임시 격리저장
+            localStorage.setItem('hsk_active_tab', tab); 
             window.speechSynthesis.cancel();
             stopStudyAudio();
             document.getElementById('tabBtnStudy').classList.remove('active');
@@ -434,15 +430,19 @@
                 if (val === 'part3') return mapped.slice(81, 121);
                 if (val === 'part4') return mapped.slice(121, 161);
                 if (val === 'part5') return mapped.slice(161);
+            } else if (currentLevel === 3) {
+                // 수정 사항: 슬라이싱 가공 영역도 50개 단위 범주로 전면 수정
+                if (val === 'part1') return mapped.slice(0, 50);
+                if (val === 'part2') return mapped.slice(50, 100);
+                if (val === 'part3') return mapped.slice(100, 150);
+                if (val === 'part4') return mapped.slice(150, 200);
+                if (val === 'part5') return mapped.slice(200, 250);
+                if (val === 'part6') return mapped.slice(250);
             } else {
                 if (val === 'part1') return mapped.slice(0, 35);
                 if (val === 'part2') return mapped.slice(35, 70);
                 if (val === 'part3') return mapped.slice(70, 110);
                 if (val === 'part4') return mapped.slice(110, 150);
-                if (val === 'part5') return mapped.slice(150, 190);
-                if (val === 'part6') return mapped.slice(190, 230);
-                if (val === 'part7') return mapped.slice(230, 270);
-                if (val === 'part8') return mapped.slice(270);
             }
             if (val === 'wrong') return mapped.filter(w => wrongWordsSet.has(w.num)); 
             return mapped;
@@ -454,7 +454,7 @@
             
             const filterVal = document.getElementById('dayFilter').value;
             if (!isInitialLoad) {
-                localStorage.setItem('hsk_current_filter', filterVal); // 필터값 로컬스토리지 갱신
+                localStorage.setItem('hsk_current_filter', filterVal); 
             }
             
             currentFilteredWords = getFilteredWords();
@@ -660,7 +660,6 @@
                             window.speechSynthesis.speak(uEn);
                         }
                         
-                        // 단일 플립 카드 클릭 시에도 대기 흐름 조율 유연화
                         autoPlayTimer = setTimeout(() => {
                             if (word.exZh) {
                                 const u3 = new SpeechSynthesisUtterance(word.exZh); 
@@ -676,7 +675,7 @@
                                 u4.rate = 1.0;
                                 window.speechSynthesis.speak(u4);
                             }
-                        }, 2000); // 2초 대기 후 예제 실행
+                        }, 2000); 
                     }
                 };
                 container.appendChild(card);
@@ -771,7 +770,6 @@
                 window.speechSynthesis.speak(uEn);
             }
             
-            // 영어 뜻 읽은 후 2초 쉬고 예제 재생
             autoPlayTimer = setTimeout(() => {
                 if (word.exZh) {
                     const u3 = new SpeechSynthesisUtterance(word.exZh); 
@@ -808,7 +806,6 @@
             }
         }
 
-        // 전체 자동 재생 최적화 엔진 (영어 뜻 읽어준 뒤 2초 지연 후 예제로 전이)
         function playNextStep() {
             if (!isAutoPlaying || isPaused) return;
             if (autoIndex >= currentFilteredWords.length) { stopStudyAudio(); return; }
@@ -825,7 +822,6 @@
             else if (autoStep === 4) { text = word.exZh || ''; lang = 'zh-CN'; rate = speed; }
             else if (autoStep === 5) { text = getExMeaningSpeechText(word); lang = 'ko-KR'; rate = 1.0; }
 
-            // 재생할 텍스트가 없는 경우 스킵 처리
             if (!text) {
                 if (autoStep === 4 || autoStep === 5) {
                     autoStep = 0; autoIndex++;
@@ -856,7 +852,6 @@
                     autoIndex++; 
                     playNextStep(); 
                 } else if (autoStep === 4) {
-                    // 핵심 로직: 영어 뜻(autoStep 3) 재생이 끝났을 때 2초(2000ms) 대기 후 다음 단계(예제) 진행
                     autoPlayTimer = setTimeout(() => {
                         playNextStep();
                     }, 2000);
@@ -869,7 +864,7 @@
 
         function stopStudyAudio() {
             isAutoPlaying = false; isPaused = false; autoIndex = 0; autoStep = 0;
-            if(autoPlayTimer) clearTimeout(autoPlayTimer); // 돌고 있던 대기 타이머 제거
+            if(autoPlayTimer) clearTimeout(autoPlayTimer); 
             const btn = document.getElementById('mainPlayBtn');
             btn.innerText = '▶ 전체 자동 재생'; btn.classList.remove('paused');
             document.querySelectorAll('#studyContainer .card').forEach(c => c.classList.remove('active'));
