@@ -70,7 +70,6 @@
         .card.active { background-color: #fefcf0; border-color: var(--accent-yellow); }
         .card.is-wrong { border-color: var(--accent-red); background-color: #fef2f2; }
         
-        /* No 영역 너비 확보 및 가독성 업그레이드 */
         .card .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #64748b; font-weight: 700; background: #f1f5f9; padding: 1px 6px; border-radius: 4px; }
 
         .card-row-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; }
@@ -134,7 +133,6 @@
         
         .flip-card-front { background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px; z-index: 2; }
         .flip-card-front.is-wrong { border-color: var(--accent-red); background-color: #fef2f2; }
-        /* 퀴즈 카드 No 영역 가독성 확장 */
         .flip-card-front .index-num, .flip-card-back .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #64748b; font-weight: 700; background: #f1f5f9; padding: 1px 6px; border-radius: 4px; }
         .flip-card-front .wrong-badge { position: absolute; top: 6px; right: 8px; font-size: 13px; display: none; }
         .flip-card-front.is-wrong .wrong-badge { display: block; }
@@ -230,11 +228,28 @@
         let wrongWordsSet = new Set();
         let currentFilteredWords = [];
         let quizWords = [];
-        let currentLevel = 1;
+        let currentLevel = null;
+        let activeTab = 'study';
+        let autoPlayTimer = null; // 2초 딜레이 제어용 타이머 변수
 
-        // 패치 단계에서 각 단어 객체에 급수 태그를 주입하도록 매핑 최적화
-        function loadHskData(level) {
+        // 페이지 로드 시 기존 상태 완벽 복원
+        window.onload = function() {
+            const savedLevel = localStorage.getItem('hsk_current_level');
+            const savedFilter = localStorage.getItem('hsk_current_filter');
+            const savedTab = localStorage.getItem('hsk_active_tab');
+            
+            if (savedTab) {
+                activeTab = savedTab;
+            }
+            
+            if (savedLevel) {
+                loadHskData(savedLevel, savedFilter);
+            }
+        };
+
+        function loadHskData(level, presetFilter = null) {
             currentLevel = level;
+            localStorage.setItem('hsk_current_level', level); // 단어장 정보 로컬저장소 세팅
             wrongWordsSet.clear(); 
             
             if (level === 'all' || level === 'pos') {
@@ -256,8 +271,13 @@
                         document.getElementById('hskTitleDisplay').innerText = `HSK 1~3급 통합 단어 마스터`;
                     }
                     
-                    switchTab('study');
-                    applyFilter();
+                    // 프리셋 필터 정보가 있으면 로드
+                    if (presetFilter) {
+                        document.getElementById('dayFilter').value = presetFilter;
+                    }
+                    
+                    switchTab(activeTab);
+                    applyFilter(true);
                 })
                 .catch(error => {
                     alert(`오류: ${error.message}\ndata 폴더 안의 hsk1, 2, 3 json 파일을 모두 확인해 주세요.`);
@@ -273,7 +293,6 @@
                         return response.json();
                     })
                     .then(data => {
-                        // 단일 메뉴 데이터 로드 시에도 고유 급수 태그 주입
                         allWords = data.map(w => ({...w, displayLevel: levelTag}));
                         setupFilterOptions(level);
                         
@@ -281,8 +300,12 @@
                         document.getElementById('hskViewContainer').style.display = 'block';
                         document.getElementById('hskTitleDisplay').innerText = titleName;
                         
-                        switchTab('study');
-                        applyFilter();
+                        if (presetFilter) {
+                            document.getElementById('dayFilter').value = presetFilter;
+                        }
+                        
+                        switchTab(activeTab);
+                        applyFilter(true);
                     })
                     .catch(error => {
                         alert(`오류: ${error.message}\ndata/${fileName} 파일 구성을 확인해 주세요.`);
@@ -293,6 +316,12 @@
         function goBackToHub() {
             window.speechSynthesis.cancel();
             stopStudyAudio();
+            // 상태 제거
+            localStorage.removeItem('hsk_current_level');
+            localStorage.removeItem('hsk_current_filter');
+            localStorage.removeItem('hsk_active_tab');
+            currentLevel = null;
+            
             document.getElementById('hskViewContainer').style.display = 'none';
             document.getElementById('hubMainView').style.display = 'block';
         }
@@ -362,6 +391,8 @@
         }
 
         function switchTab(tab) {
+            activeTab = tab;
+            localStorage.setItem('hsk_active_tab', tab); // 현재 보고 있는 탭 상태 임시 격리저장
             window.speechSynthesis.cancel();
             stopStudyAudio();
             document.getElementById('tabBtnStudy').classList.remove('active');
@@ -417,9 +448,15 @@
             return mapped;
         }
 
-        function applyFilter() {
+        function applyFilter(isInitialLoad = false) {
             window.speechSynthesis.cancel();
             stopStudyAudio();
+            
+            const filterVal = document.getElementById('dayFilter').value;
+            if (!isInitialLoad) {
+                localStorage.setItem('hsk_current_filter', filterVal); // 필터값 로컬스토리지 갱신
+            }
+            
             currentFilteredWords = getFilteredWords();
             renderStudyCards(currentFilteredWords);
             quizWords = [...currentFilteredWords];
@@ -444,11 +481,9 @@
             return '';
         }
 
-        // 한국어 예문 발음 안정화 전처리 헬퍼 함수 (Key를 exMean으로 보정 및 괄호 제거)
         function getExMeaningSpeechText(word) {
             let targetText = word.exMean || word.exMeaning || '';
             if (!targetText) return '';
-            // TTS 가독성 하락을 막기 위해 괄호 '(', ')' 문자를 빈 문자로 치환 및 공백 정돈
             return targetText.replace(/[\(\)]/g, '').trim();
         }
 
@@ -483,7 +518,6 @@
                     meaningsHtml = `<div class="ko-meaning">${word.meaning || ''}</div>`;
                 }
 
-                // 기획 수정: No.X 영역에 급수 태그 결합 출력 (예: 1급-No. 12)
                 card.innerHTML = `
                     <div class="index-num">${word.displayLevel || 'HSK'}-No. ${word.num}</div>
                     <div class="card-row-top">
@@ -551,7 +585,6 @@
                     meaningsHtml = `<div class="ko-meaning" style="font-size:18px;">${word.meaning || ''}</div>`;
                 }
 
-                // 기획 수정: 플립 퀴즈 앞/뒷면 No.X 영역에도 동일하게 급수 결합 적용
                 card.innerHTML = `
                     <div class="flip-card-inner">
                         <div class="flip-card-front ${isWrong ? 'is-wrong' : ''}">
@@ -601,6 +634,7 @@
                     if(e.target.tagName === 'BUTTON') return;
                     const isFlippingToBack = !this.classList.contains('flipped');
                     this.classList.toggle('flipped');
+                    if(autoPlayTimer) clearTimeout(autoPlayTimer);
                     window.speechSynthesis.cancel(); 
                     if (isFlippingToBack) {
                         const speed = getSpeed();
@@ -626,20 +660,23 @@
                             window.speechSynthesis.speak(uEn);
                         }
                         
-                        if (word.exZh) {
-                            const u3 = new SpeechSynthesisUtterance(word.exZh); 
-                            u3.lang = 'zh-CN'; 
-                            u3.rate = speed;
-                            window.speechSynthesis.speak(u3);
-                        }
-                        
-                        const cleanedExMean = getExMeaningSpeechText(word);
-                        if (cleanedExMean) {
-                            const u4 = new SpeechSynthesisUtterance(cleanedExMean); 
-                            u4.lang = 'ko-KR'; 
-                            u4.rate = 1.0;
-                            window.speechSynthesis.speak(u4);
-                        }
+                        // 단일 플립 카드 클릭 시에도 대기 흐름 조율 유연화
+                        autoPlayTimer = setTimeout(() => {
+                            if (word.exZh) {
+                                const u3 = new SpeechSynthesisUtterance(word.exZh); 
+                                u3.lang = 'zh-CN'; 
+                                u3.rate = speed;
+                                window.speechSynthesis.speak(u3);
+                            }
+                            
+                            const cleanedExMean = getExMeaningSpeechText(word);
+                            if (cleanedExMean) {
+                                const u4 = new SpeechSynthesisUtterance(cleanedExMean); 
+                                u4.lang = 'ko-KR'; 
+                                u4.rate = 1.0;
+                                window.speechSynthesis.speak(u4);
+                            }
+                        }, 2000); // 2초 대기 후 예제 실행
                     }
                 };
                 container.appendChild(card);
@@ -680,6 +717,7 @@
         }
 
         function shuffleCards() {
+            if(autoPlayTimer) clearTimeout(autoPlayTimer);
             window.speechSynthesis.cancel();
             document.querySelectorAll('.flip-card').forEach(card => card.classList.remove('flipped'));
             setTimeout(() => {
@@ -692,6 +730,7 @@
         }
 
         function resetCards() {
+            if(autoPlayTimer) clearTimeout(autoPlayTimer);
             window.speechSynthesis.cancel();
             document.querySelectorAll('.flip-card').forEach(card => card.classList.remove('flipped'));
             setTimeout(() => {
@@ -732,20 +771,23 @@
                 window.speechSynthesis.speak(uEn);
             }
             
-            if (word.exZh) {
-                const u3 = new SpeechSynthesisUtterance(word.exZh); 
-                u3.lang = 'zh-CN'; 
-                u3.rate = speed;
-                window.speechSynthesis.speak(u3);
-            }
-            
-            const cleanedExMean = getExMeaningSpeechText(word);
-            if (cleanedExMean) {
-                const u4 = new SpeechSynthesisUtterance(cleanedExMean); 
-                u4.lang = 'ko-KR'; 
-                u4.rate = 1.0;
-                window.speechSynthesis.speak(u4);
-            }
+            // 영어 뜻 읽은 후 2초 쉬고 예제 재생
+            autoPlayTimer = setTimeout(() => {
+                if (word.exZh) {
+                    const u3 = new SpeechSynthesisUtterance(word.exZh); 
+                    u3.lang = 'zh-CN'; 
+                    u3.rate = speed;
+                    window.speechSynthesis.speak(u3);
+                }
+                
+                const cleanedExMean = getExMeaningSpeechText(word);
+                if (cleanedExMean) {
+                    const u4 = new SpeechSynthesisUtterance(cleanedExMean); 
+                    u4.lang = 'ko-KR'; 
+                    u4.rate = 1.0;
+                    window.speechSynthesis.speak(u4);
+                }
+            }, 2000);
         }
 
         function togglePlayPause() {
@@ -758,6 +800,7 @@
             }
             if (!isPaused) {
                 isPaused = true; btn.innerText = '▶ 재생 재개'; btn.classList.remove('paused');
+                if(autoPlayTimer) clearTimeout(autoPlayTimer);
                 window.speechSynthesis.cancel(); releaseWakeLock();
             } else {
                 isPaused = false; btn.innerText = '⏸ 일시정지'; btn.classList.add('paused');
@@ -765,6 +808,7 @@
             }
         }
 
+        // 전체 자동 재생 최적화 엔진 (영어 뜻 읽어준 뒤 2초 지연 후 예제로 전이)
         function playNextStep() {
             if (!isAutoPlaying || isPaused) return;
             if (autoIndex >= currentFilteredWords.length) { stopStudyAudio(); return; }
@@ -779,8 +823,9 @@
             else if (autoStep === 2) { text = getMeaningSpeechText(word); lang = 'ko-KR'; rate = 1.0; }
             else if (autoStep === 3) { text = getEnMeaningSpeechText(word); lang = 'en-US'; rate = 1.0; } 
             else if (autoStep === 4) { text = word.exZh || ''; lang = 'zh-CN'; rate = speed; }
-            else if (autoStep === 5) { text = getExMeaningSpeechText(word); lang = 'ko-KR'; rate = 1.0; } // 보정된 한국어 예문 호출
+            else if (autoStep === 5) { text = getExMeaningSpeechText(word); lang = 'ko-KR'; rate = 1.0; }
 
+            // 재생할 텍스트가 없는 경우 스킵 처리
             if (!text) {
                 if (autoStep === 4 || autoStep === 5) {
                     autoStep = 0; autoIndex++;
@@ -804,15 +849,27 @@
 
             utterance.onend = () => {
                 if (!isAutoPlaying || isPaused) return;
+                
                 autoStep++;
-                if (autoStep > 5) { autoStep = 0; autoIndex++; }
-                playNextStep(); 
+                if (autoStep > 5) { 
+                    autoStep = 0; 
+                    autoIndex++; 
+                    playNextStep(); 
+                } else if (autoStep === 4) {
+                    // 핵심 로직: 영어 뜻(autoStep 3) 재생이 끝났을 때 2초(2000ms) 대기 후 다음 단계(예제) 진행
+                    autoPlayTimer = setTimeout(() => {
+                        playNextStep();
+                    }, 2000);
+                } else {
+                    playNextStep(); 
+                }
             };
             window.speechSynthesis.speak(utterance);
         }
 
         function stopStudyAudio() {
             isAutoPlaying = false; isPaused = false; autoIndex = 0; autoStep = 0;
+            if(autoPlayTimer) clearTimeout(autoPlayTimer); // 돌고 있던 대기 타이머 제거
             const btn = document.getElementById('mainPlayBtn');
             btn.innerText = '▶ 전체 자동 재생'; btn.classList.remove('paused');
             document.querySelectorAll('#studyContainer .card').forEach(c => c.classList.remove('active'));
