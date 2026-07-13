@@ -40,14 +40,13 @@
             background: var(--bg-card); border-radius: 14px; padding: 24px; margin-bottom: 12px; 
             border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.3s ease;
             cursor: pointer;
-            -webkit-tap-highlight-color: transparent; /* 모바일 터치 시 깜빡임 방지 */
+            -webkit-tap-highlight-color: transparent;
         }
         .phrase-card.active { background-color: #fefcf0; border-color: #f59e0b; box-shadow: 0 4px 12px rgba(245,158,11,0.1); }
         .card-header { display: flex; justify-content: space-between; align-items: center; color: var(--text-sub); font-size: 12px; font-weight: 700; margin-bottom: 12px; }
         
         .hz-text { font-size: 32px; font-weight: 800; color: #000; line-height: 1.3; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
         
-        /* 🔥 커스텀 툴팁 단어 스타일 (터치하기 편하게 가시성 상향) */
         .word-tooltip {
             position: relative; display: inline-block;
             border-bottom: 2px dashed #4f46e5;
@@ -63,7 +62,6 @@
         .btn-main { background-color: var(--primary); color: white; border: none; border-radius: 8px; padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; flex: 1; }
         .btn-stop { background-color: #64748b; color: white; border: none; border-radius: 8px; padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; width: 80px; }
 
-        /* 📱 모바일 크롬 돌파용 커스텀 모달 팝업 레이아웃 */
         .modal-overlay {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(4px); z-index: 2000;
@@ -95,7 +93,6 @@
 
     <div class="phrase-container" id="phraseList"></div>
 
-    <!-- 📱 모바일 전용 커스텀 툴팁 모달 본체 -->
     <div class="modal-overlay" id="wordModal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation();">
             <div class="modal-word" id="mWord">帮助</div>
@@ -165,24 +162,37 @@
             });
         };
 
+        // 🛡️ [안전 보정 업데이트] 치환 코드 충돌 방지 알고리즘 적용
         function parseHanziToTooltip(sentence) {
-            let htmlResult = sentence;
+            let tempResult = sentence;
             const sortedKeys = Object.keys(wordDictionary).sort((a, b) => b.length - a.length);
             
+            // 임시 플래그 치환 보관함 객체
+            const replacementMap = {};
+            let uniqueId = 0;
+
             sortedKeys.forEach(word => {
-                if (htmlResult.includes(word)) {
-                    // 🔥 변경 포인트: title 속성 대신 실시간 스크립트 함수 호출 기믹으로 우회 변경
-                    const tooltipTemplate = `<span class="word-tooltip" onclick="showWordDetail('${word}', event);">${word}</span>`;
-                    htmlResult = htmlResult.split(word).join(tooltipTemplate);
+                if (tempResult.includes(word)) {
+                    const placeholder = `__BONG_FLAG_${uniqueId}__`;
+                    replacementMap[placeholder] = `<span class="word-tooltip" onclick="showWordDetail('${word}', event);">${word}</span>`;
+                    
+                    // 순수 텍스트 상태에서만 단어를 임시 치환 플래그로 변경
+                    tempResult = tempResult.split(word).join(placeholder);
+                    uniqueId++;
                 }
             });
-            return htmlResult;
+
+            // 문장 처리가 끝나면 안전하게 실제 HTML 복원 진행 (중첩 깨짐 원천 차단)
+            Object.keys(replacementMap).forEach(placeholder => {
+                tempResult = tempResult.split(placeholder).join(replacementMap[placeholder]);
+            });
+
+            return tempResult;
         }
 
-        // 📱 모바일 크롬 전용 모달 오픈 제어 함수
         function showWordDetail(word, event) {
-            event.stopPropagation(); // 카드 전체 문장 재생 끊기 방지
-            window.speechSynthesis.cancel(); // 실행 중인 전체 오디오 잠시 대기
+            event.stopPropagation(); 
+            window.speechSynthesis.cancel(); 
 
             const info = wordDictionary[word];
             if(info) {
@@ -191,7 +201,6 @@
                 document.getElementById('mMean').innerText = info.mean;
                 document.getElementById('wordModal').style.display = 'flex';
 
-                // 단어 개별 발음 서비스 제공
                 const ut = new SpeechSynthesisUtterance(word);
                 ut.lang = 'zh-CN';
                 ut.rate = getSpeed();
