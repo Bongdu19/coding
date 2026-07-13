@@ -39,19 +39,21 @@
         .phrase-card { 
             background: var(--bg-card); border-radius: 14px; padding: 24px; margin-bottom: 12px; 
             border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.3s ease;
-            cursor: pointer; /* 카드 전체에 클릭이 가능함을 명시 */
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent; /* 모바일 터치 시 깜빡임 방지 */
         }
         .phrase-card.active { background-color: #fefcf0; border-color: #f59e0b; box-shadow: 0 4px 12px rgba(245,158,11,0.1); }
         .card-header { display: flex; justify-content: space-between; align-items: center; color: var(--text-sub); font-size: 12px; font-weight: 700; margin-bottom: 12px; }
         
-        /* 💡 툴팁 단어 스타일 디자인 */
         .hz-text { font-size: 32px; font-weight: 800; color: #000; line-height: 1.3; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+        
+        /* 🔥 커스텀 툴팁 단어 스타일 (터치하기 편하게 가시성 상향) */
         .word-tooltip {
             position: relative; display: inline-block;
-            border-bottom: 2px dotted #4f46e5; /* 툴팁 단어에 보라색 점선 부여 */
-            color: #0f172a; cursor: help; padding: 0 1px; transition: color 0.2s;
+            border-bottom: 2px dashed #4f46e5;
+            color: #4f46e5; cursor: pointer; padding: 0 2px;
+            font-weight: 800;
         }
-        .word-tooltip:hover { color: #4f46e5; }
         
         .py-text { color: #2563eb; font-size: 18px; font-weight: 700; margin: 6px 0 12px 0; }
         .ko-text { font-size: 20px; font-weight: 800; color: #dc2626; border-top: 1px dashed var(--border-color); padding-top: 10px; }
@@ -60,6 +62,27 @@
         .btn-group { display: flex; justify-content: center; gap: 8px; max-width: 500px; margin: 6px auto 0 auto; }
         .btn-main { background-color: var(--primary); color: white; border: none; border-radius: 8px; padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; flex: 1; }
         .btn-stop { background-color: #64748b; color: white; border: none; border-radius: 8px; padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; width: 80px; }
+
+        /* 📱 모바일 크롬 돌파용 커스텀 모달 팝업 레이아웃 */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(4px); z-index: 2000;
+            justify-content: center; align-items: center;
+        }
+        .modal-content {
+            background: #ffffff; border-radius: 16px; padding: 20px; width: 85%; max-width: 340px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.15); text-align: center;
+            animation: popUp 0.2s ease-out;
+        }
+        .modal-word { font-size: 36px; font-weight: 800; color: #000; margin-bottom: 4px; font-family: "PingFang SC", sans-serif; }
+        .modal-pinyin { font-size: 18px; font-weight: 700; color: #2563eb; margin-bottom: 12px; }
+        .modal-mean { font-size: 16px; font-weight: 600; color: #dc2626; background: #fff5f5; padding: 10px; border-radius: 8px; border: 1px dashed #fca5a5; }
+        .modal-close { margin-top: 16px; background: #f1f5f9; border: 1px solid var(--border-color); padding: 8px 16px; border-radius: 8px; font-weight: 700; color: var(--text-sub); width: 100%; cursor: pointer; }
+        
+        @keyframes popUp {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
     </style>
 </head>
 <body>
@@ -71,6 +94,16 @@
     </div>
 
     <div class="phrase-container" id="phraseList"></div>
+
+    <!-- 📱 모바일 전용 커스텀 툴팁 모달 본체 -->
+    <div class="modal-overlay" id="wordModal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation();">
+            <div class="modal-word" id="mWord">帮助</div>
+            <div class="modal-pinyin" id="mPinyin">bāngzhù</div>
+            <div class="modal-mean" id="mMean">돕다, 도와주다</div>
+            <button class="modal-close" onclick="closeModal()">닫기</button>
+        </div>
+    </div>
 
     <div class="bottom-controls">
         <div style="font-size:12px; font-weight:700;">
@@ -89,18 +122,14 @@
         let isPlaying = false, isPaused = false;
         let currentIndex = 0, currentStep = 0; 
         let wakeLock = null;
-        
-        // 🔄 실시간 통합 사전을 저장할 글로벌 객체
         let wordDictionary = {};
 
         window.onload = function() {
-            // 1단계: 기존 data 폴더 내의 hsk1.json과 hsk2.json을 동시에 비동기로 불러옵니다.
             Promise.all([
                 fetch('./data/hsk1.json').then(res => res.json()),
                 fetch('./data/hsk2.json').then(res => res.json())
             ])
             .then(([hsk1, hsk2]) => {
-                // 두 단어장 데이터를 합쳐서 툴팁용 딕셔너리를 자동 매핑합니다.
                 const combinedWords = [...hsk1, ...hsk2];
                 combinedWords.forEach(word => {
                     if (word.hanzi) {
@@ -117,8 +146,6 @@
                         };
                     }
                 });
-
-                // 2단계: 어구 예문 JSON 로드 진행
                 return fetch('./data/hsk2_sentences.json');
             })
             .then(res => res.json())
@@ -131,29 +158,49 @@
                 loadCategory(0);
             })
             .catch(err => {
-                console.error("데이터 로딩 중 오류 발생:", err);
-                // 단어장 파일이 없을 경우 예문만이라도 보여주도록 예외처리
+                console.error(err);
                 fetch('./data/hsk2_sentences.json').then(res => res.json()).then(data => {
                     rawData = data; loadCategory(0);
                 });
             });
         };
 
-        // 문장 내부의 한자를 툴팁화하는 헬퍼 함수
         function parseHanziToTooltip(sentence) {
             let htmlResult = sentence;
-            // 긴 단어가 먼저 매칭되도록 정렬 (예: '帮助'가 '帮'보다 먼저 변환되어야 안 깨짐)
             const sortedKeys = Object.keys(wordDictionary).sort((a, b) => b.length - a.length);
             
             sortedKeys.forEach(word => {
                 if (htmlResult.includes(word)) {
-                    const info = wordDictionary[word];
-                    // 모바일 터치 가독성을 위해 title 속성에 뜻과 병음을 조합하여 풍선도움말 구성
-                    const tooltipTemplate = `<span class="word-tooltip" title="${info.mean} / 병음: ${info.py}" onclick="event.stopPropagation();">${word}</span>`;
+                    // 🔥 변경 포인트: title 속성 대신 실시간 스크립트 함수 호출 기믹으로 우회 변경
+                    const tooltipTemplate = `<span class="word-tooltip" onclick="showWordDetail('${word}', event);">${word}</span>`;
                     htmlResult = htmlResult.split(word).join(tooltipTemplate);
                 }
             });
             return htmlResult;
+        }
+
+        // 📱 모바일 크롬 전용 모달 오픈 제어 함수
+        function showWordDetail(word, event) {
+            event.stopPropagation(); // 카드 전체 문장 재생 끊기 방지
+            window.speechSynthesis.cancel(); // 실행 중인 전체 오디오 잠시 대기
+
+            const info = wordDictionary[word];
+            if(info) {
+                document.getElementById('mWord').innerText = word;
+                document.getElementById('mPinyin').innerText = info.py;
+                document.getElementById('mMean').innerText = info.mean;
+                document.getElementById('wordModal').style.display = 'flex';
+
+                // 단어 개별 발음 서비스 제공
+                const ut = new SpeechSynthesisUtterance(word);
+                ut.lang = 'zh-CN';
+                ut.rate = getSpeed();
+                window.speechSynthesis.speak(ut);
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('wordModal').style.display = 'none';
         }
 
         function loadCategory(idx) {
@@ -165,10 +212,9 @@
             currentSentences.forEach((s) => {
                 const dynamicHanziHtml = parseHanziToTooltip(s.hanzi);
 
-                // ✨ 복원 완료: 카드 전체에 단일 문장 듣기 이벤트 리스너(speakSingle) 복구
                 container.innerHTML += `
                     <div class="phrase-card" id="p-card-${s.id}" onclick="speakSingle('${s.hanzi}', '${s.korean}')">
-                        <div class="card-header"><span>ID: ${s.id}</span> <span>🔊 카드 터치 시 이 문장만 듣기</span></div>
+                        <div class="card-header"><span>ID: ${s.id}</span> <span>🔊 카드 터치 시 문장 듣기 / 단어 터치 시 뜻 보기</span></div>
                         <div class="hz-text">${dynamicHanziHtml}</div>
                         <div class="py-text">${s.pinyin}</div>
                         <div class="ko-text">${s.korean}</div>
@@ -247,9 +293,8 @@
             if (wakeLock) { wakeLock.release(); wakeLock = null; }
         }
 
-        // 🔊 개별 카드 클릭 시 문장을 한 번 정직하게 들려주는 단일 스피크 엔진 복원
         function speakSingle(hz, ko) {
-            if(isPlaying) return; // 자동 재생 중일 때는 단일 클릭 무시하여 꼬임 방지
+            if(isPlaying) return; 
             window.speechSynthesis.cancel();
             
             const u1 = new SpeechSynthesisUtterance(hz); u1.lang = 'zh-CN'; u1.rate = getSpeed();
