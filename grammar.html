@@ -156,7 +156,23 @@
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 12px;
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* 💡 읽기 버튼과 예문 상단 헤더 */
+        .example-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .zh-sentence {
+            flex: 1;
+            line-height: 1.4;
         }
 
         .zh-word {
@@ -173,22 +189,29 @@
             border-bottom-color: var(--primary-color);
         }
 
+        /* 💡 한글이 섞여 있을 때 일반 텍스트 스타일 */
+        .non-zh-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            display: inline-block;
+        }
+
         .pinyin-text {
             font-size: 0.95rem;
             color: #64748b;
             font-style: italic;
-            margin: 6px 0 4px 0;
+            margin: 2px 0;
         }
 
         .ko-text {
             font-size: 0.95rem;
             color: #334155;
+            margin-top: 2px;
         }
 
+        /* 💡 모바일 친화적으로 겹치지 않게 고정 위치 해제한 읽기 버튼 */
         .btn-speak {
-            position: absolute;
-            right: 15px;
-            top: 15px;
             background: #e2e8f0;
             border: none;
             border-radius: 5px;
@@ -196,6 +219,8 @@
             font-size: 0.85rem;
             cursor: pointer;
             transition: background 0.2s;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
         .btn-speak:hover {
             background: #cbd5e1;
@@ -299,7 +324,6 @@
                     fetch('./data/hsk3.json').then(r => r.json()).catch(() => [])
                 ]);
 
-                // 단어 데이터를 병합하여 딕셔너리 구축
                 [...r1, ...r2, ...r3].forEach(item => {
                     const wordKey = item.hanzi || item.han || item.word;
                     
@@ -388,29 +412,33 @@
                         let threeChars = char + nextChar + nextNextChar;
                         let twoChars = char + nextChar;
 
-                        if (hskDictionary[threeChars]) {
+                        // 💡 한자 판별 조건식 최적화 (중국어 한자 범위만 툴팁span 생성)
+                        const isChineseChar = (str) => /[\u4e00-\u9fa5]/.test(str);
+
+                        if (hskDictionary[threeChars] && isChineseChar(threeChars)) {
                             parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${threeChars}')">${threeChars}</span>`;
                             i += 2; 
                         }
-                        else if (hskDictionary[twoChars]) {
+                        else if (hskDictionary[twoChars] && isChineseChar(twoChars)) {
                             parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${twoChars}')">${twoChars}</span>`;
                             i++; 
                         } 
-                        else if (/[\u4e00-\u9fa5]/.test(char)) {
+                        else if (isChineseChar(char)) {
                             parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${char}')">${char}</span>`;
                         } else {
-                            parsedZh += char;
+                            // 💡 한글이나 부호, 영문은 밑줄 없이 일반 텍스트로 안전하게 출력
+                            parsedZh += `<span class="non-zh-text">${char}</span>`;
                         }
                     }
 
                     examplesHtml += `
                         <div class="example-box">
-                            <button class="btn-speak" onclick="speakExample(event, '${ex.zh}', '${ex.ko}')">🔊 읽기</button>
-                            <div style="padding-right: 50px;">
+                            <div class="example-header">
                                 <div class="zh-sentence">${parsedZh}</div>
-                                <div class="pinyin-text">${ex.pinyin}</div>
-                                <div class="ko-text">${ex.ko}</div>
+                                <button class="btn-speak" onclick="speakExample(event, '${ex.zh}', '${ex.ko}')">🔊 읽기</button>
                             </div>
+                            <div class="pinyin-text">${ex.pinyin}</div>
+                            <div class="ko-text">${ex.ko}</div>
                         </div>
                     `;
                 });
