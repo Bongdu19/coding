@@ -201,14 +201,44 @@
             background: #cbd5e1;
         }
 
+        /* 💡 개선된 TIP 박스 디자인 */
         .tip-box {
-            background-color: #fffbeb;
-            border: 1px solid #fef3c7;
-            color: #b45309;
-            padding: 10px 12px;
-            border-radius: 8px;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            color: #334155;
+            padding: 12px 15px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        .tip-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        /* 출제 빈도 등급 포인터 배지 */
+        .freq-badge {
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 800;
+            color: white;
+            display: inline-block;
+        }
+        .freq-badge.high { background-color: #ef4444; }  /* 상: 빨강 */
+        .freq-badge.medium { background-color: #f59e0b; }/* 중: 주황 */
+        .freq-badge.low { background-color: #10b981; }   /* 하: 초록 */
+
+        .tip-content {
             font-size: 0.88rem;
-            margin-top: 12px;
+            color: #475569;
+            padding-left: 4px;
         }
 
         .word-tooltip {
@@ -262,36 +292,28 @@
 
         async function initPage() {
             try {
-                // 문법 데이터 가져오기
                 const resGrammar = await fetch('./data/grammar.json');
                 grammarData = await resGrammar.json();
 
-                // HSK 단어장 데이터 병렬 로드
                 const [r1, r2, r3] = await Promise.all([
                     fetch('./data/hsk1.json').then(r => r.json()).catch(() => []),
                     fetch('./data/hsk2.json').then(r => r.json()).catch(() => []),
                     fetch('./data/hsk3.json').then(r => r.json()).catch(() => [])
                 ]);
 
-                // 💡 단어 추출 및 계층 구조 해석부
                 [...r1, ...r2, ...r3].forEach(item => {
-                    // 1. 중국어 단어 추출 (hanzi 우선 매핑)
-                    const wordKey = item.hanzi || item.han || item.word;
+                    const wordKey = item.hanzi || item.han || item.word;[cite: 3]
                     
                     if (wordKey) {
-                        // 2. 병음 추출
-                        const pinyinValue = item.pinyin || item.pin || '';
+                        const pinyinValue = item.pinyin || item.pin || '';[cite: 3]
 
-                        // 3. 계층형 뜻 정보(meanings 배열) 파싱
                         let meaningText = '';
-                        if (item.meanings && Array.isArray(item.meanings)) {
-                            // 여러 개의 뜻이 있을 수 있으므로 매핑하여 병합
-                            meaningText = item.meanings.map(m => {
-                                const posStr = m.pos ? `[${m.pos}] ` : '';
-                                return `${posStr}${m.ko}`;
+                        if (item.meanings && Array.isArray(item.meanings)) {[cite: 3]
+                            meaningText = item.meanings.map(m => {[cite: 3]
+                                const posStr = m.pos ? `[${m.pos}] ` : '';[cite: 3]
+                                return `${posStr}${m.ko}`;[cite: 3]
                             }).join(', ');
                         } else {
-                            // 일반 단어장 구형 양식 대응 fallback
                             meaningText = item.kor || item.meaning || item.mean || '뜻 정보 없음';
                         }
 
@@ -307,6 +329,42 @@
                 console.error("데이터 로드 실패:", error);
                 document.getElementById('grammar-container').innerHTML = "<p>데이터를 불러오는 중 오류가 발생했습니다.</p>";
             }
+        }
+
+        // 💡 TIP 박스를 예쁘게 가공하는 헬퍼 함수
+        function parseTip(tipString) {
+            if (!tipString) return '';
+
+            // 기본값 설정
+            let frequency = '상';
+            let freqClass = 'high';
+            let desc = tipString;
+
+            // "출제 빈도 상/중/하" 매칭 정규식
+            const match = tipString.match(/출제\s*빈도\s*([상중하])/);
+            if (match) {
+                frequency = match[1];
+                if (frequency === '중') freqClass = 'medium';
+                if (frequency === '하') freqClass = 'low';
+            }
+
+            // 느낌표(!) 기준으로 분할하여 설명만 하단에 배치
+            const exclIndex = tipString.indexOf('!');
+            if (exclIndex !== -1) {
+                desc = tipString.substring(exclIndex + 1).trim();
+            }
+
+            return `
+                <div class="tip-box">
+                    <div class="tip-header">
+                        💡 <span>출제 빈도</span> 
+                        <span class="freq-badge ${freqClass}">${frequency}</span>
+                    </div>
+                    <div class="tip-content">
+                        ⚡ ${desc}
+                    </div>
+                </div>
+            `;
         }
 
         function renderCards() {
@@ -327,8 +385,6 @@
                     const charArray = Array.from(ex.zh);
                     let parsedZh = '';
                     
-                    // 💡 다중 문자 전방 매칭 알고리즘
-                    // 3글자 단어 매칭 추가 지원
                     for(let i = 0; i < charArray.length; i++) {
                         let char = charArray[i];
                         let nextChar = charArray[i+1] || '';
@@ -337,17 +393,14 @@
                         let threeChars = char + nextChar + nextNextChar;
                         let twoChars = char + nextChar;
 
-                        // 3글자 단어 우선 탐색
                         if (hskDictionary[threeChars]) {
                             parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${threeChars}')">${threeChars}</span>`;
                             i += 2; 
                         }
-                        // 2글자 단어 탐색
                         else if (hskDictionary[twoChars]) {
                             parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${twoChars}')">${twoChars}</span>`;
                             i++; 
                         } 
-                        // 개별 문자 탐색
                         else if (/[\u4e00-\u9fa5]/.test(char)) {
                             parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${char}')">${char}</span>`;
                         } else {
@@ -367,6 +420,9 @@
                     `;
                 });
 
+                // TIP 박스 예쁜 구조로 파싱 변환
+                const formattedTipHtml = parseTip(item.tip);
+
                 card.innerHTML = `
                     <div class="card-header" onclick="toggleCard(this)">
                         <h3 class="grammar-title">${item.title}</h3>
@@ -377,7 +433,7 @@
                     <div class="card-details">
                         <div class="description">${item.description}</div>
                         ${examplesHtml}
-                        <div class="tip-box">${item.tip}</div>
+                        ${formattedTipHtml}
                     </div>
                 `;
 
@@ -403,7 +459,7 @@
             }
 
             const rect = event.target.getBoundingClientRect();
-            tooltip.style.left = `${rect.left + window.scrollX + (rect.width/2) - 80}px`; // 툴팁 정중앙 정렬 보정
+            tooltip.style.left = `${rect.left + window.scrollX + (rect.width/2) - 80}px`; 
             tooltip.style.top = `${rect.top + window.scrollY - 60}px`;
             tooltip.style.display = 'block';
         }
@@ -412,15 +468,17 @@
             document.getElementById('tooltip').style.display = 'none';
         });
 
+        // 💡 1. TTS 기능 수정: 중 -> 한 -> 중 -> 한 순서로 교차 재생
         function speakExample(event, zhText, koText) {
             event.stopPropagation(); 
             window.speechSynthesis.cancel();
 
+            // 교차 재생 오더 생성
             const utterances = [
-                { text: zhText, lang: 'zh-CN' },
-                { text: zhText, lang: 'zh-CN' },
-                { text: koText, lang: 'ko-KR' },
-                { text: koText, lang: 'ko-KR' }
+                { text: zhText, lang: 'zh-CN' }, // 1회차 중국어
+                { text: koText, lang: 'ko-KR' }, // 1회차 한국어
+                { text: zhText, lang: 'zh-CN' }, // 2회차 중국어
+                { text: koText, lang: 'ko-KR' }  // 2회차 한국어
             ];
 
             utterances.forEach(item => {
