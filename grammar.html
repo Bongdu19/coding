@@ -301,16 +301,16 @@
 
                 // 단어 데이터를 병합하여 딕셔너리 구축
                 [...r1, ...r2, ...r3].forEach(item => {
-                    const wordKey = item.hanzi || item.han || item.word;[cite: 3]
+                    const wordKey = item.hanzi || item.han || item.word;
                     
                     if (wordKey) {
-                        const pinyinValue = item.pinyin || item.pin || '';[cite: 3]
+                        const pinyinValue = item.pinyin || item.pin || '';
 
                         let meaningText = '';
-                        if (item.meanings && Array.isArray(item.meanings)) {[cite: 3]
-                            meaningText = item.meanings.map(m => {[cite: 3]
-                                const posStr = m.pos ? `[${m.pos}] ` : '';[cite: 3]
-                                return `${posStr}${m.ko}`;[cite: 3]
+                        if (item.meanings && Array.isArray(item.meanings)) {
+                            meaningText = item.meanings.map(m => {
+                                const posStr = m.pos ? `[${m.pos}] ` : '';
+                                return `${posStr}${m.ko}`;
                             }).join(', ');
                         } else {
                             meaningText = item.kor || item.meaning || item.mean || '뜻 정보 없음';
