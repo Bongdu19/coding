@@ -201,7 +201,6 @@
             background: #cbd5e1;
         }
 
-        /* 💡 개선된 TIP 박스 디자인 */
         .tip-box {
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
@@ -222,7 +221,6 @@
             margin-bottom: 8px;
         }
 
-        /* 출제 빈도 등급 포인터 배지 */
         .freq-badge {
             font-size: 0.75rem;
             padding: 2px 6px;
@@ -231,9 +229,9 @@
             color: white;
             display: inline-block;
         }
-        .freq-badge.high { background-color: #ef4444; }  /* 상: 빨강 */
-        .freq-badge.medium { background-color: #f59e0b; }/* 중: 주황 */
-        .freq-badge.low { background-color: #10b981; }   /* 하: 초록 */
+        .freq-badge.high { background-color: #ef4444; }
+        .freq-badge.medium { background-color: #f59e0b; }
+        .freq-badge.low { background-color: #10b981; }
 
         .tip-content {
             font-size: 0.88rem;
@@ -301,6 +299,7 @@
                     fetch('./data/hsk3.json').then(r => r.json()).catch(() => [])
                 ]);
 
+                // 단어 데이터를 병합하여 딕셔너리 구축
                 [...r1, ...r2, ...r3].forEach(item => {
                     const wordKey = item.hanzi || item.han || item.word;[cite: 3]
                     
@@ -331,16 +330,13 @@
             }
         }
 
-        // 💡 TIP 박스를 예쁘게 가공하는 헬퍼 함수
         function parseTip(tipString) {
             if (!tipString) return '';
 
-            // 기본값 설정
             let frequency = '상';
             let freqClass = 'high';
             let desc = tipString;
 
-            // "출제 빈도 상/중/하" 매칭 정규식
             const match = tipString.match(/출제\s*빈도\s*([상중하])/);
             if (match) {
                 frequency = match[1];
@@ -348,7 +344,6 @@
                 if (frequency === '하') freqClass = 'low';
             }
 
-            // 느낌표(!) 기준으로 분할하여 설명만 하단에 배치
             const exclIndex = tipString.indexOf('!');
             if (exclIndex !== -1) {
                 desc = tipString.substring(exclIndex + 1).trim();
@@ -420,7 +415,6 @@
                     `;
                 });
 
-                // TIP 박스 예쁜 구조로 파싱 변환
                 const formattedTipHtml = parseTip(item.tip);
 
                 card.innerHTML = `
@@ -468,17 +462,15 @@
             document.getElementById('tooltip').style.display = 'none';
         });
 
-        // 💡 1. TTS 기능 수정: 중 -> 한 -> 중 -> 한 순서로 교차 재생
         function speakExample(event, zhText, koText) {
             event.stopPropagation(); 
             window.speechSynthesis.cancel();
 
-            // 교차 재생 오더 생성
             const utterances = [
-                { text: zhText, lang: 'zh-CN' }, // 1회차 중국어
-                { text: koText, lang: 'ko-KR' }, // 1회차 한국어
-                { text: zhText, lang: 'zh-CN' }, // 2회차 중국어
-                { text: koText, lang: 'ko-KR' }  // 2회차 한국어
+                { text: zhText, lang: 'zh-CN' },
+                { text: koText, lang: 'ko-KR' },
+                { text: zhText, lang: 'zh-CN' },
+                { text: koText, lang: 'ko-KR' }
             ];
 
             utterances.forEach(item => {
