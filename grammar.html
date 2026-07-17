@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>봉두의 HSK 문법 공부방</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #212529;
+            --primary-color: #4ea8de;
+            --accent-color: #72efdd;
+            --border-color: #e9ecef;
+            --level-2-color: #4cc9f0;
+            --level-3-color: #4361ee;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .btn-home {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            padding: 8px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            background: var(--card-bg);
+            transition: all 0.2s;
+        }
+
+        .btn-home:hover {
+            background: var(--border-color);
+        }
+
+        /* 급수 필터 탭 */
+        .filter-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #e2e8f0;
+            color: #4a5568;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* 카드 컨테이너 */
+        #grammar-container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* 문법 카드 디자인 */
+        .grammar-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grammar-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .grammar-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 6px;
+            color: white;
+            font-weight: 600;
+        }
+        .badge.hsk2 { background-color: var(--level-2-color); }
+        .badge.hsk3 { background-color: var(--level-3-color); }
+
+        .grammar-formula {
+            background: #f1f5f9;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 0.95rem;
+            color: #0f172a;
+            margin: 8px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        /* 토글될 상세 내용 */
+        .card-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .card-details.show {
+            max-height: 1000px; /* 넉넉하게 지정 */
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .description {
+            font-size: 0.95rem;
+            color: #475569;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .example-box {
+            background: #fafafa;
+            border: 1px solid #f1f5f9;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 10px;
+        }
+
+        .zh-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+
+        .pinyin-text {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .ko-text {
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .tip-box {
+            background-color: #fffbeb;
+            border: 1px solid #fef3c7;
+            color: #b45309;
+            padding: 10px 12px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Grammar 📝</h2>
+        <a href="index.html" class="btn-home">Home</a>
+    </header>
+
+    <!-- 필터 탭 -->
+    <div class="filter-tabs">
+        <button class="tab-btn active" onclick="filterLevel('ALL')">전체보기</button>
+        <button class="tab-btn" onclick="filterLevel('HSK2')">HSK 2급</button>
+        <button class="tab-btn" onclick="filterLevel('HSK3')">HSK 3급</button>
+    </div>
+
+    <!-- 카드가 주입될 컨테이너 -->
+    <div id="grammar-container"></div>
+
+    <script>
+        let grammarData = [];
+        let currentFilter = 'ALL';
+
+        // 1. JSON 데이터 로드
+        async function loadGrammar() {
+            try {
+                // 기존 'grammar.json'에서 './data/grammar.json'으로 경로 수정!
+                const response = await fetch('./data/grammar.json');
+                grammarData = await response.json();
+                renderCards();
+            } catch (error) {
+                console.error("데이터를 불러오지 못했습니다:", error);
+                document.getElementById('grammar-container').innerHTML = "<p>데이터를 불러오는 중 오류가 발생했습니다.</p>";
+            }
+        }
+        // 2. 카드 렌더링 함수
+        function renderCards() {
+            const container = document.getElementById('grammar-container');
+            container.innerHTML = '';
+
+            const filteredData = grammarData.filter(item => {
+                if (currentFilter === 'ALL') return true;
+                return item.level === currentFilter;
+            });
+
+            filteredData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'grammar-card';
+                
+                // 클릭 시 해당 카드 하위의 상세 영역 토글
+                card.onclick = (e) => {
+                    // 텍스트 드래그 시 토글 방지
+                    if (window.getSelection().toString()) return;
+                    const details = card.querySelector('.card-details');
+                    details.classList.toggle('show');
+                };
+
+                // 예문 구조 생성
+                let examplesHtml = '';
+                item.examples.forEach(ex => {
+                    examplesHtml += `
+                        <div class="example-box">
+                            <div class="zh-text">${ex.zh}</div>
+                            <div class="pinyin-text">${ex.pinyin}</div>
+                            <div class="ko-text">${ex.ko}</div>
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="card-header">
+                        <h3 class="grammar-title">${item.title}</h3>
+                        <span class="badge ${item.level.toLowerCase()}">${item.level}</span>
+                    </div>
+                    <div class="grammar-formula">${item.formula}</div>
+                    
+                    <div class="card-details">
+                        <div class="description">${item.description}</div>
+                        ${examplesHtml}
+                        <div class="tip-box">${item.tip}</div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // 3. 레벨 필터링 함수
+        function filterLevel(level) {
+            currentFilter = level;
+            
+            // 버튼 활성화 스타일 변경
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            const targetIndex = level === 'ALL' ? 0 : level === 'HSK2' ? 1 : 2;
+            buttons[targetIndex].classList.add('active');
+
+            renderCards();
+        }
+
+        // 초기 실행
+        window.onload = loadGrammar;
+    </script>
+</body>
+</html>
