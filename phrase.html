@@ -124,10 +124,11 @@
         window.onload = function() {
             Promise.all([
                 fetch('./data/hsk1.json').then(res => res.json()),
-                fetch('./data/hsk2.json').then(res => res.json())
+                fetch('./data/hsk2.json').then(res => res.json()),
+                fetch('./data/hsk3.json').then(res => res.json())
             ])
-            .then(([hsk1, hsk2]) => {
-                const combinedWords = [...hsk1, ...hsk2];
+            .then(([hsk1, hsk2, hsk3]) => {
+                const combinedWords = [...hsk1, ...hsk2, ...hsk3];
                 combinedWords.forEach(word => {
                     if (word.hanzi) {
                         let meanText = '';
