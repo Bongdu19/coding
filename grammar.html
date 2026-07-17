@@ -51,7 +51,6 @@
             background: var(--border-color);
         }
 
-        /* 급수 필터 탭 */
         .filter-tabs {
             display: flex;
             gap: 10px;
@@ -77,7 +76,6 @@
             color: white;
         }
 
-        /* 카드 컨테이너 */
         #grammar-container {
             width: 100%;
             max-width: 600px;
@@ -86,22 +84,14 @@
             gap: 15px;
         }
 
-        /* 문법 카드 디자인 */
         .grammar-card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 15px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             position: relative;
-            overflow: hidden;
-        }
-
-        .grammar-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
         }
 
         .card-header {
@@ -109,6 +99,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 10px;
+            cursor: pointer;
         }
 
         .grammar-title {
@@ -136,9 +127,9 @@
             color: #0f172a;
             margin: 8px 0;
             border-left: 4px solid var(--primary-color);
+            cursor: pointer;
         }
 
-        /* 토글될 상세 내용 */
         .card-details {
             max-height: 0;
             overflow: hidden;
@@ -146,7 +137,7 @@
         }
 
         .card-details.show {
-            max-height: 1000px; /* 넉넉하게 지정 */
+            max-height: 2000px;
             margin-top: 15px;
             padding-top: 15px;
             border-top: 1px dashed var(--border-color);
@@ -163,27 +154,51 @@
             background: #fafafa;
             border: 1px solid #f1f5f9;
             border-radius: 10px;
-            padding: 12px;
-            margin-bottom: 10px;
+            padding: 15px;
+            margin-bottom: 12px;
+            position: relative;
         }
 
-        .zh-text {
-            font-size: 1.2rem;
+        .zh-word {
+            font-size: 1.3rem;
             font-weight: 600;
             color: #1e293b;
-            margin-bottom: 4px;
+            cursor: pointer;
+            border-bottom: 1px dashed #94a3b8;
+            margin-right: 2px;
+            display: inline-block;
+        }
+        .zh-word:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
         }
 
         .pinyin-text {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: #64748b;
             font-style: italic;
-            margin-bottom: 4px;
+            margin: 6px 0 4px 0;
         }
 
         .ko-text {
             font-size: 0.95rem;
             color: #334155;
+        }
+
+        .btn-speak {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background: #e2e8f0;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-speak:hover {
+            background: #cbd5e1;
         }
 
         .tip-box {
@@ -195,6 +210,32 @@
             font-size: 0.88rem;
             margin-top: 12px;
         }
+
+        .word-tooltip {
+            position: absolute;
+            background: #1e293b;
+            color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 200px;
+            pointer-events: none;
+            display: none;
+        }
+        .word-tooltip::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px 5px 0;
+            border-style: solid;
+            border-color: #1e293b transparent;
+            display: block;
+            width: 0;
+        }
     </style>
 </head>
 <body>
@@ -204,33 +245,57 @@
         <a href="index.html" class="btn-home">Home</a>
     </header>
 
-    <!-- 필터 탭 -->
     <div class="filter-tabs">
         <button class="tab-btn active" onclick="filterLevel('ALL')">전체보기</button>
         <button class="tab-btn" onclick="filterLevel('HSK2')">HSK 2급</button>
         <button class="tab-btn" onclick="filterLevel('HSK3')">HSK 3급</button>
     </div>
 
-    <!-- 카드가 주입될 컨테이너 -->
     <div id="grammar-container"></div>
+    <div id="tooltip" class="word-tooltip"></div>
 
     <script>
         let grammarData = [];
+        let hskDictionary = {}; 
         let currentFilter = 'ALL';
 
-        // 1. JSON 데이터 로드
-        async function loadGrammar() {
+        async function initPage() {
             try {
-                // 기존 'grammar.json'에서 './data/grammar.json'으로 경로 수정!
-                const response = await fetch('./data/grammar.json');
-                grammarData = await response.json();
+                const resGrammar = await fetch('./data/grammar.json');
+                grammarData = await resGrammar.json();
+
+                const [r1, r2, r3] = await Promise.all([
+                    fetch('./data/hsk1.json').then(r => r.json()).catch(() => []),
+                    fetch('./data/hsk2.json').then(r => r.json()).catch(() => []),
+                    fetch('./data/hsk3.json').then(r => r.json()).catch(() => [])
+                ]);
+
+                // 💡 [시뮬레이션 반영 구역] 다중 필드명 매핑 설계
+                [...r1, ...r2, ...r3].forEach(item => {
+                    // 예상 가능한 한자 단어 키 추출 (han -> word -> chn -> kanji 순)
+                    const wordKey = item.han || item.word || item.chn || item.kanji;
+                    
+                    if (wordKey) {
+                        // 예상 가능한 한국어 뜻 키 추출 (kor -> meaning -> mean -> def)
+                        const meaningValue = item.kor || item.meaning || item.mean || item.definition || '뜻 정보 없음';
+                        
+                        // 예상 가능한 병음 키 추출 (pin -> pinyin)
+                        const pinyinValue = item.pin || item.pinyin || '';
+
+                        hskDictionary[wordKey.trim()] = {
+                            meaning: meaningValue,
+                            pinyin: pinyinValue
+                        };
+                    }
+                });
+
                 renderCards();
             } catch (error) {
-                console.error("데이터를 불러오지 못했습니다:", error);
+                console.error("데이터 로드 실패:", error);
                 document.getElementById('grammar-container').innerHTML = "<p>데이터를 불러오는 중 오류가 발생했습니다.</p>";
             }
         }
-        // 2. 카드 렌더링 함수
+
         function renderCards() {
             const container = document.getElementById('grammar-container');
             container.innerHTML = '';
@@ -240,36 +305,51 @@
                 return item.level === currentFilter;
             });
 
-            filteredData.forEach(item => {
+            filteredData.forEach((item, index) => {
                 const card = document.createElement('div');
                 card.className = 'grammar-card';
-                
-                // 클릭 시 해당 카드 하위의 상세 영역 토글
-                card.onclick = (e) => {
-                    // 텍스트 드래그 시 토글 방지
-                    if (window.getSelection().toString()) return;
-                    const details = card.querySelector('.card-details');
-                    details.classList.toggle('show');
-                };
 
-                // 예문 구조 생성
                 let examplesHtml = '';
-                item.examples.forEach(ex => {
+                item.examples.forEach((ex, exIdx) => {
+                    const charArray = Array.from(ex.zh);
+                    let parsedZh = '';
+                    
+                    // 💡 [시뮬레이션 단어 결합도 보완]
+                    // 한 글자 단위 툴팁뿐만 아니라 2글자 단어도 매칭될 수 있도록 전방 탐색 지원 로직
+                    for(let i = 0; i < charArray.length; i++) {
+                        let char = charArray[i];
+                        let nextChar = charArray[i+1] || '';
+                        let twoChars = char + nextChar;
+
+                        // 만약 현재 글자와 다음 글자를 합친 2글자 단어가 사전에 등록되어 있다면 2글자를 묶어서 span 생성
+                        if (hskDictionary[twoChars]) {
+                            parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${twoChars}')">${twoChars}</span>`;
+                            i++; // 다음 글자는 스킵
+                        } else if (/[\u4e00-\u9fa5]/.test(char)) {
+                            parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${char}')">${char}</span>`;
+                        } else {
+                            parsedZh += char;
+                        }
+                    }
+
                     examplesHtml += `
                         <div class="example-box">
-                            <div class="zh-text">${ex.zh}</div>
-                            <div class="pinyin-text">${ex.pinyin}</div>
-                            <div class="ko-text">${ex.ko}</div>
+                            <button class="btn-speak" onclick="speakExample(event, '${ex.zh}', '${ex.ko}')">🔊 읽기</button>
+                            <div style="padding-right: 50px;">
+                                <div class="zh-sentence">${parsedZh}</div>
+                                <div class="pinyin-text">${ex.pinyin}</div>
+                                <div class="ko-text">${ex.ko}</div>
+                            </div>
                         </div>
                     `;
                 });
 
                 card.innerHTML = `
-                    <div class="card-header">
+                    <div class="card-header" onclick="toggleCard(this)">
                         <h3 class="grammar-title">${item.title}</h3>
                         <span class="badge ${item.level.toLowerCase()}">${item.level}</span>
                     </div>
-                    <div class="grammar-formula">${item.formula}</div>
+                    <div class="grammar-formula" onclick="toggleCard(this)">${item.formula}</div>
                     
                     <div class="card-details">
                         <div class="description">${item.description}</div>
@@ -282,11 +362,54 @@
             });
         }
 
-        // 3. 레벨 필터링 함수
+        function toggleCard(element) {
+            const card = element.closest('.grammar-card');
+            const details = card.querySelector('.card-details');
+            details.classList.toggle('show');
+        }
+
+        function showTooltip(event, word) {
+            event.stopPropagation(); 
+            const tooltip = document.getElementById('tooltip');
+            const match = hskDictionary[word];
+            
+            if (match) {
+                tooltip.innerHTML = `<strong>${word}</strong> [${match.pinyin}]<br>${match.meaning}`;
+            } else {
+                tooltip.innerHTML = `<strong>${word}</strong><br>단어장 검색 결과 없음`;
+            }
+
+            const rect = event.target.getBoundingClientRect();
+            tooltip.style.left = `${rect.left + window.scrollX + (rect.width/2) - 60}px`;
+            tooltip.style.top = `${rect.top + window.scrollY - 55}px`;
+            tooltip.style.display = 'block';
+        }
+
+        document.addEventListener('click', () => {
+            document.getElementById('tooltip').style.display = 'none';
+        });
+
+        function speakExample(event, zhText, koText) {
+            event.stopPropagation(); 
+            window.speechSynthesis.cancel();
+
+            const utterances = [
+                { text: zhText, lang: 'zh-CN' },
+                { text: zhText, lang: 'zh-CN' },
+                { text: koText, lang: 'ko-KR' },
+                { text: koText, lang: 'ko-KR' }
+            ];
+
+            utterances.forEach(item => {
+                const utterance = new SpeechSynthesisUtterance(item.text);
+                utterance.lang = item.lang;
+                utterance.rate = item.lang === 'zh-CN' ? 0.85 : 1.0; 
+                window.speechSynthesis.speak(utterance);
+            });
+        }
+
         function filterLevel(level) {
             currentFilter = level;
-            
-            // 버튼 활성화 스타일 변경
             const buttons = document.querySelectorAll('.tab-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
             
@@ -296,8 +419,7 @@
             renderCards();
         }
 
-        // 초기 실행
-        window.onload = loadGrammar;
+        window.onload = initPage;
     </script>
 </body>
 </html>
