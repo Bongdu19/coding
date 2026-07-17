@@ -215,14 +215,15 @@
             position: absolute;
             background: #1e293b;
             color: #ffffff;
-            padding: 8px 12px;
-            border-radius: 6px;
+            padding: 10px 14px;
+            border-radius: 8px;
             font-size: 0.85rem;
             z-index: 100;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 200px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            max-width: 240px;
             pointer-events: none;
             display: none;
+            line-height: 1.4;
         }
         .word-tooltip::after {
             content: '';
@@ -261,29 +262,41 @@
 
         async function initPage() {
             try {
+                // 문법 데이터 가져오기
                 const resGrammar = await fetch('./data/grammar.json');
                 grammarData = await resGrammar.json();
 
+                // HSK 단어장 데이터 병렬 로드
                 const [r1, r2, r3] = await Promise.all([
                     fetch('./data/hsk1.json').then(r => r.json()).catch(() => []),
                     fetch('./data/hsk2.json').then(r => r.json()).catch(() => []),
                     fetch('./data/hsk3.json').then(r => r.json()).catch(() => [])
                 ]);
 
-                // 💡 [시뮬레이션 반영 구역] 다중 필드명 매핑 설계
+                // 💡 단어 추출 및 계층 구조 해석부
                 [...r1, ...r2, ...r3].forEach(item => {
-                    // 예상 가능한 한자 단어 키 추출 (han -> word -> chn -> kanji 순)
-                    const wordKey = item.han || item.word || item.chn || item.kanji;
+                    // 1. 중국어 단어 추출 (hanzi 우선 매핑)
+                    const wordKey = item.hanzi || item.han || item.word;
                     
                     if (wordKey) {
-                        // 예상 가능한 한국어 뜻 키 추출 (kor -> meaning -> mean -> def)
-                        const meaningValue = item.kor || item.meaning || item.mean || item.definition || '뜻 정보 없음';
-                        
-                        // 예상 가능한 병음 키 추출 (pin -> pinyin)
-                        const pinyinValue = item.pin || item.pinyin || '';
+                        // 2. 병음 추출
+                        const pinyinValue = item.pinyin || item.pin || '';
+
+                        // 3. 계층형 뜻 정보(meanings 배열) 파싱
+                        let meaningText = '';
+                        if (item.meanings && Array.isArray(item.meanings)) {
+                            // 여러 개의 뜻이 있을 수 있으므로 매핑하여 병합
+                            meaningText = item.meanings.map(m => {
+                                const posStr = m.pos ? `[${m.pos}] ` : '';
+                                return `${posStr}${m.ko}`;
+                            }).join(', ');
+                        } else {
+                            // 일반 단어장 구형 양식 대응 fallback
+                            meaningText = item.kor || item.meaning || item.mean || '뜻 정보 없음';
+                        }
 
                         hskDictionary[wordKey.trim()] = {
-                            meaning: meaningValue,
+                            meaning: meaningText,
                             pinyin: pinyinValue
                         };
                     }
@@ -314,18 +327,28 @@
                     const charArray = Array.from(ex.zh);
                     let parsedZh = '';
                     
-                    // 💡 [시뮬레이션 단어 결합도 보완]
-                    // 한 글자 단위 툴팁뿐만 아니라 2글자 단어도 매칭될 수 있도록 전방 탐색 지원 로직
+                    // 💡 다중 문자 전방 매칭 알고리즘
+                    // 3글자 단어 매칭 추가 지원
                     for(let i = 0; i < charArray.length; i++) {
                         let char = charArray[i];
                         let nextChar = charArray[i+1] || '';
+                        let nextNextChar = charArray[i+2] || '';
+                        
+                        let threeChars = char + nextChar + nextNextChar;
                         let twoChars = char + nextChar;
 
-                        // 만약 현재 글자와 다음 글자를 합친 2글자 단어가 사전에 등록되어 있다면 2글자를 묶어서 span 생성
-                        if (hskDictionary[twoChars]) {
+                        // 3글자 단어 우선 탐색
+                        if (hskDictionary[threeChars]) {
+                            parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${threeChars}')">${threeChars}</span>`;
+                            i += 2; 
+                        }
+                        // 2글자 단어 탐색
+                        else if (hskDictionary[twoChars]) {
                             parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${twoChars}')">${twoChars}</span>`;
-                            i++; // 다음 글자는 스킵
-                        } else if (/[\u4e00-\u9fa5]/.test(char)) {
+                            i++; 
+                        } 
+                        // 개별 문자 탐색
+                        else if (/[\u4e00-\u9fa5]/.test(char)) {
                             parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${char}')">${char}</span>`;
                         } else {
                             parsedZh += char;
@@ -380,8 +403,8 @@
             }
 
             const rect = event.target.getBoundingClientRect();
-            tooltip.style.left = `${rect.left + window.scrollX + (rect.width/2) - 60}px`;
-            tooltip.style.top = `${rect.top + window.scrollY - 55}px`;
+            tooltip.style.left = `${rect.left + window.scrollX + (rect.width/2) - 80}px`; // 툴팁 정중앙 정렬 보정
+            tooltip.style.top = `${rect.top + window.scrollY - 60}px`;
             tooltip.style.display = 'block';
         }
 
