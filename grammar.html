@@ -17,7 +17,8 @@
         }
 
         body {
-            font-family: 'Pretendard', -apple-system, sans-serif;
+            /* STHeiti, Microsoft YaHei, Noto Sans SC 등을 추가하여 한자 자형을 통일 */
+            font-family: 'Pretendard', -apple-system, "STHeiti", "Microsoft YaHei", "Noto Sans SC", sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
@@ -187,6 +188,11 @@
         .zh-word:hover {
             color: var(--primary-color);
             border-bottom-color: var(--primary-color);
+        }
+
+        /* 문장 안의 중국어 폰트 스타일 강제 통일 */
+        .zh-sentence, .zh-word {
+            font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
         }
 
         /* 💡 한글이 섞여 있을 때 일반 텍스트 스타일 */
