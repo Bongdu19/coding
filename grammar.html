@@ -296,6 +296,33 @@
             display: block;
             width: 0;
         }
+
+        /* 문법 설명 내에 표(Table)가 들어올 경우 예쁘게 스타일링 */
+        .description table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.88rem;
+            text-align: left;
+        }
+        
+        .description th {
+            background-color: #f1f5f9;
+            color: #1e293b;
+            font-weight: 700;
+            padding: 8px 10px;
+            border-bottom: 2px solid #cbd5e1;
+        }
+        
+        .description td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #475569;
+        }
+        
+        .description tr:hover {
+            background-color: #f8fafc;
+        }
     </style>
 </head>
 <body>
