@@ -202,447 +202,515 @@
       { "id": "S153", "hanzi": "没接住", "pinyin": "méi jiē zhù", "korean": "받지 못했다" }
     ]
   },
-
-  {
+{
     "category": "11. 结婚 / 结束 / 解决 (결혼하다, 끝나다, 해결하다)",
     "sentences": [
       { "id": "S154", "hanzi": "我结婚了", "pinyin": "wǒ jié hūn le", "korean": "나는 결혼했다" },
       { "id": "S155", "hanzi": "他没结婚", "pinyin": "tā méi jié hūn", "korean": "그는 결혼하지 않았다" },
-      { "id": "S156", "hanzi": "会议结束了", "pinyin": "huì yì jié shù le", "korean": "회의가 끝났다" },
-      { "id": "S157", "hanzi": "课结束了", "pinyin": "kè jié shù le", "korean": "수업이 끝났다" },
-      { "id": "S158", "hanzi": "还没结束", "pinyin": "hái méi jié shù", "korean": "아직 끝나지 않았다" },
-      { "id": "S159", "hanzi": "解决问题", "pinyin": "jiě jué wèn tí", "korean": "문제를 해결하다" },
-      { "id": "S160", "hanzi": "问题解决了吗", "pinyin": "wèn tí jiě jué le ma", "korean": "문제 해결됐니" },
-      { "id": "S161", "hanzi": "那我来解决吧", "pinyin": "nà wǒ lái jiě jué ba", "korean": "그럼 내가 해결할게" },
-      { "id": "S162", "hanzi": "解决不了", "pinyin": "jiě jué bu liǎo", "korean": "해결할 수 없다" }
+      { "id": "S156", "hanzi": "什么时候结婚", "pinyin": "shén me shí hou jié hūn", "korean": "언제 결혼하니" },
+      { "id": "S157", "hanzi": "会议结束了", "pinyin": "huì yì jié shù le", "korean": "회의가 끝났다" },
+      { "id": "S158", "hanzi": "课结束了", "pinyin": "kè jié shù le", "korean": "수업이 끝났다" },
+      { "id": "S159", "hanzi": "还没结束呢", "pinyin": "hái méi jié shù ne", "korean": "아직 끝나지 않았네" },
+      { "id": "S160", "hanzi": "解决问题", "pinyin": "jiě jué wèn tí", "korean": "문제를 해결하다" },
+      { "id": "S161", "hanzi": "问题解决了吗", "pinyin": "wèn tí jiě jué le ma", "korean": "문제 해결됐니" },
+      { "id": "S162", "hanzi": "那我来解决吧", "pinyin": "nà wǒ lái jiě jué ba", "korean": "그럼 내가 해결할게" },
+      { "id": "S163", "hanzi": "解决不了", "pinyin": "jiě jué bu liǎo", "korean": "해결할 수 없다" }
     ]
   },
   {
     "category": "12. 经过 / 决定 / 哭 (거치다, 결정하다, 울다)",
     "sentences": [
-      { "id": "S163", "hanzi": "经过思考", "pinyin": "jīng guò sī kǎo", "korean": "생각을 거치다" },
-      { "id": "S164", "hanzi": "经过锻炼", "pinyin": "jīng guò duàn liàn", "korean": "단련을 거치다" },
-      { "id": "S165", "hanzi": "决定去中国", "pinyin": "jué dìng qù zhōng guó", "korean": "중국에 가기로 결정하다" },
-      { "id": "S166", "hanzi": "决定去旅游", "pinyin": "jué dìng qù lǚ yóu", "korean": "여행 가기로 결정하다" },
-      { "id": "S167", "hanzi": "你怎么哭了", "pinyin": "nǐ zěn me kū le", "korean": "너 왜 우니" },
-      { "id": "S168", "hanzi": "为什么哭", "pinyin": "wèi shén me kū", "korean": "왜 우니" },
-      { "id": "S169", "hanzi": "高兴得哭了", "pinyin": "gāo xìng de kū le", "korean": "기뻐서 울었다" }
+      { "id": "S164", "hanzi": "经过思考", "pinyin": "jīng guò sī kǎo", "korean": "생각을 거치다" },
+      { "id": "S165", "hanzi": "经过锻炼", "pinyin": "jīng guò duàn liàn", "korean": "단련을 거치다" },
+      { "id": "S166", "hanzi": "决定去中国", "pinyin": "jué dìng qù zhōng guó", "korean": "중국에 가기로 결정하다" },
+      { "id": "S167", "hanzi": "决定去旅游", "pinyin": "jué dìng qù lǚ yóu", "korean": "여행 가기로 결정하다" },
+      { "id": "S168", "hanzi": "做出了决定", "pinyin": "zuò chū le jué dìng", "korean": "결정을 내렸다" },
+      { "id": "S169", "hanzi": "你怎么哭了", "pinyin": "nǐ zěn me kū le", "korean": "너 왜 우니" },
+      { "id": "S170", "hanzi": "为什么哭", "pinyin": "wèi shén me kū", "korean": "왜 우니" },
+      { "id": "S171", "hanzi": "高兴得哭了", "pinyin": "gāo xìng de kū le", "korean": "기뻐서 울었다" },
+      { "id": "S172", "hanzi": "别哭了", "pinyin": "bié kū le", "korean": "울지 마라" }
     ]
   },
   {
     "category": "13. 练习 / 聊天 / 了解 (연습하다, 채팅하다, 이해하다)",
     "sentences": [
-      { "id": "S170", "hanzi": "练习一下", "pinyin": "liàn xí yí xià", "korean": "좀 연습하다" },
-      { "id": "S171", "hanzi": "练了吗", "pinyin": "liàn le ma", "korean": "연습했니" },
-      { "id": "S172", "hanzi": "做了很多练习", "pinyin": "zuò le hěn duō liàn xí", "korean": "연습을 많이 했다" },
-      { "id": "S173", "hanzi": "练习说汉语", "pinyin": "liàn xí shuō hàn yǔ", "korean": "중국어 말하기를 연습하다" },
-      { "id": "S174", "hanzi": "练习打篮球", "pinyin": "liàn xí dǎ lán qiú", "korean": "농구를 연습하다" },
-      { "id": "S175", "hanzi": "和朋友聊天", "pinyin": "hé péng you liáo tiān", "korean": "친구와 이야기하다" },
-      { "id": "S176", "hanzi": "喜欢聊天", "pinyin": "xǐ huan liáo tiān", "korean": "채팅하는 것을 좋아하다" },
-      { "id": "S177", "hanzi": "网上聊天", "pinyin": "wǎng shàng liáo tiān", "korean": "인터넷으로 채팅하다" },
-      { "id": "S178", "hanzi": "你不了解他", "pinyin": "nǐ bù liǎo jiě tā", "korean": "너는 그를 잘 모른다" },
-      { "id": "S179", "hanzi": "了解了吗", "pinyin": "liǎo jiě le ma", "korean": "알아보았니" },
-      { "id": "S180", "hanzi": "你去了解一下", "pinyin": "nǐ qù liǎo jiě yí xià", "korean": "네가 가서 좀 알아봐라" }
+      { "id": "S173", "hanzi": "练习一下", "pinyin": "liàn xí yí xià", "korean": "좀 연습하다" },
+      { "id": "S174", "hanzi": "练了吗", "pinyin": "liàn le ma", "korean": "연습했니" },
+      { "id": "S175", "hanzi": "做了很多练习", "pinyin": "zuò le hěn duō liàn xí", "korean": "연습을 많이 했다" },
+      { "id": "S176", "hanzi": "练习说汉语", "pinyin": "liàn xí shuō hàn yǔ", "korean": "중국어 말하기를 연습하다" },
+      { "id": "S177", "hanzi": "和朋友聊天", "pinyin": "hé péng you liáo tiān", "korean": "친구와 이야기하다" },
+      { "id": "S178", "hanzi": "喜欢聊天", "pinyin": "xǐ huan liáo tiān", "korean": "채팅하는 것을 좋아하다" },
+      { "id": "S179", "hanzi": "网上聊天", "pinyin": "wǎng shàng liáo tiān", "korean": "인터넷으로 채팅하다" },
+      { "id": "S180", "hanzi": "你不了解他", "pinyin": "nǐ bù liǎo jiě tā", "korean": "너는 그를 잘 모른다" },
+      { "id": "S181", "hanzi": "了解了吗", "pinyin": "liǎo jiě le ma", "korean": "알아보았니" },
+      { "id": "S182", "hanzi": "你去了解一下", "pinyin": "nǐ qù liǎo jiě yí xià", "korean": "네가 가서 좀 알아봐라" }
     ]
   },
   {
     "category": "14. 留学 / 明白 (유학하다, 명백하다)",
     "sentences": [
-      { "id": "S181", "hanzi": "在中国留学", "pinyin": "zài zhōng guó liú xué", "korean": "중국에서 유학하다" },
-      { "id": "S182", "hanzi": "打算去中国留学", "pinyin": "dǎ suàn qù zhōng guó liú xué", "korean": "중국에 유학 갈 계획이다" },
-      { "id": "S183", "hanzi": "留学两年了", "pinyin": "liú xué liǎng nián le", "korean": "유학한 지 이 년 되었다" },
-      { "id": "S184", "hanzi": "留学生", "pinyin": "liú xué shēng", "korean": "유학생" },
-      { "id": "S185", "hanzi": "明白了", "pinyin": "míng bai le", "korean": "이해했다" },
-      { "id": "S186", "hanzi": "不明白", "pinyin": "bù míng bai", "korean": "이해하지 못하다" },
-      { "id": "S187", "hanzi": "没看明白", "pinyin": "méi kàn míng bai", "korean": "보고 이해하지 못했다" },
-      { "id": "S188", "hanzi": "听明白了", "pinyin": "tīng míng bai le", "korean": "듣고 이해했다" },
-      { "id": "S189", "hanzi": "明白过来了", "pinyin": "míng bai guò lái le", "korean": "이제야 깨달았다" },
-      { "id": "S190", "hanzi": "你怎么还不明白", "pinyin": "nǐ zěn me hái bù míng bai", "korean": "넌 왜 아직도 이해를 못 하니" }
+      { "id": "S183", "hanzi": "在中国留学", "pinyin": "zài zhōng guó liú xué", "korean": "중국에서 유학하다" },
+      { "id": "S184", "hanzi": "打算去中国留学", "pinyin": "dǎ suàn qù zhōng guó liú xué", "korean": "중국에 유학 갈 계획이다" },
+      { "id": "S185", "hanzi": "留学两年了", "pinyin": "liú xué liǎng nián le", "korean": "유학한 지 이 년 되었다" },
+      { "id": "S186", "hanzi": "留学生", "pinyin": "liú xué shēng", "korean": "유학생" },
+      { "id": "S187", "hanzi": "明白了", "pinyin": "míng bai le", "korean": "이해했다" },
+      { "id": "S188", "hanzi": "不明白", "pinyin": "bù míng bai", "korean": "이해하지 못하다" },
+      { "id": "S189", "hanzi": "没看明白", "pinyin": "méi kàn míng bai", "korean": "보고 이해하지 못했다" },
+      { "id": "S190", "hanzi": "听明白了", "pinyin": "tīng míng bai le", "korean": "듣고 이해했다" },
+      { "id": "S191", "hanzi": "明白过来了", "pinyin": "míng bai guò lái le", "korean": "이제야 깨달았다" },
+      { "id": "S192", "hanzi": "你怎么还不明白", "pinyin": "nǐ zěn me hái bù míng bai", "korean": "넌 왜 아직도 이해를 못 하니" }
     ]
   },
   {
     "category": "15. 拿 / 努力 (들다, 노력하다)",
     "sentences": [
-      { "id": "S191", "hanzi": "帮我拿着", "pinyin": "bāng wǒ ná zhe", "korean": "나를 도와 들고 있어 줘" },
-      { "id": "S192", "hanzi": "帮我拿一下", "pinyin": "bāng wǒ ná yí xià", "korean": "좀 들어줘" },
-      { "id": "S193", "hanzi": "拿来", "pinyin": "ná lái", "korean": "가져오다" },
-      { "id": "S194", "hanzi": "拿走", "pinyin": "ná zǒu", "korean": "가져가다" },
-      { "id": "S195", "hanzi": "拿不定主意", "pinyin": "ná bu dìng zhǔ yi", "korean": "결정을 내리지 못하다" },
-      { "id": "S196", "hanzi": "努力学习", "pinyin": "nǔ lì xué xí", "korean": "열심히 공부하다" },
-      { "id": "S197", "hanzi": "努力工作", "pinyin": "nǔ lì gōng zuò", "korean": "열심히 일하다" },
-      { "id": "S198", "hanzi": "努力锻炼", "pinyin": "nǔ lì duàn liàn", "korean": "열심히 단련하다" }
+      { "id": "S193", "hanzi": "帮我拿着", "pinyin": "bāng wǒ ná zhe", "korean": "나를 도와 들고 있어 줘" },
+      { "id": "S194", "hanzi": "帮我拿一下", "pinyin": "bāng wǒ ná yí xià", "korean": "좀 들어줘" },
+      { "id": "S195", "hanzi": "拿来", "pinyin": "ná lái", "korean": "가져오다" },
+      { "id": "S196", "hanzi": "拿走", "pinyin": "ná zǒu", "korean": "가져가다" },
+      { "id": "S197", "hanzi": "拿不定主意", "pinyin": "ná bu dìng zhǔ yi", "korean": "결정을 내리지 못하다" },
+      { "id": "S198", "hanzi": "努力学习", "pinyin": "nǔ lì xué xí", "korean": "열심히 공부하다" },
+      { "id": "S199", "hanzi": "努力工作", "pinyin": "nǔ lì gōng zuò", "korean": "열심히 일하다" },
+      { "id": "S200", "hanzi": "努力锻炼", "pinyin": "nǔ lì duàn liàn", "korean": "열심히 단련하다" }
     ]
   },
   {
     "category": "16. 爬山 / 骑 (등산하다, 타다)",
     "sentences": [
-      { "id": "S199", "hanzi": "喜欢爬山", "pinyin": "xǐ huan pá shān", "korean": "등산하는 것을 좋아하다" },
-      { "id": "S200", "hanzi": "一起去爬山", "pinyin": "yì qǐ qù pá shān", "korean": "함께 등산하러 가다" },
-      { "id": "S201", "hanzi": "经常去爬山", "pinyin": "jīng cháng qù pá shān", "korean": "자주 등산하러 가다" },
-      { "id": "S202", "hanzi": "骑车", "pinyin": "qí chē", "korean": "자전거를 타다" },
-      { "id": "S203", "hanzi": "骑上去", "pinyin": "qí shàng qù", "korean": "올라타다" },
-      { "id": "S204", "hanzi": "骑着自行车", "pinyin": "qí zhe zì xíng chē", "korean": "자전거를 타고 있다" }
+      { "id": "S201", "hanzi": "喜欢爬山", "pinyin": "xǐ huan pá shān", "korean": "등산하는 것을 좋아하다" },
+      { "id": "S202", "hanzi": "一起去爬山", "pinyin": "yì qǐ qù pá shān", "korean": "함께 등산하러 가다" },
+      { "id": "S203", "hanzi": "经常去爬山", "pinyin": "jīng cháng qù pá shān", "korean": "자주 등산하러 가다" },
+      { "id": "S204", "hanzi": "爬山运动", "pinyin": "pá shān yùn dòng", "korean": "등산 운동" },
+      { "id": "S205", "hanzi": "骑车", "pinyin": "qí chē", "korean": "자전거를 타다" },
+      { "id": "S206", "hanzi": "骑上去", "pinyin": "qí shàng qù", "korean": "올라타다" },
+      { "id": "S207", "hanzi": "骑着自行车", "pinyin": "qí zhe zì xíng chē", "korean": "자전거를 타고 있다" },
+      { "id": "S208", "hanzi": "骑马", "pinyin": "qí mǎ", "korean": "말을 타다" }
     ]
   },
   {
     "category": "17. 起飞 / 起来 (이륙하다, 일어나다)",
     "sentences": [
-      { "id": "S205", "hanzi": "起飞了", "pinyin": "qǐ fēi le", "korean": "이륙했다" },
-      { "id": "S206", "hanzi": "飞机已经起飞了", "pinyin": "fēi jī yǐ jīng qǐ fēi le", "korean": "비행기가 이미 이륙했다" },
-      { "id": "S207", "hanzi": "坐起来", "pinyin": "zuò qǐ lái", "korean": "일어나 앉다" },
-      { "id": "S208", "hanzi": "站起来", "pinyin": "zhàn qǐ lái", "korean": "일어서다" },
-      { "id": "S209", "hanzi": "起来吧", "pinyin": "qǐ lái ba", "korean": "일어나라" },
-      { "id": "S210", "hanzi": "起来了吗", "pinyin": "qǐ lái le ma", "korean": "일어났니" },
-      { "id": "S211", "hanzi": "起不来", "pinyin": "qǐ bu lái", "korean": "일어나지 못하다" }
+      { "id": "S209", "hanzi": "起飞了", "pinyin": "qǐ fēi le", "korean": "이륙했다" },
+      { "id": "S210", "hanzi": "飞机已经起飞了", "pinyin": "fēi jī yǐ jīng qǐ fēi le", "korean": "비행기가 이미 이륙했다" },
+      { "id": "S211", "hanzi": "什么时候起飞", "pinyin": "shén me shí hou qǐ fēi", "korean": "언제 이륙하니" },
+      { "id": "S212", "hanzi": "坐起来", "pinyin": "zuò qǐ lái", "korean": "일어나 앉다" },
+      { "id": "S213", "hanzi": "站起来", "pinyin": "zhàn qǐ lái", "korean": "일어서다" },
+      { "id": "S214", "hanzi": "起来吧", "pinyin": "qǐ lái ba", "korean": "일어나라" },
+      { "id": "S215", "hanzi": "起来了吗", "pinyin": "qǐ lái le ma", "korean": "일어났니" },
+      { "id": "S216", "hanzi": "起不来", "pinyin": "qǐ bu lái", "korean": "일어나지 못하다" }
     ]
   },
   {
     "category": "18. 请假 / 认为 (휴가를 내다, 생각하다)",
     "sentences": [
-      { "id": "S212", "hanzi": "请假了", "pinyin": "qǐng jià le", "korean": "휴가를 냈다" },
-      { "id": "S213", "hanzi": "还没请假", "pinyin": "hái méi qǐng jià", "korean": "아직 휴가를 내지 않았다" },
-      { "id": "S214", "hanzi": "为什么请假", "pinyin": "wèi shén me qǐng jià", "korean": "왜 휴가를 냈니" },
-      { "id": "S215", "hanzi": "你认为怎么样", "pinyin": "nǐ rèn wéi zěn me yàng", "korean": "넌 어떻게 생각하니" },
-      { "id": "S216", "hanzi": "我认为不难", "pinyin": "wǒ rèn wéi bù nán", "korean": "나는 어렵지 않다고 생각한다" },
-      { "id": "S217", "hanzi": "你认为漂亮吗", "pinyin": "nǐ rèn wéi piào liang ma", "korean": "너는 예쁘다고 생각하니" },
-      { "id": "S218", "hanzi": "我不认为是好事", "pinyin": "wǒ bú rèn wéi shì hǎo shì", "korean": "나는 좋은 일이라고 생각하지 않는다" },
-      { "id": "S219", "hanzi": "我认为这是你的错", "pinyin": "wǒ rèn wéi zhè shì nǐ de cuò", "korean": "나는 이것이 네 잘못이라고 생각한다" }
+      { "id": "S217", "hanzi": "请假了", "pinyin": "qǐng jià le", "korean": "휴가를 냈다" },
+      { "id": "S218", "hanzi": "还没请假", "pinyin": "hái méi qǐng jià", "korean": "아직 휴가를 내지 않았다" },
+      { "id": "S219", "hanzi": "为什么请假", "pinyin": "wèi shén me qǐng jià", "korean": "왜 휴가를 냈니" },
+      { "id": "S220", "hanzi": "想请一天假", "pinyin": "xiǎng qǐng yì tiān jià", "korean": "하루 휴가를 내고 싶다" },
+      { "id": "S221", "hanzi": "你认为怎么样", "pinyin": "nǐ rèn wéi zěn me yàng", "korean": "넌 어떻게 생각하니" },
+      { "id": "S222", "hanzi": "我认为不难", "pinyin": "wǒ rèn wéi bù nán", "korean": "나는 어렵지 않다고 생각한다" },
+      { "id": "S223", "hanzi": "你认为漂亮吗", "pinyin": "nǐ rèn wéi piào liang ma", "korean": "너는 예쁘다고 생각하니" },
+      { "id": "S224", "hanzi": "我不认为是好事", "pinyin": "wǒ bú rèn wéi )))shì hǎo shì", "korean": "나는 좋은 일이라고 생각하지 않는다" },
+      { "id": "S225", "hanzi": "我认为这是你的错", "pinyin": "wǒ rèn wéi zhè )))shì nǐ de cuò", "korean": "나는 이것이 네 잘못이라고 생각한다" }
     ]
   },
   {
     "category": "19. 上网 / 生气 / 试 (인터넷을 하다, 화내다, 시도하다)",
     "sentences": [
-      { "id": "S220", "hanzi": "天天上网", "pinyin": "tiān tiān shàng wǎng", "korean": "매일 인터넷을 하다" },
-      { "id": "S221", "hanzi": "别天天上网", "pinyin": "bié tiān tiān shàng wǎng", "korean": "매일 인터넷 하지 마라" },
-      { "id": "S222", "hanzi": "上网聊天", "pinyin": "shàng wǎng liáo tiān", "korean": "인터넷으로 채팅하다" },
-      { "id": "S223", "hanzi": "上网学习", "pinyin": "shàng wǎng xué xí", "korean": "인터넷으로 공부하다" },
-      { "id": "S224", "hanzi": "爸爸生气了", "pinyin": "bà ba shēng qì le", "korean": "아빠가 화나셨다" },
-      { "id": "S225", "hanzi": "别生气", "pinyin": "bié shēng qì", "korean": "화내지 마라" },
-      { "id": "S226", "hanzi": "他爱生气", "pinyin": "tā ài shēng qì", "korean": "그는 화내기를 좋아한다" },
-      { "id": "S227", "hanzi": "可以试试吗", "pinyin": "kě yǐ shì shi ma", "korean": "시도해 봐도 될까요" },
-      { "id": "S228", "hanzi": "试一试", "pinyin": "shì yi shì", "korean": "시험 삼아 해보다" },
-      { "id": "S229", "hanzi": "试试这件衣服", "pinyin": "shì shi zhè jiàn yī fu", "korean": "이 옷을 입어 보세요" }
+      { "id": "S226", "hanzi": "天天上网", "pinyin": "tiān tiān shàng wǎng", "korean": "매일 인터넷을 하다" },
+      { "id": "S227", "hanzi": "别天天上网", "pinyin": "bié tiān tiān shàng wǎng", "korean": "매일 인터넷 하지 마라" },
+      { "id": "S228", "hanzi": "上网聊天", "pinyin": "shàng wǎng liáo tiān", "korean": "인터넷으로 채팅하다" },
+      { "id": "S229", "hanzi": "上网学习", "pinyin": "shàng wǎng xué xí", "korean": "인터넷으로 공부하다" },
+      { "id": "S230", "hanzi": "爸爸生气了", "pinyin": "bà ba shēng qì le", "korean": "아빠가 화나셨다" },
+      { "id": "S231", "hanzi": "别生气", "pinyin": "bié shēng qì", "korean": "화내지 마라" },
+      { "id": "S232", "hanzi": "他爱生气", "pinyin": "tā ài shēng qì", "korean": "그는 화내기를 좋아한다" },
+      { "id": "S233", "hanzi": "可以试试吗", "pinyin": "kě yǐ  shì shi ma", "korean": "시도해 봐도 될까요" },
+      { "id": "S234", "hanzi": "试一试", "pinyin": "shì yi  shì", "korean": "시험 삼아 해보다" },
+      { "id": "S235", "hanzi": "试试这件衣服", "pinyin": "shì shi zhè jiàn  yī fu", "korean": "이 옷을 입어 보세요" }
     ]
   },
   {
     "category": "20. 刷牙 / 提高 / 同意 (양치질하다, 향상시키다, 동의하다)",
     "sentences": [
-      { "id": "S230", "hanzi": "吃完饭刷牙", "pinyin": "chī wán fàn shuā yá", "korean": "밥을 다 먹고 양치질하다" },
-      { "id": "S231", "hanzi": "饭后刷牙", "pinyin": "fàn hòu shuā yá", "korean": "식후에 양치질하다" },
-      { "id": "S232", "hanzi": "早上起来刷牙", "pinyin": "zǎo shang qǐ lái shuā yá", "korean": "아침에 일어나서 양치질하다" },
-      { "id": "S233", "hanzi": "儿子会刷牙了", "pinyin": "ér zi huì shuā yá le", "korean": "아들이 양치질을 할 줄 알게 되었다" },
-      { "id": "S234", "hanzi": "他在刷牙呢", "pinyin": "tā zài shuā yá ne", "korean": "그는 양치질을 하고 있네" },
-      { "id": "S235", "hanzi": "提高了很多", "pinyin": "tí gāo le hěn duō", "korean": "많이 향상되었다" },
-      { "id": "S236", "hanzi": "提高水平", "pinyin": "tí gāo shuǐ píng", "korean": "수준을 향상시키다" },
-      { "id": "S237", "hanzi": "提高了汉语水平", "pinyin": "tí gāo le hàn yǔ shuǐ píng", "korean": "중국어 실력을 향상시켰다" },
-      { "id": "S238", "hanzi": "我同意了", "pinyin": "wǒ tóng yì le", "korean": "나는 동의했다" },
-      { "id": "S239", "hanzi": "我不同意", "pinyin": "wǒ bù tóng yì", "korean": "나는 동의하지 않는다" },
-      { "id": "S240", "hanzi": "你同意我的话吗", "pinyin": "nǐ tóng yì wǒ de huà ma", "korean": "너는 내 말에 동의하니" },
-      { "id": "S241", "hanzi": "公司同意了", "pinyin": "gōng sī tóng yì le", "korean": "회사에서 동의했다" }
+      { "id": "S236", "hanzi": "吃完饭刷牙", "pinyin": "chī wán fàn shuā yá", "korean": "밥을 다 먹고 양치질하다" },
+      { "id": "S237", "hanzi": "饭后刷牙", "pinyin": "fàn hòu shuā yá", "korean": "식후에 양치질하다" },
+      { "id": "S238", "hanzi": "早上起来刷牙", "pinyin": "zǎo shang qǐ lái shuā yá", "korean": "아침에 일어나서 양치질하다" },
+      { "id": "S239", "hanzi": "儿子会刷牙了", "pinyin": "ér zi huì shuā yá le", "korean": "아들이 양치질을 할 줄 알게 되었다" },
+      { "id": "S240", "hanzi": "他在刷牙呢", "pinyin": "tā zài shuā yá ne", "korean": "그는 양치질을 하고 있네" },
+      { "id": "S241", "hanzi": "提高了很多", "pinyin": "tí gāo le hěn duō", "korean": "많이 향상되었다" },
+      { "id": "S242", "hanzi": "提高水平", "pinyin": "tí gāo shuǐ píng", "korean": "수준을 향상시키다" },
+      { "id": "S243", "hanzi": "提高了汉语水平", "pinyin": "tí gāo le hàn yǔ shuǐ píng", "korean": "중국어 실력을 향상시켰다" },
+      { "id": "S244", "hanzi": "我同意了", "pinyin": "wǒ tóng yì le", "korean": "나는 동의했다" },
+      { "id": "S245", "hanzi": "我不同意", "pinyin": "wǒ bù tóng yì", "korean": "나는 동의하지 않는다" },
+      { "id": "S246", "hanzi": "你同意我的话吗", "pinyin": "nǐ tóng yì wǒ de huà ma", "korean": "너는 내 말에 동의하니" },
+      { "id": "S247", "hanzi": "公司同意了", "pinyin": "gōng sī tóng yì le", "korean": "회사에서 동의했다" }
     ]
   },
-  {
+{
     "category": "21. 完成 / 忘记 / 习惯 / 洗澡 (완성하다, 잊다, 습관이 되다, 목욕하다)",
     "sentences": [
-      { "id": "S242", "hanzi": "完成工作", "pinyin": "wán chéng gōng zuò", "korean": "일을 완성하다" },
-      { "id": "S243", "hanzi": "完成作业", "pinyin": "wán chéng zuò yè", "korean": "숙제를 끝내다" },
-      { "id": "S244", "hanzi": "没完成", "pinyin": "méi wán chéng", "korean": "완성하지 못했다" },
-      { "id": "S245", "hanzi": "不能完成", "pinyin": "bù néng wán chéng", "korean": "완성할 수 없다" },
-      { "id": "S246", "hanzi": "忘记关门了", "pinyin": "wàng jì guān mén le", "korean": "문 닫는 것을 잊었다" },
-      { "id": "S247", "hanzi": "忘记带钱了", "pinyin": "wàng jì dài qián le", "korean": "돈 챙기는 것을 잊었다" },
-      { "id": "S248", "hanzi": "习惯吃中餐了吗", "pinyin": "xí guàn chī zhōng cān le ma", "korean": "중식 먹는 것에 익숙해졌니" },
-      { "id": "S249", "hanzi": "习惯每天运动了", "pinyin": "xí guàn měi tiān yùn dòng le", "korean": "매일 운동하는 것에 익숙해졌다" },
-      { "id": "S250", "hanzi": "在家里洗澡", "pinyin": "zài jiā lǐ xǐ zǎo", "korean": "집에서 목욕하다" },
-      { "id": "S251", "hanzi": "给孩子洗澡", "pinyin": "gěi hái zi xǐ zǎo", "korean": "아이를 씻기다" }
+      { "id": "S248", "hanzi": "完成工作", "pinyin": "wán chéng gōng zuò", "korean": "일을 완성하다" },
+      { "id": "S249", "hanzi": "完成作业", "pinyin": "wán chéng zuò yè", "korean": "숙제를 끝내다" },
+      { "id": "S250", "hanzi": "没完成", "pinyin": "méi wán chéng", "korean": "완성하지 못했다" },
+      { "id": "S251", "hanzi": "不能完成", "pinyin": "bù néng wán chéng", "korean": "완성할 수 없다" },
+      { "id": "S252", "hanzi": "忘记关门了", "pinyin": "wàng jì guān mén le", "korean": "문 닫는 것을 잊었다" },
+      { "id": "S253", "hanzi": "忘记關电脑了", "pinyin": "wàng jì guān diàn nǎo le", "korean": "컴퓨터 끄는 것을 잊었다" },
+      { "id": "S254", "hanzi": "忘记带钱了", "pinyin": "wàng jì dài qián le", "korean": "돈 챙기는 것을 잊었다" },
+      { "id": "S255", "hanzi": "习惯吃中餐了吗", "pinyin": "xí guàn chī zhōng cān le ma", "korean": "중식 먹는 것에 익숙해졌니" },
+      { "id": "S256", "hanzi": "习惯每天运动了", "pinyin": "xí guàn měi tiān yùn dòng le", "korean": "매일 운동하는 것에 익숙해졌다" },
+      { "id": "S257", "hanzi": "在家里洗澡", "pinyin": "zài jiā lǐ xǐ zǎo", "korean": "집에서 목욕하다" },
+      { "id": "S258", "hanzi": "给孩子洗澡", "pinyin": "gěi hái zi xǐ zǎo", "korean": "아이를 씻기다" },
+      { "id": "S259", "hanzi": "每天都洗澡", "pinyin": "měi tiān dōu xǐ zǎo", "korean": "매일 목욕하다" }
     ]
   },
   {
     "category": "22. 相信 / 像 / 小心 / 需要 (믿다, 닮다, 조심하다, 필요하다)",
     "sentences": [
-      { "id": "S252", "hanzi": "你相信吗", "pinyin": "nǐ xiāng xìn ma", "korean": "너는 믿니" },
-      { "id": "S253", "hanzi": "不太相信", "pinyin": "bú tài xiāng xìn", "korean": "별로 믿지 않다" },
-      { "id": "S254", "hanzi": "他长得像爸爸", "pinyin": "tā zhǎng de xiàng bà ba", "korean": "그는 아빠를 닮았다" },
-      { "id": "S255", "hanzi": "他们太像了", "pinyin": "tā men tài xiàng le", "korean": "그들은 너무 닮았다" },
-      { "id": "S256", "hanzi": "走路小心", "pinyin": "zǒu lù xiǎo xīn", "korean": "길을 걸을 때 조심하다" },
-      { "id": "S257", "hanzi": "小心开车", "pinyin": "xiǎo xīn kāi chē", "korean": "운전을 조심하다" },
-      { "id": "S258", "hanzi": "需要多长时间", "pinyin": "xū yào duō cháng shí jiān", "korean": "시간이 얼마나 필요하니" },
-      { "id": "S259", "hanzi": "需要帮助吗", "pinyin": "xū yào bāng zhù ma", "korean": "도움이 필요하니" }
+      { "id": "S260", "hanzi": "你相信吗", "pinyin": "nǐ xiāng xìn ma", "korean": "너는 믿니" },
+      { "id": "S261", "hanzi": "不太相信", "pinyin": "bú tài xiāng xìn", "korean": "별로 믿지 않다" },
+      { "id": "S262", "hanzi": "他长得像爸爸", "pinyin": "tā zhǎng de xiàng bà ba", "korean": "그는 아빠를 닮았다" },
+      { "id": "S263", "hanzi": "他们太像了", "pinyin": "tā men tài xiàng le", "korean": "그들은 너무 닮았다" },
+      { "id": "S264", "hanzi": "走路小心", "pinyin": "zǒu lù xiǎo xīn", "korean": "길을 걸을 때 조심하다" },
+      { "id": "S265", "hanzi": "小心开车", "pinyin": "xiǎo xīn kāi chē", "korean": "운전을 조심하다" },
+      { "id": "S266", "hanzi": "一定要小心", "pinyin": "yí dìng yào xiǎo xīn", "korean": "반드시 조심해야 한다" },
+      { "id": "S267", "hanzi": "需要多长时间", "pinyin": "xū yào duō cháng shí jiān", "korean": "시간이 얼마나 필요하니" },
+      { "id": "S268", "hanzi": "需要帮助吗", "pinyin": "xū yào bāng zhù ma", "korean": "도움이 필요하니" },
+      { "id": "S269", "hanzi": "现在不需要", "pinyin": "xiàn zài bù xū yào", "korean": "지금은 필요 없다" }
     ]
   },
   {
     "category": "23. 选择 / 要求 / 应该 / 影响 (선택하다, 요구하다, 마땅히 해야 한다, 영향)",
     "sentences": [
-      { "id": "S260", "hanzi": "好好选择", "pinyin": "hǎo hǎo xuǎn zé", "korean": "잘 선택하다" },
-      { "id": "S261", "hanzi": "选择什么工作", "pinyin": "xuǎn zé shén me gōng zuò", "korean": "무슨 직업을 선택할까" },
-      { "id": "S262", "hanzi": "要求八点到", "pinyin": "yāo qiú bā diǎn dào", "korean": "여덟 시에 도착하라고 요구하다" },
-      { "id": "S263", "hanzi": "要求穿红衣服", "pinyin": "yāo qiú chuān hóng yī fu", "korean": "빨간 옷을 입으라고 요구하다" },
-      { "id": "S264", "hanzi": "这是应该的", "pinyin": "zhè shì yīng gāi de", "korean": "이것은 마땅히 해야 할 일이다" },
-      { "id": "S265", "hanzi": "应该多吃菜", "pinyin": "yīng gāi duō chī cài", "korean": "채소를 많이 먹어야 한다" },
-      { "id": "S266", "hanzi": "影响到你了吗", "pinyin": "yǐng xiǎng dào nǐ le ma", "korean": "너에게 영향을 주었니" },
-      { "id": "S267", "hanzi": "没有什么影响", "pinyin": "méi yǒu shén me yǐng xiǎng", "korean": "아무런 영향이 없다" }
+      { "id": "S270", "hanzi": "好好选择", "pinyin": "hǎo hǎo xuǎn zé", "korean": "잘 선택하다" },
+      { "id": "S271", "hanzi": "选择什么工作", "pinyin": "xuǎn zé shén me gōng zuò", "korean": "무슨 직업을 선택할까" },
+      { "id": "S272", "hanzi": "要求八点到", "pinyin": "yāo qiú bā diǎn dào", "korean": "여덟 시에 도착하라고 요구하다" },
+      { "id": "S273", "hanzi": "要求穿红衣服", "pinyin": "yāo qiú chuān hóng yī fu", "korean": "빨간 옷을 입으라고 요구하다" },
+      { "id": "S274", "hanzi": "这是应该的", "pinyin": "zhè shì yīng gāi de", "korean": "이것은 마땅히 해야 할 일이다" },
+      { "id": "S275", "hanzi": "应该多吃菜", "pinyin": "yīng gāi duō chī cài", "korean": "채소를 많이 먹어야 한다" },
+      { "id": "S276", "hanzi": "不应该不吃早餐", "pinyin": "bù yīng gāi bù chī zǎo cān", "korean": "아침밥을 안 먹어서는 안 된다" },
+      { "id": "S277", "hanzi": "影响到你了吗", "pinyin": "yǐng xiǎng dào nǐ le ma", "korean": "너에게 영향을 주었니" },
+      { "id": "S278", "hanzi": "没有什么影响", "pinyin": "méi yǒu shén me yǐng xiǎng", "korean": "아무런 영향이 없다" },
+      { "id": "S279", "hanzi": "影响大了", "pinyin": "yǐng xiǎng dà le", "korean": "영향이 매우 크다" }
     ]
   },
   {
     "category": "24. 用 / 遇到 / 愿意 / 站 (사용하다, 마주치다, 원하다, 서다)",
     "sentences": [
-      { "id": "S268", "hanzi": "没用了", "pinyin": "méi yòng le", "korean": "소용없어졌다" },
-      { "id": "S269", "hanzi": "他用左手吃饭", "pinyin": "tā yòng zuǒ shǒu chī fàn", "korean": "그는 왼손으로 밥을 먹는다" },
-      { "id": "S270", "hanzi": "遇到什么事了", "pinyin": "yù dào shén me shì le", "korean": "무슨 일을 마주쳤니" },
-      { "id": "S271", "hanzi": "遇到难题了", "pinyin": "yù dào nán tí le", "korean": "어려운 문제를 만났다" },
-      { "id": "S272", "hanzi": "愿意跟我结婚吗", "pinyin": "yuàn yì gēn wǒ jié hūn ma", "korean": "나와 결혼해 줄래" },
-      { "id": "S273", "hanzi": "愿意学习汉语", "pinyin": "yuàn yì xué xí hàn yǔ", "korean": "중국어 공부하기를 원하다" },
-      { "id": "S274", "hanzi": "往前站", "pinyin": "wǎng qián zhàn", "korean": "앞으로 서다" },
-      { "id": "S275", "hanzi": "站在我旁边", "pinyin": "zhàn zài wǒ páng biān", "korean": "내 옆에 서다" }
+      { "id": "S280", "hanzi": "没用了", "pinyin": "méi yòng le", "korean": "소용없어졌다" },
+      { "id": "S281", "hanzi": "他用左手吃饭", "pinyin": "tā yòng zuǒ shǒu chī fàn", "korean": "그는 왼손으로 밥을 먹는다" },
+      { "id": "S282", "hanzi": "借我用一下手机", "pinyin": "jiè wǒ yòng yí xià shǒu jī", "korean": "휴대폰 좀 빌려줘" },
+      { "id": "S283", "hanzi": "遇到什么事了", "pinyin": "yù dào shén meTarget 문장 완료", "pinyin": "yù dào shén me shì le", "korean": "무슨 일을 마주쳤니" },
+      { "id": "S284", "hanzi": "遇到难题了", "pinyin": "yù dào nán tí le", "korean": "어려운 문제를 만났다" },
+      { "id": "S285", "hanzi": "愿意跟我结婚吗", "pinyin": "yuàn yì gēn wǒ jié hūn ma", "korean": "나와 결혼해 줄래" },
+      { "id": "S286", "hanzi": "愿意学习汉语", "pinyin": "yuàn yì xué xí hàn yǔ", "korean": "중국어 공부하기를 원하다" },
+      { "id": "S287", "hanzi": "往前站", "pinyin": "wǎng qián zhàn", "korean": "앞으로 서다" },
+      { "id": "S288", "hanzi": "站在我旁边", "pinyin": "zhàn zài wǒ páng biān", "korean": "내 옆에 서다" },
+      { "id": "S289", "hanzi": "站了很久", "pinyin": "zhàn le hěn jiǔ", "korean": "오래 서 있었다" }
     ]
   },
   {
     "category": "25. 长 / 照顾 / 注意 (자라다, 돌보다, 주의하다)",
     "sentences": [
-      { "id": "S276", "hanzi": "长大了", "pinyin": "zhǎng dà le", "korean": "다 컸다" },
-      { "id": "S277", "hanzi": "长高了", "pinyin": "zhǎng gāo le", "korean": "키가 컸다" },
-      { "id": "S278", "hanzi": "长胖了", "pinyin": "zhǎng pàng le", "korean": "살이 쪘다" },
-      { "id": "S279", "hanzi": "照顾病人", "pinyin": "zhào gù bìng rén", "korean": "환자를 돌보다" },
-      { "id": "S280", "hanzi": "照顾好孩子", "pinyin": "zhào gù hǎo hái zi", "korean": "아이를 잘 돌보다" },
-      { "id": "S281", "hanzi": "注意身体健康", "pinyin": "zhù yì shēn tǐ jiàn kāng", "korean": "건강에 주의하다" },
-      { "id": "S282", "hanzi": "注意安全", "pinyin": "zhù yì ān quán", "korean": "안전에 주의하다" },
-      { "id": "S283", "hanzi": "注意别感冒", "pinyin": "zhù yì bié gǎn mào", "korean": "감기 조심하다" }
+      { "id": "S290", "hanzi": "长大了", "pinyin": "zhǎng dà le", "korean": "다 컸다" },
+      { "id": "S291", "hanzi": "长高了", "pinyin": "zhǎng gāo le", "korean": "키가 컸다" },
+      { "id": "S292", "hanzi": "长胖了", "pinyin": "zhǎng pàng le", "korean": "살이 쪘다" },
+      { "id": "S293", "hanzi": "照顾病人", "pinyin": "zhào gù bìng rén", "korean": "환자를 돌보다" },
+      { "id": "S294", "hanzi": "照顾好孩子", "pinyin": "zhào gù hǎo hái zi", "korean": "아이를 잘 돌보다" },
+      { "id": "S295", "hanzi": "注意身体健康", "pinyin": "zhù yì shēn tǐ jiàn kāng", "korean": "건강에 주의하다" },
+      { "id": "S296", "hanzi": "注意安全", "pinyin": "zhù yì ān quán", "korean": "안전에 주의하다" },
+      { "id": "S297", "hanzi": "注意别感冒", "pinyin": "zhù yì bié gǎn mào", "korean": "감기 조심하다" }
     ]
   },
   {
     "category": "26. 矮 / 安静 / 饱 / 差 (작다, 조용하다, 배부르다, 나쁘다)",
     "sentences": [
-      { "id": "S284", "hanzi": "有点矮", "pinyin": "yǒu diǎn ǎi", "korean": "조금 키가 작다" },
-      { "id": "S285", "hanzi": "他比你矮", "pinyin": "tā bǐ nǐ ǎi", "korean": "그가 너보다 키가 작다" },
-      { "id": "S286", "hanzi": "这里安静", "pinyin": "zhè lǐ ān jìng", "korean": "여기는 조용하다" },
-      { "id": "S287", "hanzi": "喜欢安静", "pinyin": "xǐ huan ān jìng", "korean": "조용한 것을 좋아하다" },
-      { "id": "S288", "hanzi": "非常饱", "pinyin": "fēi cháng bǎo", "korean": "매우 배부르다" },
-      { "id": "S289", "hanzi": "质量差", "pinyin": "zhì liàng chà", "korean": "품질이 나쁘다" },
-      { "id": "S290", "hanzi": "太差了", "pinyin": "tài chà le", "korean": "너무 나쁘다" }
+      { "id": "S298", "hanzi": "有点矮", "pinyin": "yǒu diǎn ǎi", "korean": "조금 키가 작다" },
+      { "id": "S299", "hanzi": "他比你矮", "pinyin": "tā bǐ nǐ ǎi", "korean": "그가 너보다 키가 작다" },
+      { "id": "S300", "hanzi": "这里安静", "pinyin": "zhè lǐ ān jìng", "korean": "여기는 조용하다" },
+      { "id": "S301", "hanzi": "喜欢安静", "pinyin": "xǐ huan ān jìng", "korean": "조용한 것을 좋아하다" },
+      { "id": "S302", "hanzi": "非常饱", "pinyin": "fēi cháng bǎo", "korean": "매우 배부르다" },
+      { "id": "S303", "hanzi": "饭后饱了", "pinyin": "fàn hòu bǎo le", "korean": "밥 먹고 배부르다" },
+      { "id": "S304", "hanzi": "质量差", "pinyin": "zhì liàng chà", "korean": "품질이 나쁘다" },
+      { "id": "S305", "hanzi": "太差了", "pinyin": "tài chà le", "korean": "너무 나쁘다" }
     ]
   },
   {
     "category": "27. 聪明 / 短 / 饿 / 方便 (똑똑하다, 짧다, 배고프다, 편리하다)",
     "sentences": [
-      { "id": "S291", "hanzi": "聪明的人", "pinyin": "cōng míng de rén", "korean": "똑똑한 사람" },
-      { "id": "S292", "hanzi": "孩子很聪明", "pinyin": "hái zi hěn cōng míng", "korean": "아이가 아주 똑똑하다" },
-      { "id": "S293", "hanzi": "有点短", "pinyin": "yǒu diǎn duǎn", "korean": "조금 짧다" },
-      { "id": "S294", "hanzi": "怕饿肚子", "pinyin": "pà è dù zi", "korean": "배고플까 봐 두렵다" },
-      { "id": "S295", "hanzi": "太饿了", "pinyin": "tài è le", "korean": "너무 배고프다" },
-      { "id": "S296", "hanzi": "什么时候方便", "pinyin": "shén me shí hou fāng biàn", "korean": "언제 편하시나요" },
-      { "id": "S297", "hanzi": "非常方便", "pinyin": "fēi cháng fāng biàn", "korean": "매우 편리하다" }
+      { "id": "S306", "hanzi": "聪明的人", "pinyin": "cōng míng de rén", "korean": "똑똑한 사람" },
+      { "id": "S307", "hanzi": "孩子很聪明", "pinyin": "hái zi hěn cōng míng", "korean": "아이가 아주 똑똑하다" },
+      { "id": "S308", "hanzi": "有点短", "pinyin": "yǒu diǎn duǎn", "korean": "조금 짧다" },
+      { "id": "S309", "hanzi": "怕饿肚子", "pinyin": "pà è dù zi", "korean": "배고플까 봐 두렵다" },
+      { "id": "S310", "hanzi": "太饿了", "pinyin": "tài è le", "korean": "너무 배고프다" },
+      { "id": "S311", "hanzi": "什么时候方便", "pinyin": "shén me shí hou fāng biàn", "korean": "언제 편하시나요" },
+      { "id": "S312", "hanzi": "非常方便", "pinyin": "fēi cháng fāng biàn", "korean": "매우 편리하다" }
     ]
   },
   {
     "category": "28. 干净 / 坏 / 简单 (깨끗하다, 고장나다, 간단하다)",
     "sentences": [
-      { "id": "S298", "hanzi": "很干净", "pinyin": "hěn gān jìng", "korean": "아주 깨끗하다" },
-      { "id": "S299", "hanzi": "喜欢干净", "pinyin": "xǐ huan gān jìng", "korean": "깨끗한 것을 좋아하다" },
-      { "id": "S300", "hanzi": "电脑坏了", "pinyin": "diàn nǎo huài le", "korean": "컴퓨터가 고장 났다" },
-      { "id": "S301", "hanzi": "水果坏了", "pinyin": "shuǐ guǒ huài le", "korean": "과일이 상했다" },
-      { "id": "S302", "hanzi": "问题很简单", "pinyin": "wèn tí hěn jiǎn dān", "korean": "문제가 매우 간단하다" },
-      { "id": "S303", "hanzi": "吃得很简单", "pinyin": "chī de hěn jiǎn dān", "korean": "아주 간단하게 먹다" }
+      { "id": "S313", "hanzi": "很干净", "pinyin": "hěn gān jìng", "korean": "아주 깨끗하다" },
+      { "id": "S314", "hanzi": "喜欢干净", "pinyin": "xǐ huan gān jìng", "korean": "깨끗한 것을 좋아하다" },
+      { "id": "S315", "hanzi": "环境很干净", "pinyin": "huán jìng hěn gān jìng", "korean": "환경이 아주 깨끗하다" },
+      { "id": "S316", "hanzi": "电脑坏了", "pinyin": "diàn nǎo huài le", "korean": "컴퓨터가 고장 났다" },
+      { "id": "S317", "hanzi": "水果坏了", "pinyin": "shuǐ guǒ huài le", "korean": "과일이 상했다" },
+      { "id": "S318", "hanzi": "问题很简单", "pinyin": "wèn tí hěn jiǎn dān", "korean": "문제가 매우 간단하다" },
+      { "id": "S319", "hanzi": "吃得很简单", "pinyin": "chī de hěn jiǎn dān", "korean": "아주 간단하게 먹다" }
     ]
   },
   {
     "category": "29. 健康 / 久 / 渴 / 可爱 (건강하다, 오래되다, 목마르다, 귀엽다)",
     "sentences": [
-      { "id": "S304", "hanzi": "身体健康", "pinyin": "shēn tǐ jiàn kāng", "korean": "몸이 건강하다" },
-      { "id": "S305", "hanzi": "心理健康", "pinyin": "xīn lǐ jiàn kāng", "korean": "정신이 건강하다" },
-      { "id": "S306", "hanzi": "等了很久", "pinyin": "děng le hěn jiǔ", "korean": "아주 오래 기다렸다" },
-      { "id": "S307", "hanzi": "很久以前", "pinyin": "hěn jiǔ yǐ qián", "korean": "아주 오래전" },
-      { "id": "S308", "hanzi": "又渴又饿", "pinyin": "yòu kě yòu è", "korean": "목마르고 배고프다" },
-      { "id": "S309", "hanzi": "可爱的女儿", "pinyin": "kě ài de nǚ ér", "korean": "귀여운 딸" },
-      { "id": "S310", "hanzi": "小狗很可爱", "pinyin": "xiǎo gǒu hěn kě ài", "korean": "강아지가 매우 귀엽다" }
+      { "id": "S320", "hanzi": "身体健康", "pinyin": "shēn tǐ jiàn kāng", "korean": "몸이 건강하다" },
+      { "id": "S321", "hanzi": "心理健康", "pinyin": "xīn lǐ jiàn kāng", "korean": "정신이 건강하다" },
+      { "id": "S322", "hanzi": "等了很久", "pinyin": "děng le hěn jiǔ", "korean": "아주 오래 기다렸다" },
+      { "id": "S323", "hanzi": "很久以前", "pinyin": "hěn jiǔ yǐ qián", "korean": "아주 오래전" },
+      { "id": "S324", "hanzi": "又渴又饿", "pinyin": "yòu kě yòu è", "korean": "목마르고 배고프다" },
+      { "id": "S325", "hanzi": "可爱的女儿", "pinyin": "kě ài de nǚ ér", "korean": "귀여운 딸" },
+      { "id": "S326", "hanzi": "小狗很可爱", "pinyin": "xiǎo gǒu hěn kě ài", "korean": "강아지가 매우 귀엽다" }
     ]
   },
   {
     "category": "30. 蓝 / 老 / 绿 / 满意 (파랗다, 늙다, 초록색, 만족하다)",
     "sentences": [
-      { "id": "S311", "hanzi": "蓝色的衣服", "pinyin": "lán sè de yī fu", "korean": "파란색 옷" },
-      { "id": "S312", "hanzi": "喜欢蓝色", "pinyin": "xǐ huan lán sè", "korean": "파란색을 좋아하다" },
-      { "id": "S313", "hanzi": "人总是要老的", "pinyin": "rén zǒng shì yào lǎo de", "korean": "사람은 항상 늙기 마련이다" },
-      { "id": "S314", "hanzi": "越来越老", "pinyin": "yuè lái yuè lǎo", "korean": "점점 늙다" },
-      { "id": "S315", "hanzi": "绿色对眼睛好", "pinyin": "lǜ sè duì yǎn jing hǎo", "korean": "초록색은 눈에 좋다" },
-      { "id": "S316", "hanzi": "多看看绿色的东西", "pinyin": "duō kàn kan lǜ sè de dōng xi", "korean": "초록색 물건을 많이 보아라" },
-      { "id": "S317", "hanzi": "满意现在的工作", "pinyin": "mǎn yì xiàn zài de gōng zuò", "korean": "현재 직업에 만족하다" },
-      { "id": "S318", "hanzi": "爸爸对儿子很满意", "pinyin": "bà ba duì ér zi hěn mǎn yì", "korean": "아빠는 아들에게 아주 만족한다" }
+      { "id": "S327", "hanzi": "蓝色的衣服", "pinyin": "lán sè de yī fu", "korean": "파란색 옷" },
+      { "id": "S328", "hanzi": "喜欢蓝色", "pinyin": "xǐ huan lán sè", "korean": "파란색을 좋아하다" },
+      { "id": "S329", "hanzi": "人总是要老的", "pinyin": "rén zǒng shì yào lǎo de", "korean": "사람은 항상 늙기 마련이다" },
+      { "id": "S330", "hanzi": "越来越老", "pinyin": "yuè lái yuè lǎo", "korean": "점점 늙다" },
+      { "id": "S331", "hanzi": "绿色对眼睛好", "pinyin": "lǜ sè duì yǎn jing hǎo", "korean": "초록색은 눈에 좋다" },
+      { "id": "S332", "hanzi": "多看看绿色的东西", "pinyin": "duō kàn kan lǜ sè de dōng xi", "korean": "초록색 물건을 많이 보아라" },
+      { "id": "S333", "hanzi": "满意现在的工作", "pinyin": "mǎn yì xiàn zài de gōng zuò", "korean": "현재 직업에 만족하다" },
+      { "id": "S334", "hanzi": "爸爸对儿子很满意", "pinyin": "bà ba duì ér zi hěn mǎn yì", "korean": "아빠는 아들에게 아주 만족한다" }
     ]
   },
-  {
+{
     "category": "31. 难 / 难受 / 难过 (어렵다, 힘들다, 슬프다)",
     "sentences": [
-      { "id": "S319", "hanzi": "汉字难吗", "pinyin": "hàn zì nán ma", "korean": "한자는 어렵니" },
-      { "id": "S320", "hanzi": "觉得很难", "pinyin": "jué de hěn nán", "korean": "매우 어렵다고 느끼다" },
-      { "id": "S321", "hanzi": "心里很难受", "pinyin": "xīn lǐ hěn nán shòu", "korean": "마음이 매우 힘들다" },
-      { "id": "S322", "hanzi": "很难受的感觉", "pinyin": "hěn nán shòu de gǎn jué", "korean": "매우 힘든 느낌" },
-      { "id": "S323", "hanzi": "太难过了", "pinyin": "tài nán guò le", "korean": "너무 슬프다" },
-      { "id": "S324", "hanzi": "别难过了", "pinyin": "bié nán guò le", "korean": "슬퍼하지 마라" }
+      { "id": "S335", "hanzi": "汉字难吗", "pinyin": "hàn zì nán ma", "korean": "한자는 어렵니" },
+      { "id": "S336", "hanzi": "觉得很难", "pinyin": "jué de hěn nán", "korean": "매우 어렵다고 느끼다" },
+      { "id": "S337", "hanzi": "心里很难受", "pinyin": "xīn lǐ hěn nán shòu", "korean": "마음이 매우 힘들다" },
+      { "id": "S338", "hanzi": "很难受的感觉", "pinyin": "hěn nán shòu de gǎn jué", "korean": "매우 힘든 느낌" },
+      { "id": "S339", "hanzi": "太难过了", "pinyin": "tài nán guò le", "korean": "너무 슬프다" },
+      { "id": "S340", "hanzi": "别难过了", "pinyin": "bié nán guò le", "korean": "슬퍼하지 마라" },
+      { "id": "S341", "hanzi": "遇到难题了", "pinyin": "yù dào nán tí le", "korean": "어려운 문제를 만났다" }
     ]
   },
   {
     "category": "32. 能力 / 年轻 / 爬 / 盘子 (능력, 젊다, 오르다, 접시)",
     "sentences": [
-      { "id": "S325", "hanzi": "能力很强", "pinyin": "néng lì hěn qiáng", "korean": "능력이 매우 강하다" },
-      { "id": "S326", "hanzi": "还年轻", "pinyin": "hái nián qīng", "korean": "아직 젊다" },
-      { "id": "S327", "hanzi": "爬上山顶", "pinyin": "pá shàng shān dǐng", "korean": "산꼭대기에 오르다" },
-      { "id": "S328", "hanzi": "盘子太脏了", "pinyin": "pán zi tài zāng le", "korean": "접시가 너무 더럽다" },
-      { "id": "S329", "hanzi": "把盘子洗干净", "pinyin": "bǎ pán zi xǐ gān jìng", "korean": "접시를 깨끗이 씻다" }
+      { "id": "S342", "hanzi": "能力很强", "pinyin": "néng lì hěn qiáng", "korean": "능력이 매우 강하다" },
+      { "id": "S343", "hanzi": "提高能力", "pinyin": "tí gāo néng lì", "korean": "능력을 향상시키다" },
+      { "id": "S344", "hanzi": "他还年轻", "pinyin": "tā hái nián qīng", "korean": "그는 아직 젊다" },
+      { "id": "S345", "hanzi": "年轻的时候", "pinyin": "nián qīng de shí hou", "korean": "젊었을 때" },
+      { "id": "S346", "hanzi": "爬上山顶", "pinyin": "pá shàng shān dǐng", "korean": "산꼭대기에 오르다" },
+      { "id": "S347", "hanzi": "爬山运动", "pinyin": "pá shān yùn dòng", "korean": "등산 운동" },
+      { "id": "S348", "hanzi": "盘子太脏了", "pinyin": "pán zi tài zāng le", "korean": "접시가 너무 더럽다" },
+      { "id": "S349", "hanzi": "把盘子洗干净", "pinyin": "bǎ pán zi xǐ gān jìng", "korean": "접시를 깨끗이 씻다" },
+      { "id": "S350", "hanzi": "桌子上的盘子", "pinyin": "zhuō zi shàng de pán zi", "korean": "테이블 위의 접시" }
     ]
   },
   {
     "category": "33. 瓶子 / 旁边 / 甚至 (병, 옆, 심지어)",
     "sentences": [
-      { "id": "S330", "hanzi": "瓶子里有水", "pinyin": "píng zi lǐ yǒu shuǐ", "korean": "병 안에 물이 있다" },
-      { "id": "S331", "hanzi": "坐在旁边", "pinyin": "zuò zài páng biān", "korean": "옆에 앉다" },
-      { "id": "S332", "hanzi": "甚至忘了吃饭", "pinyin": "shèn zhì wàng le chī fàn", "korean": "심지어 밥 먹는 것도 잊었다" }
+      { "id": "S351", "hanzi": "瓶子里有水", "pinyin": "píng zi lǐ yǒu shuǐ", "korean": "병 안에 물이 있다" },
+      { "id": "S352", "hanzi": "空瓶子", "pinyin": "kōng píng zi", "korean": "빈 병" },
+      { "id": "S353", "hanzi": "坐在旁边", "pinyin": "zuò zài páng biān", "korean": "옆에 앉다" },
+      { "id": "S354", "hanzi": "站在我旁边", "pinyin": "zhàn zài wǒ páng biān", "korean": "내 옆에 서다" },
+      { "id": "S355", "hanzi": "甚至忘了吃饭", "pinyin": "shèn zhì wàng le chī fàn", "korean": "심지어 밥 먹는 것도 잊었다" },
+      { "id": "S356", "hanzi": "甚至不知道名字", "pinyin": "shèn zhì bù zhī dào míng zi", "korean": "심지어 이름도 모른다" }
     ]
   },
   {
     "category": "34. 其实 / 奇怪 / 确实 (사실은, 이상하다, 정말로)",
     "sentences": [
-      { "id": "S333", "hanzi": "其实我不知道", "pinyin": "qí shí wǒ bù zhī dào", "korean": "사실 나는 모른다" },
-      { "id": "S334", "hanzi": "其实我不喜欢", "pinyin": "qí shí wǒ bù xǐ huan", "korean": "사실 나는 좋아하지 않는다" },
-      { "id": "S335", "hanzi": "很奇怪", "pinyin": "hěn qí guài", "korean": "매우 이상하다" },
-      { "id": "S336", "hanzi": "这件事很奇怪", "pinyin": "zhè jiàn shì hěn qí guài", "korean": "이 일이 매우 이상하다" },
-      { "id": "S337", "hanzi": "确实不错", "pinyin": "què shí bú cuò", "korean": "정말로 괜찮다" },
-      { "id": "S338", "hanzi": "确实太难了", "pinyin": "què shí tài nán le", "korean": "정말로 너무 어렵다" }
+      { "id": "S357", "hanzi": "其实我不知道", "pinyin": "qí shí wǒ bù zhī dào", "korean": "사실 나는 모른다" },
+      { "id": "S358", "hanzi": "其实我不喜欢", "pinyin": "qí shí wǒ bù xǐ huan", "korean": "사실 나는 좋아하지 않는다" },
+      { "id": "S359", "hanzi": "其实很简单", "pinyin": "qí shí hěn jiǎn dān", "korean": "사실 매우 간단하다" },
+      { "id": "S360", "hanzi": "很奇怪", "pinyin": "hěn qí guài", "korean": "매우 이상하다" },
+      { "id": "S361", "hanzi": "这件事很奇怪", "pinyin": "zhè jiàn  shì hěn qí guài", "korean": "이 일이 매우 이상하다" },
+      { "id": "S362", "hanzi": "确实不错", "pinyin": "què shí bú cuò", "korean": "정말로 괜찮다" },
+      { "id": "S363", "hanzi": "确实太难了", "pinyin": "què shí tài nán le", "korean": "정말로 너무 어렵다" },
+      { "id": "S364", "hanzi": "确实很干净", "pinyin": "què shí hěn gān jìng", "korean": "정말로 아주 깨끗하다" }
     ]
   },
   {
     "category": "35. 如果 / 任务 / 认为 (만약, 임무, 생각하다)",
     "sentences": [
-      { "id": "S339", "hanzi": "如果你去", "pinyin": "rú guǒ nǐ qù", "korean": "만약 네가 간다면" },
-      { "id": "S340", "hanzi": "如果想学", "pinyin": "rú guǒ xiǎng xué", "korean": "만약 배우고 싶다면" },
-      { "id": "S341", "hanzi": "任务完成了", "pinyin": "rèn wu wán chéng le", "korean": "임무를 완수했다" },
-      { "id": "S342", "hanzi": "认为很有趣", "pinyin": "rèn wéi hěn yǒu qù", "korean": "매우 재미있다고 생각하다" }
+      { "id": "S365", "hanzi": "如果你去", "pinyin": "rú guǒ nǐ qù", "korean": "만약 네가 간다면" },
+      { "id": "S366", "hanzi": "如果想学", "pinyin": "rú guǒ xiǎng xué", "korean": "만약 배우고 싶다면" },
+      { "id": "S367", "hanzi": "如果有时间", "pinyin": "rú guǒ yǒu shí jiān", "korean": "만약 시간이 있다면" },
+      { "id": "S368", "hanzi": "任务完成了", "pinyin": "rèn wu wán chéng le", "korean": "임무를 완수했다" },
+      { "id": "S369", "hanzi": "完成任务", "pinyin": "wán chéng rèn wu", "korean": "임무를 완성하다" },
+      { "id": "S370", "hanzi": "认为很有趣", "pinyin": "rèn wéi hěn yǒu qù", "korean": "매우 재미있다고 생각하다" },
+      { "id": "S371", "hanzi": "你认为怎么样", "pinyin": "nǐ rèn wéi zěn me yàng", "korean": "넌 어떻게 생각하니" },
+      { "id": "S372", "hanzi": "我认为不难", "pinyin": "wǒ rèn wéi bù nán", "korean": "나는 어렵지 않다고 생각한다" }
     ]
   },
   {
-    "category": "36. 伞 / 深 / 申 (우산, 깊다, 신청하다)",
+    "category": "36. 伞 / 深 / 申请 (우산, 깊다, 신청하다)",
     "sentences": [
-      { "id": "S343", "hanzi": "带上伞", "pinyin": "dài shàng sǎn", "korean": "우산을 챙기다" },
-      { "id": "S344", "hanzi": "深蓝色的", "pinyin": "shēn lán sè de", "korean": "진한 파란색의" },
-      { "id": "S345", "hanzi": "申请留学", "pinyin": "shēn qǐng liú xué", "korean": "유학을 신청하다" }
+      { "id": "S373", "hanzi": "带上伞", "pinyin": "dài shàng sǎn", "korean": "우산을 챙기다" },
+      { "id": "S374", "hanzi": "忘带伞了", "pinyin": "wàng dài sǎn le", "korean": "우산 챙기는 것을 잊었다" },
+      { "id": "S375", "hanzi": "深蓝色的", "pinyin": "shēn lán sè de", "korean": "진한 파란색의" },
+      { "id": "S376", "hanzi": "颜色很深", "pinyin": "yán sè hěn shēn", "korean": "색이 매우 짙다" },
+      { "id": "S377", "hanzi": "申请留学", "pinyin": "shēn qǐng liú xué", "korean": "유학을 신청하다" },
+      { "id": "S378", "hanzi": "申请工作", "pinyin": "shēn qǐng gōng zuò", "korean": "일자리를 신청하다" }
     ]
   },
   {
-    "category": "37. 甚至 / 输 / 顺便 (심지어, 지다, 겸사겸사)",
+    "category": "37. 输 / 顺便 / 硕士 (지다, 겸사겸사, 석사)",
     "sentences": [
-      { "id": "S346", "hanzi": "输了比赛", "pinyin": "shū le bǐ sài", "korean": "시합에서 졌다" },
-      { "id": "S347", "hanzi": "别输了", "pinyin": "bié shū le", "korean": "지지 마라" },
-      { "id": "S348", "hanzi": "顺便去超市", "pinyin": "shùn biàn qù chāo shì", "korean": "가는 길에 마트에 들르다" },
-      { "id": "S349", "hanzi": "顺便帮我买", "pinyin": "shùn biàn bāng wǒ mǎi", "korean": "가는 길에 내 것도 사다" }
+      { "id": "S379", "hanzi": "输了比赛", "pinyin": "shū le bǐ sài", "korean": "시합에서 졌다" },
+      { "id": "S380", "hanzi": "别输了", "pinyin": "bié shū le", "korean": "지지 마라" },
+      { "id": "S381", "hanzi": "顺便去超市", "pinyin": "shùn biàn qù chāo  shì", "korean": "가는 길에 마트에 들르다" },
+      { "id": "S382", "hanzi": "顺便帮我买", "pinyin": "shùn biàn bāng wǒ mǎi", "korean": "가는 길에 내 것도 사다" },
+      { "id": "S383", "hanzi": "考硕士", "pinyin": "kǎo shuò  shì", "korean": "석사 시험을 보다" },
+      { "id": "S384", "hanzi": "硕士毕业", "pinyin": "shuò  shì bì yè", "korean": "석사 졸업" }
     ]
   },
   {
     "category": "38. 甜 / 提醒 / 填 (달다, 일깨우다, 기입하다)",
     "sentences": [
-      { "id": "S350", "hanzi": "太甜了", "pinyin": "tài tián le", "korean": "너무 달다" },
-      { "id": "S351", "hanzi": "提醒我一下", "pinyin": "tí xǐng wǒ yí xià", "korean": "나에게 좀 일깨워 주다" },
-      { "id": "S352", "hanzi": "填表", "pinyin": "tián biǎo", "korean": "표를 기입하다" },
-      { "id": "S353", "hanzi": "填名字", "pinyin": "tián míng zi", "korean": "이름을 쓰다" }
+      { "id": "S385", "hanzi": "太甜了", "pinyin": "tài tián le", "korean": "너무 달다" },
+      { "id": "S386", "hanzi": "味道很甜", "pinyin": "wèi dào hěn tián", "korean": "맛이 매우 달다" },
+      { "id": "S387", "hanzi": "提醒我一下", "pinyin": "tí xǐng wǒ yí xià", "korean": "나에게 좀 일깨워 주다" },
+      { "id": "S388", "hanzi": "注意提醒", "pinyin": "zhù yì tí xǐng", "korean": "알림에 주의하다" },
+      { "id": "S389", "hanzi": "填表", "pinyin": "tián biǎo", "korean": "표를 기입하다" },
+      { "id": "S390", "hanzi": "填名字", "pinyin": "tián míng zi", "korean": "이름을 쓰다" }
     ]
   },
   {
-    "category": "39. 袜子 / 完全 / 袜子 (양말, 완전히, 양말)",
+    "category": "39. 袜子 / 完全 / 危险 (양말, 완전히, 위험하다)",
     "sentences": [
-      { "id": "S354", "hanzi": "穿袜子", "pinyin": "chuān wà zi", "korean": "양말을 신다" },
-      { "id": "S355", "hanzi": "完全不知道", "pinyin": "wán quán bù zhī dào", "korean": "완전히 모른다" },
-      { "id": "S356", "hanzi": "完全明白了", "pinyin": "wán quán míng bai le", "korean": "완전히 이해했다" }
+      { "id": "S391", "hanzi": "穿袜子", "pinyin": "chuān wà zi", "korean": "양말을 신다" },
+      { "id": "S392", "hanzi": "洗袜子", "pinyin": "xǐ wà zi", "korean": "양말을 빨다" },
+      { "id": "S393", "hanzi": "完全不知道", "pinyin": "wán quán bù zhī dào", "korean": "완전히 모른다" },
+      { "id": "S394", "hanzi": "完全明白了", "pinyin": "wán quán míng bai le", "korean": "완전히 이해했다" },
+      { "id": "S395", "hanzi": "很危险", "pinyin": "hěn wēi xiǎn", "korean": "매우 위험하다" },
+      { "id": "S396", "hanzi": "危险动作", "pinyin": "wēi xiǎn dòng zuò", "korean": "위험한 동작" }
     ]
   },
   {
-    "category": "40. 危险 / 味道 / 无论 (위험하다, 맛, 불문하고)",
+    "category": "40. 味道 / 无论 / 先 (맛, 불문하고, 먼저)",
     "sentences": [
-      { "id": "S357", "hanzi": "很危险", "pinyin": "hěn wēi xiǎn", "korean": "매우 위험하다" },
-      { "id": "S358", "hanzi": "危险动作", "pinyin": "wēi xiǎn dòng zuò", "korean": "위험한 동작" },
-      { "id": "S359", "hanzi": "味道不错", "pinyin": "wèi dào bú cuò", "korean": "맛이 괜찮다" },
-      { "id": "S360", "hanzi": "无论什么", "pinyin": "wú lùn shén me", "korean": "무엇이든 불문하고" },
-      { "id": "S361", "hanzi": "无论去哪", "pinyin": "wú lùn qù nǎ", "korean": "어디를 가든 불문하고" }
+      { "id": "S397", "hanzi": "味道不错", "pinyin": "wèi dào bú cuò", "korean": "맛이 괜찮다" },
+      { "id": "S398", "hanzi": "西瓜的味道", "pinyin": "xī guā de wèi dào", "korean": "수박의 맛" },
+      { "id": "S399", "hanzi": "无论什么", "pinyin": "wú lùn shén me", "korean": "무엇이든 불문하고" },
+      { "id": "S400", "hanzi": "无论去哪", "pinyin": "wú lùn qù nǎ", "korean": "어디를 가든 불문하고" },
+      { "id": "S401", "hanzi": "你先请", "pinyin": "nǐ xiān qǐng", "korean": "당신이 먼저 하세요" },
+      { "id": "S402", "hanzi": "先吃饭吧", "pinyin": "xiān chī fàn ba", "korean": "먼저 밥 먹자" }
     ]
   },
   {
-    "category": "41. 先 / 羡慕 / 香 (먼저, 부러워하다, 향기롭다)",
+    "category": "41. 羡慕 / 香 / 相反 (부러워하다, 향기롭다, 반대)",
     "sentences": [
-      { "id": "S362", "hanzi": "你先请", "pinyin": "nǐ xiān qǐng", "korean": "당신이 먼저 하세요" },
-      { "id": "S363", "hanzi": "先吃饭吧", "pinyin": "xiān chī fàn ba", "korean": "먼저 밥 먹자" },
-      { "id": "S364", "hanzi": "我很羡慕你", "pinyin": "wǒ hěn xiàn mù nǐ", "korean": "나는 네가 매우 부럽다" },
-      { "id": "S365", "hanzi": "香水很香", "pinyin": "xiāng shuǐ hěn xiāng", "korean": "향수가 매우 향기롭다" }
+      { "id": "S403", "hanzi": "我很羡慕你", "pinyin": "wǒ hěn xiàn mù nǐ", "korean": "나는 네가 매우 부럽다" },
+      { "id": "S404", "hanzi": "羡慕别人", "pinyin": "xiàn mù bié rén", "korean": "타인을 부러워하다" },
+      { "id": "S405", "hanzi": "香水很香", "pinyin": "xiāng shuǐ hěn xiāng", "korean": "향수가 매우 향기롭다" },
+      { "id": "S406", "hanzi": "饭菜很香", "pinyin": "fàn cài hěn xiāng", "korean": "음식이 아주 맛있는 냄새가 난다" },
+      { "id": "S407", "hanzi": "正好相反", "pinyin": "zhèng hǎo xiāng fǎn", "korean": "정반대이다" },
+      { "id": "S408", "hanzi": "想法相反", "pinyin": "xiǎng fǎ xiāng fǎn", "korean": "생각이 반대이다" }
     ]
   },
   {
-    "category": "42. 相反 / 相同 / 像 (반대, 같다, 닮다)",
+    "category": "42. 相同 / 像 / 小心 (같다, 닮다, 조심하다)",
     "sentences": [
-      { "id": "S366", "hanzi": "正好相反", "pinyin": "zhèng hǎo xiāng fǎn", "korean": "정반대이다" },
-      { "id": "S367", "hanzi": "完全相同", "pinyin": "wán quán xiāng tóng", "korean": "완전히 같다" },
-      { "id": "S368", "hanzi": "长得像", "pinyin": "zhǎng de xiàng", "korean": "닮았다" }
+      { "id": "S409", "hanzi": "完全相同", "pinyin": "wán quán xiāng tóng", "korean": "완전히 같다" },
+      { "id": "S410", "hanzi": "相同的地方", "pinyin": "xiāng tóng de dì fang", "korean": "같은 부분" },
+      { "id": "S411", "hanzi": "长得像", "pinyin": "zhǎng de xiàng", "korean": "닮았다" },
+      { "id": "S412", "hanzi": "长得像妈妈", "pinyin": "zhǎng de xiàng mā ma", "korean": "엄마를 닮았다" },
+      { "id": "S413", "hanzi": "小心一点", "pinyin": "xiǎo xīn yì diǎn", "korean": "조금 조심해라" },
+      { "id": "S414", "hanzi": "路滑小心", "pinyin": "lù huá xiǎo xīn", "korean": "길이 미끄러우니 조심해라" }
     ]
   },
   {
-    "category": "43. 小心 / 辛苦 / 幸福 (조심하다, 고생스럽다, 행복하다)",
+    "category": "43. 辛苦 / 幸福 / 修理 (고생스럽다, 행복하다, 수리하다)",
     "sentences": [
-      { "id": "S369", "hanzi": "小心一点", "pinyin": "xiǎo xīn yì diǎn", "korean": "조금 조심해라" },
-      { "id": "S370", "hanzi": "你辛苦了", "pinyin": "nǐ xīn kǔ le", "korean": "고생했어요" },
-      { "id": "S371", "hanzi": "幸福的生活", "pinyin": "xìng fú de shēng huó", "korean": "행복한 삶" }
+      { "id": "S415", "hanzi": "你辛苦了", "pinyin": "nǐ xīn kǔ le", "korean": "고생했어요" },
+      { "id": "S416", "hanzi": "工作辛苦", "pinyin": "gōng zuò xīn kǔ", "korean": "일이 고되다" },
+      { "id": "S417", "hanzi": "幸福的生活", "pinyin": "xìng fú de shēng huó", "korean": "행복한 삶" },
+      { "id": "S418", "hanzi": "感到幸福", "pinyin": "gǎn dào xìng fú", "korean": "행복을 느끼다" },
+      { "id": "S419", "hanzi": "修理电脑", "pinyin": "xiū lǐ diàn nǎo", "korean": "컴퓨터를 수리하다" },
+      { "id": "S420", "hanzi": "修理汽车", "pinyin": "xiū lǐ qì chē", "korean": "자동차를 수리하다" }
     ]
   },
   {
-    "category": "44. 修理 / 需要 / 压力 (수리하다, 필요하다, 압박)",
+    "category": "44. 需要 / 压力 / 严格 (필요하다, 압박, 엄격하다)",
     "sentences": [
-      { "id": "S372", "hanzi": "修理电脑", "pinyin": "xiū lǐ diàn nǎo", "korean": "컴퓨터를 수리하다" },
-      { "id": "S373", "hanzi": "需要休息", "pinyin": "xū yào xiū xi", "korean": "휴식이 필요하다" },
-      { "id": "S374", "hanzi": "压力很大", "pinyin": "yā lì hěn dà", "korean": "압박감이 크다" }
+      { "id": "S421", "hanzi": "需要休息", "pinyin": "xū yào xiū xi", "korean": "휴식이 필요하다" },
+      { "id": "S422", "hanzi": "需要钱吗", "pinyin": "xū yào qián ma", "korean": "돈이 필요하니" },
+      { "id": "S423", "hanzi": "压力很大", "pinyin": "yā lì hěn dà", "korean": "압박감이 크다" },
+      { "id": "S424", "hanzi": "减少压力", "pinyin": "jiǎn shǎo yā lì", "korean": "스트레스를 줄이다" },
+      { "id": "S425", "hanzi": "老师很严格", "pinyin": "lǎo thī hěn yán gé", "korean": "선생님이 매우 엄격하다" },
+      { "id": "S426", "hanzi": "严格要求", "pinyin": "yán gé yāo qiú", "korean": "엄격히 요구하다" }
     ]
   },
   {
-    "category": "45. 严格 / 严重 / 研究 (엄격하다, 심각하다, 연구하다)",
+    "category": "45. 严重 / 研究 / 邀请 (심각하다, 연구하다, 초대하다)",
     "sentences": [
-      { "id": "S375", "hanzi": "老师很严格", "pinyin": "lǎo shī hěn yán gé", "korean": "선생님이 매우 엄격하다" },
-      { "id": "S376", "hanzi": "情况很严重", "pinyin": "qíng kuàng hěn yán zhòng", "korean": "상황이 매우 심각하다" },
-      { "id": "S377", "hanzi": "研究汉字", "pinyin": "yán jiū hàn zì", "korean": "한자를 연구하다" }
+      { "id": "S427", "hanzi": "情况很严重", "pinyin": "qíng kuàng hěn yán zhòng", "korean": "상황이 매우 심각하다" },
+      { "id": "S428", "hanzi": "病得很严重", "pinyin": "bìng de hěn yán zhòng", "korean": "병세가 매우 심각하다" },
+      { "id": "S429", "hanzi": "研究汉字", "pinyin": "yán jiū hàn zì", "korean": "한자를 연구하다" },
+      { "id": "S430", "hanzi": "科学研究", "pinyin": "yán jiū kē xué", "korean": "과학 연구" },
+      { "id": "S431", "hanzi": "邀请朋友", "pinyin": "yāo qǐng péng you", "korean": "친구를 초대하다" },
+      { "id": "S432", "hanzi": "接受邀请", "pinyin": "jiē shòu yāo qǐng", "korean": "초대를 수락하다" }
     ]
   },
   {
-    "category": "46. 邀请 / 一般 / 一定 (초대하다, 보통의, 반드시)",
+    "category": "46. 一般 / 一定 / 应该 (보통의, 반드시, 마땅히)",
     "sentences": [
-      { "id": "S378", "hanzi": "邀请朋友", "pinyin": "yāo qǐng péng you", "korean": "친구를 초대하다" },
-      { "id": "S379", "hanzi": "一般情况", "pinyin": "yì bān qíng kuàng", "korean": "보통 상황" },
-      { "id": "S380", "hanzi": "一定来", "pinyin": "yí dìng lái", "korean": "반드시 오다" }
+      { "id": "S433", "hanzi": "一般情况", "pinyin": "yì bān qíng kuàng", "korean": "보통 상황" },
+      { "id": "S434", "hanzi": "长得很一般", "pinyin": "zhǎng de hěn yì bān", "korean": "외모가 매우 평범하다" },
+      { "id": "S435", "hanzi": "一定来", "pinyin": "yí dìng lái", "korean": "반드시 오다" },
+      { "id": "S436", "hanzi": "不一定", "pinyin": "bù yí dìng", "korean": "확실하지 않다" },
+      { "id": "S437", "hanzi": "应该多运动", "pinyin": "yīng gāi duō yùn dòng", "korean": "마땅히 운동을 많이 해야 한다" },
+      { "id": "S438", "hanzi": "应该回家了", "pinyin": "yīng gāi huí jiā le", "korean": "마땅히 집에 가야 할 때이다" }
     ]
   },
   {
-    "category": "47. 应该 / 影响 / 用 (마땅히, 영향, 사용하다)",
+    "category": "47. 影响 / 用 / 遇到 (영향, 사용하다, 마주치다)",
     "sentences": [
-      { "id": "S381", "hanzi": "应该多运动", "pinyin": "yīng gāi duō yùn dòng", "korean": "마땅히 운동을 많이 해야 한다" },
-      { "id": "S382", "hanzi": "别影响别人", "pinyin": "bié yǐng xiǎng bié rén", "korean": "남에게 영향을 주지 마라" },
-      { "id": "S383", "hanzi": "用信用卡", "pinyin": "yòng xìn yòng kǎ", "korean": "신용카드를 사용하다" }
+      { "id": "S439", "hanzi": "别影响别人", "pinyin": "bié yǐng xiǎng bié rén", "korean": "남에게 영향을 주지 마라" },
+      { "id": "S440", "hanzi": "产生影响", "pinyin": "chǎn shēng yǐng xiǎng", "korean": "영향을 미치다" },
+      { "id": "S441", "hanzi": "用信用卡", "pinyin": "yòng xìn yòng kǎ", "korean": "신용카드를 사용하다" },
+      { "id": "S442", "hanzi": "用电脑工作", "pinyin": "yòng diàn nǎo gōng zuò", "korean": "컴퓨터로 일하다" },
+      { "id": "S443", "hanzi": "遇到老师", "pinyin": "yù dào lǎo shī", "korean": "선생님을 마주치다" },
+      { "id": "S444", "hanzi": "遇到困难", "pinyin": "yù dào kùn nán", "korean": "어려움에 부딪히다" }
     ]
   },
   {
-    "category": "48. 遇到 / 愿 / 站 (마주치다, 원하다, 서다)",
+    "category": "48. 愿意 / 站 / 照顾 (원하다, 서다, 돌보다)",
     "sentences": [
-      { "id": "S384", "hanzi": "遇到老师", "pinyin": "yù dào lǎo shī", "korean": "선생님을 마주치다" },
-      { "id": "S385", "hanzi": "愿意帮忙", "pinyin": "yuàn yì bāng máng", "korean": "기꺼이 돕기를 원하다" },
-      { "id": "S386", "hanzi": "站起来吧", "pinyin": "zhàn qǐ lái ba", "korean": "일어서라" }
+      { "id": "S445", "hanzi": "愿意帮忙", "pinyin": "yuàn yì bāng máng", "korean": "기꺼이 돕기를 원하다" },
+      { "id": "S446", "hanzi": "不愿意去", "pinyin": "bú yuàn yì qù", "korean": "가고 싶지 않다" },
+      { "id": "S447", "hanzi": "站起来吧", "pinyin": "zhàn qǐ lái ba", "korean": "일어서라" },
+      { "id": "S448", "hanzi": "站在门口", "pinyin": "zhàn zài mén kǒu", "korean": "문앞에 서 있다" },
+      { "id": "S449", "hanzi": "照顾身体", "pinyin": "zhào gù shēn tǐ", "korean": "몸을 돌보다" },
+      { "id": "S450", "hanzi": "照顾孩子", "pinyin": "zhào gù hái zi", "korean": "아이를 돌보다" }
     ]
   },
   {
-    "category": "49. 照顾 / 注意 / 总是 (돌보다, 주의하다, 항상)",
+    "category": "49. 注意 / 总是 / 矮 (주의하다, 항상, 작다)",
     "sentences": [
-      { "id": "S387", "hanzi": "照顾身体", "pinyin": "zhào gù shēn tǐ", "korean": "몸을 돌보다" },
-      { "id": "S388", "hanzi": "注意安全", "pinyin": "zhù yì ān quán", "korean": "안전을 주의하다" },
-      { "id": "S389", "hanzi": "总是迟到", "pinyin": "zǒng shì chí dào", "korean": "항상 지각하다" }
+      { "id": "S451", "hanzi": "注意安全", "pinyin": "zhù yì ān quán", "korean": "안전을 주의하다" },
+      { "id": "S452", "hanzi": "注意听讲", "pinyin": "zhù yì tīng jiǎng", "korean": "경청하다" },
+      { "id": "S453", "hanzi": "总是迟到", "pinyin": "zǒng shì chí dào", "korean": "항상 지각하다" },
+      { "id": "S454", "hanzi": "总是生病", "pinyin": "zǒng shì shēng bìng", "korean": "늘 아프다" },
+      { "id": "S455", "hanzi": "个子很矮", "pinyin": "gè zi hěn ǎi", "korean": "키가 작다" },
+      { "id": "S456", "hanzi": "比我矮", "pinyin": "bǐ wǒ ǎi", "korean": "나보다 키가 작다" }
     ]
   },
   {
-    "category": "50. 矮 / 安静 / 饱 / 差 (작다, 조용하다, 배부르다, 나쁘다)",
+    "category": "50. 安静 / 饱 / 差 (조용하다, 배부르다, 나쁘다)",
     "sentences": [
-      { "id": "S390", "hanzi": "个子很矮", "pinyin": "gè zi hěn ǎi", "korean": "키가 작다" },
-      { "id": "S391", "hanzi": "教室很安静", "pinyin": "jiào shì hěn ān jìng", "korean": "교실이 매우 조용하다" },
-      { "id": "S392", "hanzi": "已经饱了", "pinyin": "yǐ jīng bǎo le", "korean": "이미 배부르다" },
-      { "id": "S393", "hanzi": "质量很差", "pinyin": "zhì liàng hěn chà", "korean": "품질이 매우 나쁘다" }
+      { "id": "S457", "hanzi": "教室很安静", "pinyin": "jiào  shì hěn ān jìng", "korean": "교실이 매우 조용하다" },
+      { "id": "S458", "hanzi": "保持安静", "pinyin": "bǎo chí ān jìng", "korean": "조용히 하다" },
+      { "id": "S459", "hanzi": "已经饱了", "pinyin": "yǐ jīng bǎo le", "korean": "이미 배부르다" },
+      { "id": "S460", "hanzi": "吃饱了吗", "pinyin": "chī bǎo le ma", "korean": "배불리 먹었니" },
+      { "id": "S461", "hanzi": "质量很差", "pinyin": "zhì liàng hěn chà", "korean": "품질이 매우 나쁘다" },
+      { "id": "S462", "hanzi": "成绩很差", "pinyin": "chéng jì hěn chà", "korean": "성적이 매우 나쁘다" }
     ]
-  } 
+  }
 ]  
 
   
