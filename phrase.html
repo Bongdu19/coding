@@ -87,7 +87,7 @@
 
     <div class="header-wrap">
         <button class="btn-home" onclick="location.href='index.html'">⬅ 홈으로</button>
-        <div class="header-title-area">🗣️ HSK 2급 어구 예문</div>
+        <div class="header-title-area" id="headerTitle">🗣️ HSK 어구 예문</div>
         <select class="filter-select" id="catFilter" onchange="changeCategory()"></select>
     </div>
 
@@ -95,9 +95,9 @@
 
     <div class="modal-overlay" id="wordModal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation();">
-            <div class="modal-word" id="mWord">帮助</div>
-            <div class="modal-pinyin" id="mPinyin">bāngzhù</div>
-            <div class="modal-mean" id="mMean">돕다, 도와주다</div>
+            <div class="modal-word" id="mWord"></div>
+            <div class="modal-pinyin" id="mPinyin"></div>
+            <div class="modal-mean" id="mMean"></div>
             <button class="modal-close" onclick="closeModal()">닫기</button>
         </div>
     </div>
@@ -120,8 +120,13 @@
         let currentIndex = 0, currentStep = 0; 
         let wakeLock = null;
         let wordDictionary = {};
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const level = urlParams.get('level') || '2';
 
         window.onload = function() {
+            document.getElementById('headerTitle').innerText = `🗣️ HSK ${level}급 어구 예문`;
+            
             Promise.all([
                 fetch('./data/hsk1.json').then(res => res.json()),
                 fetch('./data/hsk2.json').then(res => res.json()),
@@ -137,38 +142,27 @@
                         } else {
                             meanText = word.meaning || '';
                         }
-                        
-                        wordDictionary[word.hanzi.trim()] = {
-                            mean: meanText,
-                            py: word.pinyin || ''
-                        };
+                        wordDictionary[word.hanzi.trim()] = { mean: meanText, py: word.pinyin || '' };
                     }
                 });
-                return fetch('./data/hsk2_sentences.json');
+                return fetch(`./data/hsk${level}_sentences.json`);
             })
             .then(res => res.json())
             .then(data => {
                 rawData = data;
                 const filter = document.getElementById('catFilter');
+                filter.innerHTML = '';
                 data.forEach((cat, idx) => {
                     filter.innerHTML += `<option value="${idx}">${cat.category}</option>`;
                 });
                 loadCategory(0);
             })
-            .catch(err => {
-                console.error(err);
-                fetch('./data/hsk2_sentences.json').then(res => res.json()).then(data => {
-                    rawData = data; loadCategory(0);
-                });
-            });
+            .catch(err => console.error("데이터 로드 실패:", err));
         };
 
-        // 🛡️ [안전 보정 업데이트] 치환 코드 충돌 방지 알고리즘 적용
         function parseHanziToTooltip(sentence) {
             let tempResult = sentence;
             const sortedKeys = Object.keys(wordDictionary).sort((a, b) => b.length - a.length);
-            
-            // 임시 플래그 치환 보관함 객체
             const replacementMap = {};
             let uniqueId = 0;
 
@@ -176,32 +170,26 @@
                 if (tempResult.includes(word)) {
                     const placeholder = `__BONG_FLAG_${uniqueId}__`;
                     replacementMap[placeholder] = `<span class="word-tooltip" onclick="showWordDetail('${word}', event);">${word}</span>`;
-                    
-                    // 순수 텍스트 상태에서만 단어를 임시 치환 플래그로 변경
                     tempResult = tempResult.split(word).join(placeholder);
                     uniqueId++;
                 }
             });
 
-            // 문장 처리가 끝나면 안전하게 실제 HTML 복원 진행 (중첩 깨짐 원천 차단)
             Object.keys(replacementMap).forEach(placeholder => {
                 tempResult = tempResult.split(placeholder).join(replacementMap[placeholder]);
             });
-
             return tempResult;
         }
 
         function showWordDetail(word, event) {
             event.stopPropagation(); 
             window.speechSynthesis.cancel(); 
-
             const info = wordDictionary[word];
             if(info) {
                 document.getElementById('mWord').innerText = word;
                 document.getElementById('mPinyin').innerText = info.py;
                 document.getElementById('mMean').innerText = info.mean;
                 document.getElementById('wordModal').style.display = 'flex';
-
                 const ut = new SpeechSynthesisUtterance(word);
                 ut.lang = 'zh-CN';
                 ut.rate = getSpeed();
@@ -209,22 +197,18 @@
             }
         }
 
-        function closeModal() {
-            document.getElementById('wordModal').style.display = 'none';
-        }
+        function closeModal() { document.getElementById('wordModal').style.display = 'none'; }
 
         function loadCategory(idx) {
             stopAudio();
             currentSentences = rawData[idx].sentences;
             const container = document.getElementById('phraseList');
             container.innerHTML = '';
-            
             currentSentences.forEach((s) => {
                 const dynamicHanziHtml = parseHanziToTooltip(s.hanzi);
-
                 container.innerHTML += `
                     <div class="phrase-card" id="p-card-${s.id}" onclick="speakSingle('${s.hanzi}', '${s.korean}')">
-                        <div class="card-header"><span>ID: ${s.id}</span> <span>🔊 카드 터치 시 문장 듣기 / 단어 터치 시 뜻 보기</span></div>
+                        <div class="card-header"><span>ID: ${s.id}</span> <span>🔊 터치: 문장 듣기 / 단어 터치: 뜻 보기</span></div>
                         <div class="hz-text">${dynamicHanziHtml}</div>
                         <div class="py-text">${s.pinyin}</div>
                         <div class="ko-text">${s.korean}</div>
@@ -243,39 +227,27 @@
         function playLoop() {
             if (!isPlaying || isPaused) return;
             if (currentIndex >= currentSentences.length) { stopAudio(); return; }
-
             const item = currentSentences[currentIndex];
             const speed = getSpeed();
             let text = '', lang = '', rate = 1.0;
-
             if (currentStep === 0 || currentStep === 2 || currentStep === 4) {
                 text = item.hanzi; lang = 'zh-CN'; rate = speed;
             } else {
                 text = item.korean; lang = 'ko-KR'; rate = 1.0;
             }
-
             if (currentStep === 0) {
                 document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('active'));
                 const card = document.getElementById(`p-card-${item.id}`);
-                if (card) {
-                    card.classList.add('active');
-                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
+                if (card) { card.classList.add('active'); card.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
             }
-
             const ut = new SpeechSynthesisUtterance(text);
             ut.lang = lang; ut.rate = rate;
-
             ut.onend = () => {
                 if (!isPlaying || isPaused) return;
                 currentStep++;
-                if (currentStep > 4) {
-                    currentStep = 0;
-                    currentIndex++;
-                }
+                if (currentStep > 4) { currentStep = 0; currentIndex++; }
                 setTimeout(playLoop, 400); 
             };
-
             window.speechSynthesis.speak(ut);
         }
 
@@ -306,10 +278,8 @@
         function speakSingle(hz, ko) {
             if(isPlaying) return; 
             window.speechSynthesis.cancel();
-            
             const u1 = new SpeechSynthesisUtterance(hz); u1.lang = 'zh-CN'; u1.rate = getSpeed();
             const u2 = new SpeechSynthesisUtterance(ko); u2.lang = 'ko-KR';
-            
             window.speechSynthesis.speak(u1);
             window.speechSynthesis.speak(u2);
         }
