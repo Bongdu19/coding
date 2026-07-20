@@ -274,23 +274,22 @@
             position: absolute;
             background: #1e293b;
             color: #ffffff;
-            padding: 10px 14px;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            z-index: 100;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            max-width: 240px;
-            pointer-events: none;
+            padding: 14px 16px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            z-index: 2000;
+            pointer-events: auto; /* 내부 스크롤이나 요소 대응 */
             display: none;
             line-height: 1.4;
+            transition: opacity 0.15s ease;
         }
         .word-tooltip::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -6px;
             left: 50%;
             transform: translateX(-50%);
-            border-width: 5px 5px 0;
+            border-width: 6px 6px 0;
             border-style: solid;
             border-color: #1e293b transparent;
             display: block;
@@ -341,49 +340,26 @@
     <div id="grammar-container"></div>
     <div id="tooltip" class="word-tooltip"></div>
 
+    <!-- 외부 분리 엔진 파일 인클루드 -->
+    <script src="./js/word-core.js"></script>
+    
     <script>
         let grammarData = [];
-        let hskDictionary = {}; 
         let currentFilter = 'ALL';
-
+    
         async function initPage() {
             try {
+                // 1. 공통 스크립트 엔진의 마스터 사전을 로드[cite: 1]
+                await loadMasterDictionary();
+    
+                // 2. 문법 본연의 데이터 로드
                 const resGrammar = await fetch('./data/grammar.json');
                 grammarData = await resGrammar.json();
-
-                const [r1, r2, r3] = await Promise.all([
-                    fetch('./data/hsk1.json').then(r => r.json()).catch(() => []),
-                    fetch('./data/hsk2.json').then(r => r.json()).catch(() => []),
-                    fetch('./data/hsk3.json').then(r => r.json()).catch(() => [])
-                ]);
-
-                [...r1, ...r2, ...r3].forEach(item => {
-                    const wordKey = item.hanzi || item.han || item.word;
-                    
-                    if (wordKey) {
-                        const pinyinValue = item.pinyin || item.pin || '';
-
-                        let meaningText = '';
-                        if (item.meanings && Array.isArray(item.meanings)) {
-                            meaningText = item.meanings.map(m => {
-                                const posStr = m.pos ? `[${m.pos}] ` : '';
-                                return `${posStr}${m.ko}`;
-                            }).join(', ');
-                        } else {
-                            meaningText = item.kor || item.meaning || item.mean || '뜻 정보 없음';
-                        }
-
-                        hskDictionary[wordKey.trim()] = {
-                            meaning: meaningText,
-                            pinyin: pinyinValue
-                        };
-                    }
-                });
-
+    
                 renderCards();
             } catch (error) {
                 console.error("데이터 로드 실패:", error);
-                document.getElementById('grammar-container').innerHTML = "<p>데이터를 불러오는 중 오류가 발생했습니다.</p>";
+                document.getElementById('grammar-container').innerHTML = "<p>오류가 발생했습니다.</p>";
             }
         }
 
@@ -420,81 +396,51 @@
         }
 
         function renderCards() {
-            const container = document.getElementById('grammar-container');
-            container.innerHTML = '';
-
-            const filteredData = grammarData.filter(item => {
-                if (currentFilter === 'ALL') return true;
-                return item.level === currentFilter;
-            });
-
-            filteredData.forEach((item, index) => {
-                const card = document.createElement('div');
-                card.className = 'grammar-card';
-
-                let examplesHtml = '';
-                item.examples.forEach((ex, exIdx) => {
-                    const charArray = Array.from(ex.zh);
-                    let parsedZh = '';
-                    
-                    for(let i = 0; i < charArray.length; i++) {
-                        let char = charArray[i];
-                        let nextChar = charArray[i+1] || '';
-                        let nextNextChar = charArray[i+2] || '';
-                        
-                        let threeChars = char + nextChar + nextNextChar;
-                        let twoChars = char + nextChar;
-
-                        // 💡 한자 판별 조건식 최적화 (중국어 한자 범위만 툴팁span 생성)
-                        const isChineseChar = (str) => /[\u4e00-\u9fa5]/.test(str);
-
-                        if (hskDictionary[threeChars] && isChineseChar(threeChars)) {
-                            parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${threeChars}')">${threeChars}</span>`;
-                            i += 2; 
-                        }
-                        else if (hskDictionary[twoChars] && isChineseChar(twoChars)) {
-                            parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${twoChars}')">${twoChars}</span>`;
-                            i++; 
-                        } 
-                        else if (isChineseChar(char)) {
-                            parsedZh += `<span class="zh-word" onclick="showTooltip(event, '${char}')">${char}</span>`;
-                        } else {
-                            // 💡 한글이나 부호, 영문은 밑줄 없이 일반 텍스트로 안전하게 출력
-                            parsedZh += `<span class="non-zh-text">${char}</span>`;
-                        }
-                    }
-
-                    examplesHtml += `
-                        <div class="example-box">
-                            <div class="example-header">
-                                <div class="zh-sentence">${parsedZh}</div>
-                                <button class="btn-speak" onclick="speakExample(event, '${ex.zh}', '${ex.ko}')">🔊 읽기</button>
+                const container = document.getElementById('grammar-container');
+                container.innerHTML = '';
+        
+                const filteredData = grammarData.filter(item => {
+                    if (currentFilter === 'ALL') return true;
+                    return item.level === currentFilter;
+                });
+        
+                filteredData.forEach((item, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'grammar-card';
+        
+                    let examplesHtml = '';
+                    item.examples.forEach((ex) => {
+                        // 💡 복잡했던 자형 판별 FOR문 대신 엔진의 공통 파서 1줄로 예문 자동 바인딩 교체
+                        const parsedZh = parseHanziToTooltip(ex.zh);
+        
+                        examplesHtml += `
+                            <div class="example-box">
+                                <div class="example-header">
+                                    <div class="zh-sentence">${parsedZh}</div>
+                                    <button class="btn-speak" onclick="speakExample(event, '${ex.zh}', '${ex.ko}')">🔊 읽기</button>
+                                </div>
+                                <div class="pinyin-text">${ex.pinyin}</div>
+                                <div class="ko-text">${ex.ko}</div>
                             </div>
-                            <div class="pinyin-text">${ex.pinyin}</div>
-                            <div class="ko-text">${ex.ko}</div>
+                        `;
+                    });
+        
+                    const formattedTipHtml = parseTip(item.tip);
+                    card.innerHTML = `
+                        <div class="card-header" onclick="toggleCard(this)">
+                            <h3 class="grammar-title">${item.title}</h3>
+                            <span class="badge ${item.level.toLowerCase()}">${item.level}</span>
+                        </div>
+                        <div class="grammar-formula" onclick="toggleCard(this)">${item.formula}</div>
+                        <div class="card-details">
+                            <div class="description">${item.description}</div>
+                            ${examplesHtml}
+                            ${formattedTipHtml}
                         </div>
                     `;
+                    container.appendChild(card);
                 });
-
-                const formattedTipHtml = parseTip(item.tip);
-
-                card.innerHTML = `
-                    <div class="card-header" onclick="toggleCard(this)">
-                        <h3 class="grammar-title">${item.title}</h3>
-                        <span class="badge ${item.level.toLowerCase()}">${item.level}</span>
-                    </div>
-                    <div class="grammar-formula" onclick="toggleCard(this)">${item.formula}</div>
-                    
-                    <div class="card-details">
-                        <div class="description">${item.description}</div>
-                        ${examplesHtml}
-                        ${formattedTipHtml}
-                    </div>
-                `;
-
-                container.appendChild(card);
-            });
-        }
+            }
 
         function toggleCard(element) {
             const card = element.closest('.grammar-card');
