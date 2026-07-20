@@ -250,7 +250,7 @@
             location.href = 'index.html';
         }
 
-        function setupFilterOptions(level) {
+function setupFilterOptions(level) {
             const filter = document.getElementById('dayFilter');
             filter.innerHTML = '';
             
@@ -284,12 +284,13 @@
                     <option value="all_part6">6일차 트랙 (501~${allWords.length}번)</option>
                 `;
             } else if (level === 'radical') {
+                // 💡 radical.json의 실제 제공 데이터 흐름순(총 101개)에 맞춰 카테고리와 텍스트 범위를 완전 재정비
                 options += `
-                    <option value="part1">1일차 子,女,足,目,心(1~40번)</option>
-                    <option value="part2">2일차 耳,月,水,火,土,石 (41~81번)</option>
-                    <option value="part3">3일차 金,雨,禾,竹,牛,羊,豕 (82~121번)</option>
-                    <option value="part4">4일차 鸟,鱼,角,皮,言,示,行,走 (122~161번)</option>
-                    <option value="part5">5일차 巾,门,刀,弓 (162~${allWords.length}번)</option>
+                    <option value="part1">1일차 子, 女 부수 (1~16번)</option>
+                    <option value="part2">2일차 足, 目 부수 (17~32번)</option>
+                    <option value="part3">3일차 心/忄, 耳 부수 (33~49번)</option>
+                    <option value="part4">4일차 月(육달월), 水/氵 부수 (50~71번)</option>
+                    <option value="part5">5일차 火/灬, 土, 石, 金/钅, 雨, 禾 부수 (72~${allWords.length}번)</option>
                 `;
             } else if (level == '1' || level == '2') {
                 options += `
@@ -333,7 +334,7 @@
             }
         }
 
-        function getFilteredWords() {
+         function getFilteredWords() {
             const val = document.getElementById('dayFilter').value;
             let mapped = allWords.map((w, i) => ({...w, num: i + 1}));
             
@@ -350,13 +351,13 @@
             if (val === 'all_part5') return mapped.slice(400, 500);
             if (val === 'all_part6') return mapped.slice(500);
 
-            // 타입 비교 연산자 완화(==) 처리로 데이터 유실 버그 수정
             if (currentLevel === 'radical') {
-                if (val === 'part1') return mapped.slice(0, 40);
-                if (val === 'part2') return mapped.slice(40, 81);
-                if (val === 'part3') return mapped.slice(81, 121);
-                if (val === 'part4') return mapped.slice(121, 161);
-                if (val === 'part5') return mapped.slice(161);
+                // 💡 실제 파일 내 부수 정렬 순서대로 빈틈없이 슬라이싱(slice) 구간 최적화 조정
+                if (val === 'part1') return mapped.slice(0, 16);   // 1~16번
+                if (val === 'part2') return mapped.slice(16, 32);  // 17~32번
+                if (val === 'part3') return mapped.slice(32, 49);  // 33~49번
+                if (val === 'part4') return mapped.slice(49, 71);  // 50~71번
+                if (val === 'part5') return mapped.slice(71);      // 72번~끝까지(101번)
             } else if (currentLevel == '3') {
                 if (val === 'part1') return mapped.slice(0, 50);
                 if (val === 'part2') return mapped.slice(50, 100);
