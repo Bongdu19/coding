@@ -150,7 +150,7 @@ function parseHanziToTooltip(sentence) {
 }
 
 /**
- * 컴팩트해진 전용 디자인 툴팁 창 팝업
+ * 3. [디자인 3차 변경] 급수 배치 앞으로, 발음 한 줄 통합 및 하단 뜻 가운데 정렬 반영
  */
 function showWordCoreTooltip(event, word) {
     event.stopPropagation(); 
@@ -166,24 +166,36 @@ function showWordCoreTooltip(event, word) {
 
     const info = wordDictionary[word];
     if (info) {
-        // 급수 등급에 따른 전용 컬러 인덱스 부여
+        // 급수 등급별 전용 컬러 인덱스
         let badgeColor = '#94a3b8'; // 기본 부수 (회색 계열)
         if (info.level === '1급') badgeColor = '#4caf50'; // 초록
         if (info.level === '2급') badgeColor = '#4cc9f0'; // 하늘
         if (info.level === '3급') badgeColor = '#4361ee'; // 파랑
 
-        let hanjaHtml = info.hanja ? `<div style="font-size: 12px; font-weight: 500; color: #cbd5e1; margin-bottom: 5px; font-family: 'Pretendard', sans-serif;">${info.hanja}</div>` : '';
+        // 훈음(한자 뜻) 영역 조건 처리
+        let hanjaHtml = info.hanja ? `<div style="font-size: 13px; font-weight: 500; color: #cbd5e1; margin-top: 4px;">${info.hanja}</div>` : '';
         
-        // 💡 여백(padding), 자간, 폰트 비율을 완전히 줄여 극도로 컴팩트하게 재조정
+        // 💡 [구조 개편]: 폰트 통합 / 급수 앞 배치 + 한자 + 병음 한 줄 수평 정렬 / 뜻 가운데 정렬 최적화
         tooltip.innerHTML = `
-            <div style="text-align: center; min-width: 170px; max-width: 250px; font-family: 'Pretendard', -apple-system, 'PingFang SC', sans-serif; padding: 2px 0;">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 6px; margin-bottom: 2px;">
-                    <span style="font-size: 22px; font-weight: 800; color: #ffffff;">${word}</span>
-                    <span style="font-size: 10px; font-weight: 700; color: #ffffff; background: ${badgeColor}; padding: 1px 4px; border-radius: 4px; line-height: 1.2;">${info.level}</span>
+            <div style="text-align: center; min-width: 180px; max-width: 260px; font-family: 'Pretendard', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; padding: 2px 0;">
+                
+                <!-- 첫 줄: [급수] 한자 [병음] 한 줄 수평 정렬 레이아웃 -->
+                <div style="display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.2;">
+                    <!-- 1. 급수 위치 앞으로 조정 -->
+                    <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: ${badgeColor}; padding: 1px 4px; border-radius: 4px; flex-shrink: 0;">${info.level}</span>
+                    
+                    <!-- 2. 한자 텍스트 서체 통일 -->
+                    <span style="font-size: 24px; font-weight: 800; color: #ffffff;">${word}</span>
+                    
+                    <!-- 3. 발음을 한자 뒤로 밀어 한 줄 배치 -->
+                    <span style="font-size: 15px; font-weight: 700; color: #74c0fc; margin-left: 2px;">${info.py}</span>
                 </div>
-                <div style="font-size: 13px; font-weight: 700; color: #74c0fc; margin-bottom: 4px;">${info.py}</div>
+
+                <!-- 두 번째 줄: 한자 훈음(뜻) 영역 -->
                 ${hanjaHtml}
-                <div style="font-size: 13px; font-weight: 600; color: #ff85a2; padding-top: 5px; border-top: 1px dashed rgba(255,255,255,0.15); text-align: left; line-height: 1.35; white-space: normal; word-break: break-all;">
+                
+                <!-- 세 번째 줄: 품사 및 한국어 뜻 영역 (가운데 정렬 text-align: center 보정) -->
+                <div style="font-size: 13px; font-weight: 600; color: #ff85a2; padding-top: 6px; border-top: 1px dashed rgba(255,255,255,0.15); margin-top: 6px; text-align: center; line-height: 1.4; white-space: normal; word-break: break-all;">
                     ${info.mean}
                 </div>
             </div>
