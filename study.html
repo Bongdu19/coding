@@ -48,8 +48,8 @@
         .view.active { display: block; }
         .zh-font { font-family: var(--font-zh); font-weight: 600; }
 
-        /* [학습 모드] 단어 카드 스타일 */
-        .card { background: var(--bg-card); border-radius: 12px; padding: 24px 14px 10px 14px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); border: 1px solid var(--border-color); transition: all 0.3s ease; position: relative; }
+        /* 💡 4번 조치: 학습 카드의 하단 여백(padding-bottom)을 더 주어 2줄 이상의 내부 공간을 확보 */
+        .card { background: var(--bg-card); border-radius: 12px; padding: 28px 14px 24px 14px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); border: 1px solid var(--border-color); transition: all 0.3s ease; position: relative; }
         .card.active { background-color: #fefcf0; border-color: var(--accent-yellow); }
         .card.is-wrong { border-color: var(--accent-red); background-color: #fef2f2; }
         .card .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #64748b; font-weight: 700; background: #f1f5f9; padding: 1px 6px; border-radius: 4px; }
@@ -71,7 +71,7 @@
         .en-meaning { font-size: 22px; font-weight: 800; color: #2563eb; line-height: 1.1; }
         
         .tip-box { background: #fffdf2; padding: 6px 12px; border-left: 3px solid var(--accent-yellow); border-radius: 6px; border: 1px solid #fef3c7; margin-bottom: 4px; }
-        .tip-item { font-size: 13px; color: #334155; line-height: 1.4; margin-bottom: 3px; }
+        .tip-item { line-height: 1.4; margin-bottom: 3px; }
         
         .ex-box { background: #f1f5f9; padding: 8px 12px; border-radius: 8px; border: 1px solid #cbd5e1; width: 100%; box-sizing: border-box; }
         .ex-zh { font-size: 19px; color: #0f172a; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
@@ -79,7 +79,6 @@
         .ex-pinyin { color: #1e3a8a; font-weight: 600; }
         .ex-mean { color: #334155; font-weight: 600; }
 
-        /* 예문 한자 폰트 스타일 제어 (파란 글씨 제거) */
         .ex-zh span { 
             font-size: 19px; 
             font-weight: 700; 
@@ -108,12 +107,15 @@
         .quiz-controls { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 2000; pointer-events: none; }
         .btn-quiz { pointer-events: auto; background-color: #2563eb; color: white; border: none; border-radius: 50px; padding: 10px 18px; font-size: 13px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); }
         
-        .flip-card { background-color: transparent; width: 100%; height: 290px; perspective: 1000px; cursor: pointer; margin: 0; }
+        /* 💡 4번 조치: 퀴즈 플립 카드의 높이를 고정 290px에서 340px로 늘려 아래 예문 공간 확보 */
+        .flip-card { background-color: transparent; width: 100%; height: 340px; perspective: 1000px; cursor: pointer; margin: 0; }
         .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.5s ease; transform-style: preserve-3d; }
         .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
         
         .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid var(--border-color); box-sizing: border-box; overflow: hidden; }
-        .flip-card-front { background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px; z-index: 2; }
+        
+        /* 💡 3번 조치: 퀴즈 앞면의 한자가 상단 뱃지와 겹치지 않도록 내부 패딩 상단을 35px로 대폭 확장 */
+        .flip-card-front { background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 35px 10px 10px 10px; z-index: 2; }
         .flip-card-front.is-wrong { border-color: var(--accent-red); background-color: #fef2f2; }
         .flip-card-front .index-num, .flip-card-back .index-num { position: absolute; top: 8px; left: 10px; font-size: 11px; color: #64748b; font-weight: 700; background: #f1f5f9; padding: 1px 6px; border-radius: 4px; }
         .flip-card-front .wrong-badge { position: absolute; top: 6px; right: 8px; font-size: 13px; display: none; }
@@ -121,7 +123,8 @@
         .flip-card-front .hanzi { font-size: 56px; color: var(--text-main); font-weight: 800; } 
         .flip-card-front .hint { font-size: 11px; color: var(--primary); margin-top: 10px; font-weight: 700; background: #e0e7ff; padding: 2px 8px; border-radius: 20px; }
         
-        .flip-card-back { background-color: #ffffff; transform: rotateY(180deg); padding: 22px 12px 8px 12px; display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; z-index: 1; text-align: left; }
+        /* 💡 3번 조치: 퀴즈 뒷면도 상단 패딩을 늘려 타이틀 한자와의 충돌 방지 */
+        .flip-card-back { background-color: #ffffff; transform: rotateY(180deg); padding: 32px 12px 8px 12px; display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; z-index: 1; text-align: left; }
         .flip-card-back .quiz-btn-wrap { margin-top: auto; padding-top: 4px; }
         .btn-wrong-toggle { width: 100%; background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; border-radius: 6px; padding: 6px; font-size: 12px; font-weight: 700; cursor: pointer; text-align: center; }
         .btn-wrong-toggle.marked { background-color: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
@@ -214,7 +217,6 @@
                         document.getElementById('hskTitleDisplay').innerText = `HSK 1~3급 통합 단어 마스터`;
                     }
                     
-                    // 💡 [개선 포인트] 기존 보던 필터가 없다면 무조건 1일차('all_part1' 혹은 'part1')를 디폴트로 지정
                     const filterDropdown = document.getElementById('dayFilter');
                     if (presetFilter && filterDropdown.querySelector(`option[value="${presetFilter}"]`)) {
                         filterDropdown.value = presetFilter;
@@ -238,7 +240,6 @@
                         
                         document.getElementById('hskTitleDisplay').innerText = titleName;
                         
-                        // 💡 [개선 포인트] 기존 보던 필터가 없다면 무조건 1일차('part1')를 디폴트로 지정
                         const filterDropdown = document.getElementById('dayFilter');
                         if (presetFilter && filterDropdown.querySelector(`option[value="${presetFilter}"]`)) {
                             filterDropdown.value = presetFilter;
@@ -412,38 +413,35 @@
             return (word.exMean || word.exMeaning || '').replace(/[\(\)]/g, '').trim();
         }
 
-        // 💡 [학습 모드 전용] 부수정보 규격에 맞춰 폰트 사이즈 조절(11px) 및 기억팁 줄바꿈 파서
+        /* 💡 2번 조치: 학습 모드에서는 TIP 글씨 크기를 13px 원래 크기로 복원하여 시원시원하게 노출 */
         function parseMemoryTipStudy(rawCharTip, tip2Label) {
             let charTipHtml = '';
-            // 컴팩트 사이즈 정렬을 위해 폰트 11px 명시 설정
             if (rawCharTip.includes('[기억 팁]')) {
                 let parts = rawCharTip.split(/💡?\s*\[기억\s*팁\]/);
                 let mainHanjaTip = parts[0].trim();
                 let memoryTip = parts[1] ? parts[1].trim() : '';
 
-                charTipHtml += `<div class="tip-item" style="font-size: 11px;">${tip2Label} ${mainHanjaTip}</div>`;
+                charTipHtml += `<div class="tip-item" style="font-size: 13px;">${tip2Label} ${mainHanjaTip}</div>`;
                 if (memoryTip) {
-                    charTipHtml += `<div class="tip-item" style="margin-top: 3px; font-size: 11px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
+                    charTipHtml += `<div class="tip-item" style="margin-top: 3px; font-size: 13px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
                 }
             } else {
-                charTipHtml = `<div class="tip-item" style="font-size: 11px;">${tip2Label} ${rawCharTip}</div>`;
+                charTipHtml = `<div class="tip-item" style="font-size: 13px;">${tip2Label} ${rawCharTip}</div>`;
             }
             return charTipHtml;
         }
 
-        // 💡 [퀴즈 모드 전용] 기억팁이 존재하면 한자팁을 가차없이 완전히 지워버리는 한 축 축소 전용 파서
+        /* 💡 2번 조치: 공간 확보가 시급한 퀴즈 모드에서는 팁 크기를 11px 컴팩트하게 일괄 축소 유지 */
         function parseMemoryTipQuiz(rawCharTip) {
             let charTipHtml = '';
             if (rawCharTip.includes('[기억 팁]')) {
                 let parts = rawCharTip.split(/💡?\s*\[기억\s*팁\]/);
                 let memoryTip = parts[1] ? parts[1].trim() : '';
                 
-                // 💡 요구사항 반영: 한자 팁 영역(parts[0])은 완전히 생략하고 11px 스케일 기억 팁만 출력[cite: 5]
                 if (memoryTip) {
                     charTipHtml = `<div class="tip-item" style="font-size: 11px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
                 }
             } else {
-                // 기억 팁이 없으면 기존 한자 팁만 11px 크기로 축소 노출[cite: 5]
                 charTipHtml = `<div class="tip-item" style="font-size: 11px;">✍️ <b>한자 팁:</b> ${rawCharTip}</div>`;
             }
             return charTipHtml;
@@ -474,7 +472,6 @@
                     meaningsHtml = `<div class="ko-meaning">${word.meaning || ''}</div>`;
                 }
 
-                // 부수 정보 크기(11px)에 연동되도록 폰트 압축 처리[cite: 5]
                 let charTipHtml = parseMemoryTipStudy(word.charTip || '준비 중', tip2Label);
                 const dynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
@@ -491,10 +488,8 @@
                     </div>
                     <div class="card-divider"></div>
                     <div class="meaning-box">${meaningsHtml}</div>
-                    
-                    <!-- 부수 정보(11px) 크기 스케일에 맞춰 팁 박스 일괄 축소 가공 완료 -->
                     <div class="tip-box">
-                        <div class="tip-item" style="font-size: 11px;">${tip1Label} ${word.pronTip || '준비 중'}</div>
+                        <div class="tip-item" style="font-size: 13px;">${tip1Label} ${word.pronTip || '준비 중'}</div>
                         ${charTipHtml}
                     </div>
                     <div class="ex-box">
@@ -533,7 +528,6 @@
                     meaningsHtml = `<div class="ko-meaning" style="font-size:18px;">${word.meaning || ''}</div>`;
                 }
 
-                // 💡 [퀴즈 모드 요구사항 구현] 기억 팁 존재 시 한자 팁 완전 자동 누락 분사기 가동[cite: 5]
                 let quizCharTipHtml = parseMemoryTipQuiz(word.charTip || '준비 중');
                 const quizDynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
@@ -556,13 +550,12 @@
                             <div class="card-divider" style="margin:2px 0 4px 0;"></div>
                             <div class="meaning-box" style="gap:4px; margin-bottom:4px;">${meaningsHtml}</div>
                             
-                            <!-- 💡 부수 정보 크기(11px)에 맞춰 전체 하이라이트 글자 압축 완료 -->
                             <div class="tip-box" style="padding:4px 8px; margin-bottom:4px; border-radius:4px;">
                                 <div class="tip-item" style="font-size:11px; margin-bottom:3px;">${tip1Label} ${word.pronTip || '준비 중'}</div>
                                 ${quizCharTipHtml}
                             </div>
                             <div class="ex-box" style="padding:4px 8px; border-radius:6px;">
-                                <div class="ex-zh zh-font" style="font-size:13px;">${quizDynamicExZhHtml}</div>
+                                <div class="ex-zh zh-font">${quizDynamicExZhHtml}</div>
                                 <div class="ex-pinyin-row" style="font-size:11px; margin-top:0px;">
                                     <span class="ex-pinyin">${word.exPinyin || ''}</span>
                                     <span class="ex-mean">(${word.exMean || word.exMeaning || ''})</span>
