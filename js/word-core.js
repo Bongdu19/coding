@@ -189,10 +189,10 @@ function showWordCoreTooltip(event, word) {
         `;
     }
 
-    const rect = event.target.getBoundingClientRect();
-    tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2 || 90)}px`; 
-    tooltip.style.top = `${rect.top + window.scrollY - (tooltip.offsetHeight || 95) - 8}px`;
-    tooltip.style.display = 'block';
+        const rect = event.target.getBoundingClientRect();
+        tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2 || 90)}px`; 
+        tooltip.style.top = `${rect.top + window.scrollY - (tooltip.offsetHeight || 95) - 18}px`;
+        tooltip.style.display = 'block';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
