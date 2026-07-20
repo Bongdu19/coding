@@ -1,5 +1,5 @@
 /**
- * BONG HSK 통합 단어 데이터 및 툴팁 파서 코어 엔진 (word-core.js) - 실시간 파서 업그레이드 버전
+ * BONG HSK 통합 단어 데이터 및 툴팁 파서 코어 엔진 (word-core.js) - 슬림 고딕 디자인 및 파란 글씨 제거 버전
  */
 
 let wordDictionary = {};
@@ -89,8 +89,7 @@ function injectWordsToDictionary(wordsArray, typeTag) {
 }
 
 /**
- * 💡 [구조 개편] 예문 한자들을 하나하나 쪼개지 않고, 문장 전체를 통째로 클릭 가능한 스팬으로 래핑합니다.
- * 백그라운드 로딩 상태와 무관하게 100% 정상 작동하며, 폰트 크기 불일치 현상이 완벽히 해결됩니다.
+ * 💡 [보정] 예문의 파란 글씨와 점선 밑줄 서식을 완전히 제거하여 본문 검은 글씨 크기와 100% 동기화합니다.
  */
 function parseHanziToTooltip(sentence) {
     if (!sentence) return '';
@@ -99,8 +98,8 @@ function parseHanziToTooltip(sentence) {
 
     for (let char of sentence) {
         if (isChineseChar(char)) {
-            // 한자 수량 단위당 실시간 지능형 클릭 핸들러 바인딩
-            resultHtml += `<span class="zh-clickable-char" onclick="handleCharClick(event, '${sentence}', ${sentence.indexOf(char)})">${char}</span>`;
+            // 파란 밑줄 클래스(zh-clickable-char)를 타지 않고 일반 한자 서체와 조화되도록 인라인 터치 속성만 매핑
+            resultHtml += `<span class="zh-normal-char" style="cursor: pointer;" onclick="handleCharClick(event, '${sentence}', ${sentence.indexOf(char)})">${char}</span>`;
         } else {
             resultHtml += `<span>${char}</span>`;
         }
@@ -108,16 +107,12 @@ function parseHanziToTooltip(sentence) {
     return resultHtml;
 }
 
-/**
- * 💡 사용자가 문장 속 특정 한자를 터치한 순간, 좌우 문맥을 조합하여 사전에 있는 가장 긴 단어를 찾아냅니다.
- */
 function handleCharClick(event, fullSentence, clickIndex) {
     event.stopPropagation();
     
     let matchedWord = '';
     let maxLen = 0;
     
-    // 클릭한 글자를 중심으로 최대 4글자 범위까지 단어 매칭 추적
     for (let start = Math.max(0, clickIndex - 3); start <= clickIndex; start++) {
         for (let end = clickIndex + 1; end <= Math.min(fullSentence.length, clickIndex + 4); end++) {
             let subWord = fullSentence.substring(start, end);
@@ -128,10 +123,10 @@ function handleCharClick(event, fullSentence, clickIndex) {
         }
     }
     
-    // 만약 결합 단어가 없다면 클릭한 낱개 한자 지정
     if (!matchedWord) {
         let singleChar = fullSentence.charAt(clickIndex);
-        if (wordDictionary[singleChar]) matchedWord = singleChar;
+        // 단어 검색 결과가 사전에 없더라도 매칭 타겟을 강제로 넘겨 예외 텍스트를 출력하도록 가동
+        matchedWord = singleChar;
     }
     
     if (matchedWord) {
@@ -140,7 +135,7 @@ function handleCharClick(event, fullSentence, clickIndex) {
 }
 
 /**
- * 3. 컴팩트 툴팁 메인 레이아웃 렌더러
+ * 💡 [디자인 완전 리뉴얼]: 무거운 볼드체 제거 -> 슬림 고딕 서체, 붉은색 제거 -> 화이트/실버 화사한 톤앤매너 매핑
  */
 function showWordCoreTooltip(event, word) {
     if (window.speechSynthesis) window.speechSynthesis.cancel(); 
@@ -155,36 +150,49 @@ function showWordCoreTooltip(event, word) {
 
     const info = wordDictionary[word];
     if (info) {
-        let badgeColor = '#94a3b8';
-        if (info.level === '1급') badgeColor = '#4caf50';
-        if (info.level === '2급') badgeColor = '#4cc9f0';
-        if (info.level === '3급') badgeColor = '#4361ee';
+        let badgeColor = '#64748b'; 
+        if (info.level === '1급') badgeColor = '#4caf50'; 
+        if (info.level === '2급') badgeColor = '#0284c7'; 
+        if (info.level === '3급') badgeColor = '#2563eb'; 
 
-        let hanjaHtml = info.hanja ? `<div style="font-size: 13px; font-weight: 500; color: #cbd5e1; margin-top: 4px;">${info.hanja}</div>` : '';
+        let hanjaHtml = info.hanja ? `<div style="font-size: 13px; font-weight: 400; color: #cbd5e1; margin-top: 3px;">${info.hanja}</div>` : '';
         
         tooltip.innerHTML = `
-            <div style="text-align: center; min-width: 180px; max-width: 260px; font-family: 'Pretendard', -apple-system, sans-serif; padding: 2px 0;">
+            <div style="text-align: center; min-width: 180px; max-width: 260px; font-family: 'Pretendard', -apple-system, 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; padding: 4px 0;">
+                
+                <!-- 슬림한 고급 고딕 서체 도입 및 균일화 세팅 -->
                 <div style="display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.2;">
-                    <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: ${badgeColor}; padding: 1px 4px; border-radius: 4px; flex-shrink: 0;">${info.level}</span>
-                    <span style="font-size: 24px; font-weight: 800; color: #ffffff;">${word}</span>
-                    <span style="font-size: 15px; font-weight: 700; color: #74c0fc; margin-left: 2px;">${info.py}</span>
+                    <span style="font-size: 11px; font-weight: 500; color: #ffffff; background: ${badgeColor}; padding: 1px 4px; border-radius: 4px; flex-shrink: 0; font-family: sans-serif;">${info.level}</span>
+                    <span style="font-size: 24px; font-weight: 400; color: #ffffff; letter-spacing: 0.02em;">${word}</span>
+                    <span style="font-size: 14px; font-weight: 500; color: #93c5fd; margin-left: 1px; font-family: sans-serif;">${info.py}</span>
                 </div>
+
                 ${hanjaHtml}
-                <div style="font-size: 13px; font-weight: 600; color: #ff85a2; padding-top: 6px; border-top: 1px dashed rgba(255,255,255,0.15); margin-top: 6px; text-align: center; line-height: 1.4; white-space: normal; word-break: break-all;">
+                
+                <!-- 붉은색 완전 탈피: 일체감 있는 밝은 화이트 실버 계열 텍스트로 가독성 가공 -->
+                <div style="font-size: 13px; font-weight: 400; color: #f8fafc; padding-top: 6px; border-top: 1px dashed rgba(255,255,255,0.15); margin-top: 6px; text-align: center; line-height: 1.4; white-space: normal; word-break: break-all;">
                     ${info.mean}
                 </div>
             </div>
         `;
 
-        const rect = event.target.getBoundingClientRect();
-        tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2 || 90)}px`; 
-        tooltip.style.top = `${rect.top + window.scrollY - (tooltip.offsetHeight || 110) - 8}px`;
-        tooltip.style.display = 'block';
-
         const ut = new SpeechSynthesisUtterance(word);
         ut.lang = 'zh-CN'; ut.rate = 0.8;
         window.speechSynthesis.speak(ut);
+    } else {
+        // 💡 [원복 완료]: 사전에 없는 한자 터치 시 단어장 미등록 경고 상태창 표출
+        tooltip.innerHTML = `
+            <div style="text-align: center; min-width: 160px; font-family: 'Pretendard', -apple-system, sans-serif; padding: 4px 0;">
+                <span style="font-size: 20px; font-weight: 400; color: #ffffff;">${word}</span>
+                <div style="font-size: 12px; font-weight: 400; color: #94a3b8; padding-top: 4px; margin-top: 4px; border-top: 1px dashed rgba(255,255,255,0.15);">단어장 검색 결과 없음</div>
+            </div>
+        `;
     }
+
+    const rect = event.target.getBoundingClientRect();
+    tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2 || 90)}px`; 
+    tooltip.style.top = `${rect.top + window.scrollY - (tooltip.offsetHeight || 95) - 8}px`;
+    tooltip.style.display = 'block';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
