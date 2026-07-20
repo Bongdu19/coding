@@ -138,10 +138,11 @@
             Promise.all([
                 fetch('./data/hsk1.json').then(res => res.json()),
                 fetch('./data/hsk2.json').then(res => res.json()),
-                fetch('./data/hsk3.json').then(res => res.json())
+                fetch('./data/hsk3.json').then(res => res.json()),
+                fetch('./data/radical.json').then(res => res.json()) // radical  추가
             ])
-            .then(([hsk1, hsk2, hsk3]) => {
-                const combinedWords = [...hsk1, ...hsk2, ...hsk3];
+            .then(([hsk1, hsk2, hsk3, radical]) => {
+                const combinedWords = [...hsk1, ...hsk2, ...hsk3, ...radical];
                 combinedWords.forEach(word => {
                     if (word.hanzi) {
                         let meanText = '';
