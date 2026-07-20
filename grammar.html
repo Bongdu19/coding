@@ -17,7 +17,6 @@
         }
 
         body {
-            /* STHeiti, Microsoft YaHei, Noto Sans SC 등을 추가하여 한자 자형을 통일 */
             font-family: 'Pretendard', -apple-system, "STHeiti", "Microsoft YaHei", "Noto Sans SC", sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -162,7 +161,6 @@
             gap: 8px;
         }
 
-        /* 💡 읽기 버튼과 예문 상단 헤더 */
         .example-header {
             display: flex;
             justify-content: space-between;
@@ -176,26 +174,25 @@
             line-height: 1.4;
         }
 
+        /* 💡 코어 엔진 호환용 단어 스타일 매핑 */
         .zh-word {
             font-size: 1.3rem;
             font-weight: 600;
-            color: #1e293b;
+            color: #4f46e5;
             cursor: pointer;
-            border-bottom: 1px dashed #94a3b8;
+            border-bottom: 2px dashed #4f46e5;
             margin-right: 2px;
             display: inline-block;
         }
         .zh-word:hover {
-            color: var(--primary-color);
-            border-bottom-color: var(--primary-color);
+            color: #6366f1;
+            border-bottom-color: #6366f1;
         }
 
-        /* 문장 안의 중국어 폰트 스타일 강제 통일 */
         .zh-sentence, .zh-word {
             font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
         }
 
-        /* 💡 한글이 섞여 있을 때 일반 텍스트 스타일 */
         .non-zh-text {
             font-size: 1.3rem;
             font-weight: 600;
@@ -216,7 +213,6 @@
             margin-top: 2px;
         }
 
-        /* 💡 모바일 친화적으로 겹치지 않게 고정 위치 해제한 읽기 버튼 */
         .btn-speak {
             background: #e2e8f0;
             border: none;
@@ -270,6 +266,7 @@
             padding-left: 4px;
         }
 
+        /* 💡 사이즈를 키운 새 말풍선 팝업 스타일 지정 */
         .word-tooltip {
             position: absolute;
             background: #1e293b;
@@ -278,10 +275,8 @@
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.25);
             z-index: 2000;
-            pointer-events: auto; /* 내부 스크롤이나 요소 대응 */
             display: none;
             line-height: 1.4;
-            transition: opacity 0.15s ease;
         }
         .word-tooltip::after {
             content: '';
@@ -296,7 +291,6 @@
             width: 0;
         }
 
-        /* 문법 설명 내에 표(Table)가 들어올 경우 예쁘게 스타일링 */
         .description table {
             width: 100%;
             border-collapse: collapse;
@@ -304,24 +298,8 @@
             font-size: 0.88rem;
             text-align: left;
         }
-        
-        .description th {
-            background-color: #f1f5f9;
-            color: #1e293b;
-            font-weight: 700;
-            padding: 8px 10px;
-            border-bottom: 2px solid #cbd5e1;
-        }
-        
-        .description td {
-            padding: 8px 10px;
-            border-bottom: 1px solid #e2e8f0;
-            color: #475569;
-        }
-        
-        .description tr:hover {
-            background-color: #f8fafc;
-        }
+        .description th { background-color: #f1f5f9; color: #1e293b; font-weight: 700; padding: 8px 10px; border-bottom: 2px solid #cbd5e1; }
+        .description td { padding: 8px 10px; border-bottom: 1px solid #e2e8f0; color: #475569; }
     </style>
 </head>
 <body>
@@ -340,32 +318,29 @@
     <div id="grammar-container"></div>
     <div id="tooltip" class="word-tooltip"></div>
 
-    <!-- 외부 분리 엔진 파일 인클루드 -->
+    <!-- 코어 사전 엔진 인클루드 -->
     <script src="./js/word-core.js"></script>
-    
     <script>
         let grammarData = [];
         let currentFilter = 'ALL';
-    
+
         async function initPage() {
             try {
-                // 1. 공통 스크립트 엔진의 마스터 사전을 로드[cite: 1]
-                await loadMasterDictionary();
-    
-                // 2. 문법 본연의 데이터 로드
+                // 1. 새 가속 엔진 로드 호출 (grammar는 전체 단어 수집이므로 'all' 전달)
+                await loadMasterDictionary('all');
+
                 const resGrammar = await fetch('./data/grammar.json');
                 grammarData = await resGrammar.json();
-    
+
                 renderCards();
             } catch (error) {
                 console.error("데이터 로드 실패:", error);
-                document.getElementById('grammar-container').innerHTML = "<p>오류가 발생했습니다.</p>";
+                document.getElementById('grammar-container').innerHTML = "<p>데이터를 불러오는 중 오류가 발생했습니다.</p>";
             }
         }
 
         function parseTip(tipString) {
             if (!tipString) return '';
-
             let frequency = '상';
             let freqClass = 'high';
             let desc = tipString;
@@ -396,78 +371,60 @@
         }
 
         function renderCards() {
-                const container = document.getElementById('grammar-container');
-                container.innerHTML = '';
-        
-                const filteredData = grammarData.filter(item => {
-                    if (currentFilter === 'ALL') return true;
-                    return item.level === currentFilter;
-                });
-        
-                filteredData.forEach((item, index) => {
-                    const card = document.createElement('div');
-                    card.className = 'grammar-card';
-        
-                    let examplesHtml = '';
-                    item.examples.forEach((ex) => {
-                        // 💡 복잡했던 자형 판별 FOR문 대신 엔진의 공통 파서 1줄로 예문 자동 바인딩 교체
-                        const parsedZh = parseHanziToTooltip(ex.zh);
-        
-                        examplesHtml += `
-                            <div class="example-box">
-                                <div class="example-header">
-                                    <div class="zh-sentence">${parsedZh}</div>
-                                    <button class="btn-speak" onclick="speakExample(event, '${ex.zh}', '${ex.ko}')">🔊 읽기</button>
-                                </div>
-                                <div class="pinyin-text">${ex.pinyin}</div>
-                                <div class="ko-text">${ex.ko}</div>
+            const container = document.getElementById('grammar-container');
+            container.innerHTML = '';
+
+            const filteredData = grammarData.filter(item => {
+                if (currentFilter === 'ALL') return true;
+                return item.level === currentFilter;
+            });
+
+            filteredData.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'grammar-card';
+
+                let examplesHtml = '';
+                item.examples.forEach((ex) => {
+                    // 💡 코어 엔진의 가공 처리기 연동형으로 교체하여 글자 깨짐 완전 해결
+                    const parsedZh = parseHanziToTooltip(ex.zh);
+
+                    examplesHtml += `
+                        <div class="example-box">
+                            <div class="example-header">
+                                <div class="zh-sentence">${parsedZh}</div>
+                                <button class="btn-speak" onclick="speakExample(event, '${ex.zh}', '${ex.ko}')">🔊 읽기</button>
                             </div>
-                        `;
-                    });
-        
-                    const formattedTipHtml = parseTip(item.tip);
-                    card.innerHTML = `
-                        <div class="card-header" onclick="toggleCard(this)">
-                            <h3 class="grammar-title">${item.title}</h3>
-                            <span class="badge ${item.level.toLowerCase()}">${item.level}</span>
-                        </div>
-                        <div class="grammar-formula" onclick="toggleCard(this)">${item.formula}</div>
-                        <div class="card-details">
-                            <div class="description">${item.description}</div>
-                            ${examplesHtml}
-                            ${formattedTipHtml}
+                            <div class="pinyin-text">${ex.pinyin}</div>
+                            <div class="ko-text">${ex.ko}</div>
                         </div>
                     `;
-                    container.appendChild(card);
                 });
-            }
+
+                const formattedTipHtml = parseTip(item.tip);
+
+                card.innerHTML = `
+                    <div class="card-header" onclick="toggleCard(this)">
+                        <h3 class="grammar-title">${item.title}</h3>
+                        <span class="badge ${item.level.toLowerCase()}">${item.level}</span>
+                    </div>
+                    <div class="grammar-formula" onclick="toggleCard(this)">${item.formula}</div>
+                    
+                    <div class="card-details">
+                        <div class="description">${item.description}</div>
+                        ${examplesHtml}
+                        ${formattedTipHtml}
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
 
         function toggleCard(element) {
             const card = element.closest('.grammar-card');
             const details = card.querySelector('.card-details');
             details.classList.toggle('show');
         }
-
-        function showTooltip(event, word) {
-            event.stopPropagation(); 
-            const tooltip = document.getElementById('tooltip');
-            const match = hskDictionary[word];
-            
-            if (match) {
-                tooltip.innerHTML = `<strong>${word}</strong> [${match.pinyin}]<br>${match.meaning}`;
-            } else {
-                tooltip.innerHTML = `<strong>${word}</strong><br>단어장 검색 결과 없음`;
-            }
-
-            const rect = event.target.getBoundingClientRect();
-            tooltip.style.left = `${rect.left + window.scrollX + (rect.width/2) - 80}px`; 
-            tooltip.style.top = `${rect.top + window.scrollY - 60}px`;
-            tooltip.style.display = 'block';
-        }
-
-        document.addEventListener('click', () => {
-            document.getElementById('tooltip').style.display = 'none';
-        });
 
         function speakExample(event, zhText, koText) {
             event.stopPropagation(); 
