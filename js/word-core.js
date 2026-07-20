@@ -1,5 +1,5 @@
 /**
- * BONG HSK 통합 단어 데이터 및 툴팁 파서 코어 엔진 (word-core.js) - 디자인 및 버그 수정 버전
+ * BONG HSK 통합 단어 데이터 및 툴팁 파서 코어 엔진 (word-core.js) - 컴팩트 디자인 및 급수 뱃지 반영 버전
  */
 
 // 글로벌 공유 마스터 사전
@@ -21,27 +21,38 @@ async function loadMasterDictionary(currentType = 'all') {
 
         if (primaryTarget) {
             const res = await fetch(primaryTarget).then(r => r.json()).catch(() => []);
-            injectWordsToDictionary(res);
+            injectWordsToDictionary(res, currentType);
             console.log(`⚡ 필수 사전 파일 1종 우선 로드 완료 (${primaryTarget})`);
         } else {
             const datasets = await Promise.all([
                 fetch('./data/hsk1.json').then(r => r.json()).catch(() => []),
-                fetch('./data/hsk2.json').then(r => r.json()).catch(() => []),
-                fetch('./data/hsk3.json').then(r => r.json()).catch(() => [])
+                fetch('./data/hsk2.json').then(res => res.json()).catch(() => []),
+                fetch('./data/hsk3.json').then(res => res.json()).catch(() => [])
             ]);
-            datasets.forEach(injectWordsToDictionary);
+            injectWordsToDictionary(datasets[0], '1');
+            injectWordsToDictionary(datasets[1], '2');
+            injectWordsToDictionary(datasets[2], '3');
             console.log(`⚡ 통합 사전 파일 기본 로드 완료`);
         }
 
+        // 백그라운드 지연 로드 (나머지 급수 파일 수집)
         setTimeout(async () => {
             if (isExtraDictLoaded) return;
-            const files = ['./data/hsk1.json', './data/hsk2.json', './data/hsk3.json', './data/radical.json'];
             
-            await Promise.all(files.map(async (file) => {
-                if (primaryTarget && file.includes(primaryTarget.replace('./', ''))) return;
-                const data = await fetch(file).then(r => r.json()).catch(() => []);
-                injectWordsToDictionary(data);
-            }));
+            // 💡 우선순위(1급 -> 2급 -> 3급 -> 부수)가 덮어쓰기 과정에서 보존되도록 역순(부수부터)으로 로드 처리합니다.
+            const extraFiles = [
+                { path: './data/radical.json', tag: 'radical' },
+                { path: './data/hsk3.json', tag: '3' },
+                { path: './data/hsk2.json', tag: '2' },
+                { path: './data/hsk1.json', tag: '1' }
+            ];
+
+            for (const file of extraFiles) {
+                if (primaryTarget && file.path.includes(primaryTarget.replace('./', ''))) continue;
+                const data = await fetch(file.path).then(r => r.json()).catch(() => []);
+                injectWordsToDictionary(data, file.tag);
+            }
+            
             isExtraDictLoaded = true;
             console.log("🎯 백그라운드 전체 마스터 사전 빌드 완료! 단어 수:", Object.keys(wordDictionary).length);
         }, 300);
@@ -51,40 +62,60 @@ async function loadMasterDictionary(currentType = 'all') {
     }
 }
 
-function injectWordsToDictionary(wordsArray) {
+/**
+ * 사전에 데이터를 적재하며 우선순위에 의거한 레벨 태그를 마킹합니다.
+ */
+function injectWordsToDictionary(wordsArray, typeTag) {
     if (!Array.isArray(wordsArray)) return;
+
+    // 내부 등급 문자열 치환
+    let levelLabel = '부수';
+    if (typeTag === '1') levelLabel = '1급';
+    if (typeTag === '2') levelLabel = '2급';
+    if (typeTag === '3') levelLabel = '3급';
+
     wordsArray.forEach(word => {
         const wordKey = word.hanzi || word.han || word.word;
         if (wordKey) {
+            const trimmedKey = wordKey.trim();
+            
             let meanText = '';
             if (Array.isArray(word.meanings)) {
                 meanText = word.meanings.map(m => `[${m.pos}] ${m.ko}`).join(', ');
             } else {
                 meanText = word.meaning || word.kor || '';
             }
-            wordDictionary[wordKey.trim()] = { 
+
+            // 💡 [우선순위 로직]: 기존에 이미 1급, 2급 같은 높은 우선순위 등급 정보가 채워져 있다면 덮어쓰지 않고 보호합니다.
+            if (wordDictionary[trimmedKey]) {
+                const existingLabel = wordDictionary[trimmedKey].level;
+                if (existingLabel === '1급') return;
+                if (existingLabel === '2급' && (levelLabel === '3급' || levelLabel === '부수')) return;
+                if (existingLabel === '3급' && levelLabel === '부수') return;
+            }
+
+            wordDictionary[trimmedKey] = { 
                 mean: meanText, 
                 py: word.pinyin || word.pin || '',
-                hanja: word.hanja || '' 
+                hanja: word.hanja || '',
+                level: levelLabel
             };
         }
     });
 }
 
 /**
- * 2. [버그 수정] 사전에 진짜 존재하는 단어만 파란색 밑줄(zh-word)을 만들어 줍니다.
+ * 중국어 문장 문자열을 툴팁 HTML 형태로 치환
  */
 function parseHanziToTooltip(sentence) {
     if (!sentence) return '';
     let tempResult = sentence;
     
-    // 긴 단어 우선 매칭 정렬 (漂亮 같은 복합어가 낱개 亮로 쪼개지는 버그 원천 차단)
     const sortedKeys = Object.keys(wordDictionary).sort((a, b) => b.length - a.length);
     const replacementMap = {};
     let uniqueId = 0;
     const isChineseChar = (str) => /[\u4e00-\u9fa5]/.test(str);
 
-    // 사전에 존재하는 복합 단어들 우선 치환
     sortedKeys.forEach(word => {
         if (tempResult.includes(word) && isChineseChar(word)) {
             const placeholder = `__BONG_CORE_FLAG_${uniqueId}__`;
@@ -102,11 +133,9 @@ function parseHanziToTooltip(sentence) {
             outputHtml += token;
         } else {
             for (let char of token) {
-                // 💡 [핵심 보정]: 사전에 등록되어 있는 단독 1글자 한자일 때만 zh-word(파란밑줄) 부여
                 if (isChineseChar(char) && wordDictionary[char]) {
                     outputHtml += `<span class="zh-word" onclick="showWordCoreTooltip(event, '${char}');">${char}</span>`;
                 } else {
-                    // 사전에 없는 한자거나, 기호/한글은 밑줄 없는 일반 텍스트(non-zh-text)로 격리
                     outputHtml += `<span class="non-zh-text">${char}</span>`;
                 }
             }
@@ -121,7 +150,7 @@ function parseHanziToTooltip(sentence) {
 }
 
 /**
- * 3. [디자인 변경] 어두운 배경 툴팁에 어울리도록 모든 폰트 통합, 배경색 완전 제거, 흰색/밝은색으로 통일
+ * 컴팩트해진 전용 디자인 툴팁 창 팝업
  */
 function showWordCoreTooltip(event, word) {
     event.stopPropagation(); 
@@ -137,23 +166,32 @@ function showWordCoreTooltip(event, word) {
 
     const info = wordDictionary[word];
     if (info) {
-        // 💡 1. 폰트 패밀리 통합 유도 및 2. 동적 배경색 제거 테두리 완전 클리어
-        let hanjaHtml = info.hanja ? `<div style="font-size: 14px; font-weight: 600; color: #cbd5e1; margin-bottom: 8px; font-family: 'Pretendard', -apple-system, sans-serif;">${info.hanja}</div>` : '';
+        // 급수 등급에 따른 전용 컬러 인덱스 부여
+        let badgeColor = '#94a3b8'; // 기본 부수 (회색 계열)
+        if (info.level === '1급') badgeColor = '#4caf50'; // 초록
+        if (info.level === '2급') badgeColor = '#4cc9f0'; // 하늘
+        if (info.level === '3급') badgeColor = '#4361ee'; // 파랑
+
+        let hanjaHtml = info.hanja ? `<div style="font-size: 12px; font-weight: 500; color: #cbd5e1; margin-bottom: 5px; font-family: 'Pretendard', sans-serif;">${info.hanja}</div>` : '';
         
+        // 💡 여백(padding), 자간, 폰트 비율을 완전히 줄여 극도로 컴팩트하게 재조정
         tooltip.innerHTML = `
-            <div style="text-align: center; min-width: 200px; font-family: 'Pretendard', -apple-system, 'PingFang SC', sans-serif;">
-                <div style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 4px;">${word}</div>
-                <div style="font-size: 16px; font-weight: 700; color: #74c0fc; margin-bottom: 6px;">${info.py}</div>
+            <div style="text-align: center; min-width: 170px; max-width: 250px; font-family: 'Pretendard', -apple-system, 'PingFang SC', sans-serif; padding: 2px 0;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 6px; margin-bottom: 2px;">
+                    <span style="font-size: 22px; font-weight: 800; color: #ffffff;">${word}</span>
+                    <span style="font-size: 10px; font-weight: 700; color: #ffffff; background: ${badgeColor}; padding: 1px 4px; border-radius: 4px; line-height: 1.2;">${info.level}</span>
+                </div>
+                <div style="font-size: 13px; font-weight: 700; color: #74c0fc; margin-bottom: 4px;">${info.py}</div>
                 ${hanjaHtml}
-                <div style="font-size: 15px; font-weight: 600; color: #ff85a2; padding-top: 6px; border-top: 1px dashed rgba(255,255,255,0.2); text-align: left; line-height: 1.4;">
+                <div style="font-size: 13px; font-weight: 600; color: #ff85a2; padding-top: 5px; border-top: 1px dashed rgba(255,255,255,0.15); text-align: left; line-height: 1.35; white-space: normal; word-break: break-all;">
                     ${info.mean}
                 </div>
             </div>
         `;
 
         const rect = event.target.getBoundingClientRect();
-        tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2 || 100)}px`; 
-        tooltip.style.top = `${rect.top + window.scrollY - (tooltip.offsetHeight || 130) - 12}px`;
+        tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2 || 90)}px`; 
+        tooltip.style.top = `${rect.top + window.scrollY - (tooltip.offsetHeight || 110) - 8px}px`;
         tooltip.style.display = 'block';
 
         const ut = new SpeechSynthesisUtterance(word);
