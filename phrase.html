@@ -48,11 +48,37 @@
         /* 본문 한자 글씨체 */
         .hz-text { font-size: 32px; font-weight: 800; color: #000; line-height: 1.3; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
         
-        .word-tooltip {
+        /* 외부 엔진 스크립트와 호환되는 단어 툴팁 스타일 */
+        .zh-word {
             position: relative; display: inline-block;
             border-bottom: 2px dashed #4f46e5;
             color: #4f46e5; cursor: pointer; padding: 0 2px;
             font-weight: 800;
+        }
+        
+        /* 코어 엔진용 말풍선(Tooltip) 스타일 지정 */
+        .word-tooltip {
+            position: absolute;
+            background: #1e293b;
+            color: #ffffff;
+            padding: 14px 16px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            z-index: 2000;
+            display: none;
+            line-height: 1.4;
+        }
+        .word-tooltip::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 6px 6px 0;
+            border-style: solid;
+            border-color: #1e293b transparent;
+            display: block;
+            width: 0;
         }
         
         .py-text { color: #2563eb; font-size: 18px; font-weight: 700; margin: 6px 0 12px 0; }
@@ -62,31 +88,6 @@
         .btn-group { display: flex; justify-content: center; gap: 8px; max-width: 500px; margin: 6px auto 0 auto; }
         .btn-main { background-color: var(--primary); color: white; border: none; border-radius: 8px; padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; flex: 1; }
         .btn-stop { background-color: #64748b; color: white; border: none; border-radius: 8px; padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; width: 80px; }
-
-        .modal-overlay {
-            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(4px); z-index: 2000;
-            justify-content: center; align-items: center;
-        }
-        .modal-content {
-            background: #ffffff; border-radius: 16px; padding: 20px; width: 85%; max-width: 340px;
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.15); text-align: center;
-            animation: popUp 0.2s ease-out;
-        }
-        /* 1. 모달 내 한자 글씨체를 본문(.hz-text)과 동일하게 맞춤 */
-        .modal-word { font-size: 36px; font-weight: 800; color: #000; margin-bottom: 4px; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
-        .modal-pinyin { font-size: 18px; font-weight: 700; color: #2563eb; margin-bottom: 4px; }
-        
-        /* 2. 한자의 뜻(훈음)을 보여줄 새로운 스타일 클래스 */
-        .modal-hanja { font-size: 14px; font-weight: 600; color: #64748b; margin-bottom: 12px; background: #f1f5f9; padding: 4px 8px; border-radius: 6px; display: inline-block; }
-        
-        .modal-mean { font-size: 16px; font-weight: 600; color: #dc2626; background: #fff5f5; padding: 10px; border-radius: 8px; border: 1px dashed #fca5a5; }
-        .modal-close { margin-top: 16px; background: #f1f5f9; border: 1px solid var(--border-color); padding: 8px 16px; border-radius: 8px; font-weight: 700; color: var(--text-sub); width: 100%; cursor: pointer; }
-        
-        @keyframes popUp {
-            from { transform: scale(0.9); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
     </style>
 </head>
 <body>
@@ -99,17 +100,6 @@
 
     <div class="phrase-container" id="phraseList"></div>
 
-    <div class="modal-overlay" id="wordModal" onclick="closeModal()">
-        <div class="modal-content" onclick="event.stopPropagation();">
-            <div class="modal-word" id="mWord"></div>
-            <div class="modal-pinyin" id="mPinyin"></div>
-            <!-- 한자 뜻이 들어갈 영역 추가 -->
-            <div class="modal-hanja" id="mHanja"></div>
-            <div class="modal-mean" id="mMean"></div>
-            <button class="modal-close" onclick="closeModal()">닫기</button>
-        </div>
-    </div>
-
     <div class="bottom-controls">
         <div style="font-size:12px; font-weight:700;">
             재생 속도: <span id="spVal">0.7</span>x
@@ -121,13 +111,14 @@
         </div>
     </div>
 
+    <!-- 외부 통합 엔진 자바스크립트 파일 호출 -->
+    <script src="./js/word-core.js"></script>
     <script>
         let rawData = [];
         let currentSentences = [];
         let isPlaying = false, isPaused = false;
         let currentIndex = 0, currentStep = 0; 
         let wakeLock = null;
-        let wordDictionary = {};
         
         const urlParams = new URLSearchParams(window.location.search);
         const level = urlParams.get('level') || '2';
@@ -135,30 +126,10 @@
         window.onload = function() {
             document.getElementById('headerTitle').innerText = `🗣️ HSK ${level}급 어구 예문`;
             
-            Promise.all([
-                fetch('./data/hsk1.json').then(res => res.json()),
-                fetch('./data/hsk2.json').then(res => res.json()),
-                fetch('./data/hsk3.json').then(res => res.json()),
-                fetch('./data/radical.json').then(res => res.json()) // radical  추가
-            ])
-            .then(([hsk1, hsk2, hsk3, radical]) => {
-                const combinedWords = [...hsk1, ...hsk2, ...hsk3, ...radical];
-                combinedWords.forEach(word => {
-                    if (word.hanzi) {
-                        let meanText = '';
-                        if (Array.isArray(word.meanings)) {
-                            meanText = word.meanings.map(m => `[${m.pos}] ${m.ko}`).join(', ');
-                        } else {
-                            meanText = word.meaning || '';
-                        }
-                        // 사전에 hanja 정보도 함께 저장하도록 수정
-                        wordDictionary[word.hanzi.trim()] = { 
-                            mean: meanText, 
-                            py: word.pinyin || '',
-                            hanja: word.hanja || '' 
-                        };
-                    }
-                });
+            // 1. 코어 엔진의 마스터 사전을 비동기로 로드 (hsk1, 2, 3, radical 자동 통합)
+            loadMasterDictionary()
+            .then(() => {
+                // 2. 사전 적재가 끝나면 급수별 문장 파일 호출
                 return fetch(`./data/hsk${level}_sentences.json`);
             })
             .then(res => res.json())
@@ -174,61 +145,13 @@
             .catch(err => console.error("데이터 로드 실패:", err));
         };
 
-        function parseHanziToTooltip(sentence) {
-            let tempResult = sentence;
-            const sortedKeys = Object.keys(wordDictionary).sort((a, b) => b.length - a.length);
-            const replacementMap = {};
-            let uniqueId = 0;
-
-            sortedKeys.forEach(word => {
-                if (tempResult.includes(word)) {
-                    const placeholder = `__BONG_FLAG_${uniqueId}__`;
-                    replacementMap[placeholder] = `<span class="word-tooltip" onclick="showWordDetail('${word}', event);">${word}</span>`;
-                    tempResult = tempResult.split(word).join(placeholder);
-                    uniqueId++;
-                }
-            });
-
-            Object.keys(replacementMap).forEach(placeholder => {
-                tempResult = tempResult.split(placeholder).join(replacementMap[placeholder]);
-            });
-            return tempResult;
-        }
-
-        function showWordDetail(word, event) {
-            event.stopPropagation(); 
-            window.speechSynthesis.cancel(); 
-            const info = wordDictionary[word];
-            if(info) {
-                document.getElementById('mWord').innerText = word;
-                document.getElementById('mPinyin').innerText = info.py;
-                
-                // 모달 열릴 때 한자 뜻 매핑 및 노출 여부 결정
-                const hanjaElem = document.getElementById('mHanja');
-                if (info.hanja) {
-                    hanjaElem.innerText = info.hanja;
-                    hanjaElem.style.display = 'inline-block';
-                } else {
-                    hanjaElem.style.display = 'none';
-                }
-
-                document.getElementById('mMean').innerText = info.mean;
-                document.getElementById('wordModal').style.display = 'flex';
-                const ut = new SpeechSynthesisUtterance(word);
-                ut.lang = 'zh-CN';
-                ut.rate = getSpeed();
-                window.speechSynthesis.speak(ut);
-            }
-        }
-
-        function closeModal() { document.getElementById('wordModal').style.display = 'none'; }
-
         function loadCategory(idx) {
             stopAudio();
             currentSentences = rawData[idx].sentences;
             const container = document.getElementById('phraseList');
             container.innerHTML = '';
             currentSentences.forEach((s) => {
+                // 💡 중복되던 자체 파서 대신 코어 엔진(word-core.js)의 공통 파서 함수 활용
                 const dynamicHanziHtml = parseHanziToTooltip(s.hanzi);
                 container.innerHTML += `
                     <div class="phrase-card" id="p-card-${s.id}" onclick="speakSingle('${s.hanzi}', '${s.korean}')">
