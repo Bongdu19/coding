@@ -169,35 +169,15 @@
             width: 100%;
         }
 
-        .zh-sentence {
-            flex: 1;
-            line-height: 1.4;
-        }
-
-        /* 💡 코어 엔진 호환용 단어 스타일 매핑 */
-        .zh-word {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #4f46e5;
-            cursor: pointer;
-            border-bottom: 2px dashed #4f46e5;
-            margin-right: 2px;
-            display: inline-block;
-        }
-        .zh-word:hover {
-            color: #6366f1;
-            border-bottom-color: #6366f1;
-        }
-
-        .zh-sentence, .zh-word {
-            font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        }
-
-        .non-zh-text {
+        /* 💡 문법창 예문 한자 폰트 스타일 가독성 최적화 통일 (파란 글씨 제거) */
+        .zh-sentence span {
             font-size: 1.3rem;
             font-weight: 600;
             color: #1e293b;
             display: inline-block;
+            vertical-align: middle;
+            font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+            border: none !important;
         }
 
         .pinyin-text {
@@ -266,7 +246,7 @@
             padding-left: 4px;
         }
 
-        /* 💡 사이즈를 키운 새 말풍선 팝업 스타일 지정 */
+        /* 슬림 스타일 연동 툴팁 말풍선 디자인 */
         .word-tooltip {
             position: absolute;
             background: #1e293b;
@@ -291,13 +271,7 @@
             width: 0;
         }
 
-        .description table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-            font-size: 0.88rem;
-            text-align: left;
-        }
+        .description table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.88rem; text-align: left; }
         .description th { background-color: #f1f5f9; color: #1e293b; font-weight: 700; padding: 8px 10px; border-bottom: 2px solid #cbd5e1; }
         .description td { padding: 8px 10px; border-bottom: 1px solid #e2e8f0; color: #475569; }
     </style>
@@ -318,7 +292,6 @@
     <div id="grammar-container"></div>
     <div id="tooltip" class="word-tooltip"></div>
 
-    <!-- 코어 사전 엔진 인클루드 -->
     <script src="./js/word-core.js"></script>
     <script>
         let grammarData = [];
@@ -326,7 +299,6 @@
 
         async function initPage() {
             try {
-                // 1. 새 가속 엔진 로드 호출 (grammar는 전체 단어 수집이므로 'all' 전달)
                 await loadMasterDictionary('all');
 
                 const resGrammar = await fetch('./data/grammar.json');
@@ -385,7 +357,6 @@
 
                 let examplesHtml = '';
                 item.examples.forEach((ex) => {
-                    // 💡 코어 엔진의 가공 처리기 연동형으로 교체하여 글자 깨짐 완전 해결
                     const parsedZh = parseHanziToTooltip(ex.zh);
 
                     examplesHtml += `
