@@ -48,7 +48,6 @@
         .view.active { display: block; }
         .zh-font { font-family: var(--font-zh); font-weight: 600; }
 
-        /* [학습 모드] 단어 카드 스타일 */
         .card { background: var(--bg-card); border-radius: 12px; padding: 24px 14px 10px 14px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); border: 1px solid var(--border-color); transition: all 0.3s ease; position: relative; }
         .card.active { background-color: #fefcf0; border-color: var(--accent-yellow); }
         .card.is-wrong { border-color: var(--accent-red); background-color: #fef2f2; }
@@ -79,11 +78,11 @@
         .ex-pinyin { color: #1e3a8a; font-weight: 600; }
         .ex-mean { color: #334155; font-weight: 600; }
 
-        /* 예문 단어 툴팁 및 일반 문자열 격리 스타일 */
-        .zh-word { border-bottom: 2px dashed #4f46e5; color: #4f46e5; cursor: pointer; padding: 0 2px; font-weight: 800; display: inline-block; }
-        .non-zh-text { font-size: 19px; font-weight: 700; color: #0f172a; display: inline-block; }
+        /* 💡 [폰트 사이즈 일치화 수평 정렬 스타일] 한자가 깨지거나 크기가 튀지 않도록 통일 */
+        .ex-zh span { font-size: 20px; font-weight: 700; color: #0f172a; display: inline-block; vertical-align: middle; }
+        .ex-zh .zh-clickable-char { color: #4f46e5; border-bottom: 2px dashed #4f46e5; cursor: pointer; }
+        .ex-zh .zh-clickable-char:hover { color: #6366f1; border-bottom-color: #6366f1; }
 
-        /* 마스터 사전용 말풍선 팝업 스타일 */
         .word-tooltip {
             position: absolute; background: #1e293b; color: #ffffff; padding: 14px 16px; border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.25); z-index: 2000; display: none; line-height: 1.4;
@@ -165,7 +164,6 @@
         </div>
     </div>
 
-    <!-- 외부 통합 엔진 자바스크립트 호출 -->
     <script src="./js/word-core.js"></script>
     <script>
         let allWords = [];
@@ -177,7 +175,6 @@
         let autoPlayTimer = null; 
 
         window.onload = function() {
-            // URL 파라미터에서 단어장 타입 식별 (기본값 all)
             const urlParams = new URLSearchParams(window.location.search);
             const levelType = urlParams.get('type') || 'all';
             
@@ -186,7 +183,6 @@
             
             if (savedTab) activeTab = savedTab;
 
-            // [가속화] 현재 볼 단어장의 데이터만 선별 호출하여 화면을 초고속으로 띄움
             loadMasterDictionary(levelType).then(() => {
                 loadHskData(levelType, savedFilter);
             });
@@ -217,7 +213,6 @@
                     applyFilter(true);
                 });
             } else {
-                // 부수 모드 문자열 분기점 및 파일 로드 안전 연동 보정 완료
                 const fileName = level === 'radical' ? 'radical.json' : `hsk${level}.json`;
                 const titleName = level === 'radical' ? '부수로 공부하는 중국어 단어' : `HSK ${level}급 단어 최종 마스터`;
                 const levelTag = level === 'radical' ? '부수' : `${level}급`;
@@ -250,7 +245,7 @@
             location.href = 'index.html';
         }
 
-function setupFilterOptions(level) {
+        function setupFilterOptions(level) {
             const filter = document.getElementById('dayFilter');
             filter.innerHTML = '';
             
@@ -284,7 +279,6 @@ function setupFilterOptions(level) {
                     <option value="all_part6">6일차 트랙 (501~${allWords.length}번)</option>
                 `;
             } else if (level === 'radical') {
-                // 💡 radical.json의 실제 제공 데이터 흐름순(총 101개)에 맞춰 카테고리와 텍스트 범위를 완전 재정비
                 options += `
                     <option value="part1">1일차 子, 女 부수 (1~16번)</option>
                     <option value="part2">2일차 足, 目 부수 (17~32번)</option>
@@ -334,7 +328,7 @@ function setupFilterOptions(level) {
             }
         }
 
-         function getFilteredWords() {
+        function getFilteredWords() {
             const val = document.getElementById('dayFilter').value;
             let mapped = allWords.map((w, i) => ({...w, num: i + 1}));
             
@@ -352,12 +346,11 @@ function setupFilterOptions(level) {
             if (val === 'all_part6') return mapped.slice(500);
 
             if (currentLevel === 'radical') {
-                // 💡 실제 파일 내 부수 정렬 순서대로 빈틈없이 슬라이싱(slice) 구간 최적화 조정
-                if (val === 'part1') return mapped.slice(0, 16);   // 1~16번
-                if (val === 'part2') return mapped.slice(16, 32);  // 17~32번
-                if (val === 'part3') return mapped.slice(32, 49);  // 33~49번
-                if (val === 'part4') return mapped.slice(49, 71);  // 50~71번
-                if (val === 'part5') return mapped.slice(71);      // 72번~끝까지(101번)
+                if (val === 'part1') return mapped.slice(0, 16);   
+                if (val === 'part2') return mapped.slice(16, 32);  
+                if (val === 'part3') return mapped.slice(32, 49);  
+                if (val === 'part4') return mapped.slice(49, 71);  
+                if (val === 'part5') return mapped.slice(71);      
             } else if (currentLevel == '3') {
                 if (val === 'part1') return mapped.slice(0, 50);
                 if (val === 'part2') return mapped.slice(50, 100);
@@ -402,7 +395,25 @@ function setupFilterOptions(level) {
             return (word.exMean || word.exMeaning || '').replace(/[\(\)]/g, '').trim();
         }
 
-function renderStudyCards(wordsArray) {
+        // 💡 [공통 모듈 함수] 기억 팁 파서 추출
+        function parseMemoryTip(rawCharTip, tip2Label) {
+            let charTipHtml = '';
+            if (rawCharTip.includes('[기억 팁]')) {
+                let parts = rawCharTip.split(/💡?\s*\[기억\s*팁\]/);
+                let mainHanjaTip = parts[0].trim();
+                let memoryTip = parts[1] ? parts[1].trim() : '';
+
+                charTipHtml += `<div class="tip-item">${tip2Label} ${mainHanjaTip}</div>`;
+                if (memoryTip) {
+                    charTipHtml += `<div class="tip-item" style="margin-top: 4px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
+                }
+            } else {
+                charTipHtml = `<div class="tip-item">${tip2Label} ${rawCharTip}</div>`;
+            }
+            return charTipHtml;
+        }
+
+        function renderStudyCards(wordsArray) {
             const container = document.getElementById('studyContainer');
             container.innerHTML = '';
             if(wordsArray.length === 0) {
@@ -427,28 +438,7 @@ function renderStudyCards(wordsArray) {
                     meaningsHtml = `<div class="ko-meaning">${word.meaning || ''}</div>`;
                 }
 
-                // 💡 [핵심 추가]: 3급 데이터의 [기억 팁] 분리 및 자동 줄바꿈 프로세스
-                let charTipHtml = '';
-                let rawCharTip = word.charTip || '준비 중';
-
-                if (rawCharTip.includes('[기억 팁]')) {
-                    // [기억 팁]을 기준으로 앞뒤를 쪼갭니다.
-                    let parts = rawCharTip.split(/💡?\s*\[기억\s*팁\]/);
-                    let mainHanjaTip = parts[0].trim();
-                    let memoryTip = parts[1] ? parts[1].trim() : '';
-
-                    // 한자 팁 기본 출력
-                    charTipHtml += `<div class="tip-item">${tip2Label} ${mainHanjaTip}</div>`;
-                    // 기억 팁이 존재하면 다음 줄에 이쁜 전구 이모지와 함께 분리 출력
-                    if (memoryTip) {
-                        charTipHtml += `<div class="tip-item" style="margin-top: 4px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
-                    }
-                } else {
-                    // 기억 팁이 없는 일반 데이터는 기존 방식 유지
-                    charTipHtml = `<div class="tip-item">${tip2Label} ${rawCharTip}</div>`;
-                }
-
-                // 공통 엔진 파서 연동 호출
+                let charTipHtml = parseMemoryTip(word.charTip || '준비 중', tip2Label);
                 const dynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
                 card.innerHTML = `
@@ -464,13 +454,10 @@ function renderStudyCards(wordsArray) {
                     </div>
                     <div class="card-divider"></div>
                     <div class="meaning-box">${meaningsHtml}</div>
-                    
-                    <!-- 💡 변환된 팁 컴포넌트가 렌더링되는 구역 -->
                     <div class="tip-box">
                         <div class="tip-item">${tip1Label} ${word.pronTip || '준비 중'}</div>
                         ${charTipHtml}
                     </div>
-                    
                     <div class="ex-box">
                         <div class="ex-zh zh-font">${dynamicExZhHtml}</div>
                         <div class="ex-pinyin-row">
@@ -508,6 +495,8 @@ function renderStudyCards(wordsArray) {
                     meaningsHtml = `<div class="ko-meaning" style="font-size:18px;">${word.meaning || ''}</div>`;
                 }
 
+                // 💡 [퀴즈 모드 버그 수정] 플립 카드 뒷면에도 기억 팁 분리 기능 정상 이식[cite: 5]
+                let quizCharTipHtml = parseMemoryTip(word.charTip || '준비 중', tip2Label);
                 const quizDynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
                 card.innerHTML = `
@@ -530,7 +519,7 @@ function renderStudyCards(wordsArray) {
                             <div class="meaning-box" style="gap:4px; margin-bottom:4px;">${meaningsHtml}</div>
                             <div class="tip-box" style="padding:4px 8px; margin-bottom:4px; border-radius:4px;">
                                 <div class="tip-item" style="font-size:11px; margin-bottom:3px;">${tip1Label} ${word.pronTip || '준비 중'}</div>
-                                <div class="tip-item" style="font-size:11px;">${tip2Label} ${word.charTip || '준비 중'}</div>
+                                ${quizCharTipHtml}
                             </div>
                             <div class="ex-box" style="padding:4px 8px; border-radius:6px;">
                                 <div class="ex-zh zh-font" style="font-size:13px;">${quizDynamicExZhHtml}</div>
@@ -549,7 +538,7 @@ function renderStudyCards(wordsArray) {
                 `;
                 
                 card.onclick = function(e) {
-                    if(e.target.tagName === 'BUTTON' || e.target.classList.contains('zh-word')) return;
+                    if(e.target.tagName === 'BUTTON' || e.target.classList.contains('zh-clickable-char')) return;
                     const isFlippingToBack = !this.classList.contains('flipped');
                     this.classList.toggle('flipped');
                     if(autoPlayTimer) clearTimeout(autoPlayTimer);
