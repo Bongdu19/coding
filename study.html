@@ -402,7 +402,7 @@ function setupFilterOptions(level) {
             return (word.exMean || word.exMeaning || '').replace(/[\(\)]/g, '').trim();
         }
 
-        function renderStudyCards(wordsArray) {
+function renderStudyCards(wordsArray) {
             const container = document.getElementById('studyContainer');
             container.innerHTML = '';
             if(wordsArray.length === 0) {
@@ -427,6 +427,27 @@ function setupFilterOptions(level) {
                     meaningsHtml = `<div class="ko-meaning">${word.meaning || ''}</div>`;
                 }
 
+                // 💡 [핵심 추가]: 3급 데이터의 [기억 팁] 분리 및 자동 줄바꿈 프로세스
+                let charTipHtml = '';
+                let rawCharTip = word.charTip || '준비 중';
+
+                if (rawCharTip.includes('[기억 팁]')) {
+                    // [기억 팁]을 기준으로 앞뒤를 쪼갭니다.
+                    let parts = rawCharTip.split(/💡?\s*\[기억\s*팁\]/);
+                    let mainHanjaTip = parts[0].trim();
+                    let memoryTip = parts[1] ? parts[1].trim() : '';
+
+                    // 한자 팁 기본 출력
+                    charTipHtml += `<div class="tip-item">${tip2Label} ${mainHanjaTip}</div>`;
+                    // 기억 팁이 존재하면 다음 줄에 이쁜 전구 이모지와 함께 분리 출력
+                    if (memoryTip) {
+                        charTipHtml += `<div class="tip-item" style="margin-top: 4px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
+                    }
+                } else {
+                    // 기억 팁이 없는 일반 데이터는 기존 방식 유지
+                    charTipHtml = `<div class="tip-item">${tip2Label} ${rawCharTip}</div>`;
+                }
+
                 // 공통 엔진 파서 연동 호출
                 const dynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
@@ -443,10 +464,13 @@ function setupFilterOptions(level) {
                     </div>
                     <div class="card-divider"></div>
                     <div class="meaning-box">${meaningsHtml}</div>
+                    
+                    <!-- 💡 변환된 팁 컴포넌트가 렌더링되는 구역 -->
                     <div class="tip-box">
                         <div class="tip-item">${tip1Label} ${word.pronTip || '준비 중'}</div>
-                        <div class="tip-item">${tip2Label} ${word.charTip || '준비 중'}</div>
+                        ${charTipHtml}
                     </div>
+                    
                     <div class="ex-box">
                         <div class="ex-zh zh-font">${dynamicExZhHtml}</div>
                         <div class="ex-pinyin-row">
