@@ -45,18 +45,23 @@
         .phrase-card.active { background-color: #fefcf0; border-color: #f59e0b; box-shadow: 0 4px 12px rgba(245,158,11,0.1); }
         .card-header { display: flex; justify-content: space-between; align-items: center; color: var(--text-sub); font-size: 12px; font-weight: 700; margin-bottom: 12px; }
         
-        /* 본문 한자 글씨체 */
         .hz-text { font-size: 32px; font-weight: 800; color: #000; line-height: 1.3; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
         
-        /* 외부 엔진 스크립트와 호환되는 단어 툴팁 스타일 */
+        /* 💡 코어 가속 엔진 규격용 단어 스타일 매핑 */
         .zh-word {
             position: relative; display: inline-block;
             border-bottom: 2px dashed #4f46e5;
             color: #4f46e5; cursor: pointer; padding: 0 2px;
             font-weight: 800;
         }
+        .non-zh-text {
+            font-size: 32px;
+            font-weight: 800;
+            color: #000;
+            display: inline-block;
+        }
         
-        /* 코어 엔진용 말풍선(Tooltip) 스타일 지정 */
+        /* 💡 툴팁 말풍선 공통 UI 스타일 */
         .word-tooltip {
             position: absolute;
             background: #1e293b;
@@ -111,7 +116,7 @@
         </div>
     </div>
 
-    <!-- 외부 통합 엔진 자바스크립트 파일 호출 -->
+    <!-- 외부 통합 엔진 자바스크립트 호출 -->
     <script src="./js/word-core.js"></script>
     <script>
         let rawData = [];
@@ -126,10 +131,9 @@
         window.onload = function() {
             document.getElementById('headerTitle').innerText = `🗣️ HSK ${level}급 어구 예문`;
             
-            // 1. 코어 엔진의 마스터 사전을 비동기로 로드 (hsk1, 2, 3, radical 자동 통합)
-            loadMasterDictionary()
+            // 💡 현재 급수를 인자로 던져 선별 가속화 빌드 처리
+            loadMasterDictionary(level)
             .then(() => {
-                // 2. 사전 적재가 끝나면 급수별 문장 파일 호출
                 return fetch(`./data/hsk${level}_sentences.json`);
             })
             .then(res => res.json())
@@ -151,7 +155,6 @@
             const container = document.getElementById('phraseList');
             container.innerHTML = '';
             currentSentences.forEach((s) => {
-                // 💡 중복되던 자체 파서 대신 코어 엔진(word-core.js)의 공통 파서 함수 활용
                 const dynamicHanziHtml = parseHanziToTooltip(s.hanzi);
                 container.innerHTML += `
                     <div class="phrase-card" id="p-card-${s.id}" onclick="speakSingle('${s.hanzi}', '${s.korean}')">
