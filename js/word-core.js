@@ -153,7 +153,7 @@ function showWordCoreTooltip(event, word) {
 
         const rect = event.target.getBoundingClientRect();
         tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2 || 100)}px`; 
-        tooltip.style.top = `${rect.top + window.scrollY - (tooltip.offsetHeight || 130) - 12px}px`;
+        tooltip.style.top = `${rect.top + window.scrollY - (tooltip.offsetHeight || 130) - 12}px`;
         tooltip.style.display = 'block';
 
         const ut = new SpeechSynthesisUtterance(word);
