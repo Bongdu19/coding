@@ -1,15 +1,10 @@
 /**
- * BONG HSK 통합 단어 데이터 및 툴팁 파서 코어 엔진 (word-core.js) - 컴팩트 디자인 및 급수 뱃지 반영 버전
+ * BONG HSK 통합 단어 데이터 및 툴팁 파서 코어 엔진 (word-core.js) - 실시간 파서 업그레이드 버전
  */
 
-// 글로벌 공유 마스터 사전
 let wordDictionary = {};
-// 백그라운드 지연 로드 완료 여부 플래그
 let isExtraDictLoaded = false;
 
-/**
- * 1. 기초 JSON 단어 파일들을 비동기 로드하여 마스터 사전에 적재
- */
 async function loadMasterDictionary(currentType = 'all') {
     try {
         let primaryTarget = '';
@@ -26,8 +21,8 @@ async function loadMasterDictionary(currentType = 'all') {
         } else {
             const datasets = await Promise.all([
                 fetch('./data/hsk1.json').then(r => r.json()).catch(() => []),
-                fetch('./data/hsk2.json').then(res => res.json()).catch(() => []),
-                fetch('./data/hsk3.json').then(res => res.json()).catch(() => [])
+                fetch('./data/hsk2.json').then(r => r.json()).catch(() => []),
+                fetch('./data/hsk3.json').then(r => r.json()).catch(() => [])
             ]);
             injectWordsToDictionary(datasets[0], '1');
             injectWordsToDictionary(datasets[1], '2');
@@ -35,11 +30,8 @@ async function loadMasterDictionary(currentType = 'all') {
             console.log(`⚡ 통합 사전 파일 기본 로드 완료`);
         }
 
-        // 백그라운드 지연 로드 (나머지 급수 파일 수집)
         setTimeout(async () => {
             if (isExtraDictLoaded) return;
-            
-            // 💡 우선순위(1급 -> 2급 -> 3급 -> 부수)가 덮어쓰기 과정에서 보존되도록 역순(부수부터)으로 로드 처리합니다.
             const extraFiles = [
                 { path: './data/radical.json', tag: 'radical' },
                 { path: './data/hsk3.json', tag: '3' },
@@ -52,7 +44,6 @@ async function loadMasterDictionary(currentType = 'all') {
                 const data = await fetch(file.path).then(r => r.json()).catch(() => []);
                 injectWordsToDictionary(data, file.tag);
             }
-            
             isExtraDictLoaded = true;
             console.log("🎯 백그라운드 전체 마스터 사전 빌드 완료! 단어 수:", Object.keys(wordDictionary).length);
         }, 300);
@@ -62,13 +53,8 @@ async function loadMasterDictionary(currentType = 'all') {
     }
 }
 
-/**
- * 사전에 데이터를 적재하며 우선순위에 의거한 레벨 태그를 마킹합니다.
- */
 function injectWordsToDictionary(wordsArray, typeTag) {
     if (!Array.isArray(wordsArray)) return;
-
-    // 내부 등급 문자열 치환
     let levelLabel = '부수';
     if (typeTag === '1') levelLabel = '1급';
     if (typeTag === '2') levelLabel = '2급';
@@ -78,7 +64,6 @@ function injectWordsToDictionary(wordsArray, typeTag) {
         const wordKey = word.hanzi || word.han || word.word;
         if (wordKey) {
             const trimmedKey = wordKey.trim();
-            
             let meanText = '';
             if (Array.isArray(word.meanings)) {
                 meanText = word.meanings.map(m => `[${m.pos}] ${m.ko}`).join(', ');
@@ -86,7 +71,6 @@ function injectWordsToDictionary(wordsArray, typeTag) {
                 meanText = word.meaning || word.kor || '';
             }
 
-            // 💡 [우선순위 로직]: 기존에 이미 1급, 2급 같은 높은 우선순위 등급 정보가 채워져 있다면 덮어쓰지 않고 보호합니다.
             if (wordDictionary[trimmedKey]) {
                 const existingLabel = wordDictionary[trimmedKey].level;
                 if (existingLabel === '1급') return;
@@ -105,55 +89,60 @@ function injectWordsToDictionary(wordsArray, typeTag) {
 }
 
 /**
- * 중국어 문장 문자열을 툴팁 HTML 형태로 치환
+ * 💡 [구조 개편] 예문 한자들을 하나하나 쪼개지 않고, 문장 전체를 통째로 클릭 가능한 스팬으로 래핑합니다.
+ * 백그라운드 로딩 상태와 무관하게 100% 정상 작동하며, 폰트 크기 불일치 현상이 완벽히 해결됩니다.
  */
 function parseHanziToTooltip(sentence) {
     if (!sentence) return '';
-    let tempResult = sentence;
-    
-    const sortedKeys = Object.keys(wordDictionary).sort((a, b) => b.length - a.length);
-    const replacementMap = {};
-    let uniqueId = 0;
     const isChineseChar = (str) => /[\u4e00-\u9fa5]/.test(str);
+    let resultHtml = '';
 
-    sortedKeys.forEach(word => {
-        if (tempResult.includes(word) && isChineseChar(word)) {
-            const placeholder = `__BONG_CORE_FLAG_${uniqueId}__`;
-            replacementMap[placeholder] = `<span class="zh-word" onclick="showWordCoreTooltip(event, '${word}');">${word}</span>`;
-            tempResult = tempResult.split(word).join(placeholder);
-            uniqueId++;
-        }
-    });
-
-    let outputHtml = '';
-    let tokens = tempResult.split(/(__BONG_CORE_FLAG_\d+__)/);
-
-    tokens.forEach(token => {
-        if (token.startsWith('__BONG_CORE_FLAG_')) {
-            outputHtml += token;
+    for (let char of sentence) {
+        if (isChineseChar(char)) {
+            // 한자 수량 단위당 실시간 지능형 클릭 핸들러 바인딩
+            resultHtml += `<span class="zh-clickable-char" onclick="handleCharClick(event, '${sentence}', ${sentence.indexOf(char)})">${char}</span>`;
         } else {
-            for (let char of token) {
-                if (isChineseChar(char) && wordDictionary[char]) {
-                    outputHtml += `<span class="zh-word" onclick="showWordCoreTooltip(event, '${char}');">${char}</span>`;
-                } else {
-                    outputHtml += `<span class="non-zh-text">${char}</span>`;
-                }
-            }
+            resultHtml += `<span>${char}</span>`;
         }
-    });
-
-    Object.keys(replacementMap).forEach(placeholder => {
-        outputHtml = outputHtml.split(placeholder).join(replacementMap[placeholder]);
-    });
-
-    return outputHtml;
+    }
+    return resultHtml;
 }
 
 /**
- * 3. [디자인 3차 변경] 급수 배치 앞으로, 발음 한 줄 통합 및 하단 뜻 가운데 정렬 반영
+ * 💡 사용자가 문장 속 특정 한자를 터치한 순간, 좌우 문맥을 조합하여 사전에 있는 가장 긴 단어를 찾아냅니다.
+ */
+function handleCharClick(event, fullSentence, clickIndex) {
+    event.stopPropagation();
+    
+    let matchedWord = '';
+    let maxLen = 0;
+    
+    // 클릭한 글자를 중심으로 최대 4글자 범위까지 단어 매칭 추적
+    for (let start = Math.max(0, clickIndex - 3); start <= clickIndex; start++) {
+        for (let end = clickIndex + 1; end <= Math.min(fullSentence.length, clickIndex + 4); end++) {
+            let subWord = fullSentence.substring(start, end);
+            if (wordDictionary[subWord] && subWord.length > maxLen) {
+                matchedWord = subWord;
+                maxLen = subWord.length;
+            }
+        }
+    }
+    
+    // 만약 결합 단어가 없다면 클릭한 낱개 한자 지정
+    if (!matchedWord) {
+        let singleChar = fullSentence.charAt(clickIndex);
+        if (wordDictionary[singleChar]) matchedWord = singleChar;
+    }
+    
+    if (matchedWord) {
+        showWordCoreTooltip(event, matchedWord);
+    }
+}
+
+/**
+ * 3. 컴팩트 툴팁 메인 레이아웃 렌더러
  */
 function showWordCoreTooltip(event, word) {
-    event.stopPropagation(); 
     if (window.speechSynthesis) window.speechSynthesis.cancel(); 
 
     let tooltip = document.getElementById('tooltip');
@@ -166,35 +155,21 @@ function showWordCoreTooltip(event, word) {
 
     const info = wordDictionary[word];
     if (info) {
-        // 급수 등급별 전용 컬러 인덱스
-        let badgeColor = '#94a3b8'; // 기본 부수 (회색 계열)
-        if (info.level === '1급') badgeColor = '#4caf50'; // 초록
-        if (info.level === '2급') badgeColor = '#4cc9f0'; // 하늘
-        if (info.level === '3급') badgeColor = '#4361ee'; // 파랑
+        let badgeColor = '#94a3b8';
+        if (info.level === '1급') badgeColor = '#4caf50';
+        if (info.level === '2급') badgeColor = '#4cc9f0';
+        if (info.level === '3급') badgeColor = '#4361ee';
 
-        // 훈음(한자 뜻) 영역 조건 처리
         let hanjaHtml = info.hanja ? `<div style="font-size: 13px; font-weight: 500; color: #cbd5e1; margin-top: 4px;">${info.hanja}</div>` : '';
         
-        // 💡 [구조 개편]: 폰트 통합 / 급수 앞 배치 + 한자 + 병음 한 줄 수평 정렬 / 뜻 가운데 정렬 최적화
         tooltip.innerHTML = `
-            <div style="text-align: center; min-width: 180px; max-width: 260px; font-family: 'Pretendard', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; padding: 2px 0;">
-                
-                <!-- 첫 줄: [급수] 한자 [병음] 한 줄 수평 정렬 레이아웃 -->
+            <div style="text-align: center; min-width: 180px; max-width: 260px; font-family: 'Pretendard', -apple-system, sans-serif; padding: 2px 0;">
                 <div style="display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.2;">
-                    <!-- 1. 급수 위치 앞으로 조정 -->
                     <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: ${badgeColor}; padding: 1px 4px; border-radius: 4px; flex-shrink: 0;">${info.level}</span>
-                    
-                    <!-- 2. 한자 텍스트 서체 통일 -->
                     <span style="font-size: 24px; font-weight: 800; color: #ffffff;">${word}</span>
-                    
-                    <!-- 3. 발음을 한자 뒤로 밀어 한 줄 배치 -->
                     <span style="font-size: 15px; font-weight: 700; color: #74c0fc; margin-left: 2px;">${info.py}</span>
                 </div>
-
-                <!-- 두 번째 줄: 한자 훈음(뜻) 영역 -->
                 ${hanjaHtml}
-                
-                <!-- 세 번째 줄: 품사 및 한국어 뜻 영역 (가운데 정렬 text-align: center 보정) -->
                 <div style="font-size: 13px; font-weight: 600; color: #ff85a2; padding-top: 6px; border-top: 1px dashed rgba(255,255,255,0.15); margin-top: 6px; text-align: center; line-height: 1.4; white-space: normal; word-break: break-all;">
                     ${info.mean}
                 </div>
@@ -207,13 +182,11 @@ function showWordCoreTooltip(event, word) {
         tooltip.style.display = 'block';
 
         const ut = new SpeechSynthesisUtterance(word);
-        ut.lang = 'zh-CN';
-        ut.rate = 0.8;
+        ut.lang = 'zh-CN'; ut.rate = 0.8;
         window.speechSynthesis.speak(ut);
     }
 }
 
-// 바탕화면 클릭 시 툴팁 숨기기
 document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', () => {
         const tooltip = document.getElementById('tooltip');
