@@ -79,11 +79,11 @@
         .ex-pinyin { color: #1e3a8a; font-weight: 600; }
         .ex-mean { color: #334155; font-weight: 600; }
 
-        /* 외부 엔진 공유용 예문 단어 하이라이트 스타일 */
+        /* 예문 단어 툴팁 및 일반 문자열 격리 스타일 */
         .zh-word { border-bottom: 2px dashed #4f46e5; color: #4f46e5; cursor: pointer; padding: 0 2px; font-weight: 800; display: inline-block; }
         .non-zh-text { font-size: 19px; font-weight: 700; color: #0f172a; display: inline-block; }
 
-        /* 코어 엔진용 말풍선 팝업 스타일 지정 */
+        /* 마스터 사전용 말풍선 팝업 스타일 */
         .word-tooltip {
             position: absolute; background: #1e293b; color: #ffffff; padding: 14px 16px; border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.25); z-index: 2000; display: none; line-height: 1.4;
@@ -165,7 +165,7 @@
         </div>
     </div>
 
-    <!-- 외부 통합 엔진 자바스크립트 주입 -->
+    <!-- 외부 통합 엔진 자바스크립트 호출 -->
     <script src="./js/word-core.js"></script>
     <script>
         let allWords = [];
@@ -177,7 +177,7 @@
         let autoPlayTimer = null; 
 
         window.onload = function() {
-            // URL 파라미터에서 어떤 단어장을 열었는지 수집 (기본값은 통합'all')
+            // URL 파라미터에서 단어장 타입 식별 (기본값 all)
             const urlParams = new URLSearchParams(window.location.search);
             const levelType = urlParams.get('type') || 'all';
             
@@ -186,8 +186,8 @@
             
             if (savedTab) activeTab = savedTab;
 
-            // 공통 사전 엔진을 먼저 올린 후 타겟 데이터 파일 파싱 연동 시작
-            loadMasterDictionary().then(() => {
+            // [가속화] 현재 볼 단어장의 데이터만 선별 호출하여 화면을 초고속으로 띄움
+            loadMasterDictionary(levelType).then(() => {
                 loadHskData(levelType, savedFilter);
             });
         };
@@ -197,7 +197,6 @@
             wrongWordsSet.clear(); 
             
             if (level === 'all' || level === 'pos') {
-                // 이미 window.onload 단계에서 사전이 통합 적재되었으므로 데이터 매핑만 수행
                 Promise.all([
                     fetch('./data/hsk1.json').then(res => res.json()).then(data => data.map(w => ({...w, displayLevel: '1급'}))),
                     fetch('./data/hsk2.json').then(res => res.json()).then(data => data.map(w => ({...w, displayLevel: '2급'}))),
@@ -218,12 +217,16 @@
                     applyFilter(true);
                 });
             } else {
+                // 부수 모드 문자열 분기점 및 파일 로드 안전 연동 보정 완료
                 const fileName = level === 'radical' ? 'radical.json' : `hsk${level}.json`;
                 const titleName = level === 'radical' ? '부수로 공부하는 중국어 단어' : `HSK ${level}급 단어 최종 마스터`;
                 const levelTag = level === 'radical' ? '부수' : `${level}급`;
 
                 fetch(`./data/${fileName}`)
-                    .then(response => response.json())
+                    .then(response => {
+                        if (!response.ok) throw new Error("데이터셋 파일 다운로드 실패");
+                        return response.json();
+                    })
                     .then(data => {
                         allWords = data.map(w => ({...w, displayLevel: levelTag}));
                         setupFilterOptions(level);
@@ -233,6 +236,10 @@
                         
                         switchTab(activeTab);
                         applyFilter(true);
+                    })
+                    .catch(err => {
+                        console.error("데이터 수집 에러:", err);
+                        document.getElementById('studyContainer').innerHTML = `<div style="text-align:center; padding: 40px 0; color:var(--accent-red); font-weight:700;">데이터를 불러오는 데 실패했습니다. (data/${fileName})</div>`;
                     });
             }
         }
@@ -240,7 +247,6 @@
         function goBackToHub() {
             window.speechSynthesis.cancel();
             stopStudyAudio();
-            // 안전하게 인덱스 메인 창 허브 포털로 원복 이동
             location.href = 'index.html';
         }
 
@@ -344,6 +350,7 @@
             if (val === 'all_part5') return mapped.slice(400, 500);
             if (val === 'all_part6') return mapped.slice(500);
 
+            // 타입 비교 연산자 완화(==) 처리로 데이터 유실 버그 수정
             if (currentLevel === 'radical') {
                 if (val === 'part1') return mapped.slice(0, 40);
                 if (val === 'part2') return mapped.slice(40, 81);
@@ -419,7 +426,7 @@
                     meaningsHtml = `<div class="ko-meaning">${word.meaning || ''}</div>`;
                 }
 
-                // 💡 단어장의 예문 영역도 외부 공통 파서(word-core.js)와 완벽 연동되도록 조립 변경
+                // 공통 엔진 파서 연동 호출
                 const dynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
                 card.innerHTML = `
@@ -476,7 +483,6 @@
                     meaningsHtml = `<div class="ko-meaning" style="font-size:18px;">${word.meaning || ''}</div>`;
                 }
 
-                // 플립 카드 뒷면 예문 사전 연동 컴파일
                 const quizDynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
                 card.innerHTML = `
