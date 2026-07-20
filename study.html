@@ -48,6 +48,7 @@
         .view.active { display: block; }
         .zh-font { font-family: var(--font-zh); font-weight: 600; }
 
+        /* [학습 모드] 단어 카드 스타일 */
         .card { background: var(--bg-card); border-radius: 12px; padding: 24px 14px 10px 14px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); border: 1px solid var(--border-color); transition: all 0.3s ease; position: relative; }
         .card.active { background-color: #fefcf0; border-color: var(--accent-yellow); }
         .card.is-wrong { border-color: var(--accent-red); background-color: #fef2f2; }
@@ -78,11 +79,15 @@
         .ex-pinyin { color: #1e3a8a; font-weight: 600; }
         .ex-mean { color: #334155; font-weight: 600; }
 
-        
-        /* 💡 예문 중국어 문장이 깨지거나 튀지 않고 온전한 본문 서식을 따르도록 크기 동기화 제어 */
-        .ex-zh span { font-size: 19px; font-weight: 700; color: #0f172a; display: inline-block; vertical-align: middle; border: none !important; }
-        .ex-zh .zh-clickable-char { color: #4f46e5; border-bottom: 2px dashed #4f46e5; cursor: pointer; }
-        .ex-zh .zh-clickable-char:hover { color: #6366f1; border-bottom-color: #6366f1; }
+        /* 예문 한자 폰트 스타일 제어 (파란 글씨 제거) */
+        .ex-zh span { 
+            font-size: 19px; 
+            font-weight: 700; 
+            color: #0f172a; 
+            display: inline-block; 
+            vertical-align: middle; 
+            border: none !important; 
+        }
 
         .word-tooltip {
             position: absolute; background: #1e293b; color: #ffffff; padding: 14px 16px; border-radius: 10px;
@@ -209,7 +214,14 @@
                         document.getElementById('hskTitleDisplay').innerText = `HSK 1~3급 통합 단어 마스터`;
                     }
                     
-                    if (presetFilter) document.getElementById('dayFilter').value = presetFilter;
+                    // 💡 [개선 포인트] 기존 보던 필터가 없다면 무조건 1일차('all_part1' 혹은 'part1')를 디폴트로 지정
+                    const filterDropdown = document.getElementById('dayFilter');
+                    if (presetFilter && filterDropdown.querySelector(`option[value="${presetFilter}"]`)) {
+                        filterDropdown.value = presetFilter;
+                    } else {
+                        filterDropdown.value = (level === 'pos') ? 'pos_all' : (level === 'all' ? 'all_part1' : 'part1');
+                    }
+
                     switchTab(activeTab);
                     applyFilter(true);
                 });
@@ -219,16 +231,20 @@
                 const levelTag = level === 'radical' ? '부수' : `${level}급`;
 
                 fetch(`./data/${fileName}`)
-                    .then(response => {
-                        if (!response.ok) throw new Error("데이터셋 파일 다운로드 실패");
-                        return response.json();
-                    })
+                    .then(response => response.json())
                     .then(data => {
                         allWords = data.map(w => ({...w, displayLevel: levelTag}));
                         setupFilterOptions(level);
                         
                         document.getElementById('hskTitleDisplay').innerText = titleName;
-                        if (presetFilter) document.getElementById('dayFilter').value = presetFilter;
+                        
+                        // 💡 [개선 포인트] 기존 보던 필터가 없다면 무조건 1일차('part1')를 디폴트로 지정
+                        const filterDropdown = document.getElementById('dayFilter');
+                        if (presetFilter && filterDropdown.querySelector(`option[value="${presetFilter}"]`)) {
+                            filterDropdown.value = presetFilter;
+                        } else {
+                            filterDropdown.value = 'part1';
+                        }
                         
                         switchTab(activeTab);
                         applyFilter(true);
@@ -396,20 +412,39 @@
             return (word.exMean || word.exMeaning || '').replace(/[\(\)]/g, '').trim();
         }
 
-        // 💡 [공통 모듈 함수] 기억 팁 파서 추출
-        function parseMemoryTip(rawCharTip, tip2Label) {
+        // 💡 [학습 모드 전용] 부수정보 규격에 맞춰 폰트 사이즈 조절(11px) 및 기억팁 줄바꿈 파서
+        function parseMemoryTipStudy(rawCharTip, tip2Label) {
             let charTipHtml = '';
+            // 컴팩트 사이즈 정렬을 위해 폰트 11px 명시 설정
             if (rawCharTip.includes('[기억 팁]')) {
                 let parts = rawCharTip.split(/💡?\s*\[기억\s*팁\]/);
                 let mainHanjaTip = parts[0].trim();
                 let memoryTip = parts[1] ? parts[1].trim() : '';
 
-                charTipHtml += `<div class="tip-item">${tip2Label} ${mainHanjaTip}</div>`;
+                charTipHtml += `<div class="tip-item" style="font-size: 11px;">${tip2Label} ${mainHanjaTip}</div>`;
                 if (memoryTip) {
-                    charTipHtml += `<div class="tip-item" style="margin-top: 4px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
+                    charTipHtml += `<div class="tip-item" style="margin-top: 3px; font-size: 11px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
                 }
             } else {
-                charTipHtml = `<div class="tip-item">${tip2Label} ${rawCharTip}</div>`;
+                charTipHtml = `<div class="tip-item" style="font-size: 11px;">${tip2Label} ${rawCharTip}</div>`;
+            }
+            return charTipHtml;
+        }
+
+        // 💡 [퀴즈 모드 전용] 기억팁이 존재하면 한자팁을 가차없이 완전히 지워버리는 한 축 축소 전용 파서
+        function parseMemoryTipQuiz(rawCharTip) {
+            let charTipHtml = '';
+            if (rawCharTip.includes('[기억 팁]')) {
+                let parts = rawCharTip.split(/💡?\s*\[기억\s*팁\]/);
+                let memoryTip = parts[1] ? parts[1].trim() : '';
+                
+                // 💡 요구사항 반영: 한자 팁 영역(parts[0])은 완전히 생략하고 11px 스케일 기억 팁만 출력[cite: 5]
+                if (memoryTip) {
+                    charTipHtml = `<div class="tip-item" style="font-size: 11px;">💡 <b>기억 팁:</b> ${memoryTip}</div>`;
+                }
+            } else {
+                // 기억 팁이 없으면 기존 한자 팁만 11px 크기로 축소 노출[cite: 5]
+                charTipHtml = `<div class="tip-item" style="font-size: 11px;">✍️ <b>한자 팁:</b> ${rawCharTip}</div>`;
             }
             return charTipHtml;
         }
@@ -439,7 +474,8 @@
                     meaningsHtml = `<div class="ko-meaning">${word.meaning || ''}</div>`;
                 }
 
-                let charTipHtml = parseMemoryTip(word.charTip || '준비 중', tip2Label);
+                // 부수 정보 크기(11px)에 연동되도록 폰트 압축 처리[cite: 5]
+                let charTipHtml = parseMemoryTipStudy(word.charTip || '준비 중', tip2Label);
                 const dynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
                 card.innerHTML = `
@@ -455,8 +491,10 @@
                     </div>
                     <div class="card-divider"></div>
                     <div class="meaning-box">${meaningsHtml}</div>
+                    
+                    <!-- 부수 정보(11px) 크기 스케일에 맞춰 팁 박스 일괄 축소 가공 완료 -->
                     <div class="tip-box">
-                        <div class="tip-item">${tip1Label} ${word.pronTip || '준비 중'}</div>
+                        <div class="tip-item" style="font-size: 11px;">${tip1Label} ${word.pronTip || '준비 중'}</div>
                         ${charTipHtml}
                     </div>
                     <div class="ex-box">
@@ -485,7 +523,6 @@
                 card.id = 'quiz-card-' + word.num;
                 
                 const tip1Label = (word.pronTip && word.pronTip.includes('부수')) ? '🧩 <b>부수 정보:</b>' : '💡 <b>발음 팁:</b>';
-                const tip2Label = (word.charTip && word.charTip.includes('+')) ? '✍️ <b>연상 스토리:</b>' : '✍️ <b>한자 팁:</b>';
 
                 let meaningsHtml = '';
                 if (Array.isArray(word.meanings)) {
@@ -496,8 +533,8 @@
                     meaningsHtml = `<div class="ko-meaning" style="font-size:18px;">${word.meaning || ''}</div>`;
                 }
 
-                // 💡 [퀴즈 모드 버그 수정] 플립 카드 뒷면에도 기억 팁 분리 기능 정상 이식[cite: 5]
-                let quizCharTipHtml = parseMemoryTip(word.charTip || '준비 중', tip2Label);
+                // 💡 [퀴즈 모드 요구사항 구현] 기억 팁 존재 시 한자 팁 완전 자동 누락 분사기 가동[cite: 5]
+                let quizCharTipHtml = parseMemoryTipQuiz(word.charTip || '준비 중');
                 const quizDynamicExZhHtml = parseHanziToTooltip(word.exZh || '');
 
                 card.innerHTML = `
@@ -518,6 +555,8 @@
                             </div>
                             <div class="card-divider" style="margin:2px 0 4px 0;"></div>
                             <div class="meaning-box" style="gap:4px; margin-bottom:4px;">${meaningsHtml}</div>
+                            
+                            <!-- 💡 부수 정보 크기(11px)에 맞춰 전체 하이라이트 글자 압축 완료 -->
                             <div class="tip-box" style="padding:4px 8px; margin-bottom:4px; border-radius:4px;">
                                 <div class="tip-item" style="font-size:11px; margin-bottom:3px;">${tip1Label} ${word.pronTip || '준비 중'}</div>
                                 ${quizCharTipHtml}
