@@ -96,10 +96,13 @@ function parseHanziToTooltip(sentence) {
     const isChineseChar = (str) => /[\u4e00-\u9fa5]/.test(str);
     let resultHtml = '';
 
-    for (let char of sentence) {
+    const safeSentence = sentence.replace(/'/g, "\\'");
+
+    for (let i = 0; i < sentence.length; i++) {
+        let char = sentence[i];
         if (isChineseChar(char)) {
-            // 파란 밑줄 클래스(zh-clickable-char)를 타지 않고 일반 한자 서체와 조화되도록 인라인 터치 속성만 매핑
-            resultHtml += `<span class="zh-normal-char" style="cursor: pointer;" onclick="handleCharClick(event, '${sentence}', ${sentence.indexOf(char)})">${char}</span>`;
+            // 💡 문장 내 정확한 인덱스 번호(i)를 전달하여 단어 추적의 정밀도 향상
+            resultHtml += `<span class="zh-normal-char" style="cursor: pointer;" onclick="handleCharClick(event, '${safeSentence}', ${i})">${char}</span>`;
         } else {
             resultHtml += `<span>${char}</span>`;
         }
